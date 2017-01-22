@@ -2,6 +2,8 @@
 layout: default
 ---
 
+<img src="tail_logo.png" alt="TAIL Logo" style="width: 256px;"/>
+
 ## What we do
 
 Transcendent AI Labs aims to pursue new and exciting avenues in AI/Machine Learning
