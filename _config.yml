@@ -1,0 +1,10 @@
+# Site settings
+title: Transcendent AI Labs
+tag_text: TAIL
+description: "Transcendent AI Labs aims to pursue new and exciting avenues in AI/Machine Learning
+by architecting highly modular and scalable platforms for inference, learning and decision making."
+# Build settings
+markdown: kramdown
+exclude: ["README.md"]
+sass:
+  style: compressed
