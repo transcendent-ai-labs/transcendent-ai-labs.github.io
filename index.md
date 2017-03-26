@@ -23,7 +23,7 @@ by architecting highly modular and scalable platforms for inference, learning an
 ### Dyna ML
 
 <br/>
-[DynaML](https://github.com/transcendent-ai-labs/DynaML) is our flagship machine learning library. It is an industrial grade Scala shell and platform for scientific research, education and practice.
+[DynaML](https://github.com/transcendent-ai-labs/DynaML) is our flagship machine learning library. It is an industrial grade Scala shell and platform for Machine Learning applications in scientific research, education and practice.
 
 
 <iframe src="https://ghbtns.com/github-btn.html?user=transcendent-ai-labs&amp;repo=DynaML&amp;type=watch&amp;count=true&amp;size=large" allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe>
