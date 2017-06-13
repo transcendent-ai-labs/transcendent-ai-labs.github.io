@@ -292,6 +292,24 @@ put them back together.</p>
     </span>
       <p class="shortcomment cmt">Multivariate version of <a href="#calculateGaussianScales(standardize:Boolean):io.github.mandar2812.dynaml.pipes.DataPipe[Stream[(breeze.linalg.DenseVector[Double],breeze.linalg.DenseVector[Double])],(Stream[(breeze.linalg.DenseVector[Double],breeze.linalg.DenseVector[Double])],(io.github.mandar2812.dynaml.utils.GaussianScaler,io.github.mandar2812.dynaml.utils.GaussianScaler))]" class="extmbr" name="io.github.mandar2812.dynaml.DynaMLPipe#calculateGaussianScales">calculateGaussianScales</a></p><div class="fullcomment"><div class="comment cmt"><p>Multivariate version of <a href="#calculateGaussianScales(standardize:Boolean):io.github.mandar2812.dynaml.pipes.DataPipe[Stream[(breeze.linalg.DenseVector[Double],breeze.linalg.DenseVector[Double])],(Stream[(breeze.linalg.DenseVector[Double],breeze.linalg.DenseVector[Double])],(io.github.mandar2812.dynaml.utils.GaussianScaler,io.github.mandar2812.dynaml.utils.GaussianScaler))]" class="extmbr" name="io.github.mandar2812.dynaml.DynaMLPipe#calculateGaussianScales">calculateGaussianScales</a></p></div><dl class="paramcmts block"><dt class="param">standardize</dt><dd class="cmt"><p>Set to true if one wants the standardized data and false if one
                    does wants the original data with the <span class="extype" name="MVGaussianScaler">MVGaussianScaler</span> instances.</p></dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.DynaMLPipe#calculateMeanScales" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="calculateMeanScales(standardize:Boolean):io.github.mandar2812.dynaml.pipes.DataPipe[Stream[(breeze.linalg.DenseVector[Double],breeze.linalg.DenseVector[Double])],(Stream[(breeze.linalg.DenseVector[Double],breeze.linalg.DenseVector[Double])],(io.github.mandar2812.dynaml.utils.MeanScaler,io.github.mandar2812.dynaml.utils.MeanScaler))]"></a>
+      <a id="calculateMeanScales(Boolean):DataPipe[Stream[(DenseVector[Double],DenseVector[Double])],(Stream[(DenseVector[Double],DenseVector[Double])],(MeanScaler,MeanScaler))]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">calculateMeanScales</span><span class="params">(<span name="standardize">standardize: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>)</span><span class="result">: <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</span>[<span class="extype" name="scala.Stream">Stream</span>[(<span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>], <span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>])], (<span class="extype" name="scala.Stream">Stream</span>[(<span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>], <span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>])], (<a href="utils/MeanScaler.html" class="extype" name="io.github.mandar2812.dynaml.utils.MeanScaler">MeanScaler</a>, <a href="utils/MeanScaler.html" class="extype" name="io.github.mandar2812.dynaml.utils.MeanScaler">MeanScaler</a>))]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#io.github.mandar2812.dynaml.DynaMLPipe$@calculateMeanScales(standardize:Boolean):io.github.mandar2812.dynaml.pipes.DataPipe[Stream[(breeze.linalg.DenseVector[Double],breeze.linalg.DenseVector[Double])],(Stream[(breeze.linalg.DenseVector[Double],breeze.linalg.DenseVector[Double])],(io.github.mandar2812.dynaml.utils.MeanScaler,io.github.mandar2812.dynaml.utils.MeanScaler))]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns a pipe which takes a data set and mean centers it.</p><div class="fullcomment"><div class="comment cmt"><p>Returns a pipe which takes a data set and mean centers it.</p></div><dl class="paramcmts block"><dt class="param">standardize</dt><dd class="cmt"><p>Set to true if one wants the standardized data and false if one
+                   does wants the original data with the <span class="extype" name="MeanScaler">MeanScaler</span> instances.</p></dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.DynaMLPipe#calculateMinMaxScales" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="calculateMinMaxScales(standardize:Boolean):io.github.mandar2812.dynaml.pipes.DataPipe[Stream[(breeze.linalg.DenseVector[Double],breeze.linalg.DenseVector[Double])],(Stream[(breeze.linalg.DenseVector[Double],breeze.linalg.DenseVector[Double])],(io.github.mandar2812.dynaml.utils.MinMaxScaler,io.github.mandar2812.dynaml.utils.MinMaxScaler))]"></a>
       <a id="calculateMinMaxScales(Boolean):DataPipe[Stream[(DenseVector[Double],DenseVector[Double])],(Stream[(DenseVector[Double],DenseVector[Double])],(MinMaxScaler,MinMaxScaler))]"></a>
@@ -310,6 +328,42 @@ put them back together.</p>
     </span>
       <p class="shortcomment cmt">Returns a pipe which takes a data set and calculates the minimum and maximum of each dimension.</p><div class="fullcomment"><div class="comment cmt"><p>Returns a pipe which takes a data set and calculates the minimum and maximum of each dimension.</p></div><dl class="paramcmts block"><dt class="param">standardize</dt><dd class="cmt"><p>Set to true if one wants the standardized data and false if one
                    does wants the original data with the <span class="extype" name="MinMaxScaler">MinMaxScaler</span> instances.</p></dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.DynaMLPipe#calculatePCAScales" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="calculatePCAScales(standardize:Boolean):io.github.mandar2812.dynaml.pipes.DataPipe[Stream[(breeze.linalg.DenseVector[Double],breeze.linalg.DenseVector[Double])],(Stream[(breeze.linalg.DenseVector[Double],breeze.linalg.DenseVector[Double])],(io.github.mandar2812.dynaml.utils.PCAScaler,io.github.mandar2812.dynaml.utils.MVGaussianScaler))]"></a>
+      <a id="calculatePCAScales(Boolean):DataPipe[Stream[(DenseVector[Double],DenseVector[Double])],(Stream[(DenseVector[Double],DenseVector[Double])],(PCAScaler,MVGaussianScaler))]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">calculatePCAScales</span><span class="params">(<span name="standardize">standardize: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>)</span><span class="result">: <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</span>[<span class="extype" name="scala.Stream">Stream</span>[(<span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>], <span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>])], (<span class="extype" name="scala.Stream">Stream</span>[(<span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>], <span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>])], (<a href="utils/PCAScaler.html" class="extype" name="io.github.mandar2812.dynaml.utils.PCAScaler">PCAScaler</a>, <a href="utils/MVGaussianScaler.html" class="extype" name="io.github.mandar2812.dynaml.utils.MVGaussianScaler">MVGaussianScaler</a>))]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#io.github.mandar2812.dynaml.DynaMLPipe$@calculatePCAScales(standardize:Boolean):io.github.mandar2812.dynaml.pipes.DataPipe[Stream[(breeze.linalg.DenseVector[Double],breeze.linalg.DenseVector[Double])],(Stream[(breeze.linalg.DenseVector[Double],breeze.linalg.DenseVector[Double])],(io.github.mandar2812.dynaml.utils.PCAScaler,io.github.mandar2812.dynaml.utils.MVGaussianScaler))]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns a pipe which performs PCA on data features and gaussian scaling on data targets</p><div class="fullcomment"><div class="comment cmt"><p>Returns a pipe which performs PCA on data features and gaussian scaling on data targets</p></div><dl class="paramcmts block"><dt class="param">standardize</dt><dd class="cmt"><p>Set to true if one wants the standardized data and false if one
+                   does wants the original data with the <span class="extype" name="MVGaussianScaler">MVGaussianScaler</span> instances.</p></dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.DynaMLPipe#calculatePCAScalesFeatures" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="calculatePCAScalesFeatures(standardize:Boolean):io.github.mandar2812.dynaml.pipes.DataPipe[Stream[breeze.linalg.DenseVector[Double]],(Stream[breeze.linalg.DenseVector[Double]],io.github.mandar2812.dynaml.utils.PCAScaler)]"></a>
+      <a id="calculatePCAScalesFeatures(Boolean):DataPipe[Stream[DenseVector[Double]],(Stream[DenseVector[Double]],PCAScaler)]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">calculatePCAScalesFeatures</span><span class="params">(<span name="standardize">standardize: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>)</span><span class="result">: <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</span>[<span class="extype" name="scala.Stream">Stream</span>[<span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]], (<span class="extype" name="scala.Stream">Stream</span>[<span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]], <a href="utils/PCAScaler.html" class="extype" name="io.github.mandar2812.dynaml.utils.PCAScaler">PCAScaler</a>)]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#io.github.mandar2812.dynaml.DynaMLPipe$@calculatePCAScalesFeatures(standardize:Boolean):io.github.mandar2812.dynaml.pipes.DataPipe[Stream[breeze.linalg.DenseVector[Double]],(Stream[breeze.linalg.DenseVector[Double]],io.github.mandar2812.dynaml.utils.PCAScaler)]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns a pipe which performs PCA on data features and gaussian scaling on data targets</p><div class="fullcomment"><div class="comment cmt"><p>Returns a pipe which performs PCA on data features and gaussian scaling on data targets</p></div><dl class="paramcmts block"><dt class="param">standardize</dt><dd class="cmt"><p>Set to true if one wants the standardized data and false if one
+                   does wants the original data with the <span class="extype" name="MVGaussianScaler">MVGaussianScaler</span> instances.</p></dd></dl></div>
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>
       <a id="clone():AnyRef"></a>
@@ -961,6 +1015,42 @@ data.</p>
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.DynaMLPipe#pcaFeatureScaling" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="pcaFeatureScaling:io.github.mandar2812.dynaml.pipes.DataPipe[Stream[breeze.linalg.DenseVector[Double]],(Stream[breeze.linalg.DenseVector[Double]],io.github.mandar2812.dynaml.utils.PCAScaler)]"></a>
+      <a id="pcaFeatureScaling:DataPipe[Stream[DenseVector[Double]],(Stream[DenseVector[Double]],PCAScaler)]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">pcaFeatureScaling</span><span class="result">: <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</span>[<span class="extype" name="scala.Stream">Stream</span>[<span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]], (<span class="extype" name="scala.Stream">Stream</span>[<span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]], <a href="utils/PCAScaler.html" class="extype" name="io.github.mandar2812.dynaml.utils.PCAScaler">PCAScaler</a>)]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#io.github.mandar2812.dynaml.DynaMLPipe$@pcaFeatureScaling:io.github.mandar2812.dynaml.pipes.DataPipe[Stream[breeze.linalg.DenseVector[Double]],(Stream[breeze.linalg.DenseVector[Double]],io.github.mandar2812.dynaml.utils.PCAScaler)]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Transform a data set by performing PCA on its patterns.</p>
+    </li><li name="io.github.mandar2812.dynaml.DynaMLPipe#pcaScaling" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="pcaScaling:io.github.mandar2812.dynaml.pipes.DataPipe[Stream[(breeze.linalg.DenseVector[Double],breeze.linalg.DenseVector[Double])],(Stream[(breeze.linalg.DenseVector[Double],breeze.linalg.DenseVector[Double])],(io.github.mandar2812.dynaml.utils.PCAScaler,io.github.mandar2812.dynaml.utils.MVGaussianScaler))]"></a>
+      <a id="pcaScaling:DataPipe[Stream[(DenseVector[Double],DenseVector[Double])],(Stream[(DenseVector[Double],DenseVector[Double])],(PCAScaler,MVGaussianScaler))]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">pcaScaling</span><span class="result">: <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</span>[<span class="extype" name="scala.Stream">Stream</span>[(<span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>], <span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>])], (<span class="extype" name="scala.Stream">Stream</span>[(<span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>], <span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>])], (<a href="utils/PCAScaler.html" class="extype" name="io.github.mandar2812.dynaml.utils.PCAScaler">PCAScaler</a>, <a href="utils/MVGaussianScaler.html" class="extype" name="io.github.mandar2812.dynaml.utils.MVGaussianScaler">MVGaussianScaler</a>))]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#io.github.mandar2812.dynaml.DynaMLPipe$@pcaScaling:io.github.mandar2812.dynaml.pipes.DataPipe[Stream[(breeze.linalg.DenseVector[Double],breeze.linalg.DenseVector[Double])],(Stream[(breeze.linalg.DenseVector[Double],breeze.linalg.DenseVector[Double])],(io.github.mandar2812.dynaml.utils.PCAScaler,io.github.mandar2812.dynaml.utils.MVGaussianScaler))]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Transform a data set consisting of features and targets.</p><div class="fullcomment"><div class="comment cmt"><p>Transform a data set consisting of features and targets.
+Perform PCA scaling of features and gaussian scaling of targets.
+</p></div></div>
     </li><li name="io.github.mandar2812.dynaml.DynaMLPipe#rdfToGLM" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="rdfToGLM(modelName:String,y:String,xs:Array[String])(implicitrenjin:org.renjin.script.RenjinScriptEngine):io.github.mandar2812.dynaml.pipes.DataPipe[String,org.renjin.sexp.ListVector]"></a>
       <a id="rdfToGLM(String,String,Array[String])(RenjinScriptEngine):DataPipe[String,ListVector]"></a>

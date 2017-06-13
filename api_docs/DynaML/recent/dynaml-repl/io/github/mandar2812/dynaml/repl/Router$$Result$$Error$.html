@@ -129,45 +129,24 @@ code within it.</p>
       <p class="shortcomment cmt">Invoking the <a href="Router$$EntryPoint.html" class="extype" name="io.github.mandar2812.dynaml.repl.Router.EntryPoint">EntryPoint</a> failed because there were problems
 deserializing/parsing individual arguments
 </p>
-    </li><li name="io.github.mandar2812.dynaml.repl.Router.Result.Error.RedundantArguments" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="RedundantArgumentsextendsRouter.Result.ErrorwithProductwithSerializable"></a>
-      <a id="RedundantArguments:RedundantArguments"></a>
+    </li><li name="io.github.mandar2812.dynaml.repl.Router.Result.Error.MismatchedArguments" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MismatchedArgumentsextendsRouter.Result.ErrorwithProductwithSerializable"></a>
+      <a id="MismatchedArguments:MismatchedArguments"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="Router$$Result$$Error$$RedundantArguments.html"><span class="name">RedundantArguments</span></a><span class="params">(<span name="names">names: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result"> extends <a href="Router$$Result$$Error.html" class="extype" name="io.github.mandar2812.dynaml.repl.Router.Result.Error">Error</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="Router$$Result$$Error$$MismatchedArguments.html"><span class="name">MismatchedArguments</span></a><span class="params">(<span name="missing">missing: <span class="extype" name="scala.Seq">Seq</span>[<a href="Router$$ArgSig.html" class="extype" name="io.github.mandar2812.dynaml.repl.Router.ArgSig">ArgSig</a>]</span>, <span name="unknown">unknown: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="duplicate">duplicate: <span class="extype" name="scala.Seq">Seq</span>[(<a href="Router$$ArgSig.html" class="extype" name="io.github.mandar2812.dynaml.repl.Router.ArgSig">ArgSig</a>, <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>])]</span>, <span name="incomplete">incomplete: <span class="extype" name="scala.Option">Option</span>[<a href="Router$$ArgSig.html" class="extype" name="io.github.mandar2812.dynaml.repl.Router.ArgSig">ArgSig</a>]</span>)</span><span class="result"> extends <a href="Router$$Result$$Error.html" class="extype" name="io.github.mandar2812.dynaml.repl.Router.Result.Error">Error</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.Router$$Result$$Error$@RedundantArgumentsextendsRouter.Result.ErrorwithProductwithSerializable" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.Router$$Result$$Error$@MismatchedArgumentsextendsRouter.Result.ErrorwithProductwithSerializable" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Invoking the <a href="Router$$EntryPoint.html" class="extype" name="io.github.mandar2812.dynaml.repl.Router.EntryPoint">EntryPoint</a> failed as the same argument was passed
-in more than once; possibly as a keyword-argument that was repeated,
-or a keyword-argument and positional-argument that both resolve to
-the same arg
-</p>
-    </li><li name="io.github.mandar2812.dynaml.repl.Router.Result.Error.TooManyArguments" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="TooManyArgumentsextendsRouter.Result.ErrorwithProductwithSerializable"></a>
-      <a id="TooManyArguments:TooManyArguments"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">case class</span>
-      </span>
-      <span class="symbol">
-        <a href="Router$$Result$$Error$$TooManyArguments.html"><span class="name">TooManyArguments</span></a><span class="params">(<span name="values">values: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result"> extends <a href="Router$$Result$$Error.html" class="extype" name="io.github.mandar2812.dynaml.repl.Router.Result.Error">Error</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.Router$$Result$$Error$@TooManyArgumentsextendsRouter.Result.ErrorwithProductwithSerializable" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Invoking the <a href="Router$$EntryPoint.html" class="extype" name="io.github.mandar2812.dynaml.repl.Router.EntryPoint">EntryPoint</a> failed as there were too many positional
-arguments passed in, more than what is expected by the <a href="Router$$EntryPoint.html" class="extype" name="io.github.mandar2812.dynaml.repl.Router.EntryPoint">EntryPoint</a>
+      <p class="shortcomment cmt">Invoking the <a href="Router$$EntryPoint.html" class="extype" name="io.github.mandar2812.dynaml.repl.Router.EntryPoint">EntryPoint</a> failed because the arguments provided
+did not line up with the arguments expected
 </p>
     </li></ol>
             </div>

@@ -116,7 +116,8 @@
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="tparam">LayerP</dt><dd class="cmt"><p>The type of parameters specifying layer weights</p></dd><dt class="tparam">I</dt><dd class="cmt"><p>The type of input features</p></dd></dl></div>
+      <p class="shortcomment cmt">Represents an auto-encoder acting on generic types.</p><div class="fullcomment"><div class="comment cmt"><p>Represents an auto-encoder acting on generic types.
+</p></div><dl class="paramcmts block"><dt class="tparam">LayerP</dt><dd class="cmt"><p>The type of parameters specifying layer weights</p></dd><dt class="tparam">I</dt><dd class="cmt"><p>The type of input features</p></dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.models.neuralnets.GenericFFNeuralNet" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="GenericFFNeuralNet[Data,LayerP,I]extendsNeuralNet[Data,Seq[io.github.mandar2812.dynaml.models.neuralnets.NeuralLayer[LayerP,I,I]],I,I,io.github.mandar2812.dynaml.models.neuralnets.NeuralStack[LayerP,I]]"></a>
       <a id="GenericFFNeuralNet[Data,LayerP,I]:GenericFFNeuralNet[Data,LayerP,I]"></a>
@@ -293,6 +294,26 @@ models.
       </a>
     </span>
       
+    </li><li name="io.github.mandar2812.dynaml.models.neuralnets.VectorSELU" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="VectorSELUextendsActivation[breeze.linalg.DenseVector[Double]]withProductwithSerializable"></a>
+      <a id="VectorSELU:VectorSELU"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="VectorSELU.html"><span class="name">VectorSELU</span></a><span class="params">(<span name="lambda">lambda: <span class="extype" name="scala.Double">Double</span></span>, <span name="alpha">alpha: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result"> extends <a href="Activation.html" class="extype" name="io.github.mandar2812.dynaml.models.neuralnets.Activation">Activation</a>[<span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.neuralnets.package@VectorSELUextendsActivation[breeze.linalg.DenseVector[Double]]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Implementation of the SELU activation function
+proposed by Hochreiter et.</p><div class="fullcomment"><div class="comment cmt"><p>Implementation of the SELU activation function
+proposed by Hochreiter et. al
+</p></div></div>
     </li><li name="io.github.mandar2812.dynaml.models.neuralnets.VectorWavelet" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="VectorWaveletextendsActivation[breeze.linalg.DenseVector[Double]]"></a>
       <a id="VectorWavelet:VectorWavelet"></a>
@@ -329,7 +350,9 @@ models.
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="attributes block"> <dt>Annotations</dt><dd>
+      <p class="shortcomment cmt">Base implementation of a Sparse Autoencoder</p><div class="fullcomment"><div class="comment cmt"><p>Base implementation of a Sparse Autoencoder</p><p>It is represented as a <span class="extype" name="ReversibleScaler">ReversibleScaler</span> transforming
+a breeze <span class="extype" name="DenseVector">DenseVector</span> into another breeze Dense Vector.
+</p></div><dl class="attributes block"> <dt>Annotations</dt><dd>
                 <span class="name">@deprecated</span>
               
         </dd><dt>Deprecated</dt><dd class="cmt"><p>AutoEncoder is deprecated as of DynaML v1.4.2 in favour of GenericAutoEncoder</p></dd></dl></div>
@@ -457,6 +480,24 @@ properties of a neural network.
       </a>
     </span>
       
+    </li><li name="io.github.mandar2812.dynaml.models.neuralnets.MagicSELU" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MagicSELU"></a>
+      <a id="MagicSELU:MagicSELU"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="MagicSELU$.html"><span class="name">MagicSELU</span></a><span class="result"> extends <a href="VectorSELU.html" class="extype" name="io.github.mandar2812.dynaml.models.neuralnets.VectorSELU">VectorSELU</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.neuralnets.package@MagicSELU" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">'Magic' SELU activation with specific values of lambda and alpha
+</p>
     </li><li name="io.github.mandar2812.dynaml.models.neuralnets.NeuralLayer" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="NeuralLayer"></a>
       <a id="NeuralLayer:NeuralLayer"></a>

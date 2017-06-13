@@ -195,7 +195,7 @@ as specified in Azzalani et.al.
       <p class="shortcomment cmt">The univariate extended skew gaussian distribution
 </p>
     </li><li name="io.github.mandar2812.dynaml.probability.distributions.GenericDistribution" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="GenericDistribution[T]extendsDensity[T]withRand[T]"></a>
+      <a id="GenericDistribution[T]extendsDensity[T]withRand[T]withSerializable"></a>
       <a id="GenericDistribution[T]:GenericDistribution[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -203,16 +203,16 @@ as specified in Azzalani et.al.
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="GenericDistribution.html"><span class="name">GenericDistribution</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <span class="extype" name="breeze.stats.distributions.Density">Density</span>[<span class="extype" name="io.github.mandar2812.dynaml.probability.distributions.GenericDistribution.T">T</span>] with <span class="extype" name="breeze.stats.distributions.Rand">Rand</span>[<span class="extype" name="io.github.mandar2812.dynaml.probability.distributions.GenericDistribution.T">T</span>]</span>
+        <a href="GenericDistribution.html"><span class="name">GenericDistribution</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <span class="extype" name="breeze.stats.distributions.Density">Density</span>[<span class="extype" name="io.github.mandar2812.dynaml.probability.distributions.GenericDistribution.T">T</span>] with <span class="extype" name="breeze.stats.distributions.Rand">Rand</span>[<span class="extype" name="io.github.mandar2812.dynaml.probability.distributions.GenericDistribution.T">T</span>] with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.probability.distributions.package@GenericDistribution[T]extendsDensity[T]withRand[T]" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.probability.distributions.package@GenericDistribution[T]extendsDensity[T]withRand[T]withSerializable" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt"></p>
     </li><li name="io.github.mandar2812.dynaml.probability.distributions.HasErrorBars" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="HasErrorBars[T]extendsAnyRef"></a>
+      <a id="HasErrorBars[T]extendsSerializable"></a>
       <a id="HasErrorBars[T]:HasErrorBars[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -220,10 +220,10 @@ as specified in Azzalani et.al.
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="HasErrorBars.html"><span class="name">HasErrorBars</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="HasErrorBars.html"><span class="name">HasErrorBars</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.probability.distributions.package@HasErrorBars[T]extendsAnyRef" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.probability.distributions.package@HasErrorBars[T]extendsSerializable" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -286,7 +286,7 @@ as specified in Adcock and Schutes.
     </span>
       <p class="shortcomment cmt">Matrix Students T distribution over n &times; p matrices
 </p><div class="fullcomment"><div class="comment cmt"><p>Matrix Students T distribution over n &times; p matrices
-</p></div><dl class="paramcmts block"><dt class="param">m</dt><dd class="cmt"><p>The mode, mean and center of the distribution</p></dd><dt class="param">omega</dt><dd class="cmt"><p>The p &times; p covariance matrix of the columns</p></dd><dt class="param">sigma</dt><dd class="cmt"><p>The n &times; n covariance matrix of the rows</p></dd></dl><dl class="attributes block"> <dt>Annotations</dt><dd>
+</p></div><dl class="paramcmts block"><dt class="param">mu</dt><dd class="cmt"><p>Degrees of freedom</p></dd><dt class="param">m</dt><dd class="cmt"><p>The mode, mean and center of the distribution</p></dd><dt class="param">omega</dt><dd class="cmt"><p>The p &times; p covariance matrix of the columns</p></dd><dt class="param">sigma</dt><dd class="cmt"><p>The n &times; n covariance matrix of the rows</p></dd></dl><dl class="attributes block"> <dt>Annotations</dt><dd>
                 <span class="name">@Experimental</span><span class="args">()</span>
               
         </dd></dl></div>

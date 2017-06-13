@@ -49,7 +49,9 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Logic around using Ammonite as a script-runner; invoking scripts via the
+macro-generated <a href="Router.html" class="extype" name="io.github.mandar2812.dynaml.repl.Router">Router</a>, and pretty-printing any output or error messages
+</p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
@@ -242,6 +244,23 @@
     </span>)</span>
               
         </dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.repl.Scripts#formatMainMethodSignature" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="formatMainMethodSignature(main:io.github.mandar2812.dynaml.repl.Router.EntryPoint,leftIndent:Int,leftColWidth:Int):String"></a>
+      <a id="formatMainMethodSignature(EntryPoint,Int,Int):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">formatMainMethodSignature</span><span class="params">(<span name="main">main: <a href="Router$$EntryPoint.html" class="extype" name="io.github.mandar2812.dynaml.repl.Router.EntryPoint">EntryPoint</a></span>, <span name="leftIndent">leftIndent: <span class="extype" name="scala.Int">Int</span></span>, <span name="leftColWidth">leftColWidth: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.Scripts$@formatMainMethodSignature(main:io.github.mandar2812.dynaml.repl.Router.EntryPoint,leftIndent:Int,leftColWidth:Int):String" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="io.github.mandar2812.dynaml.repl.Scripts#formatMainMethods" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="formatMainMethods(mainMethods:Seq[io.github.mandar2812.dynaml.repl.Router.EntryPoint]):String"></a>
       <a id="formatMainMethods(Seq[EntryPoint]):String"></a>
@@ -276,6 +295,40 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.repl.Scripts#getLeftColWidth" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getLeftColWidth(items:Seq[io.github.mandar2812.dynaml.repl.Router.ArgSig]):Int"></a>
+      <a id="getLeftColWidth(Seq[ArgSig]):Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getLeftColWidth</span><span class="params">(<span name="items">items: <span class="extype" name="scala.Seq">Seq</span>[<a href="Router$$ArgSig.html" class="extype" name="io.github.mandar2812.dynaml.repl.Router.ArgSig">ArgSig</a>]</span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.Scripts$@getLeftColWidth(items:Seq[io.github.mandar2812.dynaml.repl.Router.ArgSig]):Int" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.github.mandar2812.dynaml.repl.Scripts#groupArgs" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="groupArgs(flatArgs:List[String]):Seq[(String,Option[String])]"></a>
+      <a id="groupArgs(List[String]):Seq[(String,Option[String])]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">groupArgs</span><span class="params">(<span name="flatArgs">flatArgs: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>])]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.Scripts$@groupArgs(flatArgs:List[String]):Seq[(String,Option[String])]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
       <a id="hashCode():Int"></a>
@@ -397,52 +450,86 @@
       <p class="shortcomment cmt">Additional <span class="extype" name="scopt.Read">scopt.Read</span> instance to teach it how to read Ammonite paths
 </p>
     </li><li name="io.github.mandar2812.dynaml.repl.Scripts#renderArg" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="renderArg(arg:io.github.mandar2812.dynaml.repl.Router.ArgSig):String"></a>
-      <a id="renderArg(ArgSig):String"></a>
+      <a id="renderArg(arg:io.github.mandar2812.dynaml.repl.Router.ArgSig,leftOffset:Int,wrappedWidth:Int):(String,String)"></a>
+      <a id="renderArg(ArgSig,Int,Int):(String,String)"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">renderArg</span><span class="params">(<span name="arg">arg: <a href="Router$$ArgSig.html" class="extype" name="io.github.mandar2812.dynaml.repl.Router.ArgSig">ArgSig</a></span>)</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+        <span class="name">renderArg</span><span class="params">(<span name="arg">arg: <a href="Router$$ArgSig.html" class="extype" name="io.github.mandar2812.dynaml.repl.Router.ArgSig">ArgSig</a></span>, <span name="leftOffset">leftOffset: <span class="extype" name="scala.Int">Int</span></span>, <span name="wrappedWidth">wrappedWidth: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>)</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.Scripts$@renderArg(arg:io.github.mandar2812.dynaml.repl.Router.ArgSig):String" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.Scripts$@renderArg(arg:io.github.mandar2812.dynaml.repl.Router.ArgSig,leftOffset:Int,wrappedWidth:Int):(String,String)" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.github.mandar2812.dynaml.repl.Scripts#renderArgShort" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="renderArgShort(arg:io.github.mandar2812.dynaml.repl.Router.ArgSig):String"></a>
+      <a id="renderArgShort(ArgSig):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">renderArgShort</span><span class="params">(<span name="arg">arg: <a href="Router$$ArgSig.html" class="extype" name="io.github.mandar2812.dynaml.repl.Router.ArgSig">ArgSig</a></span>)</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.Scripts$@renderArgShort(arg:io.github.mandar2812.dynaml.repl.Router.ArgSig):String" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
     </li><li name="io.github.mandar2812.dynaml.repl.Scripts#runMainMethod" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="runMainMethod(mainMethod:io.github.mandar2812.dynaml.repl.Router.EntryPoint,args:Seq[String],kwargs:Seq[(String,String)]):Option[ammonite.util.Res.Failing]"></a>
-      <a id="runMainMethod(EntryPoint,Seq[String],Seq[(String,String)]):Option[Failing]"></a>
+      <a id="runMainMethod(mainMethod:io.github.mandar2812.dynaml.repl.Router.EntryPoint,scriptArgs:Seq[(String,Option[String])]):ammonite.util.Res[Any]"></a>
+      <a id="runMainMethod(EntryPoint,Seq[(String,Option[String])]):Res[Any]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">runMainMethod</span><span class="params">(<span name="mainMethod">mainMethod: <a href="Router$$EntryPoint.html" class="extype" name="io.github.mandar2812.dynaml.repl.Router.EntryPoint">EntryPoint</a></span>, <span name="args">args: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="kwargs">kwargs: <span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>)]</span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="ammonite.util.Res.Failing">Failing</span>]</span>
+        <span class="name">runMainMethod</span><span class="params">(<span name="mainMethod">mainMethod: <a href="Router$$EntryPoint.html" class="extype" name="io.github.mandar2812.dynaml.repl.Router.EntryPoint">EntryPoint</a></span>, <span name="scriptArgs">scriptArgs: <span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>])]</span>)</span><span class="result">: <span class="extype" name="ammonite.util.Res">Res</span>[<span class="extype" name="scala.Any">Any</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.Scripts$@runMainMethod(mainMethod:io.github.mandar2812.dynaml.repl.Router.EntryPoint,args:Seq[String],kwargs:Seq[(String,String)]):Option[ammonite.util.Res.Failing]" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.Scripts$@runMainMethod(mainMethod:io.github.mandar2812.dynaml.repl.Router.EntryPoint,scriptArgs:Seq[(String,Option[String])]):ammonite.util.Res[Any]" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
     </li><li name="io.github.mandar2812.dynaml.repl.Scripts#runScript" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="runScript(wd:ammonite.ops.Path,path:ammonite.ops.Path,interp:ammonite.interp.Interpreter,args:Seq[String],kwargs:Seq[(String,String)]):ammonite.util.Res[ammonite.util.Imports]"></a>
-      <a id="runScript(Path,Path,Interpreter,Seq[String],Seq[(String,String)]):Res[Imports]"></a>
+      <a id="runScript(wd:ammonite.ops.Path,path:ammonite.ops.Path,interp:ammonite.interp.Interpreter,scriptArgs:Seq[(String,Option[String])]):ammonite.util.Res[Any]"></a>
+      <a id="runScript(Path,Path,Interpreter,Seq[(String,Option[String])]):Res[Any]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">runScript</span><span class="params">(<span name="wd">wd: <span class="extype" name="ammonite.ops.Path">Path</span></span>, <span name="path">path: <span class="extype" name="ammonite.ops.Path">Path</span></span>, <span name="interp">interp: <span class="extype" name="ammonite.interp.Interpreter">Interpreter</span></span>, <span name="args">args: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="kwargs">kwargs: <span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>)]</span>)</span><span class="result">: <span class="extype" name="ammonite.util.Res">Res</span>[<span class="extype" name="ammonite.util.Imports">Imports</span>]</span>
+        <span class="name">runScript</span><span class="params">(<span name="wd">wd: <span class="extype" name="ammonite.ops.Path">Path</span></span>, <span name="path">path: <span class="extype" name="ammonite.ops.Path">Path</span></span>, <span name="interp">interp: <span class="extype" name="ammonite.interp.Interpreter">Interpreter</span></span>, <span name="scriptArgs">scriptArgs: <span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>])] = <span class="symbol">Nil</span></span>)</span><span class="result">: <span class="extype" name="ammonite.util.Res">Res</span>[<span class="extype" name="scala.Any">Any</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.Scripts$@runScript(wd:ammonite.ops.Path,path:ammonite.ops.Path,interp:ammonite.interp.Interpreter,args:Seq[String],kwargs:Seq[(String,String)]):ammonite.util.Res[ammonite.util.Imports]" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.Scripts$@runScript(wd:ammonite.ops.Path,path:ammonite.ops.Path,interp:ammonite.interp.Interpreter,scriptArgs:Seq[(String,Option[String])]):ammonite.util.Res[Any]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.github.mandar2812.dynaml.repl.Scripts#softWrap" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="softWrap(s:String,leftOffset:Int,maxWidth:Int):String"></a>
+      <a id="softWrap(String,Int,Int):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">softWrap</span><span class="params">(<span name="s">s: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="leftOffset">leftOffset: <span class="extype" name="scala.Int">Int</span></span>, <span name="maxWidth">maxWidth: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.Scripts$@softWrap(s:String,leftOffset:Int,maxWidth:Int):String" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>

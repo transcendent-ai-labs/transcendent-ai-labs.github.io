@@ -90,7 +90,27 @@ and library functions.
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="io.github.mandar2812.dynaml.utils.GaussianScaler" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+              <ol><li name="io.github.mandar2812.dynaml.utils.ConfigEncoding" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ConfigEncodingextendsEncoder[Map[String,Double],breeze.linalg.DenseVector[Double]]withProductwithSerializable"></a>
+      <a id="ConfigEncoding:ConfigEncoding"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ConfigEncoding.html"><span class="name">ConfigEncoding</span></a><span class="params">(<span name="keys">keys: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result"> extends <span class="extype" name="io.github.mandar2812.dynaml.pipes.Encoder">Encoder</span>[<span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>], <span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.utils.package@ConfigEncodingextendsEncoder[Map[String,Double],breeze.linalg.DenseVector[Double]]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">An encoding which converts a hyper-parameter configuration
+from a <span class="extype" name="Map">Map</span> to a breeze <span class="extype" name="DenseVector">DenseVector</span> and back.</p><div class="fullcomment"><div class="comment cmt"><p>An encoding which converts a hyper-parameter configuration
+from a <span class="extype" name="Map">Map</span> to a breeze <span class="extype" name="DenseVector">DenseVector</span> and back.
+</p></div><dl class="paramcmts block"><dt class="param">keys</dt><dd class="cmt"><p>A list of hyper-parameter strings.</p></dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.utils.GaussianScaler" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="GaussianScalerextendsReversibleScaler[breeze.linalg.DenseVector[Double]]withProductwithSerializable"></a>
       <a id="GaussianScaler:GaussianScaler"></a>
       <h4 class="signature">
@@ -106,7 +126,28 @@ and library functions.
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">mean</dt><dd class="cmt"><p>Sample mean of the data</p></dd><dt class="param">sigma</dt><dd class="cmt"><p>Sample variance of each data dimension</p></dd></dl></div>
+      <p class="shortcomment cmt">Scales attributes of a vector pattern using the sample mean and variance of
+each dimension.</p><div class="fullcomment"><div class="comment cmt"><p>Scales attributes of a vector pattern using the sample mean and variance of
+each dimension. This assumes that there is no covariance between the data
+dimensions.
+</p></div><dl class="paramcmts block"><dt class="param">mean</dt><dd class="cmt"><p>Sample mean of the data</p></dd><dt class="param">sigma</dt><dd class="cmt"><p>Sample variance of each data dimension</p></dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.utils.HasHyperParameters" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="HasHyperParametersextendsAnyRef"></a>
+      <a id="HasHyperParameters:HasHyperParameters"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="HasHyperParameters.html"><span class="name">HasHyperParameters</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.utils.package@HasHyperParametersextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p>
     </li><li name="io.github.mandar2812.dynaml.utils.MVGaussianScaler" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="MVGaussianScalerextendsReversibleScaler[breeze.linalg.DenseVector[Double]]withProductwithSerializable"></a>
       <a id="MVGaussianScaler:MVGaussianScaler"></a>
@@ -128,6 +169,23 @@ calculated on the data set.</p><div class="fullcomment"><div class="comment cmt"
 calculated on the data set. This allows standardization of multivariate data sets
 where the covariance of individual data dimensions is not negligible.
 </p></div><dl class="paramcmts block"><dt class="param">mean</dt><dd class="cmt"><p>Sample mean of data</p></dd><dt class="param">sigma</dt><dd class="cmt"><p>Sample covariance matrix of data.</p></dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.utils.MeanScaler" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MeanScalerextendsReversibleScaler[breeze.linalg.DenseVector[Double]]withProductwithSerializable"></a>
+      <a id="MeanScaler:MeanScaler"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="MeanScaler.html"><span class="name">MeanScaler</span></a><span class="params">(<span name="center">center: <span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]</span>)</span><span class="result"> extends <span class="extype" name="io.github.mandar2812.dynaml.pipes.ReversibleScaler">ReversibleScaler</span>[<span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.utils.package@MeanScalerextendsReversibleScaler[breeze.linalg.DenseVector[Double]]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p>
     </li><li name="io.github.mandar2812.dynaml.utils.MinMaxScaler" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="MinMaxScalerextendsReversibleScaler[breeze.linalg.DenseVector[Double]]withProductwithSerializable"></a>
       <a id="MinMaxScaler:MinMaxScaler"></a>
@@ -145,6 +203,28 @@ where the covariance of individual data dimensions is not negligible.
       </a>
     </span>
       <p class="shortcomment cmt"></p>
+    </li><li name="io.github.mandar2812.dynaml.utils.PCAScaler" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="PCAScalerextendsReversibleScaler[breeze.linalg.DenseVector[Double]]withProductwithSerializable"></a>
+      <a id="PCAScaler:PCAScaler"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="PCAScaler.html"><span class="name">PCAScaler</span></a><span class="params">(<span name="center">center: <span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="covmat">covmat: <span class="extype" name="breeze.linalg.DenseMatrix">DenseMatrix</span>[<span class="extype" name="scala.Double">Double</span>]</span>)</span><span class="result"> extends <span class="extype" name="io.github.mandar2812.dynaml.pipes.ReversibleScaler">ReversibleScaler</span>[<span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.utils.package@PCAScalerextendsReversibleScaler[breeze.linalg.DenseVector[Double]]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Transforms data by projecting
+on the principal components (eigen-vectors)
+of the sample covariance matrix.</p><div class="fullcomment"><div class="comment cmt"><p>Transforms data by projecting
+on the principal components (eigen-vectors)
+of the sample covariance matrix.
+</p></div><dl class="paramcmts block"><dt class="param">center</dt><dd class="cmt"><p>The empirical mean of the data features</p></dd><dt class="param">covmat</dt><dd class="cmt"><p>The empirical covariance matrix of the data features</p></dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.utils.UnivariateGaussianScaler" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="UnivariateGaussianScalerextendsReversibleScaler[Double]withProductwithSerializable"></a>
       <a id="UnivariateGaussianScaler:UnivariateGaussianScaler"></a>
@@ -158,6 +238,23 @@ where the covariance of individual data dimensions is not negligible.
       </span>
       </h4><span class="permalink">
       <a href="../../../../../index.html#io.github.mandar2812.dynaml.utils.package@UnivariateGaussianScalerextendsReversibleScaler[Double]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.github.mandar2812.dynaml.utils.UnivariateMeanScaler" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="UnivariateMeanScalerextendsReversibleScaler[Double]withProductwithSerializable"></a>
+      <a id="UnivariateMeanScaler:UnivariateMeanScaler"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="UnivariateMeanScaler.html"><span class="name">UnivariateMeanScaler</span></a><span class="params">(<span name="center">center: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result"> extends <span class="extype" name="io.github.mandar2812.dynaml.pipes.ReversibleScaler">ReversibleScaler</span>[<span class="extype" name="scala.Double">Double</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.utils.package@UnivariateMeanScalerextendsReversibleScaler[Double]withProductwithSerializable" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -186,6 +283,24 @@ where the covariance of individual data dimensions is not negligible.
       </a>
     </span>
       
+    </li><li name="io.github.mandar2812.dynaml.utils#chebyshev" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="chebyshev(n:Int,x:Double,kind:Int):Double"></a>
+      <a id="chebyshev(Int,Double,Int):Double"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">chebyshev</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>, <span name="x">x: <span class="extype" name="scala.Double">Double</span></span>, <span name="kind">kind: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">1</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.utils.package@chebyshev(n:Int,x:Double,kind:Int):Double" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Calculates the Chebyshev polynomials of the first and second kind,
+in a tail recursive manner, using their recurrence relations.</p>
     </li><li name="io.github.mandar2812.dynaml.utils#combine" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="combine[A](xs:Traversable[Traversable[A]]):Seq[Seq[A]]"></a>
       <a id="combine[A](Traversable[Traversable[A]]):Seq[Seq[A]]"></a>
@@ -332,6 +447,25 @@ character.
       </a>
     </span>
       
+    </li><li name="io.github.mandar2812.dynaml.utils#getPriorMapDistr" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getPriorMapDistr(d:Map[String,breeze.stats.distributions.ContinuousDistr[Double]]):breeze.stats.distributions.ContinuousDistr[Map[String,Double]]"></a>
+      <a id="getPriorMapDistr(Map[String,ContinuousDistr[Double]]):ContinuousDistr[Map[String,Double]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getPriorMapDistr</span><span class="params">(<span name="d">d: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="breeze.stats.distributions.ContinuousDistr">ContinuousDistr</span>[<span class="extype" name="scala.Double">Double</span>]]</span>)</span><span class="result">: <span class="extype" name="breeze.stats.distributions.ContinuousDistr">ContinuousDistr</span>[<span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.utils.package@getPriorMapDistr(d:Map[String,breeze.stats.distributions.ContinuousDistr[Double]]):breeze.stats.distributions.ContinuousDistr[Map[String,Double]]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Convert a hyper-prior specification to a continuous distribution
+over <span class="extype" name="Map">Map</span>
+</p>
     </li><li name="io.github.mandar2812.dynaml.utils#getStats" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getStats(data:List[breeze.linalg.DenseVector[Double]]):(breeze.linalg.DenseVector[Double],breeze.linalg.DenseVector[Double])"></a>
       <a id="getStats(List[DenseVector[Double]]):(DenseVector[Double],DenseVector[Double])"></a>
@@ -427,8 +561,8 @@ which is a <span class="extype" name="List">List</span> of <span class="extype" 
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Construct a haar transform matrix of size n</p><div class="fullcomment"><div class="comment cmt"><p>Construct a haar transform matrix of size n</p><p>NOTE: n must be a power of 2.</p></div></div>
-    </li><li name="io.github.mandar2812.dynaml.utils#hermite" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">Construct a Haar transform matrix of size n</p><div class="fullcomment"><div class="comment cmt"><p>Construct a Haar transform matrix of size n</p><p>NOTE: n must be a power of 2.</p></div></div>
+    </li><li name="io.github.mandar2812.dynaml.utils#hermite" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hermite(n:Int,x:Double):Double"></a>
       <a id="hermite(Int,Double):Double"></a>
       <h4 class="signature">
@@ -444,7 +578,11 @@ which is a <span class="extype" name="List">List</span> of <span class="extype" 
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">Calculate the value of the hermite polynomials
+tail recursively.</p><div class="fullcomment"><div class="comment cmt"><p>Calculate the value of the hermite polynomials
+tail recursively. This is needed to calculate
+the Gaussian derivatives at a point x.
+</p></div></div>
     </li><li name="io.github.mandar2812.dynaml.utils#isSquareMatrix" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="isSquareMatrix[V](mat:breeze.linalg.Matrix[V]):Unit"></a>
       <a id="isSquareMatrix[V](Matrix[V]):Unit"></a>

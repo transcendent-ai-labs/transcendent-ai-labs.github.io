@@ -90,7 +90,7 @@
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="io.github.mandar2812.dynaml.repl.DynaMLRepl#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(input:java.io.InputStream,output:java.io.OutputStream,error:java.io.OutputStream,storage:ammonite.util.Ref[ammonite.runtime.Storage],predef:String,replArgs:Seq[ammonite.util.Bind[_]],promptStr:String,wd:ammonite.ops.Path,welcomeBanner:Option[String]):io.github.mandar2812.dynaml.repl.DynaMLRepl"></a>
+      <a id="&lt;init&gt;(input:java.io.InputStream,output:java.io.OutputStream,info:java.io.OutputStream,error:java.io.OutputStream,storage:ammonite.runtime.Storage,defaultPredef:String,mainPredef:String,wd:ammonite.ops.Path,welcomeBanner:Option[String],replArgs:IndexedSeq[ammonite.util.Bind[_]],initialColors:ammonite.util.Colors,remoteLogger:Option[ammonite.repl.RemoteLogger]):io.github.mandar2812.dynaml.repl.DynaMLRepl"></a>
       <a id="&lt;init&gt;:DynaMLRepl"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -98,10 +98,10 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">DynaMLRepl</span><span class="params">(<span name="input">input: <span class="extype" name="java.io.InputStream">InputStream</span></span>, <span name="output">output: <span class="extype" name="java.io.OutputStream">OutputStream</span></span>, <span name="error">error: <span class="extype" name="java.io.OutputStream">OutputStream</span></span>, <span name="storage">storage: <span class="extype" name="ammonite.util.Ref">Ref</span>[<span class="extype" name="ammonite.runtime.Storage">Storage</span>]</span>, <span name="predef">predef: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;&quot;</span></span>, <span name="replArgs">replArgs: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="ammonite.util.Bind">Bind</span>[_]] = <span class="symbol">Nil</span></span>, <span name="promptStr">promptStr: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="wd">wd: <span class="extype" name="ammonite.ops.Path">Path</span></span>, <span name="welcomeBanner">welcomeBanner: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span>
+        <span class="name">DynaMLRepl</span><span class="params">(<span name="input">input: <span class="extype" name="java.io.InputStream">InputStream</span></span>, <span name="output">output: <span class="extype" name="java.io.OutputStream">OutputStream</span></span>, <span name="info">info: <span class="extype" name="java.io.OutputStream">OutputStream</span></span>, <span name="error">error: <span class="extype" name="java.io.OutputStream">OutputStream</span></span>, <span name="storage">storage: <span class="extype" name="ammonite.runtime.Storage">Storage</span></span>, <span name="defaultPredef">defaultPredef: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="mainPredef">mainPredef: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="wd">wd: <span class="extype" name="ammonite.ops.Path">Path</span></span>, <span name="welcomeBanner">welcomeBanner: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="replArgs">replArgs: <span class="extype" name="scala.IndexedSeq">IndexedSeq</span>[<span class="extype" name="ammonite.util.Bind">Bind</span>[_]] = <span class="symbol">Vector.empty</span></span>, <span name="initialColors">initialColors: <span class="extype" name="ammonite.util.Colors">Colors</span> = <span class="symbol"><span class="name"><a href="../../../../../ammonite/package.html">Colors.Default</a></span></span></span>, <span name="remoteLogger">remoteLogger: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="ammonite.repl.RemoteLogger">RemoteLogger</span>]</span>)</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLRepl@&lt;init&gt;(input:java.io.InputStream,output:java.io.OutputStream,error:java.io.OutputStream,storage:ammonite.util.Ref[ammonite.runtime.Storage],predef:String,replArgs:Seq[ammonite.util.Bind[_]],promptStr:String,wd:ammonite.ops.Path,welcomeBanner:Option[String]):io.github.mandar2812.dynaml.repl.DynaMLRepl" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLRepl@&lt;init&gt;(input:java.io.InputStream,output:java.io.OutputStream,info:java.io.OutputStream,error:java.io.OutputStream,storage:ammonite.runtime.Storage,defaultPredef:String,mainPredef:String,wd:ammonite.ops.Path,welcomeBanner:Option[String],replArgs:IndexedSeq[ammonite.util.Bind[_]],initialColors:ammonite.util.Colors,remoteLogger:Option[ammonite.repl.RemoteLogger]):io.github.mandar2812.dynaml.repl.DynaMLRepl" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -218,7 +218,7 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="ammonite.repl.Repl#beforeExit" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="beforeExit(exitValue:&lt;?&gt;):Any"></a>
+      <a id="beforeExit(exitValue:Any):Any"></a>
       <a id="beforeExit(Any):Any"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -450,6 +450,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="ammonite.repl.Repl#lastException" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="lastException:Throwable"></a>
+      <a id="lastException:Throwable"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">lastException</span><span class="result">: <span class="extype" name="scala.Throwable">Throwable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLRepl@lastException:Throwable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Repl</dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
@@ -582,6 +599,23 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLRepl@run():Any" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Repl</dd></dl></div>
+    </li><li name="ammonite.repl.Repl#sess0" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="sess0:ammonite.repl.SessionApiImpl"></a>
+      <a id="sess0:SessionApiImpl"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">sess0</span><span class="result">: <span class="extype" name="ammonite.repl.SessionApiImpl">SessionApiImpl</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLRepl@sess0:ammonite.repl.SessionApiImpl" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>

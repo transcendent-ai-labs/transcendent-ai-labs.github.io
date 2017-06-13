@@ -47,13 +47,13 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <span class="name">GaussianProcessPrior</span>
+        <span class="name">GaussianProcessPrior</span><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
           <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -71,7 +71,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="io.github.mandar2812.dynaml.models.bayes.GaussianProcessPrior"><span>GaussianProcessPrior</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="io.github.mandar2812.dynaml.models.bayes.GaussianProcessPrior"><span>GaussianProcessPrior</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -148,18 +148,18 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.models.bayes.GaussianProcessPrior#apply" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="apply[I,MeanFuncParams](covariance:io.github.mandar2812.dynaml.kernels.LocalScalarKernel[I],noiseCovariance:io.github.mandar2812.dynaml.kernels.LocalScalarKernel[I],meanFPipe:io.github.mandar2812.dynaml.pipes.MetaPipe[MeanFuncParams,I,Double],initialParams:MeanFuncParams)(implicitevidence$2:scala.reflect.ClassTag[I]):io.github.mandar2812.dynaml.models.bayes.GaussianProcessPrior[I,MeanFuncParams]"></a>
-      <a id="apply[I,MeanFuncParams](LocalScalarKernel[I],LocalScalarKernel[I],MetaPipe[MeanFuncParams,I,Double],MeanFuncParams)(ClassTag[I]):GaussianProcessPrior[I,MeanFuncParams]"></a>
+      <a id="apply[I,MeanFuncParams](covariance:io.github.mandar2812.dynaml.kernels.LocalScalarKernel[I],noiseCovariance:io.github.mandar2812.dynaml.kernels.LocalScalarKernel[I],meanFPipe:io.github.mandar2812.dynaml.pipes.MetaPipe[MeanFuncParams,I,Double],trendEncoder:io.github.mandar2812.dynaml.pipes.Encoder[MeanFuncParams,Map[String,Double]],initialParams:MeanFuncParams)(implicitevidence$2:scala.reflect.ClassTag[I]):io.github.mandar2812.dynaml.models.bayes.GaussianProcessPrior[I,MeanFuncParams]"></a>
+      <a id="apply[I,MeanFuncParams](LocalScalarKernel[I],LocalScalarKernel[I],MetaPipe[MeanFuncParams,I,Double],Encoder[MeanFuncParams,Map[String,Double]],MeanFuncParams)(ClassTag[I]):GaussianProcessPrior[I,MeanFuncParams]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">apply</span><span class="tparams">[<span name="I">I</span>, <span name="MeanFuncParams">MeanFuncParams</span>]</span><span class="params">(<span name="covariance">covariance: <a href="../../kernels/LocalScalarKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel">LocalScalarKernel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.bayes.GaussianProcessPrior.apply.I">I</span>]</span>, <span name="noiseCovariance">noiseCovariance: <a href="../../kernels/LocalScalarKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel">LocalScalarKernel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.bayes.GaussianProcessPrior.apply.I">I</span>]</span>, <span name="meanFPipe">meanFPipe: <span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe">MetaPipe</span>[<span class="extype" name="io.github.mandar2812.dynaml.models.bayes.GaussianProcessPrior.apply.MeanFuncParams">MeanFuncParams</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.bayes.GaussianProcessPrior.apply.I">I</span>, <span class="extype" name="scala.Double">Double</span>]</span>, <span name="initialParams">initialParams: <span class="extype" name="io.github.mandar2812.dynaml.models.bayes.GaussianProcessPrior.apply.MeanFuncParams">MeanFuncParams</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <span class="extype" name="scala.reflect.ClassTag">ClassTag</span>[<span class="extype" name="io.github.mandar2812.dynaml.models.bayes.GaussianProcessPrior.apply.I">I</span>]</span>)</span><span class="result">: <a href="GaussianProcessPrior.html" class="extype" name="io.github.mandar2812.dynaml.models.bayes.GaussianProcessPrior">GaussianProcessPrior</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.bayes.GaussianProcessPrior.apply.I">I</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.bayes.GaussianProcessPrior.apply.MeanFuncParams">MeanFuncParams</span>]</span>
+        <span class="name">apply</span><span class="tparams">[<span name="I">I</span>, <span name="MeanFuncParams">MeanFuncParams</span>]</span><span class="params">(<span name="covariance">covariance: <a href="../../kernels/LocalScalarKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel">LocalScalarKernel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.bayes.GaussianProcessPrior.apply.I">I</span>]</span>, <span name="noiseCovariance">noiseCovariance: <a href="../../kernels/LocalScalarKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel">LocalScalarKernel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.bayes.GaussianProcessPrior.apply.I">I</span>]</span>, <span name="meanFPipe">meanFPipe: <span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe">MetaPipe</span>[<span class="extype" name="io.github.mandar2812.dynaml.models.bayes.GaussianProcessPrior.apply.MeanFuncParams">MeanFuncParams</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.bayes.GaussianProcessPrior.apply.I">I</span>, <span class="extype" name="scala.Double">Double</span>]</span>, <span name="trendEncoder">trendEncoder: <span class="extype" name="io.github.mandar2812.dynaml.pipes.Encoder">Encoder</span>[<span class="extype" name="io.github.mandar2812.dynaml.models.bayes.GaussianProcessPrior.apply.MeanFuncParams">MeanFuncParams</span>, <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>]]</span>, <span name="initialParams">initialParams: <span class="extype" name="io.github.mandar2812.dynaml.models.bayes.GaussianProcessPrior.apply.MeanFuncParams">MeanFuncParams</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <span class="extype" name="scala.reflect.ClassTag">ClassTag</span>[<span class="extype" name="io.github.mandar2812.dynaml.models.bayes.GaussianProcessPrior.apply.I">I</span>]</span>)</span><span class="result">: <a href="GaussianProcessPrior.html" class="extype" name="io.github.mandar2812.dynaml.models.bayes.GaussianProcessPrior">GaussianProcessPrior</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.bayes.GaussianProcessPrior.apply.I">I</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.bayes.GaussianProcessPrior.apply.MeanFuncParams">MeanFuncParams</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.bayes.GaussianProcessPrior$@apply[I,MeanFuncParams](covariance:io.github.mandar2812.dynaml.kernels.LocalScalarKernel[I],noiseCovariance:io.github.mandar2812.dynaml.kernels.LocalScalarKernel[I],meanFPipe:io.github.mandar2812.dynaml.pipes.MetaPipe[MeanFuncParams,I,Double],initialParams:MeanFuncParams)(implicitevidence$2:scala.reflect.ClassTag[I]):io.github.mandar2812.dynaml.models.bayes.GaussianProcessPrior[I,MeanFuncParams]" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.bayes.GaussianProcessPrior$@apply[I,MeanFuncParams](covariance:io.github.mandar2812.dynaml.kernels.LocalScalarKernel[I],noiseCovariance:io.github.mandar2812.dynaml.kernels.LocalScalarKernel[I],meanFPipe:io.github.mandar2812.dynaml.pipes.MetaPipe[MeanFuncParams,I,Double],trendEncoder:io.github.mandar2812.dynaml.pipes.Encoder[MeanFuncParams,Map[String,Double]],initialParams:MeanFuncParams)(implicitevidence$2:scala.reflect.ClassTag[I]):io.github.mandar2812.dynaml.models.bayes.GaussianProcessPrior[I,MeanFuncParams]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -476,7 +476,11 @@
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="scala.AnyRef">
+        <div class="parent" name="scala.Serializable">
+              <h3>Inherited from <span class="extype" name="scala.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="java.io.Serializable">
+              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">
               <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>

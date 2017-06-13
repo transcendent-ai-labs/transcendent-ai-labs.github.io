@@ -45,13 +45,13 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">EntryPoint</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="argSignatures">argSignatures: <span class="extype" name="scala.Seq">Seq</span>[<a href="Router$$ArgSig.html" class="extype" name="io.github.mandar2812.dynaml.repl.Router.ArgSig">ArgSig</a>]</span>, <span name="varargs">varargs: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="invoke0">invoke0: (<span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>], <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]) ⇒ <a href="Router$$Result.html" class="extype" name="io.github.mandar2812.dynaml.repl.Router.Result">Result</a>[<span class="extype" name="scala.Any">Any</span>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <span class="name">EntryPoint</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="argSignatures">argSignatures: <span class="extype" name="scala.Seq">Seq</span>[<a href="Router$$ArgSig.html" class="extype" name="io.github.mandar2812.dynaml.repl.Router.ArgSig">ArgSig</a>]</span>, <span name="doc">doc: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="varargs">varargs: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="invoke0">invoke0: (<span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>], <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]) ⇒ <a href="Router$$Result.html" class="extype" name="io.github.mandar2812.dynaml.repl.Router.Result">Result</a>[<span class="extype" name="scala.Any">Any</span>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>What is known about a single endpoint for our routes. It has a <a href="#name:String" class="extmbr" name="io.github.mandar2812.dynaml.repl.Router.EntryPoint#name">name</a>,
 <a href="#argSignatures:Seq[io.github.mandar2812.dynaml.repl.Router.ArgSig]" class="extmbr" name="io.github.mandar2812.dynaml.repl.Router.EntryPoint#argSignatures">argSignatures</a> for each argument, and a macro-generated <a href="#invoke0:(Map[String,String],Seq[String])=&gt;io.github.mandar2812.dynaml.repl.Router.Result[Any]" class="extmbr" name="io.github.mandar2812.dynaml.repl.Router.EntryPoint#invoke0">invoke0</a>
-that performs all the necessary argument parsing and de-serialization.</p><p>Realistically, you will probably spend most of your time calling <a href="#invoke(args:Seq[String],kwargs:Seq[(String,String)]):io.github.mandar2812.dynaml.repl.Router.Result[Any]" class="extmbr" name="io.github.mandar2812.dynaml.repl.Router.EntryPoint#invoke">invoke</a>
+that performs all the necessary argument parsing and de-serialization.</p><p>Realistically, you will probably spend most of your time calling <a href="#invoke(groupedArgs:Seq[(String,Option[String])]):io.github.mandar2812.dynaml.repl.Router.Result[Any]" class="extmbr" name="io.github.mandar2812.dynaml.repl.Router.EntryPoint#invoke">invoke</a>
 instead, which provides a nicer API to call it that mimmicks the API of
 calling a Scala method.
 </p></div><div class="toggleContainer block">
@@ -94,7 +94,7 @@ calling a Scala method.
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="io.github.mandar2812.dynaml.repl.Router.EntryPoint#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(name:String,argSignatures:Seq[io.github.mandar2812.dynaml.repl.Router.ArgSig],varargs:Boolean,invoke0:(Map[String,String],Seq[String])=&gt;io.github.mandar2812.dynaml.repl.Router.Result[Any]):io.github.mandar2812.dynaml.repl.Router.EntryPoint"></a>
+      <a id="&lt;init&gt;(name:String,argSignatures:Seq[io.github.mandar2812.dynaml.repl.Router.ArgSig],doc:Option[String],varargs:Boolean,invoke0:(Map[String,String],Seq[String])=&gt;io.github.mandar2812.dynaml.repl.Router.Result[Any]):io.github.mandar2812.dynaml.repl.Router.EntryPoint"></a>
       <a id="&lt;init&gt;:EntryPoint"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -102,10 +102,10 @@ calling a Scala method.
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">EntryPoint</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="argSignatures">argSignatures: <span class="extype" name="scala.Seq">Seq</span>[<a href="Router$$ArgSig.html" class="extype" name="io.github.mandar2812.dynaml.repl.Router.ArgSig">ArgSig</a>]</span>, <span name="varargs">varargs: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="invoke0">invoke0: (<span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>], <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]) ⇒ <a href="Router$$Result.html" class="extype" name="io.github.mandar2812.dynaml.repl.Router.Result">Result</a>[<span class="extype" name="scala.Any">Any</span>]</span>)</span>
+        <span class="name">EntryPoint</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="argSignatures">argSignatures: <span class="extype" name="scala.Seq">Seq</span>[<a href="Router$$ArgSig.html" class="extype" name="io.github.mandar2812.dynaml.repl.Router.ArgSig">ArgSig</a>]</span>, <span name="doc">doc: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="varargs">varargs: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="invoke0">invoke0: (<span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>], <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]) ⇒ <a href="Router$$Result.html" class="extype" name="io.github.mandar2812.dynaml.repl.Router.Result">Result</a>[<span class="extype" name="scala.Any">Any</span>]</span>)</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.Router$$EntryPoint@&lt;init&gt;(name:String,argSignatures:Seq[io.github.mandar2812.dynaml.repl.Router.ArgSig],varargs:Boolean,invoke0:(Map[String,String],Seq[String])=&gt;io.github.mandar2812.dynaml.repl.Router.Result[Any]):io.github.mandar2812.dynaml.repl.Router.EntryPoint" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.Router$$EntryPoint@&lt;init&gt;(name:String,argSignatures:Seq[io.github.mandar2812.dynaml.repl.Router.ArgSig],doc:Option[String],varargs:Boolean,invoke0:(Map[String,String],Seq[String])=&gt;io.github.mandar2812.dynaml.repl.Router.Result[Any]):io.github.mandar2812.dynaml.repl.Router.EntryPoint" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -227,6 +227,23 @@ calling a Scala method.
     </span>)</span>
               
         </dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.repl.Router.EntryPoint#doc" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="doc:Option[String]"></a>
+      <a id="doc:Option[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">doc</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.Router$$EntryPoint@doc:Option[String]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -285,18 +302,18 @@ calling a Scala method.
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.repl.Router.EntryPoint#invoke" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="invoke(args:Seq[String],kwargs:Seq[(String,String)]):io.github.mandar2812.dynaml.repl.Router.Result[Any]"></a>
-      <a id="invoke(Seq[String],Seq[(String,String)]):Result[Any]"></a>
+      <a id="invoke(groupedArgs:Seq[(String,Option[String])]):io.github.mandar2812.dynaml.repl.Router.Result[Any]"></a>
+      <a id="invoke(Seq[(String,Option[String])]):Result[Any]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">invoke</span><span class="params">(<span name="args">args: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="kwargs">kwargs: <span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>)]</span>)</span><span class="result">: <a href="Router$$Result.html" class="extype" name="io.github.mandar2812.dynaml.repl.Router.Result">Result</a>[<span class="extype" name="scala.Any">Any</span>]</span>
+        <span class="name">invoke</span><span class="params">(<span name="groupedArgs">groupedArgs: <span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>])]</span>)</span><span class="result">: <a href="Router$$Result.html" class="extype" name="io.github.mandar2812.dynaml.repl.Router.Result">Result</a>[<span class="extype" name="scala.Any">Any</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.Router$$EntryPoint@invoke(args:Seq[String],kwargs:Seq[(String,String)]):io.github.mandar2812.dynaml.repl.Router.Result[Any]" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.Router$$EntryPoint@invoke(groupedArgs:Seq[(String,Option[String])]):io.github.mandar2812.dynaml.repl.Router.Result[Any]" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
