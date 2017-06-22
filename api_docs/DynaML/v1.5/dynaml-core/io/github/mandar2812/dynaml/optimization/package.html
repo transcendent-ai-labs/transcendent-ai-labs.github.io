@@ -239,6 +239,25 @@ for global optimization.</p>
       </a>
     </span>
       
+    </li><li name="io.github.mandar2812.dynaml.optimization.GPMixtureMachine" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="GPMixtureMachine[T,I]extendsMixtureMachine[T,I,Double,io.github.mandar2812.dynaml.algebra.PartitionedVector,io.github.mandar2812.dynaml.algebra.PartitionedPSDMatrix,io.github.mandar2812.dynaml.probability.distributions.BlockedMultiVariateGaussian,io.github.mandar2812.dynaml.probability.MultGaussianPRV,io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel[T,I]]"></a>
+      <a id="GPMixtureMachine[T,I]:GPMixtureMachine[T,I]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="GPMixtureMachine.html"><span class="name">GPMixtureMachine</span></a><span class="tparams">[<span name="T">T</span>, <span name="I">I</span>]</span><span class="result"> extends <a href="MixtureMachine.html" class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine">MixtureMachine</a>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.GPMixtureMachine.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.GPMixtureMachine.I">I</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</span>, <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedPSDMatrix">PartitionedPSDMatrix</span>, <a href="../probability/distributions/BlockedMultiVariateGaussian.html" class="extype" name="io.github.mandar2812.dynaml.probability.distributions.BlockedMultiVariateGaussian">BlockedMultiVariateGaussian</a>, <a href="../probability/MultGaussianPRV.html" class="extype" name="io.github.mandar2812.dynaml.probability.MultGaussianPRV">MultGaussianPRV</a>, <a href="../models/gp/AbstractGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel">AbstractGPRegressionModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.GPMixtureMachine.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.GPMixtureMachine.I">I</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.package@GPMixtureMachine[T,I]extendsMixtureMachine[T,I,Double,io.github.mandar2812.dynaml.algebra.PartitionedVector,io.github.mandar2812.dynaml.algebra.PartitionedPSDMatrix,io.github.mandar2812.dynaml.probability.distributions.BlockedMultiVariateGaussian,io.github.mandar2812.dynaml.probability.MultGaussianPRV,io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel[T,I]]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Constructs a gaussian process mixture model
+from a single <span class="extype" name="AbstractGPRegressionModel">AbstractGPRegressionModel</span> instance.</p><div class="fullcomment"><div class="comment cmt"><p>Constructs a gaussian process mixture model
+from a single <span class="extype" name="AbstractGPRegressionModel">AbstractGPRegressionModel</span> instance.</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>The type of the GP training data</p></dd><dt class="tparam">I</dt><dd class="cmt"><p>The index set/input domain of the GP model.</p></dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.optimization.GeneralGradient" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="GeneralGradientextendsAnyRef"></a>
       <a id="GeneralGradient:GeneralGradient"></a>
@@ -291,7 +310,7 @@ core functions of a global optimizer</p>
       </a>
     </span>
       
-    </li><li name="io.github.mandar2812.dynaml.optimization.GloballyOptimizable" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+    </li><li name="io.github.mandar2812.dynaml.optimization.GloballyOptimizable" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="GloballyOptimizableextendsAnyRef"></a>
       <a id="GloballyOptimizable:GloballyOptimizable"></a>
       <h4 class="signature">
@@ -307,7 +326,11 @@ core functions of a global optimizer</p>
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt"></p>
+      <p class="shortcomment cmt">A common binding characteristic between all &quot;globally optimizable&quot;
+models i.e.</p><div class="fullcomment"><div class="comment cmt"><p>A common binding characteristic between all &quot;globally optimizable&quot;
+models i.e. models where hyper-parameters can
+be optimized/tuned.
+</p></div></div>
     </li><li name="io.github.mandar2812.dynaml.optimization.GradBasedBackPropagation" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="GradBasedBackPropagation[LayerP,I]extendsRegularizedOptimizer[io.github.mandar2812.dynaml.models.neuralnets.NeuralStack[LayerP,I],I,I,Stream[(I,I)]]"></a>
       <a id="GradBasedBackPropagation[LayerP,I]:GradBasedBackPropagation[LayerP,I]"></a>
@@ -569,6 +592,23 @@ See also the documentation for the precise formulation.
     </span>
       <p class="shortcomment cmt">Compute gradient and loss for a logistic loss function,
 as used in binary classification.</p>
+    </li><li name="io.github.mandar2812.dynaml.optimization.MixtureMachine" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="MixtureMachine[T,I,Y,YDomain,YDomainVar,BaseDistr&lt;:breeze.stats.distributions.ContinuousDistr[YDomain]withbreeze.stats.distributions.Moments[YDomain,YDomainVar]withio.github.mandar2812.dynaml.probability.distributions.HasErrorBars[YDomain],W1&lt;:io.github.mandar2812.dynaml.probability.ContinuousRVWithDistr[YDomain,BaseDistr],BaseProcess&lt;:io.github.mandar2812.dynaml.models.ContinuousProcessModel[T,I,Y,W1]withio.github.mandar2812.dynaml.models.SecondOrderProcessModel[T,I,Y,Double,breeze.linalg.DenseMatrix[Double],W1]withio.github.mandar2812.dynaml.optimization.GloballyOptimizable]extendsAbstractCSA[BaseProcess,io.github.mandar2812.dynaml.models.GenContinuousMixtureModel[T,I,Y,YDomain,YDomainVar,BaseDistr,W1,BaseProcess]]"></a>
+      <a id="MixtureMachine[T,I,Y,YDomain,YDomainVar,BaseDistr&lt;:ContinuousDistr[YDomain]withMoments[YDomain,YDomainVar]withHasErrorBars[YDomain],W1&lt;:ContinuousRVWithDistr[YDomain,BaseDistr],BaseProcess&lt;:ContinuousProcessModel[T,I,Y,W1]withSecondOrderProcessModel[T,I,Y,Double,DenseMatrix[Double],W1]withGloballyOptimizable]:MixtureMachine[T,I,Y,YDomain,YDomainVar,BaseDistr,W1,BaseProcess]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="MixtureMachine.html"><span class="name">MixtureMachine</span></a><span class="tparams">[<span name="T">T</span>, <span name="I">I</span>, <span name="Y">Y</span>, <span name="YDomain">YDomain</span>, <span name="YDomainVar">YDomainVar</span>, <span name="BaseDistr">BaseDistr &lt;: <span class="extype" name="breeze.stats.distributions.ContinuousDistr">ContinuousDistr</span>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.YDomain">YDomain</span>] with <span class="extype" name="breeze.stats.distributions.Moments">Moments</span>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.YDomain">YDomain</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.YDomainVar">YDomainVar</span>] with <a href="../probability/distributions/HasErrorBars.html" class="extype" name="io.github.mandar2812.dynaml.probability.distributions.HasErrorBars">HasErrorBars</a>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.YDomain">YDomain</span>]</span>, <span name="W1">W1 &lt;: <a href="../probability/ContinuousRVWithDistr.html" class="extype" name="io.github.mandar2812.dynaml.probability.ContinuousRVWithDistr">ContinuousRVWithDistr</a>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.YDomain">YDomain</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.BaseDistr">BaseDistr</span>]</span>, <span name="BaseProcess">BaseProcess &lt;: <a href="../models/ContinuousProcessModel.html" class="extype" name="io.github.mandar2812.dynaml.models.ContinuousProcessModel">ContinuousProcessModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.I">I</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.Y">Y</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.W1">W1</span>] with <a href="../models/SecondOrderProcessModel.html" class="extype" name="io.github.mandar2812.dynaml.models.SecondOrderProcessModel">SecondOrderProcessModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.I">I</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.Y">Y</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="breeze.linalg.DenseMatrix">DenseMatrix</span>[<span class="extype" name="scala.Double">Double</span>], <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.W1">W1</span>] with <a href="GloballyOptimizable.html" class="extype" name="io.github.mandar2812.dynaml.optimization.GloballyOptimizable">GloballyOptimizable</a></span>]</span><span class="result"> extends <a href="AbstractCSA.html" class="extype" name="io.github.mandar2812.dynaml.optimization.AbstractCSA">AbstractCSA</a>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.BaseProcess">BaseProcess</span>, <a href="../models/GenContinuousMixtureModel.html" class="extype" name="io.github.mandar2812.dynaml.models.GenContinuousMixtureModel">GenContinuousMixtureModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.I">I</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.Y">Y</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.YDomain">YDomain</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.YDomainVar">YDomainVar</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.BaseDistr">BaseDistr</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.W1">W1</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.BaseProcess">BaseProcess</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.package@MixtureMachine[T,I,Y,YDomain,YDomainVar,BaseDistr&lt;:breeze.stats.distributions.ContinuousDistr[YDomain]withbreeze.stats.distributions.Moments[YDomain,YDomainVar]withio.github.mandar2812.dynaml.probability.distributions.HasErrorBars[YDomain],W1&lt;:io.github.mandar2812.dynaml.probability.ContinuousRVWithDistr[YDomain,BaseDistr],BaseProcess&lt;:io.github.mandar2812.dynaml.models.ContinuousProcessModel[T,I,Y,W1]withio.github.mandar2812.dynaml.models.SecondOrderProcessModel[T,I,Y,Double,breeze.linalg.DenseMatrix[Double],W1]withio.github.mandar2812.dynaml.optimization.GloballyOptimizable]extendsAbstractCSA[BaseProcess,io.github.mandar2812.dynaml.models.GenContinuousMixtureModel[T,I,Y,YDomain,YDomainVar,BaseDistr,W1,BaseProcess]]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p>
     </li><li name="io.github.mandar2812.dynaml.optimization.ModelTuner" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="ModelTuner[T&lt;:io.github.mandar2812.dynaml.optimization.GloballyOptimizable,T1]extendsAnyRef"></a>
       <a id="ModelTuner[T&lt;:GloballyOptimizable,T1]:ModelTuner[T,T1]"></a>
@@ -643,25 +683,6 @@ parameters.</p>
     </span>
       <p class="shortcomment cmt">Build GP committee model after performing the CSA routine
 </p>
-    </li><li name="io.github.mandar2812.dynaml.optimization.ProbGPMixtureMachine" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="ProbGPMixtureMachine[T,I]extendsAbstractCSA[io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel[T,I],io.github.mandar2812.dynaml.models.gp.GaussianProcessMixture[T,I]]"></a>
-      <a id="ProbGPMixtureMachine[T,I]:ProbGPMixtureMachine[T,I]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">class</span>
-      </span>
-      <span class="symbol">
-        <a href="ProbGPMixtureMachine.html"><span class="name">ProbGPMixtureMachine</span></a><span class="tparams">[<span name="T">T</span>, <span name="I">I</span>]</span><span class="result"> extends <a href="AbstractCSA.html" class="extype" name="io.github.mandar2812.dynaml.optimization.AbstractCSA">AbstractCSA</a>[<a href="../models/gp/AbstractGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel">AbstractGPRegressionModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPMixtureMachine.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPMixtureMachine.I">I</span>], <a href="../models/gp/GaussianProcessMixture.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.GaussianProcessMixture">GaussianProcessMixture</a>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPMixtureMachine.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPMixtureMachine.I">I</span>]]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.package@ProbGPMixtureMachine[T,I]extendsAbstractCSA[io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel[T,I],io.github.mandar2812.dynaml.models.gp.GaussianProcessMixture[T,I]]" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Constructs a gaussian process mixture model
-from a single <span class="extype" name="AbstractGPRegressionModel">AbstractGPRegressionModel</span> instance.</p><div class="fullcomment"><div class="comment cmt"><p>Constructs a gaussian process mixture model
-from a single <span class="extype" name="AbstractGPRegressionModel">AbstractGPRegressionModel</span> instance.</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>The type of the GP training data</p></dd><dt class="tparam">I</dt><dd class="cmt"><p>The index set/input domain of the GP model.</p></dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.optimization.ProbitGradient" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="ProbitGradientextendsGradient"></a>
       <a id="ProbitGradient:ProbitGradient"></a>
@@ -974,6 +995,23 @@ Uses a step-size decreasing with the square root of the number of iterations.
       </span>
       </h4><span class="permalink">
       <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.package@LaplacePosteriorMode" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.github.mandar2812.dynaml.optimization.MixtureMachine" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MixtureMachine"></a>
+      <a id="MixtureMachine:MixtureMachine"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="MixtureMachine$.html"><span class="name">MixtureMachine</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.package@MixtureMachine" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>

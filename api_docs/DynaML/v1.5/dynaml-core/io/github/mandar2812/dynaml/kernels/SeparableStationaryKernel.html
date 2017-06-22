@@ -1,9 +1,9 @@
 <!DOCTYPE html >
 <html>
         <head>
-          <title>MultiplicativeCovariance - io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance</title>
-          <meta name="description" content="MultiplicativeCovariance - io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance" />
-          <meta name="keywords" content="MultiplicativeCovariance io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance" />
+          <title>SeparableStationaryKernel - io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel</title>
+          <meta name="description" content="SeparableStationaryKernel - io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel" />
+          <meta name="keywords" content="SeparableStationaryKernel io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -16,7 +16,7 @@
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../../../index.html';
-            var hash = 'io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance';
+            var hash = 'io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel';
             var anchor = window.location.hash;
             var anchor_opt = '';
             if (anchor.length >= 1)
@@ -30,10 +30,10 @@
       <div id="definition">
         <img alt="Class" src="../../../../../lib/class_big.png" />
         <p id="owner"><a href="../../../../package.html" class="extype" name="io">io</a>.<a href="../../../package.html" class="extype" name="io.github">github</a>.<a href="../../package.html" class="extype" name="io.github.mandar2812">mandar2812</a>.<a href="../package.html" class="extype" name="io.github.mandar2812.dynaml">dynaml</a>.<a href="package.html" class="extype" name="io.github.mandar2812.dynaml.kernels">kernels</a></p>
-        <h1>MultiplicativeCovariance</h1><h3><span class="morelinks"><div>Related Doc:
+        <h1>SeparableStationaryKernel</h1><h3><span class="morelinks"><div>Related Doc:
             <a href="package.html" class="extype" name="io.github.mandar2812.dynaml.kernels">package kernels</a>
           </div></span></h3><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -45,18 +45,16 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <span class="name">MultiplicativeCovariance</span><span class="tparams">[<span name="Index">Index</span>]</span><span class="result"> extends <a href="CompositeCovariance.html" class="extype" name="io.github.mandar2812.dynaml.kernels.CompositeCovariance">CompositeCovariance</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance.Index">Index</span>]</span>
+        <span class="name">SeparableStationaryKernel</span><span class="tparams">[<span name="I">I</span>, <span name="Kernel">Kernel &lt;: <a href="StationaryKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.StationaryKernel">StationaryKernel</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel.I">I</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="breeze.linalg.DenseMatrix">DenseMatrix</span>[<span class="extype" name="scala.Double">Double</span>]] with <a href="LocalScalarKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel">LocalScalarKernel</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel.I">I</span>]</span>]</span><span class="result"> extends <a href="MultiplicativeCovariance.html" class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance">MultiplicativeCovariance</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel.I">I</span>]</span>
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>A kernel formed by multiplication
-of two kernels k(.,.) = k1(.,.) * k2(.,.)</p></div><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Implementation of separable stationary kernels as defined in
+http://jmlr.csail.mit.edu/papers/volume2/genton01a/genton01a.pdf</p><p>K(x,y) = K1(x)&times;K2(y)
+</p></div><dl class="paramcmts block"><dt class="tparam">I</dt><dd class="cmt"><p>The index set or input domain over which the kernel function is evaluated.</p></dd><dt class="tparam">Kernel</dt><dd class="cmt"><p>A kernel type which extends <a href="StationaryKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.StationaryKernel">StationaryKernel</a> as well as <a href="LocalScalarKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel">LocalScalarKernel</a></p></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="CompositeCovariance.html" class="extype" name="io.github.mandar2812.dynaml.kernels.CompositeCovariance">CompositeCovariance</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance.Index">Index</span>], <a href="LocalSVMKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalSVMKernel">LocalSVMKernel</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance.Index">Index</span>], <a href="LocalScalarKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel">LocalScalarKernel</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance.Index">Index</span>], <a href="CovarianceFunction.html" class="extype" name="io.github.mandar2812.dynaml.kernels.CovarianceFunction">CovarianceFunction</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance.Index">Index</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="breeze.linalg.DenseMatrix">DenseMatrix</span>[<span class="extype" name="scala.Double">Double</span>]], <a href="Kernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.Kernel">Kernel</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance.Index">Index</span>, <span class="extype" name="scala.Double">Double</span>], <span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
-        </div><div class="toggleContainer block">
-            <span class="toggle">Known Subclasses</span>
-            <div class="subClasses hiddenContent"><a href="SeparableStationaryKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel">SeparableStationaryKernel</a></div>
-          </div></div>
+          <div class="superTypes hiddenContent"><a href="MultiplicativeCovariance.html" class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance">MultiplicativeCovariance</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel.I">I</span>], <a href="CompositeCovariance.html" class="extype" name="io.github.mandar2812.dynaml.kernels.CompositeCovariance">CompositeCovariance</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel.I">I</span>], <a href="LocalSVMKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalSVMKernel">LocalSVMKernel</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel.I">I</span>], <a href="LocalScalarKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel">LocalScalarKernel</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel.I">I</span>], <a href="CovarianceFunction.html" class="extype" name="io.github.mandar2812.dynaml.kernels.CovarianceFunction">CovarianceFunction</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel.I">I</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="breeze.linalg.DenseMatrix">DenseMatrix</span>[<span class="extype" name="scala.Double">Double</span>]], <a href="Kernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.Kernel">Kernel</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel.I">I</span>, <span class="extype" name="scala.Double">Double</span>], <span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
         
 
       <div id="mbrsel">
@@ -73,7 +71,7 @@ of two kernels k(.,.) = k1(.,.) * k2(.,.)</p></div><div class="toggleContainer b
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance"><span>MultiplicativeCovariance</span></li><li class="in" name="io.github.mandar2812.dynaml.kernels.CompositeCovariance"><span>CompositeCovariance</span></li><li class="in" name="io.github.mandar2812.dynaml.kernels.LocalSVMKernel"><span>LocalSVMKernel</span></li><li class="in" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel"><span>LocalScalarKernel</span></li><li class="in" name="io.github.mandar2812.dynaml.kernels.CovarianceFunction"><span>CovarianceFunction</span></li><li class="in" name="io.github.mandar2812.dynaml.kernels.Kernel"><span>Kernel</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel"><span>SeparableStationaryKernel</span></li><li class="in" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance"><span>MultiplicativeCovariance</span></li><li class="in" name="io.github.mandar2812.dynaml.kernels.CompositeCovariance"><span>CompositeCovariance</span></li><li class="in" name="io.github.mandar2812.dynaml.kernels.LocalSVMKernel"><span>LocalSVMKernel</span></li><li class="in" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel"><span>LocalScalarKernel</span></li><li class="in" name="io.github.mandar2812.dynaml.kernels.CovarianceFunction"><span>CovarianceFunction</span></li><li class="in" name="io.github.mandar2812.dynaml.kernels.Kernel"><span>Kernel</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -92,23 +90,25 @@ of two kernels k(.,.) = k1(.,.) * k2(.,.)</p></div><div class="toggleContainer b
         <div id="allMembers">
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
-              <ol><li name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(firstKernel:io.github.mandar2812.dynaml.kernels.LocalScalarKernel[Index],otherKernel:io.github.mandar2812.dynaml.kernels.LocalScalarKernel[Index]):io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance[Index]"></a>
-      <a id="&lt;init&gt;:MultiplicativeCovariance[Index]"></a>
+              <ol><li name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="&lt;init&gt;(firstKernel:Kernel,otherKernel:Kernel):io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel[I,Kernel]"></a>
+      <a id="&lt;init&gt;:SeparableStationaryKernel[I,Kernel]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">MultiplicativeCovariance</span><span class="params">(<span name="firstKernel">firstKernel: <a href="LocalScalarKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel">LocalScalarKernel</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance.Index">Index</span>]</span>, <span name="otherKernel">otherKernel: <a href="LocalScalarKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel">LocalScalarKernel</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance.Index">Index</span>]</span>)</span>
+        <span class="name">SeparableStationaryKernel</span><span class="params">(<span name="firstKernel">firstKernel: <span class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel.Kernel">Kernel</span></span>, <span name="otherKernel">otherKernel: <span class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel.Kernel">Kernel</span></span>)</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@&lt;init&gt;(firstKernel:io.github.mandar2812.dynaml.kernels.LocalScalarKernel[Index],otherKernel:io.github.mandar2812.dynaml.kernels.LocalScalarKernel[Index]):io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance[Index]" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@&lt;init&gt;(firstKernel:Kernel,otherKernel:Kernel):io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel[I,Kernel]" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">firstKernel</dt><dd class="cmt"><p>The kernel given by K1,
+                   it is assumed that the user inputs a valid stationary kernel of type <a href="Kernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.Kernel">Kernel</a></p></dd><dt class="param">otherKernel</dt><dd class="cmt"><p>The kernel given by K2,
+                   it is assumed that the user inputs a valid stationary kernel of type <a href="Kernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.Kernel">Kernel</a></p></dd></dl></div>
     </li></ol>
             </div>
 
@@ -130,7 +130,7 @@ of two kernels k(.,.) = k1(.,.) * k2(.,.)</p></div><div class="toggleContainer b
         <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@!=(x$1:Any):Boolean" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -147,24 +147,24 @@ of two kernels k(.,.) = k1(.,.) * k2(.,.)</p></div><div class="toggleContainer b
         <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@##():Int" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@##():Int" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel#*" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="*(c:Double):io.github.mandar2812.dynaml.kernels.LocalScalarKernel[Index]"></a>
-      <a id="*(Double):LocalScalarKernel[Index]"></a>
+      <a id="*(Double):LocalScalarKernel[I]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $times" class="name">*</span><span class="params">(<span name="c">c: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <a href="LocalScalarKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel">LocalScalarKernel</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance.Index">Index</span>]</span>
+        <span title="gt4s: $times" class="name">*</span><span class="params">(<span name="c">c: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <a href="LocalScalarKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel">LocalScalarKernel</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel.I">I</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@*(c:Double):io.github.mandar2812.dynaml.kernels.LocalScalarKernel[Index]" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@*(c:Double):io.github.mandar2812.dynaml.kernels.LocalScalarKernel[Index]" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -173,17 +173,17 @@ of two kernels k(.,.) = k1(.,.) * k2(.,.)</p></div><div class="toggleContainer b
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="LocalScalarKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel">LocalScalarKernel</a></dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel#*" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="*[T&lt;:io.github.mandar2812.dynaml.kernels.LocalScalarKernel[Index]](otherKernel:T)(implicitev:scala.reflect.ClassTag[Index]):io.github.mandar2812.dynaml.kernels.CompositeCovariance[Index]"></a>
-      <a id="*[T&lt;:LocalScalarKernel[Index]](T)(ClassTag[Index]):CompositeCovariance[Index]"></a>
+      <a id="*[T&lt;:LocalScalarKernel[I]](T)(ClassTag[I]):CompositeCovariance[I]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $times" class="name">*</span><span class="tparams">[<span name="T">T &lt;: <a href="LocalScalarKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel">LocalScalarKernel</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance.Index">Index</span>]</span>]</span><span class="params">(<span name="otherKernel">otherKernel: <span class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel.*.T">T</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ev">ev: <span class="extype" name="scala.reflect.ClassTag">ClassTag</span>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance.Index">Index</span>]</span>)</span><span class="result">: <a href="CompositeCovariance.html" class="extype" name="io.github.mandar2812.dynaml.kernels.CompositeCovariance">CompositeCovariance</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance.Index">Index</span>]</span>
+        <span title="gt4s: $times" class="name">*</span><span class="tparams">[<span name="T">T &lt;: <a href="LocalScalarKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel">LocalScalarKernel</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel.I">I</span>]</span>]</span><span class="params">(<span name="otherKernel">otherKernel: <span class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel.*.T">T</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ev">ev: <span class="extype" name="scala.reflect.ClassTag">ClassTag</span>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel.I">I</span>]</span>)</span><span class="result">: <a href="CompositeCovariance.html" class="extype" name="io.github.mandar2812.dynaml.kernels.CompositeCovariance">CompositeCovariance</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel.I">I</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@*[T&lt;:io.github.mandar2812.dynaml.kernels.LocalScalarKernel[Index]](otherKernel:T)(implicitev:scala.reflect.ClassTag[Index]):io.github.mandar2812.dynaml.kernels.CompositeCovariance[Index]" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@*[T&lt;:io.github.mandar2812.dynaml.kernels.LocalScalarKernel[Index]](otherKernel:T)(implicitev:scala.reflect.ClassTag[Index]):io.github.mandar2812.dynaml.kernels.CompositeCovariance[Index]" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -192,17 +192,17 @@ of two kernels k(.,.) = k1(.,.) * k2(.,.)</p></div><div class="toggleContainer b
 </p></div><dl class="paramcmts block"><dt class="param">otherKernel</dt><dd class="cmt"><p>The kernel to multiply to the current one.</p></dd><dt>returns</dt><dd class="cmt"><p>The kernel k defined above.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="LocalScalarKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel">LocalScalarKernel</a></dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel#+" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="+[T&lt;:io.github.mandar2812.dynaml.kernels.LocalScalarKernel[Index]](otherKernel:T)(implicitev:scala.reflect.ClassTag[Index]):io.github.mandar2812.dynaml.kernels.CompositeCovariance[Index]"></a>
-      <a id="+[T&lt;:LocalScalarKernel[Index]](T)(ClassTag[Index]):CompositeCovariance[Index]"></a>
+      <a id="+[T&lt;:LocalScalarKernel[I]](T)(ClassTag[I]):CompositeCovariance[I]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $plus" class="name">+</span><span class="tparams">[<span name="T">T &lt;: <a href="LocalScalarKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel">LocalScalarKernel</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance.Index">Index</span>]</span>]</span><span class="params">(<span name="otherKernel">otherKernel: <span class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel.+.T">T</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ev">ev: <span class="extype" name="scala.reflect.ClassTag">ClassTag</span>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance.Index">Index</span>]</span>)</span><span class="result">: <a href="CompositeCovariance.html" class="extype" name="io.github.mandar2812.dynaml.kernels.CompositeCovariance">CompositeCovariance</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance.Index">Index</span>]</span>
+        <span title="gt4s: $plus" class="name">+</span><span class="tparams">[<span name="T">T &lt;: <a href="LocalScalarKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel">LocalScalarKernel</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel.I">I</span>]</span>]</span><span class="params">(<span name="otherKernel">otherKernel: <span class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel.+.T">T</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ev">ev: <span class="extype" name="scala.reflect.ClassTag">ClassTag</span>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel.I">I</span>]</span>)</span><span class="result">: <a href="CompositeCovariance.html" class="extype" name="io.github.mandar2812.dynaml.kernels.CompositeCovariance">CompositeCovariance</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel.I">I</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@+[T&lt;:io.github.mandar2812.dynaml.kernels.LocalScalarKernel[Index]](otherKernel:T)(implicitev:scala.reflect.ClassTag[Index]):io.github.mandar2812.dynaml.kernels.CompositeCovariance[Index]" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@+[T&lt;:io.github.mandar2812.dynaml.kernels.LocalScalarKernel[Index]](otherKernel:T)(implicitev:scala.reflect.ClassTag[Index]):io.github.mandar2812.dynaml.kernels.CompositeCovariance[Index]" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -210,17 +210,17 @@ of two kernels k(.,.) = k1(.,.) * k2(.,.)</p></div><div class="toggleContainer b
  return The kernel k defined above.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="LocalScalarKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel">LocalScalarKernel</a></dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel#:*" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id=":*[T1](otherKernel:io.github.mandar2812.dynaml.kernels.LocalScalarKernel[T1]):io.github.mandar2812.dynaml.kernels.KroneckerProductKernel[Index,T1]"></a>
-      <a id=":*[T1](LocalScalarKernel[T1]):KroneckerProductKernel[Index,T1]"></a>
+      <a id=":*[T1](LocalScalarKernel[T1]):KroneckerProductKernel[I,T1]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $colon$times" class="name">:*</span><span class="tparams">[<span name="T1">T1</span>]</span><span class="params">(<span name="otherKernel">otherKernel: <a href="LocalScalarKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel">LocalScalarKernel</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel.:*.T1">T1</span>]</span>)</span><span class="result">: <a href="KroneckerProductKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.KroneckerProductKernel">KroneckerProductKernel</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance.Index">Index</span>, <span class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel.:*.T1">T1</span>]</span>
+        <span title="gt4s: $colon$times" class="name">:*</span><span class="tparams">[<span name="T1">T1</span>]</span><span class="params">(<span name="otherKernel">otherKernel: <a href="LocalScalarKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel">LocalScalarKernel</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel.:*.T1">T1</span>]</span>)</span><span class="result">: <a href="KroneckerProductKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.KroneckerProductKernel">KroneckerProductKernel</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel.I">I</span>, <span class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel.:*.T1">T1</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@:*[T1](otherKernel:io.github.mandar2812.dynaml.kernels.LocalScalarKernel[T1]):io.github.mandar2812.dynaml.kernels.KroneckerProductKernel[Index,T1]" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@:*[T1](otherKernel:io.github.mandar2812.dynaml.kernels.LocalScalarKernel[T1]):io.github.mandar2812.dynaml.kernels.KroneckerProductKernel[Index,T1]" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -229,17 +229,17 @@ of two kernels k(.,.) = k1(.,.) * k2(.,.)</p></div><div class="toggleContainer b
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="LocalScalarKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel">LocalScalarKernel</a></dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel#:+" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id=":+[T1](otherKernel:io.github.mandar2812.dynaml.kernels.LocalScalarKernel[T1]):io.github.mandar2812.dynaml.kernels.CompositeCovariance[(Index,T1)]"></a>
-      <a id=":+[T1](LocalScalarKernel[T1]):CompositeCovariance[(Index,T1)]"></a>
+      <a id=":+[T1](LocalScalarKernel[T1]):CompositeCovariance[(I,T1)]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $colon$plus" class="name">:+</span><span class="tparams">[<span name="T1">T1</span>]</span><span class="params">(<span name="otherKernel">otherKernel: <a href="LocalScalarKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel">LocalScalarKernel</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel.:+.T1">T1</span>]</span>)</span><span class="result">: <a href="CompositeCovariance.html" class="extype" name="io.github.mandar2812.dynaml.kernels.CompositeCovariance">CompositeCovariance</a>[(<span class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance.Index">Index</span>, <span class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel.:+.T1">T1</span>)]</span>
+        <span title="gt4s: $colon$plus" class="name">:+</span><span class="tparams">[<span name="T1">T1</span>]</span><span class="params">(<span name="otherKernel">otherKernel: <a href="LocalScalarKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel">LocalScalarKernel</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel.:+.T1">T1</span>]</span>)</span><span class="result">: <a href="CompositeCovariance.html" class="extype" name="io.github.mandar2812.dynaml.kernels.CompositeCovariance">CompositeCovariance</a>[(<span class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel.I">I</span>, <span class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel.:+.T1">T1</span>)]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@:+[T1](otherKernel:io.github.mandar2812.dynaml.kernels.LocalScalarKernel[T1]):io.github.mandar2812.dynaml.kernels.CompositeCovariance[(Index,T1)]" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@:+[T1](otherKernel:io.github.mandar2812.dynaml.kernels.LocalScalarKernel[T1]):io.github.mandar2812.dynaml.kernels.CompositeCovariance[(Index,T1)]" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -256,24 +256,24 @@ of two kernels k(.,.) = k1(.,.) * k2(.,.)</p></div><div class="toggleContainer b
         <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@==(x$1:Any):Boolean" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@==(x$1:Any):Boolean" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel#&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="&gt;[K&lt;:io.github.mandar2812.dynaml.kernels.GenericRBFKernel[Index]](otherKernel:K):io.github.mandar2812.dynaml.kernels.CompositeCovariance[Index]"></a>
-      <a id="&gt;[K&lt;:GenericRBFKernel[Index]](K):CompositeCovariance[Index]"></a>
+      <a id="&gt;[K&lt;:GenericRBFKernel[I]](K):CompositeCovariance[I]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $greater" class="name">&gt;</span><span class="tparams">[<span name="K">K &lt;: <a href="GenericRBFKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.GenericRBFKernel">GenericRBFKernel</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance.Index">Index</span>]</span>]</span><span class="params">(<span name="otherKernel">otherKernel: <span class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel.&gt;.K">K</span></span>)</span><span class="result">: <a href="CompositeCovariance.html" class="extype" name="io.github.mandar2812.dynaml.kernels.CompositeCovariance">CompositeCovariance</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance.Index">Index</span>]</span>
+        <span title="gt4s: $greater" class="name">&gt;</span><span class="tparams">[<span name="K">K &lt;: <a href="GenericRBFKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.GenericRBFKernel">GenericRBFKernel</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel.I">I</span>]</span>]</span><span class="params">(<span name="otherKernel">otherKernel: <span class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel.&gt;.K">K</span></span>)</span><span class="result">: <a href="CompositeCovariance.html" class="extype" name="io.github.mandar2812.dynaml.kernels.CompositeCovariance">CompositeCovariance</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel.I">I</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@&gt;[K&lt;:io.github.mandar2812.dynaml.kernels.GenericRBFKernel[Index]](otherKernel:K):io.github.mandar2812.dynaml.kernels.CompositeCovariance[Index]" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@&gt;[K&lt;:io.github.mandar2812.dynaml.kernels.GenericRBFKernel[Index]](otherKernel:K):io.github.mandar2812.dynaml.kernels.CompositeCovariance[Index]" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -292,24 +292,24 @@ of two kernels k(.,.) = k1(.,.) * k2(.,.)</p></div><div class="toggleContainer b
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@asInstanceOf[T0]:T0" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel#asPipe" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asPipe:io.github.mandar2812.dynaml.pipes.DataPipe[Map[String,Double],io.github.mandar2812.dynaml.kernels.LocalScalarKernel[Index]]"></a>
-      <a id="asPipe:DataPipe[Map[String,Double],LocalScalarKernel[Index]]"></a>
+      <a id="asPipe:DataPipe[Map[String,Double],LocalScalarKernel[I]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">asPipe</span><span class="result">: <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</span>[<span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>], <a href="LocalScalarKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel">LocalScalarKernel</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance.Index">Index</span>]]</span>
+        <span class="name">asPipe</span><span class="result">: <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</span>[<span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>], <a href="LocalScalarKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel">LocalScalarKernel</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel.I">I</span>]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@asPipe:io.github.mandar2812.dynaml.pipes.DataPipe[Map[String,Double],io.github.mandar2812.dynaml.kernels.LocalScalarKernel[Index]]" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@asPipe:io.github.mandar2812.dynaml.pipes.DataPipe[Map[String,Double],io.github.mandar2812.dynaml.kernels.LocalScalarKernel[Index]]" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -331,7 +331,7 @@ set with that configuration.
         <span class="name">block</span><span class="params">(<span name="h">h: <span class="extype" name="scala.Predef.String">String</span>*</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@block(h:String*):Unit" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@block(h:String*):Unit" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -348,7 +348,7 @@ set with that configuration.
         <span class="name">block_all_hyper_parameters</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@block_all_hyper_parameters:Unit" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@block_all_hyper_parameters:Unit" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -365,79 +365,79 @@ set with that configuration.
         <span class="name">blocked_hyper_parameters</span><span class="result">: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@blocked_hyper_parameters:List[String]" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@blocked_hyper_parameters:List[String]" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="CovarianceFunction.html" class="extype" name="io.github.mandar2812.dynaml.kernels.CovarianceFunction">CovarianceFunction</a></dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel#buildBlockedCrossKernelMatrix" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="buildBlockedCrossKernelMatrix[S&lt;:Seq[Index]](dataset1:S,dataset2:S):io.github.mandar2812.dynaml.algebra.PartitionedMatrix"></a>
-      <a id="buildBlockedCrossKernelMatrix[S&lt;:Seq[Index]](S,S):PartitionedMatrix"></a>
+      <a id="buildBlockedCrossKernelMatrix[S&lt;:Seq[I]](S,S):PartitionedMatrix"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">buildBlockedCrossKernelMatrix</span><span class="tparams">[<span name="S">S &lt;: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance.Index">Index</span>]</span>]</span><span class="params">(<span name="dataset1">dataset1: <span class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel.buildBlockedCrossKernelMatrix.S">S</span></span>, <span name="dataset2">dataset2: <span class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel.buildBlockedCrossKernelMatrix.S">S</span></span>)</span><span class="result">: <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedMatrix">PartitionedMatrix</span></span>
+        <span class="name">buildBlockedCrossKernelMatrix</span><span class="tparams">[<span name="S">S &lt;: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel.I">I</span>]</span>]</span><span class="params">(<span name="dataset1">dataset1: <span class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel.buildBlockedCrossKernelMatrix.S">S</span></span>, <span name="dataset2">dataset2: <span class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel.buildBlockedCrossKernelMatrix.S">S</span></span>)</span><span class="result">: <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedMatrix">PartitionedMatrix</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@buildBlockedCrossKernelMatrix[S&lt;:Seq[Index]](dataset1:S,dataset2:S):io.github.mandar2812.dynaml.algebra.PartitionedMatrix" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@buildBlockedCrossKernelMatrix[S&lt;:Seq[Index]](dataset1:S,dataset2:S):io.github.mandar2812.dynaml.algebra.PartitionedMatrix" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="LocalScalarKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel">LocalScalarKernel</a></dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel#buildBlockedKernelMatrix" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="buildBlockedKernelMatrix[S&lt;:Seq[Index]](mappedData:S,length:Long):io.github.mandar2812.dynaml.algebra.PartitionedPSDMatrix"></a>
-      <a id="buildBlockedKernelMatrix[S&lt;:Seq[Index]](S,Long):PartitionedPSDMatrix"></a>
+      <a id="buildBlockedKernelMatrix[S&lt;:Seq[I]](S,Long):PartitionedPSDMatrix"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">buildBlockedKernelMatrix</span><span class="tparams">[<span name="S">S &lt;: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance.Index">Index</span>]</span>]</span><span class="params">(<span name="mappedData">mappedData: <span class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel.buildBlockedKernelMatrix.S">S</span></span>, <span name="length">length: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedPSDMatrix">PartitionedPSDMatrix</span></span>
+        <span class="name">buildBlockedKernelMatrix</span><span class="tparams">[<span name="S">S &lt;: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel.I">I</span>]</span>]</span><span class="params">(<span name="mappedData">mappedData: <span class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel.buildBlockedKernelMatrix.S">S</span></span>, <span name="length">length: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedPSDMatrix">PartitionedPSDMatrix</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@buildBlockedKernelMatrix[S&lt;:Seq[Index]](mappedData:S,length:Long):io.github.mandar2812.dynaml.algebra.PartitionedPSDMatrix" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@buildBlockedKernelMatrix[S&lt;:Seq[Index]](mappedData:S,length:Long):io.github.mandar2812.dynaml.algebra.PartitionedPSDMatrix" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="LocalScalarKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel">LocalScalarKernel</a></dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance#buildCrossKernelMatrix" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="buildCrossKernelMatrix[S&lt;:Seq[Index]](dataset1:S,dataset2:S):breeze.linalg.DenseMatrix[Double]"></a>
-      <a id="buildCrossKernelMatrix[S&lt;:Seq[Index]](S,S):DenseMatrix[Double]"></a>
+      <a id="buildCrossKernelMatrix[S&lt;:Seq[I]](S,S):DenseMatrix[Double]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">buildCrossKernelMatrix</span><span class="tparams">[<span name="S">S &lt;: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance.Index">Index</span>]</span>]</span><span class="params">(<span name="dataset1">dataset1: <span class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance.buildCrossKernelMatrix.S">S</span></span>, <span name="dataset2">dataset2: <span class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance.buildCrossKernelMatrix.S">S</span></span>)</span><span class="result">: <span class="extype" name="breeze.linalg.DenseMatrix">DenseMatrix</span>[<span class="extype" name="scala.Double">Double</span>]</span>
+        <span class="name">buildCrossKernelMatrix</span><span class="tparams">[<span name="S">S &lt;: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel.I">I</span>]</span>]</span><span class="params">(<span name="dataset1">dataset1: <span class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance.buildCrossKernelMatrix.S">S</span></span>, <span name="dataset2">dataset2: <span class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance.buildCrossKernelMatrix.S">S</span></span>)</span><span class="result">: <span class="extype" name="breeze.linalg.DenseMatrix">DenseMatrix</span>[<span class="extype" name="scala.Double">Double</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@buildCrossKernelMatrix[S&lt;:Seq[Index]](dataset1:S,dataset2:S):breeze.linalg.DenseMatrix[Double]" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@buildCrossKernelMatrix[S&lt;:Seq[Index]](dataset1:S,dataset2:S):breeze.linalg.DenseMatrix[Double]" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance">MultiplicativeCovariance</a> → <a href="LocalScalarKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel">LocalScalarKernel</a> → <a href="CovarianceFunction.html" class="extype" name="io.github.mandar2812.dynaml.kernels.CovarianceFunction">CovarianceFunction</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="MultiplicativeCovariance.html" class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance">MultiplicativeCovariance</a> → <a href="LocalScalarKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel">LocalScalarKernel</a> → <a href="CovarianceFunction.html" class="extype" name="io.github.mandar2812.dynaml.kernels.CovarianceFunction">CovarianceFunction</a></dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance#buildKernelMatrix" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="buildKernelMatrix[S&lt;:Seq[Index]](mappedData:S,length:Int):io.github.mandar2812.dynaml.kernels.KernelMatrix[breeze.linalg.DenseMatrix[Double]]"></a>
-      <a id="buildKernelMatrix[S&lt;:Seq[Index]](S,Int):KernelMatrix[DenseMatrix[Double]]"></a>
+      <a id="buildKernelMatrix[S&lt;:Seq[I]](S,Int):KernelMatrix[DenseMatrix[Double]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">buildKernelMatrix</span><span class="tparams">[<span name="S">S &lt;: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance.Index">Index</span>]</span>]</span><span class="params">(<span name="mappedData">mappedData: <span class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance.buildKernelMatrix.S">S</span></span>, <span name="length">length: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="KernelMatrix.html" class="extype" name="io.github.mandar2812.dynaml.kernels.KernelMatrix">KernelMatrix</a>[<span class="extype" name="breeze.linalg.DenseMatrix">DenseMatrix</span>[<span class="extype" name="scala.Double">Double</span>]]</span>
+        <span class="name">buildKernelMatrix</span><span class="tparams">[<span name="S">S &lt;: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel.I">I</span>]</span>]</span><span class="params">(<span name="mappedData">mappedData: <span class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance.buildKernelMatrix.S">S</span></span>, <span name="length">length: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="KernelMatrix.html" class="extype" name="io.github.mandar2812.dynaml.kernels.KernelMatrix">KernelMatrix</a>[<span class="extype" name="breeze.linalg.DenseMatrix">DenseMatrix</span>[<span class="extype" name="scala.Double">Double</span>]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@buildKernelMatrix[S&lt;:Seq[Index]](mappedData:S,length:Int):io.github.mandar2812.dynaml.kernels.KernelMatrix[breeze.linalg.DenseMatrix[Double]]" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@buildKernelMatrix[S&lt;:Seq[Index]](mappedData:S,length:Int):io.github.mandar2812.dynaml.kernels.KernelMatrix[breeze.linalg.DenseMatrix[Double]]" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance">MultiplicativeCovariance</a> → <a href="LocalScalarKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel">LocalScalarKernel</a> → <a href="CovarianceFunction.html" class="extype" name="io.github.mandar2812.dynaml.kernels.CovarianceFunction">CovarianceFunction</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="MultiplicativeCovariance.html" class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance">MultiplicativeCovariance</a> → <a href="LocalScalarKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel">LocalScalarKernel</a> → <a href="CovarianceFunction.html" class="extype" name="io.github.mandar2812.dynaml.kernels.CovarianceFunction">CovarianceFunction</a></dd></dl></div>
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>
       <a id="clone():AnyRef"></a>
@@ -450,7 +450,7 @@ set with that configuration.
         <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@clone():Object" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@clone():Object" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -473,7 +473,7 @@ set with that configuration.
         <span class="name">colBlocking</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@colBlocking:Int" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@colBlocking:Int" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -490,7 +490,7 @@ set with that configuration.
         <span class="name">effective_hyper_parameters</span><span class="result">: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@effective_hyper_parameters:List[String]" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@effective_hyper_parameters:List[String]" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -507,7 +507,7 @@ set with that configuration.
         <span class="name">effective_state</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@effective_state:Map[String,Double]" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@effective_state:Map[String,Double]" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -524,7 +524,7 @@ set with that configuration.
         <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -541,46 +541,46 @@ set with that configuration.
         <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@equals(x$1:Any):Boolean" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.kernels.CovarianceFunction#evaluate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="evaluate(x:T,y:T):V"></a>
-      <a id="evaluate(Index,Index):Double"></a>
+      <a id="evaluate(I,I):Double"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">evaluate</span><span class="params">(<span name="x">x: <span class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance.Index">Index</span></span>, <span name="y">y: <span class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance.Index">Index</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+        <span class="name">evaluate</span><span class="params">(<span name="x">x: <span class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel.I">I</span></span>, <span name="y">y: <span class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel.I">I</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@evaluate(x:T,y:T):V" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@evaluate(x:T,y:T):V" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="CovarianceFunction.html" class="extype" name="io.github.mandar2812.dynaml.kernels.CovarianceFunction">CovarianceFunction</a> → <a href="Kernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.Kernel">Kernel</a></dd></dl></div>
-    </li><li name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance#evaluateAt" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="evaluateAt(config:Map[String,Double])(x:Index,y:Index):Double"></a>
-      <a id="evaluateAt(Map[String,Double])(Index,Index):Double"></a>
+    </li><li name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel#evaluateAt" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="evaluateAt(config:Map[String,Double])(x:I,y:I):Double"></a>
+      <a id="evaluateAt(Map[String,Double])(I,I):Double"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">evaluateAt</span><span class="params">(<span name="config">config: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>]</span>)</span><span class="params">(<span name="x">x: <span class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance.Index">Index</span></span>, <span name="y">y: <span class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance.Index">Index</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+        <span class="name">evaluateAt</span><span class="params">(<span name="config">config: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>]</span>)</span><span class="params">(<span name="x">x: <span class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel.I">I</span></span>, <span name="y">y: <span class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel.I">I</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@evaluateAt(config:Map[String,Double])(x:Index,y:Index):Double" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@evaluateAt(config:Map[String,Double])(x:I,y:I):Double" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance">MultiplicativeCovariance</a> → <a href="LocalSVMKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalSVMKernel">LocalSVMKernel</a> → <a href="CovarianceFunction.html" class="extype" name="io.github.mandar2812.dynaml.kernels.CovarianceFunction">CovarianceFunction</a></dd></dl></div>
-    </li><li name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance#fID" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel">SeparableStationaryKernel</a> → <a href="MultiplicativeCovariance.html" class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance">MultiplicativeCovariance</a> → <a href="LocalSVMKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalSVMKernel">LocalSVMKernel</a> → <a href="CovarianceFunction.html" class="extype" name="io.github.mandar2812.dynaml.kernels.CovarianceFunction">CovarianceFunction</a></dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance#fID" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="fID:String"></a>
       <a id="fID:String"></a>
       <h4 class="signature">
@@ -592,11 +592,11 @@ set with that configuration.
         <span class="name">fID</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@fID:String" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@fID:String" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="MultiplicativeCovariance.html" class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance">MultiplicativeCovariance</a></dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
       <a id="finalize():Unit"></a>
@@ -609,7 +609,7 @@ set with that configuration.
         <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@finalize():Unit" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@finalize():Unit" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -620,23 +620,25 @@ set with that configuration.
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance#firstKernel" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="firstKernel:io.github.mandar2812.dynaml.kernels.LocalScalarKernel[Index]"></a>
-      <a id="firstKernel:LocalScalarKernel[Index]"></a>
+    </li><li name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel#firstKernel" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="firstKernel:Kernel"></a>
+      <a id="firstKernel:Kernel"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">firstKernel</span><span class="result">: <a href="LocalScalarKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel">LocalScalarKernel</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance.Index">Index</span>]</span>
+        <span class="name">firstKernel</span><span class="result">: <span class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel.Kernel">Kernel</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@firstKernel:io.github.mandar2812.dynaml.kernels.LocalScalarKernel[Index]" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@firstKernel:Kernel" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">The kernel given by K1,
+                   it is assumed that the user inputs a valid stationary kernel of type <a href="Kernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.Kernel">Kernel</a></p><div class="fullcomment"><div class="comment cmt"><p>The kernel given by K1,
+                   it is assumed that the user inputs a valid stationary kernel of type <a href="Kernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.Kernel">Kernel</a></p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel">SeparableStationaryKernel</a> → <a href="MultiplicativeCovariance.html" class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance">MultiplicativeCovariance</a></dd></dl></div>
     </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <a id="getClass():Class[_]"></a>
@@ -649,7 +651,7 @@ set with that configuration.
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@getClass():Class[_]" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@getClass():Class[_]" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -666,45 +668,45 @@ set with that configuration.
         <span class="name">getKernelConfigs</span><span class="params">(<span name="config">config: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>]</span>)</span><span class="result">: (<span class="extype" name="scala.collection.immutable.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>], <span class="extype" name="scala.collection.immutable.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>])</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@getKernelConfigs(config:Map[String,Double]):(scala.collection.immutable.Map[String,Double],scala.collection.immutable.Map[String,Double])" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@getKernelConfigs(config:Map[String,Double]):(scala.collection.immutable.Map[String,Double],scala.collection.immutable.Map[String,Double])" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="MultiplicativeCovariance.html" class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance">MultiplicativeCovariance</a></dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.kernels.CovarianceFunction#gradient" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="gradient(x:T,y:T):Map[String,V]"></a>
-      <a id="gradient(Index,Index):Map[String,Double]"></a>
+      <a id="gradient(I,I):Map[String,Double]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">gradient</span><span class="params">(<span name="x">x: <span class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance.Index">Index</span></span>, <span name="y">y: <span class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance.Index">Index</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>]</span>
+        <span class="name">gradient</span><span class="params">(<span name="x">x: <span class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel.I">I</span></span>, <span name="y">y: <span class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel.I">I</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@gradient(x:T,y:T):Map[String,V]" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@gradient(x:T,y:T):Map[String,V]" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="CovarianceFunction.html" class="extype" name="io.github.mandar2812.dynaml.kernels.CovarianceFunction">CovarianceFunction</a></dd></dl></div>
-    </li><li name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance#gradientAt" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="gradientAt(config:Map[String,Double])(x:Index,y:Index):Map[String,Double]"></a>
-      <a id="gradientAt(Map[String,Double])(Index,Index):Map[String,Double]"></a>
+    </li><li name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel#gradientAt" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="gradientAt(config:Map[String,Double])(x:I,y:I):scala.collection.immutable.Map[String,Double]"></a>
+      <a id="gradientAt(Map[String,Double])(I,I):Map[String,Double]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">gradientAt</span><span class="params">(<span name="config">config: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>]</span>)</span><span class="params">(<span name="x">x: <span class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance.Index">Index</span></span>, <span name="y">y: <span class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance.Index">Index</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>]</span>
+        <span class="name">gradientAt</span><span class="params">(<span name="config">config: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>]</span>)</span><span class="params">(<span name="x">x: <span class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel.I">I</span></span>, <span name="y">y: <span class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel.I">I</span></span>)</span><span class="result">: <span class="extype" name="scala.collection.immutable.Map">Map</span>[<span class="extype" name="java.lang.String">String</span>, <span class="extype" name="scala.Double">Double</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@gradientAt(config:Map[String,Double])(x:Index,y:Index):Map[String,Double]" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@gradientAt(config:Map[String,Double])(x:I,y:I):scala.collection.immutable.Map[String,Double]" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance">MultiplicativeCovariance</a> → <a href="LocalSVMKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalSVMKernel">LocalSVMKernel</a> → <a href="CovarianceFunction.html" class="extype" name="io.github.mandar2812.dynaml.kernels.CovarianceFunction">CovarianceFunction</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel">SeparableStationaryKernel</a> → <a href="MultiplicativeCovariance.html" class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance">MultiplicativeCovariance</a> → <a href="LocalSVMKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalSVMKernel">LocalSVMKernel</a> → <a href="CovarianceFunction.html" class="extype" name="io.github.mandar2812.dynaml.kernels.CovarianceFunction">CovarianceFunction</a></dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
       <a id="hashCode():Int"></a>
@@ -717,7 +719,7 @@ set with that configuration.
         <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@hashCode():Int" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@hashCode():Int" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -734,11 +736,11 @@ set with that configuration.
         <span class="name">hyper_parameters</span><span class="result">: <span class="extype" name="scala.collection.immutable.List">List</span>[<span class="extype" name="java.lang.String">String</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@hyper_parameters:List[String]" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@hyper_parameters:List[String]" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance">MultiplicativeCovariance</a> → <a href="CovarianceFunction.html" class="extype" name="io.github.mandar2812.dynaml.kernels.CovarianceFunction">CovarianceFunction</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="MultiplicativeCovariance.html" class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance">MultiplicativeCovariance</a> → <a href="CovarianceFunction.html" class="extype" name="io.github.mandar2812.dynaml.kernels.CovarianceFunction">CovarianceFunction</a></dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -751,7 +753,7 @@ set with that configuration.
         <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -768,7 +770,7 @@ set with that configuration.
         <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -785,7 +787,7 @@ set with that configuration.
         <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@notify():Unit" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@notify():Unit" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -802,28 +804,30 @@ set with that configuration.
         <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@notifyAll():Unit" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@notifyAll():Unit" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance#otherKernel" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="otherKernel:io.github.mandar2812.dynaml.kernels.LocalScalarKernel[Index]"></a>
-      <a id="otherKernel:LocalScalarKernel[Index]"></a>
+    </li><li name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel#otherKernel" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="otherKernel:Kernel"></a>
+      <a id="otherKernel:Kernel"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">otherKernel</span><span class="result">: <a href="LocalScalarKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel">LocalScalarKernel</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance.Index">Index</span>]</span>
+        <span class="name">otherKernel</span><span class="result">: <span class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel.Kernel">Kernel</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@otherKernel:io.github.mandar2812.dynaml.kernels.LocalScalarKernel[Index]" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@otherKernel:Kernel" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">The kernel given by K2,
+                   it is assumed that the user inputs a valid stationary kernel of type <a href="Kernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.Kernel">Kernel</a></p><div class="fullcomment"><div class="comment cmt"><p>The kernel given by K2,
+                   it is assumed that the user inputs a valid stationary kernel of type <a href="Kernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.Kernel">Kernel</a></p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel">SeparableStationaryKernel</a> → <a href="MultiplicativeCovariance.html" class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance">MultiplicativeCovariance</a></dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel#rowBlocking" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="rowBlocking:Int"></a>
       <a id="rowBlocking:Int"></a>
@@ -836,12 +840,12 @@ set with that configuration.
         <span class="name">rowBlocking</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@rowBlocking:Int" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@rowBlocking:Int" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="LocalScalarKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel">LocalScalarKernel</a></dd></dl></div>
-    </li><li name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance#sID" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance#sID" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="sID:String"></a>
       <a id="sID:String"></a>
       <h4 class="signature">
@@ -853,11 +857,11 @@ set with that configuration.
         <span class="name">sID</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@sID:String" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@sID:String" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="MultiplicativeCovariance.html" class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance">MultiplicativeCovariance</a></dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel#setBlockSizes" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="setBlockSizes(s:(Int,Int)):Unit"></a>
       <a id="setBlockSizes((Int,Int)):Unit"></a>
@@ -870,28 +874,28 @@ set with that configuration.
         <span class="name">setBlockSizes</span><span class="params">(<span name="s">s: (<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Int">Int</span>)</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@setBlockSizes(s:(Int,Int)):Unit" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@setBlockSizes(s:(Int,Int)):Unit" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="LocalScalarKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel">LocalScalarKernel</a></dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance#setHyperParameters" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="setHyperParameters(h:Map[String,Double]):MultiplicativeCovariance.this.type"></a>
-      <a id="setHyperParameters(Map[String,Double]):MultiplicativeCovariance.this.type"></a>
+      <a id="setHyperParameters(Map[String,Double]):SeparableStationaryKernel.this.type"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">setHyperParameters</span><span class="params">(<span name="h">h: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>]</span>)</span><span class="result">: <a href="" class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance">MultiplicativeCovariance</a>.this.type</span>
+        <span class="name">setHyperParameters</span><span class="params">(<span name="h">h: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>]</span>)</span><span class="result">: <a href="" class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel">SeparableStationaryKernel</a>.this.type</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@setHyperParameters(h:Map[String,Double]):MultiplicativeCovariance.this.type" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@setHyperParameters(h:Map[String,Double]):MultiplicativeCovariance.this.type" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance">MultiplicativeCovariance</a> → <a href="CovarianceFunction.html" class="extype" name="io.github.mandar2812.dynaml.kernels.CovarianceFunction">CovarianceFunction</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="MultiplicativeCovariance.html" class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance">MultiplicativeCovariance</a> → <a href="CovarianceFunction.html" class="extype" name="io.github.mandar2812.dynaml.kernels.CovarianceFunction">CovarianceFunction</a></dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.kernels.CovarianceFunction#state" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="state:Map[String,Double]"></a>
       <a id="state:Map[String,Double]"></a>
@@ -904,7 +908,7 @@ set with that configuration.
         <span class="name">state</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@state:Map[String,Double]" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@state:Map[String,Double]" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -921,7 +925,7 @@ set with that configuration.
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -938,7 +942,7 @@ set with that configuration.
         <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@toString():String" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@toString():String" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -955,7 +959,7 @@ set with that configuration.
         <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@wait():Unit" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@wait():Unit" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -978,7 +982,7 @@ set with that configuration.
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -1001,7 +1005,7 @@ set with that configuration.
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance@wait(x$1:Long):Unit" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel@wait(x$1:Long):Unit" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -1021,16 +1025,18 @@ set with that configuration.
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="io.github.mandar2812.dynaml.kernels.CompositeCovariance">
-              <h3>Inherited from <a href="CompositeCovariance.html" class="extype" name="io.github.mandar2812.dynaml.kernels.CompositeCovariance">CompositeCovariance</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance.Index">Index</span>]</h3>
+        <div class="parent" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance">
+              <h3>Inherited from <a href="MultiplicativeCovariance.html" class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance">MultiplicativeCovariance</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel.I">I</span>]</h3>
+            </div><div class="parent" name="io.github.mandar2812.dynaml.kernels.CompositeCovariance">
+              <h3>Inherited from <a href="CompositeCovariance.html" class="extype" name="io.github.mandar2812.dynaml.kernels.CompositeCovariance">CompositeCovariance</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel.I">I</span>]</h3>
             </div><div class="parent" name="io.github.mandar2812.dynaml.kernels.LocalSVMKernel">
-              <h3>Inherited from <a href="LocalSVMKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalSVMKernel">LocalSVMKernel</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance.Index">Index</span>]</h3>
+              <h3>Inherited from <a href="LocalSVMKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalSVMKernel">LocalSVMKernel</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel.I">I</span>]</h3>
             </div><div class="parent" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel">
-              <h3>Inherited from <a href="LocalScalarKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel">LocalScalarKernel</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance.Index">Index</span>]</h3>
+              <h3>Inherited from <a href="LocalScalarKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel">LocalScalarKernel</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel.I">I</span>]</h3>
             </div><div class="parent" name="io.github.mandar2812.dynaml.kernels.CovarianceFunction">
-              <h3>Inherited from <a href="CovarianceFunction.html" class="extype" name="io.github.mandar2812.dynaml.kernels.CovarianceFunction">CovarianceFunction</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance.Index">Index</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="breeze.linalg.DenseMatrix">DenseMatrix</span>[<span class="extype" name="scala.Double">Double</span>]]</h3>
+              <h3>Inherited from <a href="CovarianceFunction.html" class="extype" name="io.github.mandar2812.dynaml.kernels.CovarianceFunction">CovarianceFunction</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel.I">I</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="breeze.linalg.DenseMatrix">DenseMatrix</span>[<span class="extype" name="scala.Double">Double</span>]]</h3>
             </div><div class="parent" name="io.github.mandar2812.dynaml.kernels.Kernel">
-              <h3>Inherited from <a href="Kernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.Kernel">Kernel</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance.Index">Index</span>, <span class="extype" name="scala.Double">Double</span>]</h3>
+              <h3>Inherited from <a href="Kernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.Kernel">Kernel</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel.I">I</span>, <span class="extype" name="scala.Double">Double</span>]</h3>
             </div><div class="parent" name="scala.Serializable">
               <h3>Inherited from <span class="extype" name="scala.Serializable">Serializable</span></h3>
             </div><div class="parent" name="java.io.Serializable">

@@ -82,7 +82,8 @@
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt"></p>
+      <p class="shortcomment cmt">A kernel formed by addition
+of two kernels k(.,.) = k1(.,.) + k2(.,.)</p>
     </li><li name="io.github.mandar2812.dynaml.kernels.AnovaCovFunc" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="AnovaCovFuncextendsCovarianceFunction[Double,Double,breeze.linalg.DenseMatrix[Double]]withLocalSVMKernel[Double]"></a>
       <a id="AnovaCovFunc:AnovaCovFunc"></a>
@@ -923,7 +924,8 @@ be diagonal.
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt"></p>
+      <p class="shortcomment cmt">A kernel formed by multiplication
+of two kernels k(.,.) = k1(.,.) * k2(.,.)</p>
     </li><li name="io.github.mandar2812.dynaml.kernels.NeuralNetworkKernel" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="NeuralNetworkKernelextendsCovarianceFunction[breeze.linalg.DenseVector[Double],Double,breeze.linalg.DenseMatrix[Double]]withSVMKernel[breeze.linalg.DenseMatrix[Double]]withLocalSVMKernel[breeze.linalg.DenseVector[Double]]withSerializable"></a>
       <a id="NeuralNetworkKernel:NeuralNetworkKernel"></a>
@@ -1161,6 +1163,26 @@ functionality requirements of an SVM Kernel
 scaled version of a base GP.</p><div class="fullcomment"><div class="comment cmt"><p>Represents covariance function of a GP which is
 scaled version of a base GP.</p><p>z ~ GP(m(.), K(.,.))</p><p>y = g(x)*z</p><p>y ~ GP(g(x)*m(x), g(x)K(x,x')g(x'))
 </p></div></div>
+    </li><li name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="SeparableStationaryKernel[I,Kernel&lt;:io.github.mandar2812.dynaml.kernels.StationaryKernel[I,Double,breeze.linalg.DenseMatrix[Double]]withio.github.mandar2812.dynaml.kernels.LocalScalarKernel[I]]extendsMultiplicativeCovariance[I]"></a>
+      <a id="SeparableStationaryKernel[I,Kernel&lt;:StationaryKernel[I,Double,DenseMatrix[Double]]withLocalScalarKernel[I]]:SeparableStationaryKernel[I,Kernel]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="SeparableStationaryKernel.html"><span class="name">SeparableStationaryKernel</span></a><span class="tparams">[<span name="I">I</span>, <span name="Kernel">Kernel &lt;: <a href="StationaryKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.StationaryKernel">StationaryKernel</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel.I">I</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="breeze.linalg.DenseMatrix">DenseMatrix</span>[<span class="extype" name="scala.Double">Double</span>]] with <a href="LocalScalarKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel">LocalScalarKernel</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel.I">I</span>]</span>]</span><span class="result"> extends <a href="MultiplicativeCovariance.html" class="extype" name="io.github.mandar2812.dynaml.kernels.MultiplicativeCovariance">MultiplicativeCovariance</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.SeparableStationaryKernel.I">I</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.package@SeparableStationaryKernel[I,Kernel&lt;:io.github.mandar2812.dynaml.kernels.StationaryKernel[I,Double,breeze.linalg.DenseMatrix[Double]]withio.github.mandar2812.dynaml.kernels.LocalScalarKernel[I]]extendsMultiplicativeCovariance[I]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Implementation of separable stationary kernels as defined in
+http://jmlr.csail.mit.edu/papers/volume2/genton01a/genton01a.pdf</p><div class="fullcomment"><div class="comment cmt"><p>Implementation of separable stationary kernels as defined in
+http://jmlr.csail.mit.edu/papers/volume2/genton01a/genton01a.pdf</p><p>K(x,y) = K1(x)&times;K2(y)
+</p></div><dl class="paramcmts block"><dt class="tparam">I</dt><dd class="cmt"><p>The index set or input domain over which the kernel function is evaluated.</p></dd><dt class="tparam">Kernel</dt><dd class="cmt"><p>A kernel type which extends <a href="StationaryKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.StationaryKernel">StationaryKernel</a> as well as <a href="LocalScalarKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel">LocalScalarKernel</a></p></dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.kernels.StationaryKernel" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="StationaryKernel[T,V,M]extendsCovarianceFunction[T,V,M]"></a>
       <a id="StationaryKernel[T,V,M]:StationaryKernel[T,V,M]"></a>

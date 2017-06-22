@@ -1,9 +1,9 @@
 <!DOCTYPE html >
 <html>
         <head>
-          <title>MetaPipe21 - io.github.mandar2812.dynaml.pipes.MetaPipe21</title>
-          <meta name="description" content="MetaPipe21 - io.github.mandar2812.dynaml.pipes.MetaPipe21" />
-          <meta name="keywords" content="MetaPipe21 io.github.mandar2812.dynaml.pipes.MetaPipe21" />
+          <title>GPMixturePipe - io.github.mandar2812.dynaml.modelpipe.GPMixturePipe</title>
+          <meta name="description" content="GPMixturePipe - io.github.mandar2812.dynaml.modelpipe.GPMixturePipe" />
+          <meta name="keywords" content="GPMixturePipe io.github.mandar2812.dynaml.modelpipe.GPMixturePipe" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -16,7 +16,7 @@
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../../../index.html';
-            var hash = 'io.github.mandar2812.dynaml.pipes.MetaPipe21';
+            var hash = 'io.github.mandar2812.dynaml.modelpipe.GPMixturePipe';
             var anchor = window.location.hash;
             var anchor_opt = '';
             if (anchor.length >= 1)
@@ -28,14 +28,12 @@
         </head>
         <body class="type">
       <div id="definition">
-        <a href="MetaPipe21$.html" title="See companion object"><img alt="Trait/Object" src="../../../../../lib/trait_to_object_big.png" /></a>
-        <p id="owner"><a href="../../../../package.html" class="extype" name="io">io</a>.<a href="../../../package.html" class="extype" name="io.github">github</a>.<a href="../../package.html" class="extype" name="io.github.mandar2812">mandar2812</a>.<a href="../package.html" class="extype" name="io.github.mandar2812.dynaml">dynaml</a>.<a href="package.html" class="extype" name="io.github.mandar2812.dynaml.pipes">pipes</a></p>
-        <h1><a href="MetaPipe21$.html" title="See companion object">MetaPipe21</a></h1><h3><span class="morelinks"><div>
-            Related Docs:
-            <a href="MetaPipe21$.html" title="See companion object">object MetaPipe21</a>
-            | <a href="package.html" class="extype" name="io.github.mandar2812.dynaml.pipes">package pipes</a>
+        <img alt="Class" src="../../../../../lib/class_big.png" />
+        <p id="owner"><a href="../../../../package.html" class="extype" name="io">io</a>.<a href="../../../package.html" class="extype" name="io.github">github</a>.<a href="../../package.html" class="extype" name="io.github.mandar2812">mandar2812</a>.<a href="../package.html" class="extype" name="io.github.mandar2812.dynaml">dynaml</a>.<a href="package.html" class="extype" name="io.github.mandar2812.dynaml.modelpipe">modelpipe</a></p>
+        <h1>GPMixturePipe</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="package.html" class="extype" name="io.github.mandar2812.dynaml.modelpipe">package modelpipe</a>
           </div></span></h3><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.pipes.MetaPipe21" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.modelpipe.GPMixturePipe" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -44,17 +42,16 @@
       <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">trait</span>
+        <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <span class="name">MetaPipe21</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>, <span name="C">C</span>, <span name="D">D</span>]</span><span class="result"> extends <a href="DataPipe2.html" class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe2">DataPipe2</a>[<span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe21.A">A</span>, <span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe21.B">B</span>, <a href="DataPipe.html" class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</a>[<span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe21.C">C</span>, <span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe21.D">D</span>]]</span>
+        <span class="name">GPMixturePipe</span><span class="tparams">[<span name="T">T</span>, <span name="I">I</span>]</span><span class="result"> extends <a href="MixturePipe.html" class="extype" name="io.github.mandar2812.dynaml.modelpipe.MixturePipe">MixturePipe</a>[<span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPMixturePipe.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPMixturePipe.I">I</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</span>, <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedPSDMatrix">PartitionedPSDMatrix</span>, <a href="../probability/distributions/BlockedMultiVariateGaussian.html" class="extype" name="io.github.mandar2812.dynaml.probability.distributions.BlockedMultiVariateGaussian">BlockedMultiVariateGaussian</a>, <a href="../probability/MultGaussianPRV.html" class="extype" name="io.github.mandar2812.dynaml.probability.MultGaussianPRV">MultGaussianPRV</a>, <a href="../models/gp/AbstractGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel">AbstractGPRegressionModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPMixturePipe.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPMixturePipe.I">I</span>]]</span>
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Wraps a curried function of order 1 which takes 2 arguments
-and returns a <span class="extype" name="Function1">Function1</span>.</p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe21">MetaPipe21</a>[<span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe21.A">A</span>, <span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe21.B">B</span>, <span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe21.C">C</span>, <span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe21.D">D</span>]</dd></dl><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="DataPipe2.html" class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe2">DataPipe2</a>[<span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe21.A">A</span>, <span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe21.B">B</span>, <a href="DataPipe.html" class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</a>[<span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe21.C">C</span>, <span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe21.D">D</span>]], <span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="MixturePipe.html" class="extype" name="io.github.mandar2812.dynaml.modelpipe.MixturePipe">MixturePipe</a>[<span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPMixturePipe.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPMixturePipe.I">I</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</span>, <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedPSDMatrix">PartitionedPSDMatrix</span>, <a href="../probability/distributions/BlockedMultiVariateGaussian.html" class="extype" name="io.github.mandar2812.dynaml.probability.distributions.BlockedMultiVariateGaussian">BlockedMultiVariateGaussian</a>, <a href="../probability/MultGaussianPRV.html" class="extype" name="io.github.mandar2812.dynaml.probability.MultGaussianPRV">MultGaussianPRV</a>, <a href="../models/gp/AbstractGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel">AbstractGPRegressionModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPMixturePipe.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPMixturePipe.I">I</span>]], <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe2">DataPipe2</span>[<span class="extype" name="scala.Seq">Seq</span>[<a href="../models/gp/AbstractGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel">AbstractGPRegressionModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPMixturePipe.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPMixturePipe.I">I</span>]], <span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>], <a href="../models/GenContinuousMixtureModel.html" class="extype" name="io.github.mandar2812.dynaml.models.GenContinuousMixtureModel">GenContinuousMixtureModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPMixturePipe.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPMixturePipe.I">I</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</span>, <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedPSDMatrix">PartitionedPSDMatrix</span>, <a href="../probability/distributions/BlockedMultiVariateGaussian.html" class="extype" name="io.github.mandar2812.dynaml.probability.distributions.BlockedMultiVariateGaussian">BlockedMultiVariateGaussian</a>, <a href="../probability/MultGaussianPRV.html" class="extype" name="io.github.mandar2812.dynaml.probability.MultGaussianPRV">MultGaussianPRV</a>, <a href="../models/gp/AbstractGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel">AbstractGPRegressionModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPMixturePipe.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPMixturePipe.I">I</span>]]], <span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -72,7 +69,7 @@ and returns a <span class="extype" name="Function1">Function1</span>.</p></div><
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="io.github.mandar2812.dynaml.pipes.MetaPipe21"><span>MetaPipe21</span></li><li class="in" name="io.github.mandar2812.dynaml.pipes.DataPipe2"><span>DataPipe2</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="io.github.mandar2812.dynaml.modelpipe.GPMixturePipe"><span>GPMixturePipe</span></li><li class="in" name="io.github.mandar2812.dynaml.modelpipe.MixturePipe"><span>MixturePipe</span></li><li class="in" name="io.github.mandar2812.dynaml.pipes.DataPipe2"><span>DataPipe2</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -89,34 +86,34 @@ and returns a <span class="extype" name="Function1">Function1</span>.</p></div><
 
       <div id="template">
         <div id="allMembers">
-        
-
-        
-
-        <div id="values" class="values members">
-              <h3>Abstract Value Members</h3>
-              <ol><li name="io.github.mandar2812.dynaml.pipes.DataPipe2#run" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="run(data1:Source1,data2:Source2):Result"></a>
-      <a id="run(A,B):DataPipe[C,D]"></a>
+        <div id="constructors" class="members">
+              <h3>Instance Constructors</h3>
+              <ol><li name="io.github.mandar2812.dynaml.modelpipe.GPMixturePipe#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;()(implicitevidence$2:scala.reflect.ClassTag[I]):io.github.mandar2812.dynaml.modelpipe.GPMixturePipe[T,I]"></a>
+      <a id="&lt;init&gt;:GPMixturePipe[T,I]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
+        <span class="modifier"></span>
+        <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">run</span><span class="params">(<span name="data1">data1: <span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe21.A">A</span></span>, <span name="data2">data2: <span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe21.B">B</span></span>)</span><span class="result">: <a href="DataPipe.html" class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</a>[<span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe21.C">C</span>, <span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe21.D">D</span>]</span>
+        <span class="name">GPMixturePipe</span><span class="params">()</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <span class="extype" name="scala.reflect.ClassTag">ClassTag</span>[<span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPMixturePipe.I">I</span>]</span>)</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.pipes.MetaPipe21@run(data1:Source1,data2:Source2):Result" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.modelpipe.GPMixturePipe@&lt;init&gt;()(implicitevidence$2:scala.reflect.ClassTag[I]):io.github.mandar2812.dynaml.modelpipe.GPMixturePipe[T,I]" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="DataPipe2.html" class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe2">DataPipe2</a></dd></dl></div>
+      
     </li></ol>
             </div>
 
+        
+
+        
+
         <div id="values" class="values members">
-              <h3>Concrete Value Members</h3>
+              <h3>Value Members</h3>
               <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
@@ -129,7 +126,7 @@ and returns a <span class="extype" name="Function1">Function1</span>.</p></div><
         <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.pipes.MetaPipe21@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.modelpipe.GPMixturePipe@!=(x$1:Any):Boolean" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -146,7 +143,7 @@ and returns a <span class="extype" name="Function1">Function1</span>.</p></div><
         <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.pipes.MetaPipe21@##():Int" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.modelpipe.GPMixturePipe@##():Int" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -163,62 +160,45 @@ and returns a <span class="extype" name="Function1">Function1</span>.</p></div><
         <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.pipes.MetaPipe21@==(x$1:Any):Boolean" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.modelpipe.GPMixturePipe@==(x$1:Any):Boolean" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.pipes.DataPipe2#&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="&gt;[Result2](otherPipe:io.github.mandar2812.dynaml.pipes.DataPipe[Result,Result2]):io.github.mandar2812.dynaml.pipes.DataPipe2[Source1,Source2,Result2]"></a>
-      <a id="&gt;[Result2](DataPipe[DataPipe[C,D],Result2]):DataPipe2[A,B,Result2]"></a>
+      <a id="&gt;[Result2](DataPipe[GenContinuousMixtureModel[T,I,Double,PartitionedVector,PartitionedPSDMatrix,BlockedMultiVariateGaussian,MultGaussianPRV,AbstractGPRegressionModel[T,I]],Result2]):DataPipe2[Seq[AbstractGPRegressionModel[T,I]],DenseVector[Double],Result2]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $greater" class="name">&gt;</span><span class="tparams">[<span name="Result2">Result2</span>]</span><span class="params">(<span name="otherPipe">otherPipe: <a href="DataPipe.html" class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</a>[<a href="DataPipe.html" class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</a>[<span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe21.C">C</span>, <span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe21.D">D</span>], <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe2.&gt;.Result2">Result2</span>]</span>)</span><span class="result">: <a href="DataPipe2.html" class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe2">DataPipe2</a>[<span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe21.A">A</span>, <span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe21.B">B</span>, <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe2.&gt;.Result2">Result2</span>]</span>
+        <span title="gt4s: $greater" class="name">&gt;</span><span class="tparams">[<span name="Result2">Result2</span>]</span><span class="params">(<span name="otherPipe">otherPipe: <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</span>[<a href="../models/GenContinuousMixtureModel.html" class="extype" name="io.github.mandar2812.dynaml.models.GenContinuousMixtureModel">GenContinuousMixtureModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPMixturePipe.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPMixturePipe.I">I</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</span>, <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedPSDMatrix">PartitionedPSDMatrix</span>, <a href="../probability/distributions/BlockedMultiVariateGaussian.html" class="extype" name="io.github.mandar2812.dynaml.probability.distributions.BlockedMultiVariateGaussian">BlockedMultiVariateGaussian</a>, <a href="../probability/MultGaussianPRV.html" class="extype" name="io.github.mandar2812.dynaml.probability.MultGaussianPRV">MultGaussianPRV</a>, <a href="../models/gp/AbstractGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel">AbstractGPRegressionModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPMixturePipe.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPMixturePipe.I">I</span>]], <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe2.&gt;.Result2">Result2</span>]</span>)</span><span class="result">: <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe2">DataPipe2</span>[<span class="extype" name="scala.Seq">Seq</span>[<a href="../models/gp/AbstractGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel">AbstractGPRegressionModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPMixturePipe.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPMixturePipe.I">I</span>]], <span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>], <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe2.&gt;.Result2">Result2</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.pipes.MetaPipe21@&gt;[Result2](otherPipe:io.github.mandar2812.dynaml.pipes.DataPipe[Result,Result2]):io.github.mandar2812.dynaml.pipes.DataPipe2[Source1,Source2,Result2]" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.modelpipe.GPMixturePipe@&gt;[Result2](otherPipe:io.github.mandar2812.dynaml.pipes.DataPipe[Result,Result2]):io.github.mandar2812.dynaml.pipes.DataPipe2[Source1,Source2,Result2]" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="DataPipe2.html" class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe2">DataPipe2</a></dd></dl></div>
-    </li><li name="io.github.mandar2812.dynaml.pipes.MetaPipe21#&gt;&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&gt;&gt;[E](next:io.github.mandar2812.dynaml.pipes.DataPipe[D,E]):io.github.mandar2812.dynaml.pipes.MetaPipe21[A,B,C,E]"></a>
-      <a id="&gt;&gt;[E](DataPipe[D,E]):MetaPipe21[A,B,C,E]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $greater$greater" class="name">&gt;&gt;</span><span class="tparams">[<span name="E">E</span>]</span><span class="params">(<span name="next">next: <a href="DataPipe.html" class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</a>[<span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe21.D">D</span>, <span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe21.&gt;&gt;.E">E</span>]</span>)</span><span class="result">: <a href="" class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe21">MetaPipe21</a>[<span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe21.A">A</span>, <span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe21.B">B</span>, <span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe21.C">C</span>, <span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe21.&gt;&gt;.E">E</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.pipes.MetaPipe21@&gt;&gt;[E](next:io.github.mandar2812.dynaml.pipes.DataPipe[D,E]):io.github.mandar2812.dynaml.pipes.MetaPipe21[A,B,C,E]" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>DataPipe2</dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.pipes.DataPipe2#apply" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="apply(data1:Source1,data2:Source2):Result"></a>
-      <a id="apply(A,B):DataPipe[C,D]"></a>
+      <a id="apply(Seq[AbstractGPRegressionModel[T,I]],DenseVector[Double]):GenContinuousMixtureModel[T,I,Double,PartitionedVector,PartitionedPSDMatrix,BlockedMultiVariateGaussian,MultGaussianPRV,AbstractGPRegressionModel[T,I]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">apply</span><span class="params">(<span name="data1">data1: <span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe21.A">A</span></span>, <span name="data2">data2: <span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe21.B">B</span></span>)</span><span class="result">: <a href="DataPipe.html" class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</a>[<span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe21.C">C</span>, <span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe21.D">D</span>]</span>
+        <span class="name">apply</span><span class="params">(<span name="data1">data1: <span class="extype" name="scala.Seq">Seq</span>[<a href="../models/gp/AbstractGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel">AbstractGPRegressionModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPMixturePipe.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPMixturePipe.I">I</span>]]</span>, <span name="data2">data2: <span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]</span>)</span><span class="result">: <a href="../models/GenContinuousMixtureModel.html" class="extype" name="io.github.mandar2812.dynaml.models.GenContinuousMixtureModel">GenContinuousMixtureModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPMixturePipe.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPMixturePipe.I">I</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</span>, <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedPSDMatrix">PartitionedPSDMatrix</span>, <a href="../probability/distributions/BlockedMultiVariateGaussian.html" class="extype" name="io.github.mandar2812.dynaml.probability.distributions.BlockedMultiVariateGaussian">BlockedMultiVariateGaussian</a>, <a href="../probability/MultGaussianPRV.html" class="extype" name="io.github.mandar2812.dynaml.probability.MultGaussianPRV">MultGaussianPRV</a>, <a href="../models/gp/AbstractGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel">AbstractGPRegressionModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPMixturePipe.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPMixturePipe.I">I</span>]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.pipes.MetaPipe21@apply(data1:Source1,data2:Source2):Result" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.modelpipe.GPMixturePipe@apply(data1:Source1,data2:Source2):Result" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="DataPipe2.html" class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe2">DataPipe2</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>DataPipe2</dd></dl></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
@@ -231,7 +211,7 @@ and returns a <span class="extype" name="Function1">Function1</span>.</p></div><
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.pipes.MetaPipe21@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.modelpipe.GPMixturePipe@asInstanceOf[T0]:T0" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -248,7 +228,7 @@ and returns a <span class="extype" name="Function1">Function1</span>.</p></div><
         <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.pipes.MetaPipe21@clone():Object" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.modelpipe.GPMixturePipe@clone():Object" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -271,7 +251,7 @@ and returns a <span class="extype" name="Function1">Function1</span>.</p></div><
         <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.pipes.MetaPipe21@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.modelpipe.GPMixturePipe@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -288,7 +268,7 @@ and returns a <span class="extype" name="Function1">Function1</span>.</p></div><
         <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.pipes.MetaPipe21@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.modelpipe.GPMixturePipe@equals(x$1:Any):Boolean" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -305,7 +285,7 @@ and returns a <span class="extype" name="Function1">Function1</span>.</p></div><
         <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.pipes.MetaPipe21@finalize():Unit" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.modelpipe.GPMixturePipe@finalize():Unit" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -328,7 +308,7 @@ and returns a <span class="extype" name="Function1">Function1</span>.</p></div><
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.pipes.MetaPipe21@getClass():Class[_]" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.modelpipe.GPMixturePipe@getClass():Class[_]" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -345,7 +325,7 @@ and returns a <span class="extype" name="Function1">Function1</span>.</p></div><
         <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.pipes.MetaPipe21@hashCode():Int" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.modelpipe.GPMixturePipe@hashCode():Int" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -362,7 +342,7 @@ and returns a <span class="extype" name="Function1">Function1</span>.</p></div><
         <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.pipes.MetaPipe21@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.modelpipe.GPMixturePipe@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -379,7 +359,7 @@ and returns a <span class="extype" name="Function1">Function1</span>.</p></div><
         <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.pipes.MetaPipe21@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.modelpipe.GPMixturePipe@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -396,7 +376,7 @@ and returns a <span class="extype" name="Function1">Function1</span>.</p></div><
         <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.pipes.MetaPipe21@notify():Unit" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.modelpipe.GPMixturePipe@notify():Unit" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -413,11 +393,28 @@ and returns a <span class="extype" name="Function1">Function1</span>.</p></div><
         <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.pipes.MetaPipe21@notifyAll():Unit" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.modelpipe.GPMixturePipe@notifyAll():Unit" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.modelpipe.GPMixturePipe#run" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="run(models:Seq[io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel[T,I]],weights:breeze.linalg.DenseVector[Double]):io.github.mandar2812.dynaml.models.gp.GaussianProcessMixture[T,I]"></a>
+      <a id="run(Seq[AbstractGPRegressionModel[T,I]],DenseVector[Double]):GaussianProcessMixture[T,I]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">run</span><span class="params">(<span name="models">models: <span class="extype" name="scala.Seq">Seq</span>[<a href="../models/gp/AbstractGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel">AbstractGPRegressionModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPMixturePipe.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPMixturePipe.I">I</span>]]</span>, <span name="weights">weights: <span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]</span>)</span><span class="result">: <a href="../models/gp/GaussianProcessMixture.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.GaussianProcessMixture">GaussianProcessMixture</a>[<span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPMixturePipe.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPMixturePipe.I">I</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.modelpipe.GPMixturePipe@run(models:Seq[io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel[T,I]],weights:breeze.linalg.DenseVector[Double]):io.github.mandar2812.dynaml.models.gp.GaussianProcessMixture[T,I]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPMixturePipe">GPMixturePipe</a> → DataPipe2</dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
@@ -430,7 +427,7 @@ and returns a <span class="extype" name="Function1">Function1</span>.</p></div><
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.pipes.MetaPipe21@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.modelpipe.GPMixturePipe@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -447,7 +444,7 @@ and returns a <span class="extype" name="Function1">Function1</span>.</p></div><
         <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.pipes.MetaPipe21@toString():String" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.modelpipe.GPMixturePipe@toString():String" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -464,7 +461,7 @@ and returns a <span class="extype" name="Function1">Function1</span>.</p></div><
         <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.pipes.MetaPipe21@wait():Unit" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.modelpipe.GPMixturePipe@wait():Unit" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -487,7 +484,7 @@ and returns a <span class="extype" name="Function1">Function1</span>.</p></div><
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.pipes.MetaPipe21@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.modelpipe.GPMixturePipe@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -510,7 +507,7 @@ and returns a <span class="extype" name="Function1">Function1</span>.</p></div><
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.pipes.MetaPipe21@wait(x$1:Long):Unit" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.modelpipe.GPMixturePipe@wait(x$1:Long):Unit" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -530,8 +527,10 @@ and returns a <span class="extype" name="Function1">Function1</span>.</p></div><
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="io.github.mandar2812.dynaml.pipes.DataPipe2">
-              <h3>Inherited from <a href="DataPipe2.html" class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe2">DataPipe2</a>[<span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe21.A">A</span>, <span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe21.B">B</span>, <a href="DataPipe.html" class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</a>[<span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe21.C">C</span>, <span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe21.D">D</span>]]</h3>
+        <div class="parent" name="io.github.mandar2812.dynaml.modelpipe.MixturePipe">
+              <h3>Inherited from <a href="MixturePipe.html" class="extype" name="io.github.mandar2812.dynaml.modelpipe.MixturePipe">MixturePipe</a>[<span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPMixturePipe.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPMixturePipe.I">I</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</span>, <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedPSDMatrix">PartitionedPSDMatrix</span>, <a href="../probability/distributions/BlockedMultiVariateGaussian.html" class="extype" name="io.github.mandar2812.dynaml.probability.distributions.BlockedMultiVariateGaussian">BlockedMultiVariateGaussian</a>, <a href="../probability/MultGaussianPRV.html" class="extype" name="io.github.mandar2812.dynaml.probability.MultGaussianPRV">MultGaussianPRV</a>, <a href="../models/gp/AbstractGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel">AbstractGPRegressionModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPMixturePipe.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPMixturePipe.I">I</span>]]</h3>
+            </div><div class="parent" name="io.github.mandar2812.dynaml.pipes.DataPipe2">
+              <h3>Inherited from <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe2">DataPipe2</span>[<span class="extype" name="scala.Seq">Seq</span>[<a href="../models/gp/AbstractGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel">AbstractGPRegressionModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPMixturePipe.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPMixturePipe.I">I</span>]], <span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>], <a href="../models/GenContinuousMixtureModel.html" class="extype" name="io.github.mandar2812.dynaml.models.GenContinuousMixtureModel">GenContinuousMixtureModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPMixturePipe.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPMixturePipe.I">I</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</span>, <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedPSDMatrix">PartitionedPSDMatrix</span>, <a href="../probability/distributions/BlockedMultiVariateGaussian.html" class="extype" name="io.github.mandar2812.dynaml.probability.distributions.BlockedMultiVariateGaussian">BlockedMultiVariateGaussian</a>, <a href="../probability/MultGaussianPRV.html" class="extype" name="io.github.mandar2812.dynaml.probability.MultGaussianPRV">MultGaussianPRV</a>, <a href="../models/gp/AbstractGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel">AbstractGPRegressionModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPMixturePipe.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPMixturePipe.I">I</span>]]]</h3>
             </div><div class="parent" name="scala.Serializable">
               <h3>Inherited from <span class="extype" name="scala.Serializable">Serializable</span></h3>
             </div><div class="parent" name="java.io.Serializable">

@@ -1,9 +1,9 @@
 <!DOCTYPE html >
 <html>
         <head>
-          <title>ProbGPCommMachine - io.github.mandar2812.dynaml.optimization.ProbGPCommMachine</title>
-          <meta name="description" content="ProbGPCommMachine - io.github.mandar2812.dynaml.optimization.ProbGPCommMachine" />
-          <meta name="keywords" content="ProbGPCommMachine io.github.mandar2812.dynaml.optimization.ProbGPCommMachine" />
+          <title>MixtureMachine - io.github.mandar2812.dynaml.optimization.MixtureMachine</title>
+          <meta name="description" content="MixtureMachine - io.github.mandar2812.dynaml.optimization.MixtureMachine" />
+          <meta name="keywords" content="MixtureMachine io.github.mandar2812.dynaml.optimization.MixtureMachine" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -16,7 +16,7 @@
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../../../index.html';
-            var hash = 'io.github.mandar2812.dynaml.optimization.ProbGPCommMachine';
+            var hash = 'io.github.mandar2812.dynaml.optimization.MixtureMachine';
             var anchor = window.location.hash;
             var anchor_opt = '';
             if (anchor.length >= 1)
@@ -28,14 +28,14 @@
         </head>
         <body class="type">
       <div id="definition">
-        <a href="ProbGPCommMachine$.html" title="See companion object"><img alt="Class/Object" src="../../../../../lib/class_to_object_big.png" /></a>
+        <a href="MixtureMachine$.html" title="See companion object"><img alt="Class/Object" src="../../../../../lib/class_to_object_big.png" /></a>
         <p id="owner"><a href="../../../../package.html" class="extype" name="io">io</a>.<a href="../../../package.html" class="extype" name="io.github">github</a>.<a href="../../package.html" class="extype" name="io.github.mandar2812">mandar2812</a>.<a href="../package.html" class="extype" name="io.github.mandar2812.dynaml">dynaml</a>.<a href="package.html" class="extype" name="io.github.mandar2812.dynaml.optimization">optimization</a></p>
-        <h1><a href="ProbGPCommMachine$.html" title="See companion object">ProbGPCommMachine</a></h1><h3><span class="morelinks"><div>
+        <h1><a href="MixtureMachine$.html" title="See companion object">MixtureMachine</a></h1><h3><span class="morelinks"><div>
             Related Docs:
-            <a href="ProbGPCommMachine$.html" title="See companion object">object ProbGPCommMachine</a>
+            <a href="MixtureMachine$.html" title="See companion object">object MixtureMachine</a>
             | <a href="package.html" class="extype" name="io.github.mandar2812.dynaml.optimization">package optimization</a>
           </div></span></h3><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.ProbGPCommMachine" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -43,19 +43,21 @@
 
       <h4 id="signature" class="signature">
       <span class="modifier_kind">
-        <span class="modifier"></span>
+        <span class="modifier">abstract </span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <span class="name">ProbGPCommMachine</span><span class="tparams">[<span name="T">T</span>, <span name="I">I</span>]</span><span class="result"> extends <a href="CoupledSimulatedAnnealing.html" class="extype" name="io.github.mandar2812.dynaml.optimization.CoupledSimulatedAnnealing">CoupledSimulatedAnnealing</a>[<a href="../models/gp/AbstractGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel">AbstractGPRegressionModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine.I">I</span>]]</span>
+        <span class="name">MixtureMachine</span><span class="tparams">[<span name="T">T</span>, <span name="I">I</span>, <span name="Y">Y</span>, <span name="YDomain">YDomain</span>, <span name="YDomainVar">YDomainVar</span>, <span name="BaseDistr">BaseDistr &lt;: <span class="extype" name="breeze.stats.distributions.ContinuousDistr">ContinuousDistr</span>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.YDomain">YDomain</span>] with <span class="extype" name="breeze.stats.distributions.Moments">Moments</span>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.YDomain">YDomain</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.YDomainVar">YDomainVar</span>] with <a href="../probability/distributions/HasErrorBars.html" class="extype" name="io.github.mandar2812.dynaml.probability.distributions.HasErrorBars">HasErrorBars</a>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.YDomain">YDomain</span>]</span>, <span name="W1">W1 &lt;: <a href="../probability/ContinuousRVWithDistr.html" class="extype" name="io.github.mandar2812.dynaml.probability.ContinuousRVWithDistr">ContinuousRVWithDistr</a>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.YDomain">YDomain</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.BaseDistr">BaseDistr</span>]</span>, <span name="BaseProcess">BaseProcess &lt;: <a href="../models/ContinuousProcessModel.html" class="extype" name="io.github.mandar2812.dynaml.models.ContinuousProcessModel">ContinuousProcessModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.I">I</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.Y">Y</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.W1">W1</span>] with <a href="../models/SecondOrderProcessModel.html" class="extype" name="io.github.mandar2812.dynaml.models.SecondOrderProcessModel">SecondOrderProcessModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.I">I</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.Y">Y</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="breeze.linalg.DenseMatrix">DenseMatrix</span>[<span class="extype" name="scala.Double">Double</span>], <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.W1">W1</span>] with <a href="GloballyOptimizable.html" class="extype" name="io.github.mandar2812.dynaml.optimization.GloballyOptimizable">GloballyOptimizable</a></span>]</span><span class="result"> extends <a href="AbstractCSA.html" class="extype" name="io.github.mandar2812.dynaml.optimization.AbstractCSA">AbstractCSA</a>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.BaseProcess">BaseProcess</span>, <a href="../models/GenContinuousMixtureModel.html" class="extype" name="io.github.mandar2812.dynaml.models.GenContinuousMixtureModel">GenContinuousMixtureModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.I">I</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.Y">Y</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.YDomain">YDomain</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.YDomainVar">YDomainVar</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.BaseDistr">BaseDistr</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.W1">W1</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.BaseProcess">BaseProcess</span>]]</span>
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Build GP committee model after performing the CSA routine
-</p></div><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="CoupledSimulatedAnnealing.html" class="extype" name="io.github.mandar2812.dynaml.optimization.CoupledSimulatedAnnealing">CoupledSimulatedAnnealing</a>[<a href="../models/gp/AbstractGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel">AbstractGPRegressionModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine.I">I</span>]], <a href="GlobalOptimizer.html" class="extype" name="io.github.mandar2812.dynaml.optimization.GlobalOptimizer">GlobalOptimizer</a>[<a href="../models/gp/AbstractGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel">AbstractGPRegressionModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine.I">I</span>]], <a href="AbstractCSA.html" class="extype" name="io.github.mandar2812.dynaml.optimization.AbstractCSA">AbstractCSA</a>[<a href="../models/gp/AbstractGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel">AbstractGPRegressionModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine.I">I</span>], <a href="../models/gp/AbstractGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel">AbstractGPRegressionModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine.I">I</span>]], <a href="AbstractGridSearch.html" class="extype" name="io.github.mandar2812.dynaml.optimization.AbstractGridSearch">AbstractGridSearch</a>[<a href="../models/gp/AbstractGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel">AbstractGPRegressionModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine.I">I</span>], <a href="../models/gp/AbstractGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel">AbstractGPRegressionModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine.I">I</span>]], <a href="ModelTuner.html" class="extype" name="io.github.mandar2812.dynaml.optimization.ModelTuner">ModelTuner</a>[<a href="../models/gp/AbstractGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel">AbstractGPRegressionModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine.I">I</span>], <a href="../models/gp/AbstractGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel">AbstractGPRegressionModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine.I">I</span>]], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
-        </div></div>
+          <div class="superTypes hiddenContent"><a href="AbstractCSA.html" class="extype" name="io.github.mandar2812.dynaml.optimization.AbstractCSA">AbstractCSA</a>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.BaseProcess">BaseProcess</span>, <a href="../models/GenContinuousMixtureModel.html" class="extype" name="io.github.mandar2812.dynaml.models.GenContinuousMixtureModel">GenContinuousMixtureModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.I">I</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.Y">Y</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.YDomain">YDomain</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.YDomainVar">YDomainVar</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.BaseDistr">BaseDistr</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.W1">W1</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.BaseProcess">BaseProcess</span>]], <a href="AbstractGridSearch.html" class="extype" name="io.github.mandar2812.dynaml.optimization.AbstractGridSearch">AbstractGridSearch</a>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.BaseProcess">BaseProcess</span>, <a href="../models/GenContinuousMixtureModel.html" class="extype" name="io.github.mandar2812.dynaml.models.GenContinuousMixtureModel">GenContinuousMixtureModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.I">I</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.Y">Y</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.YDomain">YDomain</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.YDomainVar">YDomainVar</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.BaseDistr">BaseDistr</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.W1">W1</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.BaseProcess">BaseProcess</span>]], <a href="ModelTuner.html" class="extype" name="io.github.mandar2812.dynaml.optimization.ModelTuner">ModelTuner</a>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.BaseProcess">BaseProcess</span>, <a href="../models/GenContinuousMixtureModel.html" class="extype" name="io.github.mandar2812.dynaml.models.GenContinuousMixtureModel">GenContinuousMixtureModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.I">I</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.Y">Y</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.YDomain">YDomain</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.YDomainVar">YDomainVar</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.BaseDistr">BaseDistr</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.W1">W1</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.BaseProcess">BaseProcess</span>]], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div><div class="toggleContainer block">
+            <span class="toggle">Known Subclasses</span>
+            <div class="subClasses hiddenContent"><a href="GPMixtureMachine.html" class="extype" name="io.github.mandar2812.dynaml.optimization.GPMixtureMachine">GPMixtureMachine</a></div>
+          </div></div>
         
 
       <div id="mbrsel">
@@ -72,7 +74,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine"><span>ProbGPCommMachine</span></li><li class="in" name="io.github.mandar2812.dynaml.optimization.CoupledSimulatedAnnealing"><span>CoupledSimulatedAnnealing</span></li><li class="in" name="io.github.mandar2812.dynaml.optimization.GlobalOptimizer"><span>GlobalOptimizer</span></li><li class="in" name="io.github.mandar2812.dynaml.optimization.AbstractCSA"><span>AbstractCSA</span></li><li class="in" name="io.github.mandar2812.dynaml.optimization.AbstractGridSearch"><span>AbstractGridSearch</span></li><li class="in" name="io.github.mandar2812.dynaml.optimization.ModelTuner"><span>ModelTuner</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="io.github.mandar2812.dynaml.optimization.MixtureMachine"><span>MixtureMachine</span></li><li class="in" name="io.github.mandar2812.dynaml.optimization.AbstractCSA"><span>AbstractCSA</span></li><li class="in" name="io.github.mandar2812.dynaml.optimization.AbstractGridSearch"><span>AbstractGridSearch</span></li><li class="in" name="io.github.mandar2812.dynaml.optimization.ModelTuner"><span>ModelTuner</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -91,19 +93,19 @@
         <div id="allMembers">
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
-              <ol><li name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(model:io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel[T,I])(implicitevidence$1:scala.reflect.ClassTag[I]):io.github.mandar2812.dynaml.optimization.ProbGPCommMachine[T,I]"></a>
-      <a id="&lt;init&gt;:ProbGPCommMachine[T,I]"></a>
+              <ol><li name="io.github.mandar2812.dynaml.optimization.MixtureMachine#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;(model:BaseProcess)(implicitevidence$1:scala.reflect.ClassTag[I]):io.github.mandar2812.dynaml.optimization.MixtureMachine[T,I,Y,YDomain,YDomainVar,BaseDistr,W1,BaseProcess]"></a>
+      <a id="&lt;init&gt;:MixtureMachine[T,I,Y,YDomain,YDomainVar,BaseDistr,W1,BaseProcess]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">ProbGPCommMachine</span><span class="params">(<span name="model">model: <a href="../models/gp/AbstractGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel">AbstractGPRegressionModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine.I">I</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <span class="extype" name="scala.reflect.ClassTag">ClassTag</span>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine.I">I</span>]</span>)</span>
+        <span class="name">MixtureMachine</span><span class="params">(<span name="model">model: <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.BaseProcess">BaseProcess</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <span class="extype" name="scala.reflect.ClassTag">ClassTag</span>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.I">I</span>]</span>)</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.ProbGPCommMachine@&lt;init&gt;(model:io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel[T,I])(implicitevidence$1:scala.reflect.ClassTag[I]):io.github.mandar2812.dynaml.optimization.ProbGPCommMachine[T,I]" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@&lt;init&gt;(model:BaseProcess)(implicitevidence$1:scala.reflect.ClassTag[I]):io.github.mandar2812.dynaml.optimization.MixtureMachine[T,I,Y,YDomain,YDomainVar,BaseDistr,W1,BaseProcess]" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -113,10 +115,47 @@
 
         
 
-        
+        <div id="values" class="values members">
+              <h3>Abstract Value Members</h3>
+              <ol><li name="io.github.mandar2812.dynaml.optimization.MixtureMachine#confToModel" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="confToModel:io.github.mandar2812.dynaml.pipes.DataPipe[Map[String,Double],BaseProcess]"></a>
+      <a id="confToModel:DataPipe[Map[String,Double],BaseProcess]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">confToModel</span><span class="result">: <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</span>[<span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>], <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.BaseProcess">BaseProcess</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@confToModel:io.github.mandar2812.dynaml.pipes.DataPipe[Map[String,Double],BaseProcess]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.github.mandar2812.dynaml.optimization.MixtureMachine#mixturePipe" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="mixturePipe:io.github.mandar2812.dynaml.pipes.DataPipe2[Seq[BaseProcess],breeze.linalg.DenseVector[Double],io.github.mandar2812.dynaml.models.GenContinuousMixtureModel[T,I,Y,YDomain,YDomainVar,BaseDistr,W1,BaseProcess]]"></a>
+      <a id="mixturePipe:DataPipe2[Seq[BaseProcess],DenseVector[Double],GenContinuousMixtureModel[T,I,Y,YDomain,YDomainVar,BaseDistr,W1,BaseProcess]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">mixturePipe</span><span class="result">: <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe2">DataPipe2</span>[<span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.BaseProcess">BaseProcess</span>], <span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>], <a href="../models/GenContinuousMixtureModel.html" class="extype" name="io.github.mandar2812.dynaml.models.GenContinuousMixtureModel">GenContinuousMixtureModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.I">I</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.Y">Y</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.YDomain">YDomain</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.YDomainVar">YDomainVar</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.BaseDistr">BaseDistr</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.W1">W1</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.BaseProcess">BaseProcess</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@mixturePipe:io.github.mandar2812.dynaml.pipes.DataPipe2[Seq[BaseProcess],breeze.linalg.DenseVector[Double],io.github.mandar2812.dynaml.models.GenContinuousMixtureModel[T,I,Y,YDomain,YDomainVar,BaseDistr,W1,BaseProcess]]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
 
         <div id="values" class="values members">
-              <h3>Value Members</h3>
+              <h3>Concrete Value Members</h3>
               <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
@@ -129,7 +168,7 @@
         <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.ProbGPCommMachine@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@!=(x$1:Any):Boolean" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -146,7 +185,7 @@
         <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.ProbGPCommMachine@##():Int" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@##():Int" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -163,7 +202,7 @@
         <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.ProbGPCommMachine@==(x$1:Any):Boolean" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@==(x$1:Any):Boolean" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -180,12 +219,12 @@
         <span class="name">MAX_ITERATIONS</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.ProbGPCommMachine@MAX_ITERATIONS:Int" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@MAX_ITERATIONS:Int" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractCSA.html" class="extype" name="io.github.mandar2812.dynaml.optimization.AbstractCSA">AbstractCSA</a></dd></dl></div>
-    </li><li name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine#_policy" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="io.github.mandar2812.dynaml.optimization.MixtureMachine#_policy" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="_policy:String"></a>
       <a id="_policy:String"></a>
       <h4 class="signature">
@@ -197,7 +236,7 @@
         <span class="name">_policy</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.ProbGPCommMachine@_policy:String" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@_policy:String" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -214,7 +253,7 @@
         <span class="name">acceptanceTemperature</span><span class="params">(<span name="initialTemp">initialTemp: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="params">(<span name="k">k: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.ProbGPCommMachine@acceptanceTemperature(initialTemp:Double)(k:Int):Double" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@acceptanceTemperature(initialTemp:Double)(k:Int):Double" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -231,7 +270,7 @@
         <span class="name">alpha</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.ProbGPCommMachine@alpha:Double" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@alpha:Double" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -248,11 +287,45 @@
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.ProbGPCommMachine@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@asInstanceOf[T0]:T0" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.optimization.MixtureMachine#baselinePolicy" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="baselinePolicy:String"></a>
+      <a id="baselinePolicy:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">baselinePolicy</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@baselinePolicy:String" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.optimization.MixtureMachine#calculateEnergyLandscape" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="calculateEnergyLandscape(initialConfig:Map[String,Double],options:Map[String,String]):Seq[(Double,Map[String,Double])]"></a>
+      <a id="calculateEnergyLandscape(Map[String,Double],Map[String,String]):Seq[(Double,Map[String,Double])]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">calculateEnergyLandscape</span><span class="params">(<span name="initialConfig">initialConfig: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>]</span>, <span name="options">options: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>])]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@calculateEnergyLandscape(initialConfig:Map[String,Double],options:Map[String,String]):Seq[(Double,Map[String,Double])]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>
       <a id="clone():AnyRef"></a>
@@ -265,7 +338,7 @@
         <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.ProbGPCommMachine@clone():Object" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@clone():Object" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -288,7 +361,7 @@
         <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.ProbGPCommMachine@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -305,7 +378,7 @@
         <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.ProbGPCommMachine@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@equals(x$1:Any):Boolean" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -322,7 +395,7 @@
         <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.ProbGPCommMachine@finalize():Unit" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@finalize():Unit" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -345,7 +418,7 @@
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.ProbGPCommMachine@getClass():Class[_]" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@getClass():Class[_]" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -362,7 +435,7 @@
         <span class="name">getEnergyLandscape</span><span class="params">(<span name="initialConfig">initialConfig: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>]</span>, <span name="options">options: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">Map()</span></span>, <span name="prior">prior: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <a href="../probability/ContinuousRVWithDistr.html" class="extype" name="io.github.mandar2812.dynaml.probability.ContinuousRVWithDistr">ContinuousRVWithDistr</a>[<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="breeze.stats.distributions.ContinuousDistr">ContinuousDistr</span>[<span class="extype" name="scala.Double">Double</span>]]] = <span class="symbol">Map()</span></span>)</span><span class="result">: <span class="extype" name="scala.List">List</span>[(<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>])]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.ProbGPCommMachine@getEnergyLandscape(initialConfig:Map[String,Double],options:Map[String,String],prior:Map[String,io.github.mandar2812.dynaml.probability.ContinuousRVWithDistr[Double,breeze.stats.distributions.ContinuousDistr[Double]]]):List[(Double,Map[String,Double])]" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@getEnergyLandscape(initialConfig:Map[String,Double],options:Map[String,String],prior:Map[String,io.github.mandar2812.dynaml.probability.ContinuousRVWithDistr[Double,breeze.stats.distributions.ContinuousDistr[Double]]]):List[(Double,Map[String,Double])]" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -379,7 +452,7 @@
         <span class="name">getGrid</span><span class="params">(<span name="initialConfig">initialConfig: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.ProbGPCommMachine@getGrid(initialConfig:Map[String,Double]):Seq[Map[String,Double]]" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@getGrid(initialConfig:Map[String,Double]):Seq[Map[String,Double]]" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -396,7 +469,7 @@
         <span class="name">gridsize</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.ProbGPCommMachine@gridsize:Int" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@gridsize:Int" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -413,7 +486,7 @@
         <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.ProbGPCommMachine@hashCode():Int" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@hashCode():Int" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -430,7 +503,7 @@
         <span class="name">iTemp</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.ProbGPCommMachine@iTemp:Double" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@iTemp:Double" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -447,7 +520,7 @@
         <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.ProbGPCommMachine@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -464,7 +537,7 @@
         <span class="name">logarithmicScale</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.ProbGPCommMachine@logarithmicScale:Boolean" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@logarithmicScale:Boolean" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -481,7 +554,7 @@
         <span class="name">logger</span><span class="result">: <span class="extype" name="org.apache.log4j.Logger">Logger</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.ProbGPCommMachine@logger:org.apache.log4j.Logger" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@logger:org.apache.log4j.Logger" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -498,11 +571,28 @@
         <span class="name">meanFieldPrior</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <a href="../probability/ContinuousRVWithDistr.html" class="extype" name="io.github.mandar2812.dynaml.probability.ContinuousRVWithDistr">ContinuousRVWithDistr</a>[<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="breeze.stats.distributions.ContinuousDistr">ContinuousDistr</span>[<span class="extype" name="scala.Double">Double</span>]]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.ProbGPCommMachine@meanFieldPrior:Map[String,io.github.mandar2812.dynaml.probability.ContinuousRVWithDistr[Double,breeze.stats.distributions.ContinuousDistr[Double]]]" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@meanFieldPrior:Map[String,io.github.mandar2812.dynaml.probability.ContinuousRVWithDistr[Double,breeze.stats.distributions.ContinuousDistr[Double]]]" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="ModelTuner.html" class="extype" name="io.github.mandar2812.dynaml.optimization.ModelTuner">ModelTuner</a></dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.optimization.MixtureMachine#modelProbabilities" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="modelProbabilities:io.github.mandar2812.dynaml.pipes.DataPipe[Seq[(Double,Map[String,Double])],Seq[(Double,Map[String,Double])]]"></a>
+      <a id="modelProbabilities:DataPipe[Seq[(Double,Map[String,Double])],Seq[(Double,Map[String,Double])]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">modelProbabilities</span><span class="result">: <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</span>[<span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>])], <span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>])]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@modelProbabilities:io.github.mandar2812.dynaml.pipes.DataPipe[Seq[(Double,Map[String,Double])],Seq[(Double,Map[String,Double])]]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.optimization.AbstractCSA#mutate" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="mutate:(Map[String,Double],Double)=&gt;Map[String,Double]"></a>
       <a id="mutate:(Map[String,Double],Double)⇒Map[String,Double]"></a>
@@ -515,7 +605,7 @@
         <span class="name">mutate</span><span class="result">: (<span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>], <span class="extype" name="scala.Double">Double</span>) ⇒ <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.ProbGPCommMachine@mutate:(Map[String,Double],Double)=&gt;Map[String,Double]" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@mutate:(Map[String,Double],Double)=&gt;Map[String,Double]" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -532,7 +622,7 @@
         <span class="name">mutationTemperature</span><span class="params">(<span name="initialTemp">initialTemp: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="params">(<span name="k">k: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.ProbGPCommMachine@mutationTemperature(initialTemp:Double)(k:Int):Double" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@mutationTemperature(initialTemp:Double)(k:Int):Double" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -549,7 +639,7 @@
         <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.ProbGPCommMachine@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -566,7 +656,7 @@
         <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.ProbGPCommMachine@notify():Unit" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@notify():Unit" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -583,7 +673,7 @@
         <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.ProbGPCommMachine@notifyAll():Unit" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@notifyAll():Unit" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -600,28 +690,28 @@
         <span class="name">num_samples</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.ProbGPCommMachine@num_samples:Int" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@num_samples:Int" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="ModelTuner.html" class="extype" name="io.github.mandar2812.dynaml.optimization.ModelTuner">ModelTuner</a></dd></dl></div>
-    </li><li name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine#optimize" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="optimize(initialConfig:Map[String,Double],options:Map[String,String]):(io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel[T,I],Map[String,Double])"></a>
-      <a id="optimize(Map[String,Double],Map[String,String]):(AbstractGPRegressionModel[T,I],Map[String,Double])"></a>
+    </li><li name="io.github.mandar2812.dynaml.optimization.MixtureMachine#optimize" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="optimize(initialConfig:Map[String,Double],options:Map[String,String]):(io.github.mandar2812.dynaml.models.GenContinuousMixtureModel[T,I,Y,YDomain,YDomainVar,BaseDistr,W1,BaseProcess],scala.collection.immutable.Map[String,Double])"></a>
+      <a id="optimize(Map[String,Double],Map[String,String]):(GenContinuousMixtureModel[T,I,Y,YDomain,YDomainVar,BaseDistr,W1,BaseProcess],Map[String,Double])"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">optimize</span><span class="params">(<span name="initialConfig">initialConfig: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>]</span>, <span name="options">options: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: (<a href="../models/gp/AbstractGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel">AbstractGPRegressionModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine.I">I</span>], <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>])</span>
+        <span class="name">optimize</span><span class="params">(<span name="initialConfig">initialConfig: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>]</span>, <span name="options">options: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: (<a href="../models/GenContinuousMixtureModel.html" class="extype" name="io.github.mandar2812.dynaml.models.GenContinuousMixtureModel">GenContinuousMixtureModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.I">I</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.Y">Y</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.YDomain">YDomain</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.YDomainVar">YDomainVar</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.BaseDistr">BaseDistr</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.W1">W1</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.BaseProcess">BaseProcess</span>], <span class="extype" name="scala.collection.immutable.Map">Map</span>[<span class="extype" name="java.lang.String">String</span>, <span class="extype" name="scala.Double">Double</span>])</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.ProbGPCommMachine@optimize(initialConfig:Map[String,Double],options:Map[String,String]):(io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel[T,I],Map[String,Double])" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@optimize(initialConfig:Map[String,Double],options:Map[String,String]):(io.github.mandar2812.dynaml.models.GenContinuousMixtureModel[T,I,Y,YDomain,YDomainVar,BaseDistr,W1,BaseProcess],scala.collection.immutable.Map[String,Double])" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine">ProbGPCommMachine</a> → <a href="CoupledSimulatedAnnealing.html" class="extype" name="io.github.mandar2812.dynaml.optimization.CoupledSimulatedAnnealing">CoupledSimulatedAnnealing</a> → <a href="ModelTuner.html" class="extype" name="io.github.mandar2812.dynaml.optimization.ModelTuner">ModelTuner</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine">MixtureMachine</a> → <a href="ModelTuner.html" class="extype" name="io.github.mandar2812.dynaml.optimization.ModelTuner">ModelTuner</a></dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.optimization.AbstractCSA#performCSA" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="performCSA(initialConfig:Map[String,Double],options:Map[String,String]):List[(Double,Map[String,Double])]"></a>
       <a id="performCSA(Map[String,Double],Map[String,String]):List[(Double,Map[String,Double])]"></a>
@@ -634,160 +724,177 @@
         <span class="name">performCSA</span><span class="params">(<span name="initialConfig">initialConfig: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>]</span>, <span name="options">options: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">Map()</span></span>)</span><span class="result">: <span class="extype" name="scala.List">List</span>[(<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>])]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.ProbGPCommMachine@performCSA(initialConfig:Map[String,Double],options:Map[String,String]):List[(Double,Map[String,Double])]" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@performCSA(initialConfig:Map[String,Double],options:Map[String,String]):List[(Double,Map[String,Double])]" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractCSA.html" class="extype" name="io.github.mandar2812.dynaml.optimization.AbstractCSA">AbstractCSA</a></dd></dl></div>
-    </li><li name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine#setBaseLinePolicy" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="setBaseLinePolicy(p:String):ProbGPCommMachine.this.type"></a>
-      <a id="setBaseLinePolicy(String):ProbGPCommMachine.this.type"></a>
+    </li><li name="io.github.mandar2812.dynaml.optimization.MixtureMachine#policy" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="policy:String"></a>
+      <a id="policy:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">policy</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@policy:String" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.optimization.MixtureMachine#setBaseLinePolicy" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="setBaseLinePolicy(p:String):MixtureMachine.this.type"></a>
+      <a id="setBaseLinePolicy(String):MixtureMachine.this.type"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">setBaseLinePolicy</span><span class="params">(<span name="p">p: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine">ProbGPCommMachine</a>.this.type</span>
+        <span class="name">setBaseLinePolicy</span><span class="params">(<span name="p">p: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine">MixtureMachine</a>.this.type</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.ProbGPCommMachine@setBaseLinePolicy(p:String):ProbGPCommMachine.this.type" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@setBaseLinePolicy(p:String):MixtureMachine.this.type" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
     </li><li name="io.github.mandar2812.dynaml.optimization.AbstractCSA#setGridSize" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="setGridSize(s:Int):AbstractCSA.this.type"></a>
-      <a id="setGridSize(Int):ProbGPCommMachine.this.type"></a>
+      <a id="setGridSize(Int):MixtureMachine.this.type"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">setGridSize</span><span class="params">(<span name="s">s: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="" class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine">ProbGPCommMachine</a>.this.type</span>
+        <span class="name">setGridSize</span><span class="params">(<span name="s">s: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="" class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine">MixtureMachine</a>.this.type</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.ProbGPCommMachine@setGridSize(s:Int):AbstractCSA.this.type" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@setGridSize(s:Int):AbstractCSA.this.type" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractCSA.html" class="extype" name="io.github.mandar2812.dynaml.optimization.AbstractCSA">AbstractCSA</a> → <a href="AbstractGridSearch.html" class="extype" name="io.github.mandar2812.dynaml.optimization.AbstractGridSearch">AbstractGridSearch</a> → <a href="ModelTuner.html" class="extype" name="io.github.mandar2812.dynaml.optimization.ModelTuner">ModelTuner</a></dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.optimization.AbstractCSA#setLogScale" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="setLogScale(t:Boolean):AbstractCSA.this.type"></a>
-      <a id="setLogScale(Boolean):ProbGPCommMachine.this.type"></a>
+      <a id="setLogScale(Boolean):MixtureMachine.this.type"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">setLogScale</span><span class="params">(<span name="t">t: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="" class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine">ProbGPCommMachine</a>.this.type</span>
+        <span class="name">setLogScale</span><span class="params">(<span name="t">t: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="" class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine">MixtureMachine</a>.this.type</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.ProbGPCommMachine@setLogScale(t:Boolean):AbstractCSA.this.type" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@setLogScale(t:Boolean):AbstractCSA.this.type" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractCSA.html" class="extype" name="io.github.mandar2812.dynaml.optimization.AbstractCSA">AbstractCSA</a> → <a href="AbstractGridSearch.html" class="extype" name="io.github.mandar2812.dynaml.optimization.AbstractGridSearch">AbstractGridSearch</a> → <a href="ModelTuner.html" class="extype" name="io.github.mandar2812.dynaml.optimization.ModelTuner">ModelTuner</a></dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.optimization.AbstractCSA#setMaxIterations" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="setMaxIterations(m:Int):AbstractCSA.this.type"></a>
-      <a id="setMaxIterations(Int):ProbGPCommMachine.this.type"></a>
+      <a id="setMaxIterations(Int):MixtureMachine.this.type"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">setMaxIterations</span><span class="params">(<span name="m">m: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="" class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine">ProbGPCommMachine</a>.this.type</span>
+        <span class="name">setMaxIterations</span><span class="params">(<span name="m">m: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="" class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine">MixtureMachine</a>.this.type</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.ProbGPCommMachine@setMaxIterations(m:Int):AbstractCSA.this.type" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@setMaxIterations(m:Int):AbstractCSA.this.type" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractCSA.html" class="extype" name="io.github.mandar2812.dynaml.optimization.AbstractCSA">AbstractCSA</a></dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.optimization.ModelTuner#setNumSamples" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="setNumSamples(n:Int):ModelTuner.this.type"></a>
-      <a id="setNumSamples(Int):ProbGPCommMachine.this.type"></a>
+      <a id="setNumSamples(Int):MixtureMachine.this.type"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">setNumSamples</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="" class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine">ProbGPCommMachine</a>.this.type</span>
+        <span class="name">setNumSamples</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="" class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine">MixtureMachine</a>.this.type</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.ProbGPCommMachine@setNumSamples(n:Int):ModelTuner.this.type" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@setNumSamples(n:Int):ModelTuner.this.type" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ModelTuner.html" class="extype" name="io.github.mandar2812.dynaml.optimization.ModelTuner">ModelTuner</a></dd></dl></div>
-    </li><li name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine#setPolicy" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="setPolicy(p:String):ProbGPCommMachine.this.type"></a>
-      <a id="setPolicy(String):ProbGPCommMachine.this.type"></a>
+    </li><li name="io.github.mandar2812.dynaml.optimization.MixtureMachine#setPolicy" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="setPolicy(p:String):MixtureMachine.this.type"></a>
+      <a id="setPolicy(String):MixtureMachine.this.type"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">setPolicy</span><span class="params">(<span name="p">p: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine">ProbGPCommMachine</a>.this.type</span>
+        <span class="name">setPolicy</span><span class="params">(<span name="p">p: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine">MixtureMachine</a>.this.type</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.ProbGPCommMachine@setPolicy(p:String):ProbGPCommMachine.this.type" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@setPolicy(p:String):MixtureMachine.this.type" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
     </li><li name="io.github.mandar2812.dynaml.optimization.ModelTuner#setPrior" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="setPrior(p:Map[String,io.github.mandar2812.dynaml.probability.ContinuousRVWithDistr[Double,breeze.stats.distributions.ContinuousDistr[Double]]]):ModelTuner.this.type"></a>
-      <a id="setPrior(Map[String,ContinuousRVWithDistr[Double,ContinuousDistr[Double]]]):ProbGPCommMachine.this.type"></a>
+      <a id="setPrior(Map[String,ContinuousRVWithDistr[Double,ContinuousDistr[Double]]]):MixtureMachine.this.type"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">setPrior</span><span class="params">(<span name="p">p: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <a href="../probability/ContinuousRVWithDistr.html" class="extype" name="io.github.mandar2812.dynaml.probability.ContinuousRVWithDistr">ContinuousRVWithDistr</a>[<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="breeze.stats.distributions.ContinuousDistr">ContinuousDistr</span>[<span class="extype" name="scala.Double">Double</span>]]]</span>)</span><span class="result">: <a href="" class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine">ProbGPCommMachine</a>.this.type</span>
+        <span class="name">setPrior</span><span class="params">(<span name="p">p: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <a href="../probability/ContinuousRVWithDistr.html" class="extype" name="io.github.mandar2812.dynaml.probability.ContinuousRVWithDistr">ContinuousRVWithDistr</a>[<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="breeze.stats.distributions.ContinuousDistr">ContinuousDistr</span>[<span class="extype" name="scala.Double">Double</span>]]]</span>)</span><span class="result">: <a href="" class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine">MixtureMachine</a>.this.type</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.ProbGPCommMachine@setPrior(p:Map[String,io.github.mandar2812.dynaml.probability.ContinuousRVWithDistr[Double,breeze.stats.distributions.ContinuousDistr[Double]]]):ModelTuner.this.type" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@setPrior(p:Map[String,io.github.mandar2812.dynaml.probability.ContinuousRVWithDistr[Double,breeze.stats.distributions.ContinuousDistr[Double]]]):ModelTuner.this.type" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ModelTuner.html" class="extype" name="io.github.mandar2812.dynaml.optimization.ModelTuner">ModelTuner</a></dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.optimization.AbstractCSA#setStepSize" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="setStepSize(s:Double):AbstractCSA.this.type"></a>
-      <a id="setStepSize(Double):ProbGPCommMachine.this.type"></a>
+      <a id="setStepSize(Double):MixtureMachine.this.type"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">setStepSize</span><span class="params">(<span name="s">s: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <a href="" class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine">ProbGPCommMachine</a>.this.type</span>
+        <span class="name">setStepSize</span><span class="params">(<span name="s">s: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <a href="" class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine">MixtureMachine</a>.this.type</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.ProbGPCommMachine@setStepSize(s:Double):AbstractCSA.this.type" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@setStepSize(s:Double):AbstractCSA.this.type" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractCSA.html" class="extype" name="io.github.mandar2812.dynaml.optimization.AbstractCSA">AbstractCSA</a> → <a href="AbstractGridSearch.html" class="extype" name="io.github.mandar2812.dynaml.optimization.AbstractGridSearch">AbstractGridSearch</a> → <a href="ModelTuner.html" class="extype" name="io.github.mandar2812.dynaml.optimization.ModelTuner">ModelTuner</a></dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.optimization.AbstractCSA#setVariant" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="setVariant(v:String):AbstractCSA.this.type"></a>
-      <a id="setVariant(String):ProbGPCommMachine.this.type"></a>
+      <a id="setVariant(String):MixtureMachine.this.type"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">setVariant</span><span class="params">(<span name="v">v: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine">ProbGPCommMachine</a>.this.type</span>
+        <span class="name">setVariant</span><span class="params">(<span name="v">v: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine">MixtureMachine</a>.this.type</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.ProbGPCommMachine@setVariant(v:String):AbstractCSA.this.type" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@setVariant(v:String):AbstractCSA.this.type" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -804,7 +911,7 @@
         <span class="name">step</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.ProbGPCommMachine@step:Double" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@step:Double" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -821,24 +928,24 @@
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.ProbGPCommMachine@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.optimization.AbstractGridSearch#system" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="system:M"></a>
-      <a id="system:AbstractGPRegressionModel[T,I]"></a>
+      <a id="system:BaseProcess"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">system</span><span class="result">: <a href="../models/gp/AbstractGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel">AbstractGPRegressionModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine.I">I</span>]</span>
+        <span class="name">system</span><span class="result">: <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.BaseProcess">BaseProcess</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.ProbGPCommMachine@system:M" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@system:M" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -855,7 +962,7 @@
         <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.ProbGPCommMachine@toString():String" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@toString():String" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -872,7 +979,7 @@
         <span class="name">variant</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.ProbGPCommMachine@variant:String" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@variant:String" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -889,7 +996,7 @@
         <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.ProbGPCommMachine@wait():Unit" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@wait():Unit" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -912,7 +1019,7 @@
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.ProbGPCommMachine@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -935,7 +1042,7 @@
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.ProbGPCommMachine@wait(x$1:Long):Unit" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.optimization.MixtureMachine@wait(x$1:Long):Unit" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -955,16 +1062,12 @@
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="io.github.mandar2812.dynaml.optimization.CoupledSimulatedAnnealing">
-              <h3>Inherited from <a href="CoupledSimulatedAnnealing.html" class="extype" name="io.github.mandar2812.dynaml.optimization.CoupledSimulatedAnnealing">CoupledSimulatedAnnealing</a>[<a href="../models/gp/AbstractGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel">AbstractGPRegressionModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine.I">I</span>]]</h3>
-            </div><div class="parent" name="io.github.mandar2812.dynaml.optimization.GlobalOptimizer">
-              <h3>Inherited from <a href="GlobalOptimizer.html" class="extype" name="io.github.mandar2812.dynaml.optimization.GlobalOptimizer">GlobalOptimizer</a>[<a href="../models/gp/AbstractGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel">AbstractGPRegressionModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine.I">I</span>]]</h3>
-            </div><div class="parent" name="io.github.mandar2812.dynaml.optimization.AbstractCSA">
-              <h3>Inherited from <a href="AbstractCSA.html" class="extype" name="io.github.mandar2812.dynaml.optimization.AbstractCSA">AbstractCSA</a>[<a href="../models/gp/AbstractGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel">AbstractGPRegressionModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine.I">I</span>], <a href="../models/gp/AbstractGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel">AbstractGPRegressionModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine.I">I</span>]]</h3>
+        <div class="parent" name="io.github.mandar2812.dynaml.optimization.AbstractCSA">
+              <h3>Inherited from <a href="AbstractCSA.html" class="extype" name="io.github.mandar2812.dynaml.optimization.AbstractCSA">AbstractCSA</a>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.BaseProcess">BaseProcess</span>, <a href="../models/GenContinuousMixtureModel.html" class="extype" name="io.github.mandar2812.dynaml.models.GenContinuousMixtureModel">GenContinuousMixtureModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.I">I</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.Y">Y</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.YDomain">YDomain</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.YDomainVar">YDomainVar</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.BaseDistr">BaseDistr</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.W1">W1</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.BaseProcess">BaseProcess</span>]]</h3>
             </div><div class="parent" name="io.github.mandar2812.dynaml.optimization.AbstractGridSearch">
-              <h3>Inherited from <a href="AbstractGridSearch.html" class="extype" name="io.github.mandar2812.dynaml.optimization.AbstractGridSearch">AbstractGridSearch</a>[<a href="../models/gp/AbstractGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel">AbstractGPRegressionModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine.I">I</span>], <a href="../models/gp/AbstractGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel">AbstractGPRegressionModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine.I">I</span>]]</h3>
+              <h3>Inherited from <a href="AbstractGridSearch.html" class="extype" name="io.github.mandar2812.dynaml.optimization.AbstractGridSearch">AbstractGridSearch</a>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.BaseProcess">BaseProcess</span>, <a href="../models/GenContinuousMixtureModel.html" class="extype" name="io.github.mandar2812.dynaml.models.GenContinuousMixtureModel">GenContinuousMixtureModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.I">I</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.Y">Y</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.YDomain">YDomain</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.YDomainVar">YDomainVar</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.BaseDistr">BaseDistr</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.W1">W1</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.BaseProcess">BaseProcess</span>]]</h3>
             </div><div class="parent" name="io.github.mandar2812.dynaml.optimization.ModelTuner">
-              <h3>Inherited from <a href="ModelTuner.html" class="extype" name="io.github.mandar2812.dynaml.optimization.ModelTuner">ModelTuner</a>[<a href="../models/gp/AbstractGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel">AbstractGPRegressionModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine.I">I</span>], <a href="../models/gp/AbstractGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel">AbstractGPRegressionModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.ProbGPCommMachine.I">I</span>]]</h3>
+              <h3>Inherited from <a href="ModelTuner.html" class="extype" name="io.github.mandar2812.dynaml.optimization.ModelTuner">ModelTuner</a>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.BaseProcess">BaseProcess</span>, <a href="../models/GenContinuousMixtureModel.html" class="extype" name="io.github.mandar2812.dynaml.models.GenContinuousMixtureModel">GenContinuousMixtureModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.I">I</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.Y">Y</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.YDomain">YDomain</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.YDomainVar">YDomainVar</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.BaseDistr">BaseDistr</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.W1">W1</span>, <span class="extype" name="io.github.mandar2812.dynaml.optimization.MixtureMachine.BaseProcess">BaseProcess</span>]]</h3>
             </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">
