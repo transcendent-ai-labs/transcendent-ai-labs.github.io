@@ -1,9 +1,9 @@
 <!DOCTYPE html >
 <html>
         <head>
-          <title>IIDRandomVariable - io.github.mandar2812.dynaml.probability.IIDRandomVariable</title>
-          <meta name="description" content="IIDRandomVariable - io.github.mandar2812.dynaml.probability.IIDRandomVariable" />
-          <meta name="keywords" content="IIDRandomVariable io.github.mandar2812.dynaml.probability.IIDRandomVariable" />
+          <title>IIDDiscreteRVDistr - io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr</title>
+          <meta name="description" content="IIDDiscreteRVDistr - io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr" />
+          <meta name="keywords" content="IIDDiscreteRVDistr io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -16,7 +16,7 @@
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../../../index.html';
-            var hash = 'io.github.mandar2812.dynaml.probability.IIDRandomVariable';
+            var hash = 'io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr';
             var anchor = window.location.hash;
             var anchor_opt = '';
             if (anchor.length >= 1)
@@ -28,14 +28,14 @@
         </head>
         <body class="type">
       <div id="definition">
-        <a href="IIDRandomVariable$.html" title="See companion object"><img alt="Trait/Object" src="../../../../../lib/trait_to_object_big.png" /></a>
+        <a href="IIDDiscreteRVDistr$.html" title="See companion object"><img alt="Trait/Object" src="../../../../../lib/trait_to_object_big.png" /></a>
         <p id="owner"><a href="../../../../package.html" class="extype" name="io">io</a>.<a href="../../../package.html" class="extype" name="io.github">github</a>.<a href="../../package.html" class="extype" name="io.github.mandar2812">mandar2812</a>.<a href="../package.html" class="extype" name="io.github.mandar2812.dynaml">dynaml</a>.<a href="package.html" class="extype" name="io.github.mandar2812.dynaml.probability">probability</a></p>
-        <h1><a href="IIDRandomVariable$.html" title="See companion object">IIDRandomVariable</a></h1><h3><span class="morelinks"><div>
+        <h1><a href="IIDDiscreteRVDistr$.html" title="See companion object">IIDDiscreteRVDistr</a></h1><h3><span class="morelinks"><div>
             Related Docs:
-            <a href="IIDRandomVariable$.html" title="See companion object">object IIDRandomVariable</a>
+            <a href="IIDDiscreteRVDistr$.html" title="See companion object">object IIDDiscreteRVDistr</a>
             | <a href="package.html" class="extype" name="io.github.mandar2812.dynaml.probability">package probability</a>
           </div></span></h3><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDRandomVariable" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -47,19 +47,14 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <span class="name">IIDRandomVariable</span><span class="tparams">[<span name="D">D</span>, <span name="R">+R &lt;: <a href="RandomVariable.html" class="extype" name="io.github.mandar2812.dynaml.probability.RandomVariable">RandomVariable</a>[<span class="extype" name="io.github.mandar2812.dynaml.probability.IIDRandomVariable.D">D</span>]</span>]</span><span class="result"> extends <a href="RandomVariable.html" class="extype" name="io.github.mandar2812.dynaml.probability.RandomVariable">RandomVariable</a>[<span class="extype" name="scala.Stream">Stream</span>[<span class="extype" name="io.github.mandar2812.dynaml.probability.IIDRandomVariable.D">D</span>]]</span>
+        <span class="name">IIDDiscreteRVDistr</span><span class="tparams">[<span name="D">D</span>, <span name="Distr">+Distr &lt;: <span class="extype" name="breeze.stats.distributions.DiscreteDistr">DiscreteDistr</span>[<span class="extype" name="io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr.D">D</span>]</span>, <span name="R">+R &lt;: <a href="DiscreteRVWithDistr.html" class="extype" name="io.github.mandar2812.dynaml.probability.DiscreteRVWithDistr">DiscreteRVWithDistr</a>[<span class="extype" name="io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr.D">D</span>, <span class="extype" name="io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr.Distr">Distr</span>]</span>]</span><span class="result"> extends <a href="RandomVariable.html" class="extype" name="io.github.mandar2812.dynaml.probability.RandomVariable">RandomVariable</a>[<span class="extype" name="scala.Stream">Stream</span>[<span class="extype" name="io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr.D">D</span>]] with <a href="IIDRandomVarDistr.html" class="extype" name="io.github.mandar2812.dynaml.probability.IIDRandomVarDistr">IIDRandomVarDistr</a>[<span class="extype" name="io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr.D">D</span>, <span class="extype" name="io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr.Distr">Distr</span>, <span class="extype" name="io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr.R">R</span>]</span>
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>An independent and identically distributed
-<a href="RandomVariable.html" class="extype" name="io.github.mandar2812.dynaml.probability.RandomVariable">RandomVariable</a> represented as a <span class="extype" name="Stream">Stream</span>
-</p></div><dl class="paramcmts block"><dt class="tparam">D</dt><dd class="cmt"><p>The base domain</p></dd><dt class="tparam">R</dt><dd class="cmt"><p>Random variable defined over the base domain</p></dd></dl><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="RandomVariable.html" class="extype" name="io.github.mandar2812.dynaml.probability.RandomVariable">RandomVariable</a>[<span class="extype" name="scala.Stream">Stream</span>[<span class="extype" name="io.github.mandar2812.dynaml.probability.IIDRandomVariable.D">D</span>]], <span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
-        </div><div class="toggleContainer block">
-            <span class="toggle">Known Subclasses</span>
-            <div class="subClasses hiddenContent"><a href="IIDContinuousRVDistr.html" class="extype" name="io.github.mandar2812.dynaml.probability.IIDContinuousRVDistr">IIDContinuousRVDistr</a>, <a href="IIDDiscreteRVDistr.html" class="extype" name="io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr">IIDDiscreteRVDistr</a>, <a href="IIDRandomVarDistr.html" class="extype" name="io.github.mandar2812.dynaml.probability.IIDRandomVarDistr">IIDRandomVarDistr</a></div>
-          </div></div>
+          <div class="superTypes hiddenContent"><a href="IIDRandomVarDistr.html" class="extype" name="io.github.mandar2812.dynaml.probability.IIDRandomVarDistr">IIDRandomVarDistr</a>[<span class="extype" name="io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr.D">D</span>, <span class="extype" name="io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr.Distr">Distr</span>, <span class="extype" name="io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr.R">R</span>], <a href="RandomVarWithDistr.html" class="extype" name="io.github.mandar2812.dynaml.probability.RandomVarWithDistr">RandomVarWithDistr</a>[<span class="extype" name="scala.Stream">Stream</span>[<span class="extype" name="io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr.D">D</span>], <span class="extype" name="breeze.stats.distributions.Density">Density</span>[<span class="extype" name="scala.Stream">Stream</span>[<span class="extype" name="io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr.D">D</span>]] with <span class="extype" name="breeze.stats.distributions.Rand">Rand</span>[<span class="extype" name="scala.Stream">Stream</span>[<span class="extype" name="io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr.D">D</span>]]], <a href="HasDistribution.html" class="extype" name="io.github.mandar2812.dynaml.probability.HasDistribution">HasDistribution</a>[<span class="extype" name="scala.Stream">Stream</span>[<span class="extype" name="io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr.D">D</span>]], <a href="IIDRandomVariable.html" class="extype" name="io.github.mandar2812.dynaml.probability.IIDRandomVariable">IIDRandomVariable</a>[<span class="extype" name="io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr.D">D</span>, <span class="extype" name="io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr.R">R</span>], <a href="RandomVariable.html" class="extype" name="io.github.mandar2812.dynaml.probability.RandomVariable">RandomVariable</a>[<span class="extype" name="scala.Stream">Stream</span>[<span class="extype" name="io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr.D">D</span>]], <span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
         
 
       <div id="mbrsel">
@@ -76,7 +71,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="io.github.mandar2812.dynaml.probability.IIDRandomVariable"><span>IIDRandomVariable</span></li><li class="in" name="io.github.mandar2812.dynaml.probability.RandomVariable"><span>RandomVariable</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr"><span>IIDDiscreteRVDistr</span></li><li class="in" name="io.github.mandar2812.dynaml.probability.IIDRandomVarDistr"><span>IIDRandomVarDistr</span></li><li class="in" name="io.github.mandar2812.dynaml.probability.RandomVarWithDistr"><span>RandomVarWithDistr</span></li><li class="in" name="io.github.mandar2812.dynaml.probability.HasDistribution"><span>HasDistribution</span></li><li class="in" name="io.github.mandar2812.dynaml.probability.IIDRandomVariable"><span>IIDRandomVariable</span></li><li class="in" name="io.github.mandar2812.dynaml.probability.RandomVariable"><span>RandomVariable</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -99,7 +94,7 @@
 
         <div id="values" class="values members">
               <h3>Abstract Value Members</h3>
-              <ol><li name="io.github.mandar2812.dynaml.probability.IIDRandomVariable#baseRandomVariable" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+              <ol><li name="io.github.mandar2812.dynaml.probability.IIDRandomVarDistr#baseRandomVariable" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="baseRandomVariable:R"></a>
       <a id="baseRandomVariable:R"></a>
       <h4 class="signature">
@@ -108,15 +103,15 @@
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">baseRandomVariable</span><span class="result">: <span class="extype" name="io.github.mandar2812.dynaml.probability.IIDRandomVariable.R">R</span></span>
+        <span class="name">baseRandomVariable</span><span class="result">: <span class="extype" name="io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr.R">R</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDRandomVariable@baseRandomVariable:R" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr@baseRandomVariable:R" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
-    </li><li name="io.github.mandar2812.dynaml.probability.IIDRandomVariable#num" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="IIDRandomVarDistr.html" class="extype" name="io.github.mandar2812.dynaml.probability.IIDRandomVarDistr">IIDRandomVarDistr</a> → <a href="IIDRandomVariable.html" class="extype" name="io.github.mandar2812.dynaml.probability.IIDRandomVariable">IIDRandomVariable</a></dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.probability.IIDRandomVarDistr#num" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="num:Int"></a>
       <a id="num:Int"></a>
       <h4 class="signature">
@@ -128,11 +123,11 @@
         <span class="name">num</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDRandomVariable@num:Int" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr@num:Int" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="IIDRandomVarDistr.html" class="extype" name="io.github.mandar2812.dynaml.probability.IIDRandomVarDistr">IIDRandomVarDistr</a> → <a href="IIDRandomVariable.html" class="extype" name="io.github.mandar2812.dynaml.probability.IIDRandomVariable">IIDRandomVariable</a></dd></dl></div>
     </li></ol>
             </div>
 
@@ -150,7 +145,7 @@
         <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDRandomVariable@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr@!=(x$1:Any):Boolean" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -167,11 +162,30 @@
         <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDRandomVariable@##():Int" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr@##():Int" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.probability.RandomVarWithDistr#:*" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id=":*[Domain1,Dist1&lt;:breeze.stats.distributions.Density[Domain1]withbreeze.stats.distributions.Rand[Domain1]](other:io.github.mandar2812.dynaml.probability.RandomVarWithDistr[Domain1,Dist1]):io.github.mandar2812.dynaml.probability.RandomVarWithDistr[(Domain,Domain1),io.github.mandar2812.dynaml.probability.distributions.GenericDistribution[(Domain,Domain1)]]"></a>
+      <a id=":*[Domain1,Dist1&lt;:Density[Domain1]withRand[Domain1]](RandomVarWithDistr[Domain1,Dist1]):RandomVarWithDistr[(Stream[D],Domain1),GenericDistribution[(Stream[D],Domain1)]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $colon$times" class="name">:*</span><span class="tparams">[<span name="Domain1">Domain1</span>, <span name="Dist1">Dist1 &lt;: <span class="extype" name="breeze.stats.distributions.Density">Density</span>[<span class="extype" name="io.github.mandar2812.dynaml.probability.RandomVarWithDistr.:*.Domain1">Domain1</span>] with <span class="extype" name="breeze.stats.distributions.Rand">Rand</span>[<span class="extype" name="io.github.mandar2812.dynaml.probability.RandomVarWithDistr.:*.Domain1">Domain1</span>]</span>]</span><span class="params">(<span name="other">other: <a href="RandomVarWithDistr.html" class="extype" name="io.github.mandar2812.dynaml.probability.RandomVarWithDistr">RandomVarWithDistr</a>[<span class="extype" name="io.github.mandar2812.dynaml.probability.RandomVarWithDistr.:*.Domain1">Domain1</span>, <span class="extype" name="io.github.mandar2812.dynaml.probability.RandomVarWithDistr.:*.Dist1">Dist1</span>]</span>)</span><span class="result">: <a href="RandomVarWithDistr.html" class="extype" name="io.github.mandar2812.dynaml.probability.RandomVarWithDistr">RandomVarWithDistr</a>[(<span class="extype" name="scala.Stream">Stream</span>[<span class="extype" name="io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr.D">D</span>], <span class="extype" name="io.github.mandar2812.dynaml.probability.RandomVarWithDistr.:*.Domain1">Domain1</span>), <a href="distributions/GenericDistribution.html" class="extype" name="io.github.mandar2812.dynaml.probability.distributions.GenericDistribution">GenericDistribution</a>[(<span class="extype" name="scala.Stream">Stream</span>[<span class="extype" name="io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr.D">D</span>], <span class="extype" name="io.github.mandar2812.dynaml.probability.RandomVarWithDistr.:*.Domain1">Domain1</span>)]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr@:*[Domain1,Dist1&lt;:breeze.stats.distributions.Density[Domain1]withbreeze.stats.distributions.Rand[Domain1]](other:io.github.mandar2812.dynaml.probability.RandomVarWithDistr[Domain1,Dist1]):io.github.mandar2812.dynaml.probability.RandomVarWithDistr[(Domain,Domain1),io.github.mandar2812.dynaml.probability.distributions.GenericDistribution[(Domain,Domain1)]]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Cartesian product with another random variables which
+has a defined probability distribution.</p><div class="fullcomment"><div class="comment cmt"><p>Cartesian product with another random variables which
+has a defined probability distribution.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="RandomVarWithDistr.html" class="extype" name="io.github.mandar2812.dynaml.probability.RandomVarWithDistr">RandomVarWithDistr</a></dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.probability.RandomVariable#:*" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id=":*[Domain1](other:io.github.mandar2812.dynaml.probability.RandomVariable[Domain1]):io.github.mandar2812.dynaml.probability.RandomVariable[(Domain,Domain1)]"></a>
       <a id=":*[Domain1](RandomVariable[Domain1]):RandomVariable[(Stream[D],Domain1)]"></a>
@@ -181,10 +195,10 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $colon$times" class="name">:*</span><span class="tparams">[<span name="Domain1">Domain1</span>]</span><span class="params">(<span name="other">other: <a href="RandomVariable.html" class="extype" name="io.github.mandar2812.dynaml.probability.RandomVariable">RandomVariable</a>[<span class="extype" name="io.github.mandar2812.dynaml.probability.RandomVariable.:*.Domain1">Domain1</span>]</span>)</span><span class="result">: <a href="RandomVariable.html" class="extype" name="io.github.mandar2812.dynaml.probability.RandomVariable">RandomVariable</a>[(<span class="extype" name="scala.Stream">Stream</span>[<span class="extype" name="io.github.mandar2812.dynaml.probability.IIDRandomVariable.D">D</span>], <span class="extype" name="io.github.mandar2812.dynaml.probability.RandomVariable.:*.Domain1">Domain1</span>)]</span>
+        <span title="gt4s: $colon$times" class="name">:*</span><span class="tparams">[<span name="Domain1">Domain1</span>]</span><span class="params">(<span name="other">other: <a href="RandomVariable.html" class="extype" name="io.github.mandar2812.dynaml.probability.RandomVariable">RandomVariable</a>[<span class="extype" name="io.github.mandar2812.dynaml.probability.RandomVariable.:*.Domain1">Domain1</span>]</span>)</span><span class="result">: <a href="RandomVariable.html" class="extype" name="io.github.mandar2812.dynaml.probability.RandomVariable">RandomVariable</a>[(<span class="extype" name="scala.Stream">Stream</span>[<span class="extype" name="io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr.D">D</span>], <span class="extype" name="io.github.mandar2812.dynaml.probability.RandomVariable.:*.Domain1">Domain1</span>)]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDRandomVariable@:*[Domain1](other:io.github.mandar2812.dynaml.probability.RandomVariable[Domain1]):io.github.mandar2812.dynaml.probability.RandomVariable[(Domain,Domain1)]" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr@:*[Domain1](other:io.github.mandar2812.dynaml.probability.RandomVariable[Domain1]):io.github.mandar2812.dynaml.probability.RandomVariable[(Domain,Domain1)]" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -205,7 +219,7 @@ two random variables.
         <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDRandomVariable@==(x$1:Any):Boolean" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr@==(x$1:Any):Boolean" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -219,10 +233,10 @@ two random variables.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $greater" class="name">&gt;</span><span class="tparams">[<span name="OtherDomain">OtherDomain</span>]</span><span class="params">(<span name="transformation">transformation: <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</span>[<span class="extype" name="scala.Stream">Stream</span>[<span class="extype" name="io.github.mandar2812.dynaml.probability.IIDRandomVariable.D">D</span>], <span class="extype" name="io.github.mandar2812.dynaml.probability.RandomVariable.&gt;.OtherDomain">OtherDomain</span>]</span>)</span><span class="result">: <a href="MeasurableFunction.html" class="extype" name="io.github.mandar2812.dynaml.probability.MeasurableFunction">MeasurableFunction</a>[<span class="extype" name="scala.Stream">Stream</span>[<span class="extype" name="io.github.mandar2812.dynaml.probability.IIDRandomVariable.D">D</span>], <span class="extype" name="io.github.mandar2812.dynaml.probability.RandomVariable.&gt;.OtherDomain">OtherDomain</span>, <a href="RandomVariable.html" class="extype" name="io.github.mandar2812.dynaml.probability.RandomVariable">RandomVariable</a>[<span class="extype" name="scala.Stream">Stream</span>[<span class="extype" name="io.github.mandar2812.dynaml.probability.IIDRandomVariable.D">D</span>]]]</span>
+        <span title="gt4s: $greater" class="name">&gt;</span><span class="tparams">[<span name="OtherDomain">OtherDomain</span>]</span><span class="params">(<span name="transformation">transformation: <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</span>[<span class="extype" name="scala.Stream">Stream</span>[<span class="extype" name="io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr.D">D</span>], <span class="extype" name="io.github.mandar2812.dynaml.probability.RandomVariable.&gt;.OtherDomain">OtherDomain</span>]</span>)</span><span class="result">: <a href="MeasurableFunction.html" class="extype" name="io.github.mandar2812.dynaml.probability.MeasurableFunction">MeasurableFunction</a>[<span class="extype" name="scala.Stream">Stream</span>[<span class="extype" name="io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr.D">D</span>], <span class="extype" name="io.github.mandar2812.dynaml.probability.RandomVariable.&gt;.OtherDomain">OtherDomain</span>, <a href="RandomVariable.html" class="extype" name="io.github.mandar2812.dynaml.probability.RandomVariable">RandomVariable</a>[<span class="extype" name="scala.Stream">Stream</span>[<span class="extype" name="io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr.D">D</span>]]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDRandomVariable@&gt;[OtherDomain](transformation:io.github.mandar2812.dynaml.pipes.DataPipe[Domain,OtherDomain]):io.github.mandar2812.dynaml.probability.MeasurableFunction[Domain,OtherDomain,io.github.mandar2812.dynaml.probability.RandomVariable[Domain]]" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr@&gt;[OtherDomain](transformation:io.github.mandar2812.dynaml.pipes.DataPipe[Domain,OtherDomain]):io.github.mandar2812.dynaml.probability.MeasurableFunction[Domain,OtherDomain,io.github.mandar2812.dynaml.probability.RandomVariable[Domain]]" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -243,7 +257,7 @@ morphed random variable on <span class="extype" name="OtherDomain">OtherDomain</
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDRandomVariable@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr@asInstanceOf[T0]:T0" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -260,7 +274,7 @@ morphed random variable on <span class="extype" name="OtherDomain">OtherDomain</
         <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDRandomVariable@clone():Object" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr@clone():Object" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -280,10 +294,10 @@ morphed random variable on <span class="extype" name="OtherDomain">OtherDomain</
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">draw</span><span class="result">: <span class="extype" name="scala.Stream">Stream</span>[<span class="extype" name="io.github.mandar2812.dynaml.probability.IIDRandomVariable.D">D</span>]</span>
+        <span class="name">draw</span><span class="result">: <span class="extype" name="scala.Stream">Stream</span>[<span class="extype" name="io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr.D">D</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDRandomVariable@draw:Domain" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr@draw:Domain" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -302,7 +316,7 @@ morphed random variable on <span class="extype" name="OtherDomain">OtherDomain</
         <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDRandomVariable@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -319,7 +333,7 @@ morphed random variable on <span class="extype" name="OtherDomain">OtherDomain</
         <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDRandomVariable@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr@equals(x$1:Any):Boolean" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -336,7 +350,7 @@ morphed random variable on <span class="extype" name="OtherDomain">OtherDomain</
         <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDRandomVariable@finalize():Unit" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr@finalize():Unit" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -359,7 +373,7 @@ morphed random variable on <span class="extype" name="OtherDomain">OtherDomain</
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDRandomVariable@getClass():Class[_]" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr@getClass():Class[_]" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -376,28 +390,28 @@ morphed random variable on <span class="extype" name="OtherDomain">OtherDomain</
         <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDRandomVariable@hashCode():Int" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr@hashCode():Int" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="io.github.mandar2812.dynaml.probability.RandomVariable#iid" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="iid(n:Int):io.github.mandar2812.dynaml.probability.IIDRandomVariable[Domain,io.github.mandar2812.dynaml.probability.RandomVariable[Domain]]"></a>
-      <a id="iid(Int):IIDRandomVariable[Stream[D],RandomVariable[Stream[D]]]"></a>
+    </li><li name="io.github.mandar2812.dynaml.probability.RandomVarWithDistr#iid" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="iid(n:Int):io.github.mandar2812.dynaml.probability.RandomVariable[Stream[Domain]]withio.github.mandar2812.dynaml.probability.IIDRandomVariable[Domain,io.github.mandar2812.dynaml.probability.RandomVarWithDistr[Domain,Dist]]"></a>
+      <a id="iid(Int):RandomVariable[Stream[Stream[D]]]withIIDRandomVariable[Stream[D],RandomVarWithDistr[Stream[D],Density[Stream[D]]withRand[Stream[D]]]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">iid</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="" class="extype" name="io.github.mandar2812.dynaml.probability.IIDRandomVariable">IIDRandomVariable</a>[<span class="extype" name="scala.Stream">Stream</span>[<span class="extype" name="io.github.mandar2812.dynaml.probability.IIDRandomVariable.D">D</span>], <a href="RandomVariable.html" class="extype" name="io.github.mandar2812.dynaml.probability.RandomVariable">RandomVariable</a>[<span class="extype" name="scala.Stream">Stream</span>[<span class="extype" name="io.github.mandar2812.dynaml.probability.IIDRandomVariable.D">D</span>]]]</span>
+        <span class="name">iid</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="RandomVariable.html" class="extype" name="io.github.mandar2812.dynaml.probability.RandomVariable">RandomVariable</a>[<span class="extype" name="scala.Stream">Stream</span>[<span class="extype" name="scala.Stream">Stream</span>[<span class="extype" name="io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr.D">D</span>]]] with <a href="IIDRandomVariable.html" class="extype" name="io.github.mandar2812.dynaml.probability.IIDRandomVariable">IIDRandomVariable</a>[<span class="extype" name="scala.Stream">Stream</span>[<span class="extype" name="io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr.D">D</span>], <a href="RandomVarWithDistr.html" class="extype" name="io.github.mandar2812.dynaml.probability.RandomVarWithDistr">RandomVarWithDistr</a>[<span class="extype" name="scala.Stream">Stream</span>[<span class="extype" name="io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr.D">D</span>], <span class="extype" name="breeze.stats.distributions.Density">Density</span>[<span class="extype" name="scala.Stream">Stream</span>[<span class="extype" name="io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr.D">D</span>]] with <span class="extype" name="breeze.stats.distributions.Rand">Rand</span>[<span class="extype" name="scala.Stream">Stream</span>[<span class="extype" name="io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr.D">D</span>]]]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDRandomVariable@iid(n:Int):io.github.mandar2812.dynaml.probability.IIDRandomVariable[Domain,io.github.mandar2812.dynaml.probability.RandomVariable[Domain]]" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr@iid(n:Int):io.github.mandar2812.dynaml.probability.RandomVariable[Stream[Domain]]withio.github.mandar2812.dynaml.probability.IIDRandomVariable[Domain,io.github.mandar2812.dynaml.probability.RandomVarWithDistr[Domain,Dist]]" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Create an iid random variable from the current (this)</p><div class="fullcomment"><div class="comment cmt"><p>Create an iid random variable from the current (this)</p></div><dl class="paramcmts block"><dt class="param">n</dt><dd class="cmt"><p>The number of iid samples of the base random variable.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="RandomVariable.html" class="extype" name="io.github.mandar2812.dynaml.probability.RandomVariable">RandomVariable</a></dd></dl></div>
+      <p class="shortcomment cmt">Create an iid random variable from the current (this)</p><div class="fullcomment"><div class="comment cmt"><p>Create an iid random variable from the current (this)</p></div><dl class="paramcmts block"><dt class="param">n</dt><dd class="cmt"><p>The number of iid samples of the base random variable.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="RandomVarWithDistr.html" class="extype" name="io.github.mandar2812.dynaml.probability.RandomVarWithDistr">RandomVarWithDistr</a> → <a href="RandomVariable.html" class="extype" name="io.github.mandar2812.dynaml.probability.RandomVariable">RandomVariable</a></dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -410,7 +424,7 @@ morphed random variable on <span class="extype" name="OtherDomain">OtherDomain</
         <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDRandomVariable@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -427,7 +441,7 @@ morphed random variable on <span class="extype" name="OtherDomain">OtherDomain</
         <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDRandomVariable@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -444,7 +458,7 @@ morphed random variable on <span class="extype" name="OtherDomain">OtherDomain</
         <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDRandomVariable@notify():Unit" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr@notify():Unit" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -461,12 +475,12 @@ morphed random variable on <span class="extype" name="OtherDomain">OtherDomain</
         <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDRandomVariable@notifyAll():Unit" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr@notifyAll():Unit" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="io.github.mandar2812.dynaml.probability.IIDRandomVariable#sample" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+    </li><li name="io.github.mandar2812.dynaml.probability.IIDRandomVarDistr#sample" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="sample:io.github.mandar2812.dynaml.pipes.DataPipe[Unit,scala.collection.immutable.Stream[D]]"></a>
       <a id="sample:DataPipe[Unit,Stream[D]]"></a>
       <h4 class="signature">
@@ -475,16 +489,16 @@ morphed random variable on <span class="extype" name="OtherDomain">OtherDomain</
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">sample</span><span class="result">: <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</span>[<span class="extype" name="scala.Unit">Unit</span>, <span class="extype" name="scala.collection.immutable.Stream">Stream</span>[<span class="extype" name="io.github.mandar2812.dynaml.probability.IIDRandomVariable.D">D</span>]]</span>
+        <span class="name">sample</span><span class="result">: <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</span>[<span class="extype" name="scala.Unit">Unit</span>, <span class="extype" name="scala.collection.immutable.Stream">Stream</span>[<span class="extype" name="io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr.D">D</span>]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDRandomVariable@sample:io.github.mandar2812.dynaml.pipes.DataPipe[Unit,scala.collection.immutable.Stream[D]]" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr@sample:io.github.mandar2812.dynaml.pipes.DataPipe[Unit,scala.collection.immutable.Stream[D]]" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Generate a sample from
 the random variable</p><div class="fullcomment"><div class="comment cmt"><p>Generate a sample from
-the random variable</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="io.github.mandar2812.dynaml.probability.IIDRandomVariable">IIDRandomVariable</a> → <a href="RandomVariable.html" class="extype" name="io.github.mandar2812.dynaml.probability.RandomVariable">RandomVariable</a></dd></dl></div>
+the random variable</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="IIDRandomVarDistr.html" class="extype" name="io.github.mandar2812.dynaml.probability.IIDRandomVarDistr">IIDRandomVarDistr</a> → <a href="IIDRandomVariable.html" class="extype" name="io.github.mandar2812.dynaml.probability.IIDRandomVariable">IIDRandomVariable</a> → <a href="RandomVariable.html" class="extype" name="io.github.mandar2812.dynaml.probability.RandomVariable">RandomVariable</a></dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
@@ -497,7 +511,7 @@ the random variable</p></div><dl class="attributes block"> <dt>Definition Classe
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDRandomVariable@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -514,11 +528,33 @@ the random variable</p></div><dl class="attributes block"> <dt>Definition Classe
         <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDRandomVariable@toString():String" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr@toString():String" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr#underlyingDist" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="underlyingDist:io.github.mandar2812.dynaml.probability.distributions.AbstractDiscreteDistr[Stream[D]]"></a>
+      <a id="underlyingDist:AbstractDiscreteDistr[Stream[D]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">underlyingDist</span><span class="result">: <a href="distributions/AbstractDiscreteDistr.html" class="extype" name="io.github.mandar2812.dynaml.probability.distributions.AbstractDiscreteDistr">AbstractDiscreteDistr</a>[<span class="extype" name="scala.Stream">Stream</span>[<span class="extype" name="io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr.D">D</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr@underlyingDist:io.github.mandar2812.dynaml.probability.distributions.AbstractDiscreteDistr[Stream[D]]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The actual probability density
+function is represented as a breeze
+<span class="extype" name="Density">Density</span> object.</p><div class="fullcomment"><div class="comment cmt"><p>The actual probability density
+function is represented as a breeze
+<span class="extype" name="Density">Density</span> object.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr">IIDDiscreteRVDistr</a> → <a href="IIDRandomVarDistr.html" class="extype" name="io.github.mandar2812.dynaml.probability.IIDRandomVarDistr">IIDRandomVarDistr</a> → <a href="RandomVarWithDistr.html" class="extype" name="io.github.mandar2812.dynaml.probability.RandomVarWithDistr">RandomVarWithDistr</a> → <a href="HasDistribution.html" class="extype" name="io.github.mandar2812.dynaml.probability.HasDistribution">HasDistribution</a></dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>
@@ -531,7 +567,7 @@ the random variable</p></div><dl class="attributes block"> <dt>Definition Classe
         <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDRandomVariable@wait():Unit" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr@wait():Unit" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -554,7 +590,7 @@ the random variable</p></div><dl class="attributes block"> <dt>Definition Classe
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDRandomVariable@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -577,7 +613,7 @@ the random variable</p></div><dl class="attributes block"> <dt>Definition Classe
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDRandomVariable@wait(x$1:Long):Unit" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr@wait(x$1:Long):Unit" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -597,8 +633,16 @@ the random variable</p></div><dl class="attributes block"> <dt>Definition Classe
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="io.github.mandar2812.dynaml.probability.RandomVariable">
-              <h3>Inherited from <a href="RandomVariable.html" class="extype" name="io.github.mandar2812.dynaml.probability.RandomVariable">RandomVariable</a>[<span class="extype" name="scala.Stream">Stream</span>[<span class="extype" name="io.github.mandar2812.dynaml.probability.IIDRandomVariable.D">D</span>]]</h3>
+        <div class="parent" name="io.github.mandar2812.dynaml.probability.IIDRandomVarDistr">
+              <h3>Inherited from <a href="IIDRandomVarDistr.html" class="extype" name="io.github.mandar2812.dynaml.probability.IIDRandomVarDistr">IIDRandomVarDistr</a>[<span class="extype" name="io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr.D">D</span>, <span class="extype" name="io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr.Distr">Distr</span>, <span class="extype" name="io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr.R">R</span>]</h3>
+            </div><div class="parent" name="io.github.mandar2812.dynaml.probability.RandomVarWithDistr">
+              <h3>Inherited from <a href="RandomVarWithDistr.html" class="extype" name="io.github.mandar2812.dynaml.probability.RandomVarWithDistr">RandomVarWithDistr</a>[<span class="extype" name="scala.Stream">Stream</span>[<span class="extype" name="io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr.D">D</span>], <span class="extype" name="breeze.stats.distributions.Density">Density</span>[<span class="extype" name="scala.Stream">Stream</span>[<span class="extype" name="io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr.D">D</span>]] with <span class="extype" name="breeze.stats.distributions.Rand">Rand</span>[<span class="extype" name="scala.Stream">Stream</span>[<span class="extype" name="io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr.D">D</span>]]]</h3>
+            </div><div class="parent" name="io.github.mandar2812.dynaml.probability.HasDistribution">
+              <h3>Inherited from <a href="HasDistribution.html" class="extype" name="io.github.mandar2812.dynaml.probability.HasDistribution">HasDistribution</a>[<span class="extype" name="scala.Stream">Stream</span>[<span class="extype" name="io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr.D">D</span>]]</h3>
+            </div><div class="parent" name="io.github.mandar2812.dynaml.probability.IIDRandomVariable">
+              <h3>Inherited from <a href="IIDRandomVariable.html" class="extype" name="io.github.mandar2812.dynaml.probability.IIDRandomVariable">IIDRandomVariable</a>[<span class="extype" name="io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr.D">D</span>, <span class="extype" name="io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr.R">R</span>]</h3>
+            </div><div class="parent" name="io.github.mandar2812.dynaml.probability.RandomVariable">
+              <h3>Inherited from <a href="RandomVariable.html" class="extype" name="io.github.mandar2812.dynaml.probability.RandomVariable">RandomVariable</a>[<span class="extype" name="scala.Stream">Stream</span>[<span class="extype" name="io.github.mandar2812.dynaml.probability.IIDDiscreteRVDistr.D">D</span>]]</h3>
             </div><div class="parent" name="scala.Serializable">
               <h3>Inherited from <span class="extype" name="scala.Serializable">Serializable</span></h3>
             </div><div class="parent" name="java.io.Serializable">
