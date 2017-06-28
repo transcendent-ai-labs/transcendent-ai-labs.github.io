@@ -66,7 +66,27 @@
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="io.github.mandar2812.dynaml.analysis.DifferentiableMap" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+              <ol><li name="io.github.mandar2812.dynaml.analysis.BSplineGenerator" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="BSplineGeneratorextendsMetaPipe21[Int,Int,Double,Double]"></a>
+      <a id="BSplineGenerator:BSplineGenerator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="BSplineGenerator.html"><span class="name">BSplineGenerator</span></a><span class="result"> extends <span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe21">MetaPipe21</span>[<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Double">Double</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.package@BSplineGeneratorextendsMetaPipe21[Int,Int,Double,Double]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">B-Spline generator as described in
+<a href="http://ftp.cs.wisc.edu/Approx/bsplbasic.pdf">B(asic)-Spline Basics</a> by Carl de Boor.</a></p><div class="fullcomment"><div class="comment cmt"><p>B-Spline generator as described in
+<a href="http://ftp.cs.wisc.edu/Approx/bsplbasic.pdf">B(asic)-Spline Basics</a> by Carl de Boor.</p><p>B<sub>i,k</sub>(t) :=
+&omega;<sub>i,k</sub>(t) B<sub>i,k-1</sub>(t) + (1 - &omega;<sub>i+1,k</sub>(t)) B<sub>i+1,k-1</sub></p></div></div>
+    </li><li name="io.github.mandar2812.dynaml.analysis.DifferentiableMap" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="DifferentiableMap[S,D,J]extendsDataPipe[S,D]"></a>
       <a id="DifferentiableMap[S,D,J]:DifferentiableMap[S,D,J]"></a>
       <h4 class="signature">
@@ -176,7 +196,60 @@ as well as Jacobian of the inverse.</p>
 
         <div id="values" class="values members">
               <h3>Value Members</h3>
-              <ol><li name="io.github.mandar2812.dynaml.analysis.DifferentiableMap" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+              <ol><li name="io.github.mandar2812.dynaml.analysis.BSplineGenerator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BSplineGenerator"></a>
+      <a id="BSplineGenerator:BSplineGenerator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="BSplineGenerator$.html"><span class="name">BSplineGenerator</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.package@BSplineGenerator" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The <a href="BSplineGenerator.html" class="extype" name="io.github.mandar2812.dynaml.analysis.BSplineGenerator">BSplineGenerator</a> companion object has convenience methods for
+creating arbitrary b-spline generators from knot sequences.</p>
+    </li><li name="io.github.mandar2812.dynaml.analysis.BernsteinSplineGenerator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BernsteinSplineGenerator"></a>
+      <a id="BernsteinSplineGenerator:BernsteinSplineGenerator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="BernsteinSplineGenerator$.html"><span class="name">BernsteinSplineGenerator</span></a><span class="result"> extends <a href="BSplineGenerator.html" class="extype" name="io.github.mandar2812.dynaml.analysis.BSplineGenerator">BSplineGenerator</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.package@BernsteinSplineGenerator" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Bernstein B-Splines have knots as (.....0011....)
+</p>
+    </li><li name="io.github.mandar2812.dynaml.analysis.CardinalBSplineGenerator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CardinalBSplineGenerator"></a>
+      <a id="CardinalBSplineGenerator:CardinalBSplineGenerator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="CardinalBSplineGenerator$.html"><span class="name">CardinalBSplineGenerator</span></a><span class="result"> extends <a href="BSplineGenerator.html" class="extype" name="io.github.mandar2812.dynaml.analysis.BSplineGenerator">BSplineGenerator</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.package@CardinalBSplineGenerator" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Cardinal B-Splines have knots as the sequence of integers.</p>
+    </li><li name="io.github.mandar2812.dynaml.analysis.DifferentiableMap" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="DifferentiableMap"></a>
       <a id="DifferentiableMap:DifferentiableMap"></a>
       <h4 class="signature">
