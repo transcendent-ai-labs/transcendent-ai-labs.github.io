@@ -172,29 +172,7 @@ bi-infinite sequence of knots (specified as a <span class="extype" name="DataPip
 </p></div><dl class="paramcmts block"><dt class="param">knotFunction</dt><dd class="cmt"><p>A <span class="extype" name="DataPipe">DataPipe</span> from <span class="extype" name="Int">Int</span> to <span class="extype" name="Double">Double</span> which outputs
                     the knot for any index.</p></dd><dt>returns</dt><dd class="cmt"><p>a <a href="BSplineGenerator.html" class="extype" name="io.github.mandar2812.dynaml.analysis.BSplineGenerator">BSplineGenerator</a> instance.</p></dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.analysis.BSplineGenerator#apply" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="apply(knotFunction:Int=&gt;Double):io.github.mandar2812.dynaml.analysis.BSplineGenerator"></a>
-      <a id="apply((Int)⇒Double):BSplineGenerator"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">apply</span><span class="params">(<span name="knotFunction">knotFunction: (<span class="extype" name="scala.Int">Int</span>) ⇒ <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <a href="BSplineGenerator.html" class="extype" name="io.github.mandar2812.dynaml.analysis.BSplineGenerator">BSplineGenerator</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.BSplineGenerator$@apply(knotFunction:Int=&gt;Double):io.github.mandar2812.dynaml.analysis.BSplineGenerator" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Create a b-spline generator from a
-bi-infinite sequence of knots (specified as a function)
-</p><div class="fullcomment"><div class="comment cmt"><p>Create a b-spline generator from a
-bi-infinite sequence of knots (specified as a function)
-</p></div><dl class="paramcmts block"><dt class="param">knotFunction</dt><dd class="cmt"><p>A function from <span class="extype" name="Int">Int</span> to <span class="extype" name="Double">Double</span> which outputs
-                    the knot for any index.</p></dd><dt>returns</dt><dd class="cmt"><p>a <a href="BSplineGenerator.html" class="extype" name="io.github.mandar2812.dynaml.analysis.BSplineGenerator">BSplineGenerator</a> instance.</p></dd></dl></div>
-    </li><li name="io.github.mandar2812.dynaml.analysis.BSplineGenerator#apply" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="apply(knots:Seq[Double],isSorted:Boolean):io.github.mandar2812.dynaml.analysis.BSplineGenerator"></a>
+      <a id="apply(ks:Seq[Double],isSorted:Boolean):io.github.mandar2812.dynaml.analysis.BSplineGenerator"></a>
       <a id="apply(Seq[Double],Boolean):BSplineGenerator"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -202,14 +180,14 @@ bi-infinite sequence of knots (specified as a function)
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">apply</span><span class="params">(<span name="knots">knots: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="isSorted">isSorted: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="result">: <a href="BSplineGenerator.html" class="extype" name="io.github.mandar2812.dynaml.analysis.BSplineGenerator">BSplineGenerator</a></span>
+        <span class="name">apply</span><span class="params">(<span name="ks">ks: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="isSorted">isSorted: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="result">: <a href="BSplineGenerator.html" class="extype" name="io.github.mandar2812.dynaml.analysis.BSplineGenerator">BSplineGenerator</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.BSplineGenerator$@apply(knots:Seq[Double],isSorted:Boolean):io.github.mandar2812.dynaml.analysis.BSplineGenerator" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.BSplineGenerator$@apply(ks:Seq[Double],isSorted:Boolean):io.github.mandar2812.dynaml.analysis.BSplineGenerator" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Create a b-spline generator from a supplied sequence of knots.</p><div class="fullcomment"><div class="comment cmt"><p>Create a b-spline generator from a supplied sequence of knots.</p></div><dl class="paramcmts block"><dt class="param">knots</dt><dd class="cmt"><p>A sequence of knots</p></dd><dt class="param">isSorted</dt><dd class="cmt"><p>Set to true if the sequence is already sorted (defaults to false).</p></dd><dt>returns</dt><dd class="cmt"><p>a <a href="BSplineGenerator.html" class="extype" name="io.github.mandar2812.dynaml.analysis.BSplineGenerator">BSplineGenerator</a> instance.</p></dd></dl></div>
+      <p class="shortcomment cmt">Create a b-spline generator from a supplied sequence of knots.</p><div class="fullcomment"><div class="comment cmt"><p>Create a b-spline generator from a supplied sequence of knots.</p></div><dl class="paramcmts block"><dt class="param">ks</dt><dd class="cmt"><p>A sequence of knots</p></dd><dt class="param">isSorted</dt><dd class="cmt"><p>Set to true if the sequence is already sorted (defaults to false).</p></dd><dt>returns</dt><dd class="cmt"><p>a <a href="BSplineGenerator.html" class="extype" name="io.github.mandar2812.dynaml.analysis.BSplineGenerator">BSplineGenerator</a> instance.</p></dd></dl></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>

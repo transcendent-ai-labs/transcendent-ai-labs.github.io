@@ -101,7 +101,7 @@
     </span>
       <p class="shortcomment cmt">Single-Output Gaussian Process Regression Model
 Performs gp/spline smoothing/regression with
-vector inputs and a singular scalar output.</p><div class="fullcomment"><div class="comment cmt"><p>Single-Output Gaussian Process Regression Model
+vector inputs and a singular scalar output.</p><div class="fullcomment"><div class="comment cmt"><h5> Gaussian Process Regression </h5><p>Single-Output Gaussian Process Regression Model
 Performs gp/spline smoothing/regression with
 vector inputs and a singular scalar output.
 </p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>The data structure holding the training data.</p></dd><dt class="tparam">I</dt><dd class="cmt"><p>The index set over which the Gaussian Process
@@ -208,7 +208,7 @@ vector inputs and a singular scalar output.
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Represents a multinomial mixture of GP models</p><div class="fullcomment"><div class="comment cmt"><p>Represents a multinomial mixture of GP models</p></div><dl class="paramcmts block"><dt class="tparam">I</dt><dd class="cmt"><p>The index set (input domain) over which each component GP is
+      <p class="shortcomment cmt">Represents a multinomial mixture of Gaussian Process regression models</p><div class="fullcomment"><div class="comment cmt"><h5> GP Mixtures </h5><p>Represents a multinomial mixture of Gaussian Process regression models</p></div><dl class="paramcmts block"><dt class="tparam">I</dt><dd class="cmt"><p>The index set (input domain) over which each component GP is
           defined.</p></dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.models.gp.KroneckerGPRegressionModel" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="KroneckerGPRegressionModel[T,I,J]extendsAbstractGPRegressionModel[T,(I,J)]"></a>
@@ -277,7 +277,10 @@ vector inputs and a singular scalar output.
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="tparam">I</dt><dd class="cmt"><p>The index set of the GP.</p></dd></dl></div>
+      <p class="shortcomment cmt">Abstract implementation of multi-output gaussian process
+as outlined in Lawrence et.</p><div class="fullcomment"><div class="comment cmt"><h5> Multi-Output GP Regression </h5><p>Abstract implementation of multi-output gaussian process
+as outlined in Lawrence et. al 2012 on arxiv
+</p></div><dl class="paramcmts block"><dt class="tparam">I</dt><dd class="cmt"><p>The index set of the GP.</p></dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.models.gp.MTGPRegressionModel" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="MTGPRegressionModel[I]extendsAbstractGPRegressionModel[Seq[Stream[(I,Double)]],(I,Int)]"></a>
       <a id="MTGPRegressionModel[I]:MTGPRegressionModel[I]"></a>

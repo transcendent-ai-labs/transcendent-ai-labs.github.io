@@ -1,9 +1,9 @@
 <!DOCTYPE html >
 <html>
         <head>
-          <title>BSplineGenerator - io.github.mandar2812.dynaml.analysis.BSplineGenerator</title>
-          <meta name="description" content="BSplineGenerator - io.github.mandar2812.dynaml.analysis.BSplineGenerator" />
-          <meta name="keywords" content="BSplineGenerator io.github.mandar2812.dynaml.analysis.BSplineGenerator" />
+          <title>CubicSplineARDKernel - io.github.mandar2812.dynaml.kernels.CubicSplineARDKernel</title>
+          <meta name="description" content="CubicSplineARDKernel - io.github.mandar2812.dynaml.kernels.CubicSplineARDKernel" />
+          <meta name="keywords" content="CubicSplineARDKernel io.github.mandar2812.dynaml.kernels.CubicSplineARDKernel" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -16,7 +16,7 @@
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../../../index.html';
-            var hash = 'io.github.mandar2812.dynaml.analysis.BSplineGenerator';
+            var hash = 'io.github.mandar2812.dynaml.kernels.CubicSplineARDKernel$';
             var anchor = window.location.hash;
             var anchor_opt = '';
             if (anchor.length >= 1)
@@ -26,16 +26,16 @@
    	  </script>
     
         </head>
-        <body class="type">
+        <body class="value">
       <div id="definition">
-        <a href="BSplineGenerator$.html" title="See companion object"><img alt="Class/Object" src="../../../../../lib/class_to_object_big.png" /></a>
-        <p id="owner"><a href="../../../../package.html" class="extype" name="io">io</a>.<a href="../../../package.html" class="extype" name="io.github">github</a>.<a href="../../package.html" class="extype" name="io.github.mandar2812">mandar2812</a>.<a href="../package.html" class="extype" name="io.github.mandar2812.dynaml">dynaml</a>.<a href="package.html" class="extype" name="io.github.mandar2812.dynaml.analysis">analysis</a></p>
-        <h1><a href="BSplineGenerator$.html" title="See companion object">BSplineGenerator</a></h1><h3><span class="morelinks"><div>
+        <a href="CubicSplineARDKernel.html" title="See companion class"><img alt="Object/Class" src="../../../../../lib/object_to_class_big.png" /></a>
+        <p id="owner"><a href="../../../../package.html" class="extype" name="io">io</a>.<a href="../../../package.html" class="extype" name="io.github">github</a>.<a href="../../package.html" class="extype" name="io.github.mandar2812">mandar2812</a>.<a href="../package.html" class="extype" name="io.github.mandar2812.dynaml">dynaml</a>.<a href="package.html" class="extype" name="io.github.mandar2812.dynaml.kernels">kernels</a></p>
+        <h1><a href="CubicSplineARDKernel.html" title="See companion class">CubicSplineARDKernel</a></h1><h3><span class="morelinks"><div>
             Related Docs:
-            <a href="BSplineGenerator$.html" title="See companion object">object BSplineGenerator</a>
-            | <a href="package.html" class="extype" name="io.github.mandar2812.dynaml.analysis">package analysis</a>
+            <a href="CubicSplineARDKernel.html" title="See companion class">class CubicSplineARDKernel</a>
+            | <a href="package.html" class="extype" name="io.github.mandar2812.dynaml.kernels">package kernels</a>
           </div></span></h3><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.BSplineGenerator" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.CubicSplineARDKernel$" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -43,23 +43,18 @@
 
       <h4 id="signature" class="signature">
       <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">class</span>
+        <span class="modifier"></span>
+        <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <span class="name">BSplineGenerator</span><span class="result"> extends <span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe21">MetaPipe21</span>[<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Double">Double</span>]</span>
+        <span class="name">CubicSplineARDKernel</span><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><h5> (B)ASIC SPLINES </h5><p>B-Spline generator as described in
-<a href="http://ftp.cs.wisc.edu/Approx/bsplbasic.pdf">B(asic)-Spline Basics</a> by Carl de Boor.</p><p>B<sub>i,k</sub>(t) :=
-&omega;<sub>i,k</sub>(t) B<sub>i,k-1</sub>(t) + (1 - &omega;<sub>i+1,k</sub>(t)) B<sub>i+1,k-1</sub></p></div><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe21">MetaPipe21</span>[<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Double">Double</span>], <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe2">DataPipe2</span>[<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</span>[<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Double">Double</span>]], <span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
-        </div><div class="toggleContainer block">
-            <span class="toggle">Known Subclasses</span>
-            <div class="subClasses hiddenContent"><a href="BernsteinSplineGenerator$.html" class="extype" name="io.github.mandar2812.dynaml.analysis.BernsteinSplineGenerator">BernsteinSplineGenerator</a>, <a href="CardinalBSplineGenerator$.html" class="extype" name="io.github.mandar2812.dynaml.analysis.CardinalBSplineGenerator">CardinalBSplineGenerator</a></div>
-          </div></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
         
 
       <div id="mbrsel">
@@ -76,7 +71,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="io.github.mandar2812.dynaml.analysis.BSplineGenerator"><span>BSplineGenerator</span></li><li class="in" name="io.github.mandar2812.dynaml.pipes.MetaPipe21"><span>MetaPipe21</span></li><li class="in" name="io.github.mandar2812.dynaml.pipes.DataPipe2"><span>DataPipe2</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="io.github.mandar2812.dynaml.kernels.CubicSplineARDKernel"><span>CubicSplineARDKernel</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -93,55 +88,14 @@
 
       <div id="template">
         <div id="allMembers">
-        <div id="constructors" class="members">
-              <h3>Instance Constructors</h3>
-              <ol><li name="io.github.mandar2812.dynaml.analysis.BSplineGenerator#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;():io.github.mandar2812.dynaml.analysis.BSplineGenerator"></a>
-      <a id="&lt;init&gt;:BSplineGenerator"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">new</span>
-      </span>
-      <span class="symbol">
-        <span class="name">BSplineGenerator</span><span class="params">()</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.BSplineGenerator@&lt;init&gt;():io.github.mandar2812.dynaml.analysis.BSplineGenerator" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
-    </li></ol>
-            </div>
+        
+
+        
 
         
 
         <div id="values" class="values members">
-              <h3>Abstract Value Members</h3>
-              <ol><li name="io.github.mandar2812.dynaml.analysis.BSplineGenerator#knot" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="knot:Int=&gt;Double"></a>
-      <a id="knot:(Int)⇒Double"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">knot</span><span class="result">: (<span class="extype" name="scala.Int">Int</span>) ⇒ <span class="extype" name="scala.Double">Double</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.BSplineGenerator@knot:Int=&gt;Double" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">The knot sequence, strictly non-decreasing
-</p>
-    </li></ol>
-            </div>
-
-        <div id="values" class="values members">
-              <h3>Concrete Value Members</h3>
+              <h3>Value Members</h3>
               <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
@@ -154,7 +108,7 @@
         <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.BSplineGenerator@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.CubicSplineARDKernel$@!=(x$1:Any):Boolean" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -171,7 +125,7 @@
         <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.BSplineGenerator@##():Int" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.CubicSplineARDKernel$@##():Int" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -188,62 +142,11 @@
         <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.BSplineGenerator@==(x$1:Any):Boolean" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.CubicSplineARDKernel$@==(x$1:Any):Boolean" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="io.github.mandar2812.dynaml.pipes.DataPipe2#&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="&gt;[Result2](otherPipe:io.github.mandar2812.dynaml.pipes.DataPipe[Result,Result2]):io.github.mandar2812.dynaml.pipes.DataPipe2[Source1,Source2,Result2]"></a>
-      <a id="&gt;[Result2](DataPipe[DataPipe[Double,Double],Result2]):DataPipe2[Int,Int,Result2]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $greater" class="name">&gt;</span><span class="tparams">[<span name="Result2">Result2</span>]</span><span class="params">(<span name="otherPipe">otherPipe: <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</span>[<span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</span>[<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Double">Double</span>], <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe2.&gt;.Result2">Result2</span>]</span>)</span><span class="result">: <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe2">DataPipe2</span>[<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe2.&gt;.Result2">Result2</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.BSplineGenerator@&gt;[Result2](otherPipe:io.github.mandar2812.dynaml.pipes.DataPipe[Result,Result2]):io.github.mandar2812.dynaml.pipes.DataPipe2[Source1,Source2,Result2]" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>DataPipe2</dd></dl></div>
-    </li><li name="io.github.mandar2812.dynaml.pipes.MetaPipe21#&gt;&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="&gt;&gt;[E](next:io.github.mandar2812.dynaml.pipes.DataPipe[D,E]):io.github.mandar2812.dynaml.pipes.MetaPipe21[A,B,C,E]"></a>
-      <a id="&gt;&gt;[E](DataPipe[Double,E]):MetaPipe21[Int,Int,Double,E]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $greater$greater" class="name">&gt;&gt;</span><span class="tparams">[<span name="E">E</span>]</span><span class="params">(<span name="next">next: <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</span>[<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe21.&gt;&gt;.E">E</span>]</span>)</span><span class="result">: <span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe21">MetaPipe21</span>[<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe21.&gt;&gt;.E">E</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.BSplineGenerator@&gt;&gt;[E](next:io.github.mandar2812.dynaml.pipes.DataPipe[D,E]):io.github.mandar2812.dynaml.pipes.MetaPipe21[A,B,C,E]" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>MetaPipe21</dd></dl></div>
-    </li><li name="io.github.mandar2812.dynaml.pipes.DataPipe2#apply" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="apply(data1:Source1,data2:Source2):Result"></a>
-      <a id="apply(Int,Int):DataPipe[Double,Double]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">apply</span><span class="params">(<span name="data1">data1: <span class="extype" name="scala.Int">Int</span></span>, <span name="data2">data2: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</span>[<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Double">Double</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.BSplineGenerator@apply(data1:Source1,data2:Source2):Result" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>DataPipe2</dd></dl></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
@@ -256,28 +159,11 @@
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.BSplineGenerator@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.CubicSplineARDKernel$@asInstanceOf[T0]:T0" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="io.github.mandar2812.dynaml.analysis.BSplineGenerator#bsplinerec" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="bsplinerec(x:Double,k:Int,i:Int,acc:Seq[Double]):Double"></a>
-      <a id="bsplinerec(Double,Int,Int,Seq[Double]):Double"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">bsplinerec</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Double">Double</span></span>, <span name="k">k: <span class="extype" name="scala.Int">Int</span></span>, <span name="i">i: <span class="extype" name="scala.Int">Int</span></span>, <span name="acc">acc: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Double">Double</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.BSplineGenerator@bsplinerec(x:Double,k:Int,i:Int,acc:Seq[Double]):Double" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>
       <a id="clone():AnyRef"></a>
@@ -290,7 +176,7 @@
         <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.BSplineGenerator@clone():Object" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.CubicSplineARDKernel$@clone():Object" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -313,7 +199,7 @@
         <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.BSplineGenerator@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.CubicSplineARDKernel$@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -330,7 +216,7 @@
         <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.BSplineGenerator@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.CubicSplineARDKernel$@equals(x$1:Any):Boolean" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -347,7 +233,7 @@
         <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.BSplineGenerator@finalize():Unit" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.CubicSplineARDKernel$@finalize():Unit" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -370,11 +256,28 @@
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.BSplineGenerator@getClass():Class[_]" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.CubicSplineARDKernel$@getClass():Class[_]" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.kernels.CubicSplineARDKernel#getEncoderforBreezeDV" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getEncoderforBreezeDV(dim:Int):io.github.mandar2812.dynaml.pipes.Encoder[Map[String,Double],breeze.linalg.DenseVector[Double]]"></a>
+      <a id="getEncoderforBreezeDV(Int):Encoder[Map[String,Double],DenseVector[Double]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getEncoderforBreezeDV</span><span class="params">(<span name="dim">dim: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="io.github.mandar2812.dynaml.pipes.Encoder">Encoder</span>[<span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>], <span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.CubicSplineARDKernel$@getEncoderforBreezeDV(dim:Int):io.github.mandar2812.dynaml.pipes.Encoder[Map[String,Double],breeze.linalg.DenseVector[Double]]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
       <a id="hashCode():Int"></a>
@@ -387,7 +290,7 @@
         <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.BSplineGenerator@hashCode():Int" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.CubicSplineARDKernel$@hashCode():Int" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -404,7 +307,7 @@
         <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.BSplineGenerator@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.CubicSplineARDKernel$@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -421,7 +324,7 @@
         <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.BSplineGenerator@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.CubicSplineARDKernel$@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -438,7 +341,7 @@
         <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.BSplineGenerator@notify():Unit" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.CubicSplineARDKernel$@notify():Unit" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -455,49 +358,11 @@
         <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.BSplineGenerator@notifyAll():Unit" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.CubicSplineARDKernel$@notifyAll():Unit" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="io.github.mandar2812.dynaml.analysis.BSplineGenerator#omega" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="omega(i:Int,k:Int)(x:Double):Double"></a>
-      <a id="omega(Int,Int)(Double):Double"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">omega</span><span class="params">(<span name="i">i: <span class="extype" name="scala.Int">Int</span></span>, <span name="k">k: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.BSplineGenerator@omega(i:Int,k:Int)(x:Double):Double" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">&omega;<sub>i,k</sub>(t) := 0, if t<sub>i</sub> = t<sub>i+k-1</sub>
-                         otherwise, (t - t<sub>i</sub>)/(t<sub>i+k-1</sub> - t<sub>i</sub>)
-</sub></sub></sub></sub></sub></sub></p><div class="fullcomment"><div class="comment cmt"><p>&omega;<sub>i,k</sub>(t) := 0, if t<sub>i</sub> = t<sub>i+k-1</sub>
-                         otherwise, (t - t<sub>i</sub>)/(t<sub>i+k-1</sub> - t<sub>i</sub>)
-</p></div></div>
-    </li><li name="io.github.mandar2812.dynaml.analysis.BSplineGenerator#run" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="run(segment:Int,order:Int):io.github.mandar2812.dynaml.pipes.DataPipe[Double,Double]"></a>
-      <a id="run(Int,Int):DataPipe[Double,Double]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">run</span><span class="params">(<span name="segment">segment: <span class="extype" name="scala.Int">Int</span></span>, <span name="order">order: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</span>[<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Double">Double</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.BSplineGenerator@run(segment:Int,order:Int):io.github.mandar2812.dynaml.pipes.DataPipe[Double,Double]" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="io.github.mandar2812.dynaml.analysis.BSplineGenerator">BSplineGenerator</a> → DataPipe2</dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
@@ -510,7 +375,7 @@
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.BSplineGenerator@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.CubicSplineARDKernel$@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -527,7 +392,7 @@
         <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.BSplineGenerator@toString():String" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.CubicSplineARDKernel$@toString():String" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -544,7 +409,7 @@
         <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.BSplineGenerator@wait():Unit" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.CubicSplineARDKernel$@wait():Unit" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -567,7 +432,7 @@
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.BSplineGenerator@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.CubicSplineARDKernel$@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -590,7 +455,7 @@
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.BSplineGenerator@wait(x$1:Long):Unit" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.CubicSplineARDKernel$@wait(x$1:Long):Unit" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -610,11 +475,7 @@
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="io.github.mandar2812.dynaml.pipes.MetaPipe21">
-              <h3>Inherited from <span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe21">MetaPipe21</span>[<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Double">Double</span>]</h3>
-            </div><div class="parent" name="io.github.mandar2812.dynaml.pipes.DataPipe2">
-              <h3>Inherited from <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe2">DataPipe2</span>[<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</span>[<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Double">Double</span>]]</h3>
-            </div><div class="parent" name="scala.Serializable">
+        <div class="parent" name="scala.Serializable">
               <h3>Inherited from <span class="extype" name="scala.Serializable">Serializable</span></h3>
             </div><div class="parent" name="java.io.Serializable">
               <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
