@@ -1224,7 +1224,7 @@ scaled version of a base GP.</p><p>z ~ GP(m(.), K(.,.))</p><p>y = g(x)*z</p><p>y
 http://jmlr.csail.mit.edu/papers/volume2/genton01a/genton01a.pdf</p><div class="fullcomment"><div class="comment cmt"><p>Implementation of separable stationary kernels as defined in
 http://jmlr.csail.mit.edu/papers/volume2/genton01a/genton01a.pdf</p><p>K(x,y) = K1(x)&times;K2(y)
 </p></div><dl class="paramcmts block"><dt class="tparam">I</dt><dd class="cmt"><p>The index set or input domain over which the kernel function is evaluated.</p></dd><dt class="tparam">Kernel</dt><dd class="cmt"><p>A kernel type which extends <a href="StationaryKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.StationaryKernel">StationaryKernel</a> as well as <a href="LocalScalarKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel">LocalScalarKernel</a></p></dd></dl></div>
-    </li><li name="io.github.mandar2812.dynaml.kernels.StationaryKernel" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+    </li><li name="io.github.mandar2812.dynaml.kernels.StationaryKernel" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="StationaryKernel[T,V,M]extendsCovarianceFunction[T,V,M]"></a>
       <a id="StationaryKernel[T,V,M]:StationaryKernel[T,V,M]"></a>
       <h4 class="signature">
@@ -1240,10 +1240,10 @@ http://jmlr.csail.mit.edu/papers/volume2/genton01a/genton01a.pdf</p><p>K(x,y) = 
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">An abstract representation of stationary kernel functions,
+      <p class="shortcomment cmt">C(x,y) = C<sub>s</sub>(||x-y||)</sub></p><div class="fullcomment"><div class="comment cmt"><h5> Stationary Covariance Functions </h5><p>C(x,y) = C<sub>s</sub>(||x-y||)</p><p>An abstract representation of stationary kernel functions,
 this requires an implicit variable which represents how addition, subtraction etc
 are carried out for the input domain <span class="extype" name="T">T</span>
-</p>
+</p></div></div>
     </li><li name="io.github.mandar2812.dynaml.kernels.TStudentCovFunc" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="TStudentCovFuncextendsCovarianceFunction[Double,Double,breeze.linalg.DenseMatrix[Double]]withLocalSVMKernel[Double]"></a>
       <a id="TStudentCovFunc:TStudentCovFunc"></a>
