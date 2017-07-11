@@ -61,7 +61,7 @@ vector inputs and a singular scalar output.
           <div class="superTypes hiddenContent"><a href="../../optimization/GloballyOptWithGrad.html" class="extype" name="io.github.mandar2812.dynaml.optimization.GloballyOptWithGrad">GloballyOptWithGrad</a>, <a href="../../optimization/GloballyOptimizable.html" class="extype" name="io.github.mandar2812.dynaml.optimization.GloballyOptimizable">GloballyOptimizable</a>, <a href="../SecondOrderProcessModel.html" class="extype" name="io.github.mandar2812.dynaml.models.SecondOrderProcessModel">SecondOrderProcessModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel.I">I</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="breeze.linalg.DenseMatrix">DenseMatrix</span>[<span class="extype" name="scala.Double">Double</span>], <a href="../../probability/MultGaussianPRV.html" class="extype" name="io.github.mandar2812.dynaml.probability.MultGaussianPRV">MultGaussianPRV</a>], <a href="../ContinuousProcessModel.html" class="extype" name="io.github.mandar2812.dynaml.models.ContinuousProcessModel">ContinuousProcessModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel.I">I</span>, <span class="extype" name="scala.Double">Double</span>, <a href="../../probability/MultGaussianPRV.html" class="extype" name="io.github.mandar2812.dynaml.probability.MultGaussianPRV">MultGaussianPRV</a>], <a href="../StochasticProcessModel.html" class="extype" name="io.github.mandar2812.dynaml.models.StochasticProcessModel">StochasticProcessModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel.I">I</span>, <span class="extype" name="scala.Double">Double</span>, <a href="../../probability/MultGaussianPRV.html" class="extype" name="io.github.mandar2812.dynaml.probability.MultGaussianPRV">MultGaussianPRV</a>], <a href="../Model.html" class="extype" name="io.github.mandar2812.dynaml.models.Model">Model</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel.I">I</span>, <span class="extype" name="scala.Double">Double</span>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block">
             <span class="toggle">Known Subclasses</span>
-            <div class="subClasses hiddenContent"><a href="GPNarModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.GPNarModel">GPNarModel</a>, <a href="GPNarXModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.GPNarXModel">GPNarXModel</a>, <a href="GPRegression.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.GPRegression">GPRegression</a>, <a href="GPTimeSeries.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.GPTimeSeries">GPTimeSeries</a>, <a href="KroneckerGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.KroneckerGPRegressionModel">KroneckerGPRegressionModel</a>, <a href="KroneckerMOGPModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.KroneckerMOGPModel">KroneckerMOGPModel</a>, <a href="MOGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.MOGPRegressionModel">MOGPRegressionModel</a>, <a href="MTGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.MTGPRegressionModel">MTGPRegressionModel</a></div>
+            <div class="subClasses hiddenContent"><a href="GPNarModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.GPNarModel">GPNarModel</a>, <a href="GPNarXModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.GPNarXModel">GPNarXModel</a>, <a href="GPOperatorModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.GPOperatorModel">GPOperatorModel</a>, <a href="GPRegression.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.GPRegression">GPRegression</a>, <a href="GPTimeSeries.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.GPTimeSeries">GPTimeSeries</a>, <a href="KroneckerGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.KroneckerGPRegressionModel">KroneckerGPRegressionModel</a>, <a href="KroneckerMOGPModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.KroneckerMOGPModel">KroneckerMOGPModel</a>, <a href="MOGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.MOGPRegressionModel">MOGPRegressionModel</a>, <a href="MTGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.MTGPRegressionModel">MTGPRegressionModel</a></div>
           </div></div>
         
 
@@ -615,6 +615,40 @@ also known as log likelihood.</p></dd></dl><dl class="attributes block"> <dt>Def
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel#getCrossKernelMatrix" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getCrossKernelMatrix[U&lt;:Seq[I]](test:U):io.github.mandar2812.dynaml.algebra.PartitionedMatrix"></a>
+      <a id="getCrossKernelMatrix[U&lt;:Seq[I]](U):PartitionedMatrix"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getCrossKernelMatrix</span><span class="tparams">[<span name="U">U &lt;: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel.I">I</span>]</span>]</span><span class="params">(<span name="test">test: <span class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel.getCrossKernelMatrix.U">U</span></span>)</span><span class="result">: <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedMatrix">PartitionedMatrix</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel@getCrossKernelMatrix[U&lt;:Seq[I]](test:U):io.github.mandar2812.dynaml.algebra.PartitionedMatrix" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel#getTestKernelMatrix" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getTestKernelMatrix[U&lt;:Seq[I]](test:U):io.github.mandar2812.dynaml.algebra.PartitionedPSDMatrix"></a>
+      <a id="getTestKernelMatrix[U&lt;:Seq[I]](U):PartitionedPSDMatrix"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getTestKernelMatrix</span><span class="tparams">[<span name="U">U &lt;: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel.I">I</span>]</span>]</span><span class="params">(<span name="test">test: <span class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel.getTestKernelMatrix.U">U</span></span>)</span><span class="result">: <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedPSDMatrix">PartitionedPSDMatrix</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel@getTestKernelMatrix[U&lt;:Seq[I]](test:U):io.github.mandar2812.dynaml.algebra.PartitionedPSDMatrix" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel#gradEnergy" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="gradEnergy(h:Map[String,Double]):Map[String,Double]"></a>
       <a id="gradEnergy(Map[String,Double]):Map[String,Double]"></a>

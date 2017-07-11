@@ -75,7 +75,7 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="DynaML.html"><span class="name">DynaML</span></a><span class="params">(<span name="predef">predef: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;&quot;</span></span>, <span name="defaultPredef">defaultPredef: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>, <span name="storageBackend">storageBackend: <span class="extype" name="ammonite.runtime.Storage">Storage</span> = <span class="defval" name='<span class="name"><a href="../../../package.html">new Storage.Folder(Defaults.ammoniteHome)</a></span>'>...</span></span>, <span name="wd">wd: <span class="extype" name="ammonite.ops.Path">Path</span> = <span class="symbol"><span class="name"><a href="../../../../ammonite/package.html">ammonite.ops.pwd</a></span></span></span>, <span name="welcomeBanner">welcomeBanner: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol"><span class="name"><a href="../../../package.html">Some(Defaults.welcomeBanner)</a></span></span></span>, <span name="inputStream">inputStream: <span class="extype" name="java.io.InputStream">InputStream</span> = <span class="symbol">System.in</span></span>, <span name="outputStream">outputStream: <span class="extype" name="java.io.OutputStream">OutputStream</span> = <span class="symbol">System.out</span></span>, <span name="infoStream">infoStream: <span class="extype" name="java.io.OutputStream">OutputStream</span> = <span class="symbol">System.err</span></span>, <span name="errorStream">errorStream: <span class="extype" name="java.io.OutputStream">OutputStream</span> = <span class="symbol">System.err</span></span>, <span name="verboseOutput">verboseOutput: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>, <span name="remoteLogging">remoteLogging: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="DynaML.html"><span class="name">DynaML</span></a><span class="params">(<span name="predefCode">predefCode: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;&quot;</span></span>, <span name="predefFile">predefFile: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="ammonite.ops.Path">Path</span>] = <span class="symbol">None</span></span>, <span name="defaultPredef">defaultPredef: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>, <span name="storageBackend">storageBackend: <span class="extype" name="ammonite.runtime.Storage">Storage</span> = <span class="defval" name='<span class="name"><a href="../../../package.html">new Storage.Folder(Defaults.ammoniteHome)</a></span>'>...</span></span>, <span name="wd">wd: <span class="extype" name="ammonite.ops.Path">Path</span> = <span class="symbol"><span class="name"><a href="../../../../ammonite/package.html">ammonite.ops.pwd</a></span></span></span>, <span name="welcomeBanner">welcomeBanner: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol"><span class="name"><a href="../../../package.html">Some(Defaults.welcomeBanner)</a></span></span></span>, <span name="inputStream">inputStream: <span class="extype" name="java.io.InputStream">InputStream</span> = <span class="symbol">System.in</span></span>, <span name="outputStream">outputStream: <span class="extype" name="java.io.OutputStream">OutputStream</span> = <span class="symbol">System.out</span></span>, <span name="errorStream">errorStream: <span class="extype" name="java.io.OutputStream">OutputStream</span> = <span class="symbol">System.err</span></span>, <span name="verboseOutput">verboseOutput: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>, <span name="remoteLogging">remoteLogging: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>, <span name="colors">colors: <span class="extype" name="ammonite.util.Colors">Colors</span> = <span class="symbol"><span class="name"><a href="../../../../ammonite/package.html">Colors.Default</a></span></span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#io.github.mandar2812.dynaml.package@DynaMLextendsProductwithSerializable" title="Permalink" target="_top">
@@ -84,12 +84,12 @@
     </span>
       <p class="shortcomment cmt">Contains the various entry points to the Ammonite REPL.</p><div class="fullcomment"><div class="comment cmt"><p>Contains the various entry points to the Ammonite REPL.</p><p>Configuration of the basic REPL is done by passing in arguments when
 constructing the <a href="DynaML.html" class="extype" name="io.github.mandar2812.dynaml.DynaML">DynaML</a> instance, and the various entrypoints such
-as <a href="DynaML.html#run(replArgs:ammonite.util.Bind[_]*):Any" class="extmbr" name="io.github.mandar2812.dynaml.DynaML#run">run</a> <a href="DynaML.html#runScript(path:ammonite.ops.Path,scriptArgs:Seq[(String,Option[String])]):(ammonite.util.Res[Any],Seq[(ammonite.ops.Path,Option[Long])])" class="extmbr" name="io.github.mandar2812.dynaml.DynaML#runScript">runScript</a> and so on are methods on that instance.</p><p>It is more or less equivalent to the <span class="extype" name="ammonite.repl.Repl">ammonite.repl.Repl</span> object itself, and has
+as <a href="DynaML.html#run(replArgs:ammonite.util.Bind[_]*):(ammonite.util.Res[Any],Seq[(ammonite.ops.Path,Long)])" class="extmbr" name="io.github.mandar2812.dynaml.DynaML#run">run</a> <a href="DynaML.html#runScript(path:ammonite.ops.Path,scriptArgs:Seq[(String,Option[String])]):(ammonite.util.Res[Any],Seq[(ammonite.ops.Path,Long)])" class="extmbr" name="io.github.mandar2812.dynaml.DynaML#runScript">runScript</a> and so on are methods on that instance.</p><p>It is more or less equivalent to the <span class="extype" name="ammonite.repl.Repl">ammonite.repl.Repl</span> object itself, and has
 a similar set of parameters, but does not have any of the <span class="extype" name="ammonite.repl.Repl">ammonite.repl.Repl</span>'s
 implementation-related code and provides a more convenient set of
-entry-points that a user can call.</p><p>Note that the <a href="DynaML.html#instantiateRepl(replArgs:IndexedSeq[ammonite.util.Bind[_]],remoteLogger:Option[ammonite.repl.RemoteLogger]):io.github.mandar2812.dynaml.repl.DynaMLRepl" class="extmbr" name="io.github.mandar2812.dynaml.DynaML#instantiateRepl">instantiateRepl</a> function generates a new <span class="extype" name="Repl">Repl</span>
+entry-points that a user can call.</p><p>Note that the <a href="DynaML.html#instantiateRepl(replArgs:IndexedSeq[ammonite.util.Bind[_]],remoteLogger:Option[ammonite.repl.RemoteLogger]):ProductwithSerializablewithscala.util.Either[(ammonite.util.Res.Failure,Seq[(ammonite.ops.Path,Long)]),io.github.mandar2812.dynaml.repl.DynaMLRepl]" class="extmbr" name="io.github.mandar2812.dynaml.DynaML#instantiateRepl">instantiateRepl</a> function generates a new <span class="extype" name="Repl">Repl</span>
 every time it is called!
-</p></div><dl class="paramcmts block"><dt class="param">predef</dt><dd class="cmt"><p>Any additional code you want to run before the REPL session
+</p></div><dl class="paramcmts block"><dt class="param">predefCode</dt><dd class="cmt"><p>Any additional code you want to run before the REPL session
               starts. Can contain multiple blocks separated by <code>@</code>s</p></dd><dt class="param">defaultPredef</dt><dd class="cmt"><p>Do you want to include the &quot;standard&quot; predef imports
                      provided by Ammonite? These include tools like <code>time</code>,
                      <code>grep</code>, the <code>|</code> or <code>|?</code> pipes from ammonite-ops, and
@@ -102,10 +102,29 @@ every time it is called!
           the scripts will be considered relative to when assigning them
           packages</p></dd><dt class="param">inputStream</dt><dd class="cmt"><p>Where input to the Repl is coming from, typically System.in,
                    but it could come from somewhere else e.g. across the
-                   network in the case of the SshdRepl</p></dd><dt class="param">outputStream</dt><dd class="cmt"><p>Primary output of code run using Ammonite</p></dd><dt class="param">infoStream</dt><dd class="cmt"><p>Miscellaneous logging output when running Ammonite. This
-                  is typically stuff you want to see when running interactively,
-                  but not something you want to see when e.g. you forward a
-                  script's output to a file. This by default it goes to System.err</p></dd><dt class="param">errorStream</dt><dd class="cmt"><p>Error output when things go bad, typically System.err</p></dd></dl></div>
+                   network in the case of the SshdRepl</p></dd><dt class="param">outputStream</dt><dd class="cmt"><p>Primary output of code run using Ammonite</p></dd><dt class="param">errorStream</dt><dd class="cmt"><p>Error output when things go bad, typically System.err; also
+                   gets sent miscellaneous info messages that aren't strictly
+                   part of the REPL or script's output</p></dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.MainRunner" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="MainRunnerextendsAnyRef"></a>
+      <a id="MainRunner:MainRunner"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="MainRunner.html"><span class="name">MainRunner</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#io.github.mandar2812.dynaml.package@MainRunnerextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Bundles together:</p><div class="fullcomment"><div class="comment cmt"><p>Bundles together:</p><p>- All the code relying on <span class="extype" name="cliConfig">cliConfig</span>
+- Handling for the common input/output streams and print-streams
+- Logic around the watch-and-rerun flag
+</p></div></div>
     </li></ol>
             </div>
 

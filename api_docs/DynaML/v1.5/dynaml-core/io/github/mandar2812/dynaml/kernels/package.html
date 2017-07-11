@@ -522,6 +522,44 @@ in Wilson et.</p><div class="fullcomment"><div class="comment cmt"><p>Implements
 in Wilson et. al.</p><p>The kernel is defined as the inverse fourier transform
 of a gaussian spectral density as is shown by Bochner's theorem.
 </p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>The domain over which the kernel is defined</p></dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.kernels.GenExpSpaceTimeKernel" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GenExpSpaceTimeKernel[I]extendsCovarianceFunction[(I,Double),Double,breeze.linalg.DenseMatrix[Double]]withLocalScalarKernel[(I,Double)]"></a>
+      <a id="GenExpSpaceTimeKernel[I]:GenExpSpaceTimeKernel[I]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="GenExpSpaceTimeKernel.html"><span class="name">GenExpSpaceTimeKernel</span></a><span class="tparams">[<span name="I">I</span>]</span><span class="result"> extends <a href="CovarianceFunction.html" class="extype" name="io.github.mandar2812.dynaml.kernels.CovarianceFunction">CovarianceFunction</a>[(<span class="extype" name="io.github.mandar2812.dynaml.kernels.GenExpSpaceTimeKernel.I">I</span>, <span class="extype" name="scala.Double">Double</span>), <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="breeze.linalg.DenseMatrix">DenseMatrix</span>[<span class="extype" name="scala.Double">Double</span>]] with <a href="LocalScalarKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel">LocalScalarKernel</a>[(<span class="extype" name="io.github.mandar2812.dynaml.kernels.GenExpSpaceTimeKernel.I">I</span>, <span class="extype" name="scala.Double">Double</span>)]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.package@GenExpSpaceTimeKernel[I]extendsCovarianceFunction[(I,Double),Double,breeze.linalg.DenseMatrix[Double]]withLocalScalarKernel[(I,Double)]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">An exponential family covariance function between space time coordinates
+</p>
+    </li><li name="io.github.mandar2812.dynaml.kernels.GenExponentialKernel" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="GenExponentialKernel[I]extendsCovarianceFunction[I,Double,breeze.linalg.DenseMatrix[Double]]withLocalScalarKernel[I]"></a>
+      <a id="GenExponentialKernel[I]:GenExponentialKernel[I]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="GenExponentialKernel.html"><span class="name">GenExponentialKernel</span></a><span class="tparams">[<span name="I">I</span>]</span><span class="result"> extends <a href="CovarianceFunction.html" class="extype" name="io.github.mandar2812.dynaml.kernels.CovarianceFunction">CovarianceFunction</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.GenExponentialKernel.I">I</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="breeze.linalg.DenseMatrix">DenseMatrix</span>[<span class="extype" name="scala.Double">Double</span>]] with <a href="LocalScalarKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel">LocalScalarKernel</a>[<span class="extype" name="io.github.mandar2812.dynaml.kernels.GenExponentialKernel.I">I</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.package@GenExponentialKernel[I]extendsCovarianceFunction[I,Double,breeze.linalg.DenseMatrix[Double]]withLocalScalarKernel[I]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Covariance expressed as exponential of some
+scaled distance metric between arguments.</p><div class="fullcomment"><div class="comment cmt"><p>Covariance expressed as exponential of some
+scaled distance metric between arguments.</p><p>K(x, y) = &sigma;<sup>2<sup> exp(-1/2 &times; ||x-y||/&theta;)
+</p></div></div>
     </li><li name="io.github.mandar2812.dynaml.kernels.GenericMaternARDKernel" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="GenericMaternARDKernel[T]extendsStationaryKernel[T,Double,breeze.linalg.DenseMatrix[Double]]withLocalScalarKernel[T]withSerializable"></a>
       <a id="GenericMaternARDKernel[T]:GenericMaternARDKernel[T]"></a>
@@ -793,6 +831,23 @@ functionality of Kernel Matrices.</p>
       </a>
     </span>
       <p class="shortcomment cmt">18/8/15.</p>
+    </li><li name="io.github.mandar2812.dynaml.kernels.LinearPDEKernel" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="LinearPDEKernel[I]extendsCovarianceFunction[(I,Double),Double,breeze.linalg.DenseMatrix[Double]]withLocalScalarKernel[(I,Double)]"></a>
+      <a id="LinearPDEKernel[I]:LinearPDEKernel[I]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="LinearPDEKernel.html"><span class="name">LinearPDEKernel</span></a><span class="tparams">[<span name="I">I</span>]</span><span class="result"> extends <a href="CovarianceFunction.html" class="extype" name="io.github.mandar2812.dynaml.kernels.CovarianceFunction">CovarianceFunction</a>[(<span class="extype" name="io.github.mandar2812.dynaml.kernels.LinearPDEKernel.I">I</span>, <span class="extype" name="scala.Double">Double</span>), <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="breeze.linalg.DenseMatrix">DenseMatrix</span>[<span class="extype" name="scala.Double">Double</span>]] with <a href="LocalScalarKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel">LocalScalarKernel</a>[(<span class="extype" name="io.github.mandar2812.dynaml.kernels.LinearPDEKernel.I">I</span>, <span class="extype" name="scala.Double">Double</span>)]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.package@LinearPDEKernel[I]extendsCovarianceFunction[(I,Double),Double,breeze.linalg.DenseMatrix[Double]]withLocalScalarKernel[(I,Double)]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Kernels for linear PDE operator equations.</p>
     </li><li name="io.github.mandar2812.dynaml.kernels.LocalSVMKernel" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="LocalSVMKernel[Index]extendsCovarianceFunction[Index,Double,breeze.linalg.DenseMatrix[Double]]withLocalScalarKernel[Index]"></a>
       <a id="LocalSVMKernel[Index]:LocalSVMKernel[Index]"></a>
@@ -1459,6 +1514,23 @@ K(x,y) = 1/(1 + ||x - y||<sup>d</sup>)
       </span>
       </h4><span class="permalink">
       <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.package@GaussianSpectralKernel" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.github.mandar2812.dynaml.kernels.GenExponentialKernel" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GenExponentialKernel"></a>
+      <a id="GenExponentialKernel:GenExponentialKernel"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="GenExponentialKernel$.html"><span class="name">GenExponentialKernel</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.package@GenExponentialKernel" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
