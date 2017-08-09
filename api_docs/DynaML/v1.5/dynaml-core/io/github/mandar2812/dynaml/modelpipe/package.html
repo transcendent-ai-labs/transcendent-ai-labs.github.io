@@ -134,6 +134,26 @@
       </a>
     </span>
       
+    </li><li name="io.github.mandar2812.dynaml.modelpipe.GPBasisFuncRegressionPipe" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="GPBasisFuncRegressionPipe[Source,IndexSet]extendsModelPipe[Source,Seq[(IndexSet,Double)],IndexSet,Double,io.github.mandar2812.dynaml.models.gp.GPBasisFuncRegressionModel[Seq[(IndexSet,Double)],IndexSet]]"></a>
+      <a id="GPBasisFuncRegressionPipe[Source,IndexSet]:GPBasisFuncRegressionPipe[Source,IndexSet]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="GPBasisFuncRegressionPipe.html"><span class="name">GPBasisFuncRegressionPipe</span></a><span class="tparams">[<span name="Source">Source</span>, <span name="IndexSet">IndexSet</span>]</span><span class="result"> extends <a href="ModelPipe.html" class="extype" name="io.github.mandar2812.dynaml.modelpipe.ModelPipe">ModelPipe</a>[<span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPBasisFuncRegressionPipe.Source">Source</span>, <span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPBasisFuncRegressionPipe.IndexSet">IndexSet</span>, <span class="extype" name="scala.Double">Double</span>)], <span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPBasisFuncRegressionPipe.IndexSet">IndexSet</span>, <span class="extype" name="scala.Double">Double</span>, <a href="../models/gp/GPBasisFuncRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.GPBasisFuncRegressionModel">GPBasisFuncRegressionModel</a>[<span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPBasisFuncRegressionPipe.IndexSet">IndexSet</span>, <span class="extype" name="scala.Double">Double</span>)], <span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPBasisFuncRegressionPipe.IndexSet">IndexSet</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.modelpipe.package@GPBasisFuncRegressionPipe[Source,IndexSet]extendsModelPipe[Source,Seq[(IndexSet,Double)],IndexSet,Double,io.github.mandar2812.dynaml.models.gp.GPBasisFuncRegressionModel[Seq[(IndexSet,Double)],IndexSet]]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A data pipe which can spawn a Gaussian Process Basis Function
+regression model from a provided training data set.</p><div class="fullcomment"><div class="comment cmt"><h5> GP Basis Function Pipe </h5><p>A data pipe which can spawn a Gaussian Process Basis Function
+regression model from a provided training data set.
+</p></div><dl class="paramcmts block"><dt class="tparam">Source</dt><dd class="cmt"><p>Input data type</p></dd><dt class="tparam">IndexSet</dt><dd class="cmt"><p>Type of features of each data pattern</p></dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.modelpipe.GPMixturePipe" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="GPMixturePipe[T,I]extendsMixturePipe[T,I,Double,io.github.mandar2812.dynaml.algebra.PartitionedVector,io.github.mandar2812.dynaml.algebra.PartitionedPSDMatrix,io.github.mandar2812.dynaml.probability.distributions.BlockedMultiVariateGaussian,io.github.mandar2812.dynaml.probability.MultGaussianPRV,io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel[T,I]]"></a>
       <a id="GPMixturePipe[T,I]:GPMixturePipe[T,I]"></a>
@@ -151,7 +171,7 @@
       </a>
     </span>
       
-    </li><li name="io.github.mandar2812.dynaml.modelpipe.GPRegressionPipe" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="io.github.mandar2812.dynaml.modelpipe.GPRegressionPipe" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="GPRegressionPipe[Source,IndexSet]extendsModelPipe[Source,Seq[(IndexSet,Double)],IndexSet,Double,io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel[Seq[(IndexSet,Double)],IndexSet]]"></a>
       <a id="GPRegressionPipe[Source,IndexSet]:GPRegressionPipe[Source,IndexSet]"></a>
       <h4 class="signature">
@@ -167,8 +187,11 @@
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt"></p>
-    </li><li name="io.github.mandar2812.dynaml.modelpipe.GPRegressionPipe2" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">A data pipe which can spawn a Gaussian Process regression model
+from a provided training data set.</p><div class="fullcomment"><div class="comment cmt"><h5> GP Pipes </h5><p>A data pipe which can spawn a Gaussian Process regression model
+from a provided training data set.
+</p></div><dl class="paramcmts block"><dt class="tparam">Source</dt><dd class="cmt"><p>Input data type</p></dd><dt class="tparam">IndexSet</dt><dd class="cmt"><p>Type of features of each data pattern</p></dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.modelpipe.GPRegressionPipe2" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="GPRegressionPipe2[IndexSet]extendsDataPipe2[Seq[(IndexSet,Double)],io.github.mandar2812.dynaml.pipes.DataPipe[IndexSet,Double],io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel[Seq[(IndexSet,Double)],IndexSet]]"></a>
       <a id="GPRegressionPipe2[IndexSet]:GPRegressionPipe2[IndexSet]"></a>
       <h4 class="signature">
@@ -184,7 +207,10 @@
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">A <span class="extype" name="DataPipe2">DataPipe2</span> which takes a data set,
+a trend and outputs a GP Regression model.</p><div class="fullcomment"><div class="comment cmt"><h5> GP Pipes: Alternate </h5><p>A <span class="extype" name="DataPipe2">DataPipe2</span> which takes a data set,
+a trend and outputs a GP Regression model.
+</p></div><dl class="paramcmts block"><dt class="tparam">IndexSet</dt><dd class="cmt"><p>Type of features of each data pattern</p></dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.modelpipe.GeneralizedLeastSquaresPipe2" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="GeneralizedLeastSquaresPipe2extendsDataPipe2[Stream[(breeze.linalg.DenseVector[Double],Double)],io.github.mandar2812.dynaml.pipes.DataPipe[breeze.linalg.DenseVector[Double],breeze.linalg.DenseVector[Double]],io.github.mandar2812.dynaml.models.lm.GeneralizedLeastSquaresModel]"></a>
       <a id="GeneralizedLeastSquaresPipe2:GeneralizedLeastSquaresPipe2"></a>

@@ -107,6 +107,31 @@ vector inputs and a singular scalar output.
 </p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>The data structure holding the training data.</p></dd><dt class="tparam">I</dt><dd class="cmt"><p>The index set over which the Gaussian Process
           is defined.
           e.g:</p><ul><li>I = Double when implementing GP time series</li><li>I = DenseVector when implementing GP regression</li></ul></dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.models.gp.GPBasisFuncRegressionModel" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="GPBasisFuncRegressionModel[T,I]extendsAbstractGPRegressionModel[T,I]"></a>
+      <a id="GPBasisFuncRegressionModel[T,I]:GPBasisFuncRegressionModel[T,I]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="GPBasisFuncRegressionModel.html"><span class="name">GPBasisFuncRegressionModel</span></a><span class="tparams">[<span name="T">T</span>, <span name="I">I</span>]</span><span class="result"> extends <a href="AbstractGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel">AbstractGPRegressionModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.GPBasisFuncRegressionModel.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.gp.GPBasisFuncRegressionModel.I">I</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.package@GPBasisFuncRegressionModel[T,I]extendsAbstractGPRegressionModel[T,I]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Single-Output Gaussian Process Regression Model
+Performs gp/spline smoothing/regression with
+vector inputs and a singular scalar output.</p><div class="fullcomment"><div class="comment cmt"><h5> Basis Function Gaussian Process Regression </h5><p>Single-Output Gaussian Process Regression Model
+Performs gp/spline smoothing/regression with
+vector inputs and a singular scalar output.</p><p>The model incorporates explicit basis functions which are
+used to parameterize the mean/trend function.
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>The data structure holding the training data.</p></dd><dt class="tparam">I</dt><dd class="cmt"><p>The index set over which the Gaussian Process
+          is defined.
+          e.g:</p><ul><li>I = Double when implementing GP time series</li><li>I = DenseVector when implementing GP regression</li></ul></dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.models.gp.GPCommitteeRegression" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="GPCommitteeRegression[D,I]extendsLinearModel[D,breeze.linalg.DenseVector[Double],I,Double,D]"></a>
       <a id="GPCommitteeRegression[D,I]:GPCommitteeRegression[D,I]"></a>
@@ -279,6 +304,24 @@ by linear PDEs.</p>
       </a>
     </span>
       <p class="shortcomment cmt"></p>
+    </li><li name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcess" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="LogGaussianProcess[T,I]extendsWarpedGPModel[T,I]"></a>
+      <a id="LogGaussianProcess[T,I]:LogGaussianProcess[T,I]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="LogGaussianProcess.html"><span class="name">LogGaussianProcess</span></a><span class="tparams">[<span name="T">T</span>, <span name="I">I</span>]</span><span class="result"> extends <a href="WarpedGPModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel">WarpedGPModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcess.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcess.I">I</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.package@LogGaussianProcess[T,I]extendsWarpedGPModel[T,I]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A stochastic process whose logarithm is a gaussian process.</p><div class="fullcomment"><div class="comment cmt"><h5> Log Gaussian Processes </h5><p>A stochastic process whose logarithm is a gaussian process.
+</p></div></div>
     </li><li name="io.github.mandar2812.dynaml.models.gp.MOGPRegressionModel" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="MOGPRegressionModel[I]extendsAbstractGPRegressionModel[Stream[(I,breeze.linalg.DenseVector[Double])],(I,Int)]"></a>
       <a id="MOGPRegressionModel[I]:MOGPRegressionModel[I]"></a>
