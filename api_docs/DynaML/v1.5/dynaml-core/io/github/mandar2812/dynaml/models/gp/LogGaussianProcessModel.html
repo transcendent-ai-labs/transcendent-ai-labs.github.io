@@ -1,9 +1,9 @@
 <!DOCTYPE html >
 <html>
         <head>
-          <title>WarpedGPModel - io.github.mandar2812.dynaml.models.gp.WarpedGPModel</title>
-          <meta name="description" content="WarpedGPModel - io.github.mandar2812.dynaml.models.gp.WarpedGPModel" />
-          <meta name="keywords" content="WarpedGPModel io.github.mandar2812.dynaml.models.gp.WarpedGPModel" />
+          <title>LogGaussianProcessModel - io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel</title>
+          <meta name="description" content="LogGaussianProcessModel - io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel" />
+          <meta name="keywords" content="LogGaussianProcessModel io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -16,7 +16,7 @@
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../../../../index.html';
-            var hash = 'io.github.mandar2812.dynaml.models.gp.WarpedGPModel';
+            var hash = 'io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel';
             var anchor = window.location.hash;
             var anchor_opt = '';
             if (anchor.length >= 1)
@@ -30,10 +30,10 @@
       <div id="definition">
         <img alt="Class" src="../../../../../../lib/class_big.png" />
         <p id="owner"><a href="../../../../../package.html" class="extype" name="io">io</a>.<a href="../../../../package.html" class="extype" name="io.github">github</a>.<a href="../../../package.html" class="extype" name="io.github.mandar2812">mandar2812</a>.<a href="../../package.html" class="extype" name="io.github.mandar2812.dynaml">dynaml</a>.<a href="../package.html" class="extype" name="io.github.mandar2812.dynaml.models">models</a>.<a href="package.html" class="extype" name="io.github.mandar2812.dynaml.models.gp">gp</a></p>
-        <h1>WarpedGPModel</h1><h3><span class="morelinks"><div>Related Doc:
+        <h1>LogGaussianProcessModel</h1><h3><span class="morelinks"><div>Related Doc:
             <a href="package.html" class="extype" name="io.github.mandar2812.dynaml.models.gp">package gp</a>
           </div></span></h3><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.WarpedGPModel" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -45,20 +45,15 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <span class="name">WarpedGPModel</span><span class="tparams">[<span name="T">T</span>, <span name="I">I</span>]</span><span class="result"> extends <a href="../ContinuousProcessModel.html" class="extype" name="io.github.mandar2812.dynaml.models.ContinuousProcessModel">ContinuousProcessModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.I">I</span>, <span class="extype" name="scala.Double">Double</span>, <a href="../../probability/MeasurableDistrRV.html" class="extype" name="io.github.mandar2812.dynaml.probability.MeasurableDistrRV">MeasurableDistrRV</a>[<a href="../../algebra/PartitionedVector.html" class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</a>, <a href="../../algebra/PartitionedVector.html" class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</a>, <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedMatrix">PartitionedMatrix</span>, <a href="../../probability/distributions/BlockedMultiVariateGaussian.html" class="extype" name="io.github.mandar2812.dynaml.probability.distributions.BlockedMultiVariateGaussian">BlockedMultiVariateGaussian</a>]] with <a href="../SecondOrderProcessModel.html" class="extype" name="io.github.mandar2812.dynaml.models.SecondOrderProcessModel">SecondOrderProcessModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.I">I</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="breeze.linalg.DenseMatrix">DenseMatrix</span>[<span class="extype" name="scala.Double">Double</span>], <a href="../../probability/MeasurableDistrRV.html" class="extype" name="io.github.mandar2812.dynaml.probability.MeasurableDistrRV">MeasurableDistrRV</a>[<a href="../../algebra/PartitionedVector.html" class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</a>, <a href="../../algebra/PartitionedVector.html" class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</a>, <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedMatrix">PartitionedMatrix</span>, <a href="../../probability/distributions/BlockedMultiVariateGaussian.html" class="extype" name="io.github.mandar2812.dynaml.probability.distributions.BlockedMultiVariateGaussian">BlockedMultiVariateGaussian</a>]] with <a href="../../optimization/GloballyOptWithGrad.html" class="extype" name="io.github.mandar2812.dynaml.optimization.GloballyOptWithGrad">GloballyOptWithGrad</a></span>
+        <span class="name">LogGaussianProcessModel</span><span class="tparams">[<span name="T">T</span>, <span name="I">I</span>]</span><span class="result"> extends <a href="WarpedGPModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel">WarpedGPModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel.I">I</span>]</span>
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>::Experimental::</p><p>A warped Gaussian Process.</p></div><dl class="attributes block"> <dt>Annotations</dt><dd>
-                <span class="name">@Experimental</span><span class="args">()</span>
-              
-        </dd></dl><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><h5> Log Gaussian Processes </h5><p>A stochastic process whose logarithm is a gaussian process.
+</p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="../../optimization/GloballyOptWithGrad.html" class="extype" name="io.github.mandar2812.dynaml.optimization.GloballyOptWithGrad">GloballyOptWithGrad</a>, <a href="../../optimization/GloballyOptimizable.html" class="extype" name="io.github.mandar2812.dynaml.optimization.GloballyOptimizable">GloballyOptimizable</a>, <a href="../SecondOrderProcessModel.html" class="extype" name="io.github.mandar2812.dynaml.models.SecondOrderProcessModel">SecondOrderProcessModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.I">I</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="breeze.linalg.DenseMatrix">DenseMatrix</span>[<span class="extype" name="scala.Double">Double</span>], <a href="../../probability/MeasurableDistrRV.html" class="extype" name="io.github.mandar2812.dynaml.probability.MeasurableDistrRV">MeasurableDistrRV</a>[<a href="../../algebra/PartitionedVector.html" class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</a>, <a href="../../algebra/PartitionedVector.html" class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</a>, <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedMatrix">PartitionedMatrix</span>, <a href="../../probability/distributions/BlockedMultiVariateGaussian.html" class="extype" name="io.github.mandar2812.dynaml.probability.distributions.BlockedMultiVariateGaussian">BlockedMultiVariateGaussian</a>]], <a href="../ContinuousProcessModel.html" class="extype" name="io.github.mandar2812.dynaml.models.ContinuousProcessModel">ContinuousProcessModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.I">I</span>, <span class="extype" name="scala.Double">Double</span>, <a href="../../probability/MeasurableDistrRV.html" class="extype" name="io.github.mandar2812.dynaml.probability.MeasurableDistrRV">MeasurableDistrRV</a>[<a href="../../algebra/PartitionedVector.html" class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</a>, <a href="../../algebra/PartitionedVector.html" class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</a>, <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedMatrix">PartitionedMatrix</span>, <a href="../../probability/distributions/BlockedMultiVariateGaussian.html" class="extype" name="io.github.mandar2812.dynaml.probability.distributions.BlockedMultiVariateGaussian">BlockedMultiVariateGaussian</a>]], <a href="../StochasticProcessModel.html" class="extype" name="io.github.mandar2812.dynaml.models.StochasticProcessModel">StochasticProcessModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.I">I</span>, <span class="extype" name="scala.Double">Double</span>, <a href="../../probability/MeasurableDistrRV.html" class="extype" name="io.github.mandar2812.dynaml.probability.MeasurableDistrRV">MeasurableDistrRV</a>[<a href="../../algebra/PartitionedVector.html" class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</a>, <a href="../../algebra/PartitionedVector.html" class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</a>, <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedMatrix">PartitionedMatrix</span>, <a href="../../probability/distributions/BlockedMultiVariateGaussian.html" class="extype" name="io.github.mandar2812.dynaml.probability.distributions.BlockedMultiVariateGaussian">BlockedMultiVariateGaussian</a>]], <a href="../Model.html" class="extype" name="io.github.mandar2812.dynaml.models.Model">Model</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.I">I</span>, <span class="extype" name="scala.Double">Double</span>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
-        </div><div class="toggleContainer block">
-            <span class="toggle">Known Subclasses</span>
-            <div class="subClasses hiddenContent"><a href="LogGaussianProcessModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel">LogGaussianProcessModel</a></div>
-          </div></div>
+          <div class="superTypes hiddenContent"><a href="WarpedGPModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel">WarpedGPModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel.I">I</span>], <a href="../../optimization/GloballyOptWithGrad.html" class="extype" name="io.github.mandar2812.dynaml.optimization.GloballyOptWithGrad">GloballyOptWithGrad</a>, <a href="../../optimization/GloballyOptimizable.html" class="extype" name="io.github.mandar2812.dynaml.optimization.GloballyOptimizable">GloballyOptimizable</a>, <a href="../SecondOrderProcessModel.html" class="extype" name="io.github.mandar2812.dynaml.models.SecondOrderProcessModel">SecondOrderProcessModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel.I">I</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="breeze.linalg.DenseMatrix">DenseMatrix</span>[<span class="extype" name="scala.Double">Double</span>], <a href="../../probability/MeasurableDistrRV.html" class="extype" name="io.github.mandar2812.dynaml.probability.MeasurableDistrRV">MeasurableDistrRV</a>[<a href="../../algebra/PartitionedVector.html" class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</a>, <a href="../../algebra/PartitionedVector.html" class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</a>, <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedMatrix">PartitionedMatrix</span>, <a href="../../probability/distributions/BlockedMultiVariateGaussian.html" class="extype" name="io.github.mandar2812.dynaml.probability.distributions.BlockedMultiVariateGaussian">BlockedMultiVariateGaussian</a>]], <a href="../ContinuousProcessModel.html" class="extype" name="io.github.mandar2812.dynaml.models.ContinuousProcessModel">ContinuousProcessModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel.I">I</span>, <span class="extype" name="scala.Double">Double</span>, <a href="../../probability/MeasurableDistrRV.html" class="extype" name="io.github.mandar2812.dynaml.probability.MeasurableDistrRV">MeasurableDistrRV</a>[<a href="../../algebra/PartitionedVector.html" class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</a>, <a href="../../algebra/PartitionedVector.html" class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</a>, <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedMatrix">PartitionedMatrix</span>, <a href="../../probability/distributions/BlockedMultiVariateGaussian.html" class="extype" name="io.github.mandar2812.dynaml.probability.distributions.BlockedMultiVariateGaussian">BlockedMultiVariateGaussian</a>]], <a href="../StochasticProcessModel.html" class="extype" name="io.github.mandar2812.dynaml.models.StochasticProcessModel">StochasticProcessModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel.I">I</span>, <span class="extype" name="scala.Double">Double</span>, <a href="../../probability/MeasurableDistrRV.html" class="extype" name="io.github.mandar2812.dynaml.probability.MeasurableDistrRV">MeasurableDistrRV</a>[<a href="../../algebra/PartitionedVector.html" class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</a>, <a href="../../algebra/PartitionedVector.html" class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</a>, <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedMatrix">PartitionedMatrix</span>, <a href="../../probability/distributions/BlockedMultiVariateGaussian.html" class="extype" name="io.github.mandar2812.dynaml.probability.distributions.BlockedMultiVariateGaussian">BlockedMultiVariateGaussian</a>]], <a href="../Model.html" class="extype" name="io.github.mandar2812.dynaml.models.Model">Model</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel.I">I</span>, <span class="extype" name="scala.Double">Double</span>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
         
 
       <div id="mbrsel">
@@ -75,7 +70,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel"><span>WarpedGPModel</span></li><li class="in" name="io.github.mandar2812.dynaml.optimization.GloballyOptWithGrad"><span>GloballyOptWithGrad</span></li><li class="in" name="io.github.mandar2812.dynaml.optimization.GloballyOptimizable"><span>GloballyOptimizable</span></li><li class="in" name="io.github.mandar2812.dynaml.models.SecondOrderProcessModel"><span>SecondOrderProcessModel</span></li><li class="in" name="io.github.mandar2812.dynaml.models.ContinuousProcessModel"><span>ContinuousProcessModel</span></li><li class="in" name="io.github.mandar2812.dynaml.models.StochasticProcessModel"><span>StochasticProcessModel</span></li><li class="in" name="io.github.mandar2812.dynaml.models.Model"><span>Model</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel"><span>LogGaussianProcessModel</span></li><li class="in" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel"><span>WarpedGPModel</span></li><li class="in" name="io.github.mandar2812.dynaml.optimization.GloballyOptWithGrad"><span>GloballyOptWithGrad</span></li><li class="in" name="io.github.mandar2812.dynaml.optimization.GloballyOptimizable"><span>GloballyOptimizable</span></li><li class="in" name="io.github.mandar2812.dynaml.models.SecondOrderProcessModel"><span>SecondOrderProcessModel</span></li><li class="in" name="io.github.mandar2812.dynaml.models.ContinuousProcessModel"><span>ContinuousProcessModel</span></li><li class="in" name="io.github.mandar2812.dynaml.models.StochasticProcessModel"><span>StochasticProcessModel</span></li><li class="in" name="io.github.mandar2812.dynaml.models.Model"><span>Model</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -94,19 +89,19 @@
         <div id="allMembers">
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
-              <ol><li name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(p:io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel[T,I])(warpingFunc:io.github.mandar2812.dynaml.analysis.PushforwardMap[Double,Double,Double])(implicitevidence$1:scala.reflect.ClassTag[I],implicitpf:io.github.mandar2812.dynaml.analysis.PartitionedVectorField,implicittransform:io.github.mandar2812.dynaml.pipes.Encoder[T,Seq[(I,Double)]]):io.github.mandar2812.dynaml.models.gp.WarpedGPModel[T,I]"></a>
-      <a id="&lt;init&gt;:WarpedGPModel[T,I]"></a>
+              <ol><li name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;(p:io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel[T,I])(implicitevidence$2:scala.reflect.ClassTag[I],implicitpf:io.github.mandar2812.dynaml.analysis.PartitionedVectorField,implicittransform:io.github.mandar2812.dynaml.pipes.Encoder[T,Seq[(I,Double)]]):io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel[T,I]"></a>
+      <a id="&lt;init&gt;:LogGaussianProcessModel[T,I]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">WarpedGPModel</span><span class="params">(<span name="p">p: <a href="AbstractGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel">AbstractGPRegressionModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.I">I</span>]</span>)</span><span class="params">(<span name="warpingFunc">warpingFunc: <a href="../../analysis/PushforwardMap.html" class="extype" name="io.github.mandar2812.dynaml.analysis.PushforwardMap">PushforwardMap</a>[<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Double">Double</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <span class="extype" name="scala.reflect.ClassTag">ClassTag</span>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.I">I</span>]</span>, <span name="pf">pf: <a href="../../analysis/PartitionedVectorField.html" class="extype" name="io.github.mandar2812.dynaml.analysis.PartitionedVectorField">PartitionedVectorField</a></span>, <span name="transform">transform: <span class="extype" name="io.github.mandar2812.dynaml.pipes.Encoder">Encoder</span>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.T">T</span>, <span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.I">I</span>, <span class="extype" name="scala.Double">Double</span>)]]</span>)</span>
+        <span class="name">LogGaussianProcessModel</span><span class="params">(<span name="p">p: <a href="AbstractGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel">AbstractGPRegressionModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel.I">I</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <span class="extype" name="scala.reflect.ClassTag">ClassTag</span>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel.I">I</span>]</span>, <span name="pf">pf: <a href="../../analysis/PartitionedVectorField.html" class="extype" name="io.github.mandar2812.dynaml.analysis.PartitionedVectorField">PartitionedVectorField</a></span>, <span name="transform">transform: <span class="extype" name="io.github.mandar2812.dynaml.pipes.Encoder">Encoder</span>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel.T">T</span>, <span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel.I">I</span>, <span class="extype" name="scala.Double">Double</span>)]]</span>)</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.WarpedGPModel@&lt;init&gt;(p:io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel[T,I])(warpingFunc:io.github.mandar2812.dynaml.analysis.PushforwardMap[Double,Double,Double])(implicitevidence$1:scala.reflect.ClassTag[I],implicitpf:io.github.mandar2812.dynaml.analysis.PartitionedVectorField,implicittransform:io.github.mandar2812.dynaml.pipes.Encoder[T,Seq[(I,Double)]]):io.github.mandar2812.dynaml.models.gp.WarpedGPModel[T,I]" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel@&lt;init&gt;(p:io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel[T,I])(implicitevidence$2:scala.reflect.ClassTag[I],implicitpf:io.github.mandar2812.dynaml.analysis.PartitionedVectorField,implicittransform:io.github.mandar2812.dynaml.pipes.Encoder[T,Seq[(I,Double)]]):io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel[T,I]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -132,7 +127,7 @@
         <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.WarpedGPModel@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel@!=(x$1:Any):Boolean" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -149,7 +144,7 @@
         <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.WarpedGPModel@##():Int" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel@##():Int" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -166,7 +161,7 @@
         <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.WarpedGPModel@==(x$1:Any):Boolean" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel@==(x$1:Any):Boolean" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -183,7 +178,7 @@
         <span class="name">_current_state</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.WarpedGPModel@_current_state:Map[String,Double]" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel@_current_state:Map[String,Double]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -200,7 +195,7 @@
         <span class="name">_errorSigma</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.WarpedGPModel@_errorSigma:Int" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel@_errorSigma:Int" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -217,7 +212,7 @@
         <span class="name">_hyper_parameters</span><span class="result">: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.WarpedGPModel@_hyper_parameters:List[String]" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel@_hyper_parameters:List[String]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -234,7 +229,7 @@
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.WarpedGPModel@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel@asInstanceOf[T0]:T0" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -251,7 +246,7 @@
         <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.WarpedGPModel@clone():Object" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel@clone():Object" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -271,17 +266,17 @@
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">covariance</span><span class="result">: <a href="../../kernels/LocalScalarKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel">LocalScalarKernel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.I">I</span>]</span>
+        <span class="name">covariance</span><span class="result">: <a href="../../kernels/LocalScalarKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel">LocalScalarKernel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel.I">I</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.WarpedGPModel@covariance:io.github.mandar2812.dynaml.kernels.LocalScalarKernel[I]" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel@covariance:io.github.mandar2812.dynaml.kernels.LocalScalarKernel[I]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Underlying covariance function of the
 Gaussian Processes.</p><div class="fullcomment"><div class="comment cmt"><p>Underlying covariance function of the
 Gaussian Processes.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel">WarpedGPModel</a> → <a href="../SecondOrderProcessModel.html" class="extype" name="io.github.mandar2812.dynaml.models.SecondOrderProcessModel">SecondOrderProcessModel</a></dd></dl></div>
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="WarpedGPModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel">WarpedGPModel</a> → <a href="../SecondOrderProcessModel.html" class="extype" name="io.github.mandar2812.dynaml.models.SecondOrderProcessModel">SecondOrderProcessModel</a></dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel#current_state" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="current_state:Map[String,Double]"></a>
       <a id="current_state:Map[String,Double]"></a>
@@ -294,14 +289,14 @@ Gaussian Processes.
         <span class="name">current_state</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.WarpedGPModel@current_state:Map[String,Double]" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel@current_state:Map[String,Double]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">A Map which stores the current state of
 the system.</p><div class="fullcomment"><div class="comment cmt"><p>A Map which stores the current state of
 the system.
-</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="" class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel">WarpedGPModel</a> → <a href="../../optimization/GloballyOptimizable.html" class="extype" name="io.github.mandar2812.dynaml.optimization.GloballyOptimizable">GloballyOptimizable</a></dd></dl></div>
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="WarpedGPModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel">WarpedGPModel</a> → <a href="../../optimization/GloballyOptimizable.html" class="extype" name="io.github.mandar2812.dynaml.optimization.GloballyOptimizable">GloballyOptimizable</a></dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.models.Model#data" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="data:T"></a>
       <a id="data:T"></a>
@@ -311,10 +306,10 @@ the system.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">data</span><span class="result">: <span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.T">T</span></span>
+        <span class="name">data</span><span class="result">: <span class="extype" name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel.T">T</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.WarpedGPModel@data:T" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel@data:T" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -328,10 +323,10 @@ the system.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">dataAsIndexSeq</span><span class="params">(<span name="data">data: <span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.T">T</span></span>)</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.I">I</span>]</span>
+        <span class="name">dataAsIndexSeq</span><span class="params">(<span name="data">data: <span class="extype" name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel.T">T</span></span>)</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel.I">I</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.WarpedGPModel@dataAsIndexSeq(data:T):Seq[I]" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel@dataAsIndexSeq(data:T):Seq[I]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -349,10 +344,10 @@ Seq[I] where I is the index set of the GP
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">dataAsSeq</span><span class="params">(<span name="data">data: <span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.T">T</span></span>)</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.I">I</span>, <span class="extype" name="scala.Double">Double</span>)]</span>
+        <span class="name">dataAsSeq</span><span class="params">(<span name="data">data: <span class="extype" name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel.T">T</span></span>)</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel.I">I</span>, <span class="extype" name="scala.Double">Double</span>)]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.WarpedGPModel@dataAsSeq(data:T):Seq[(I,Double)]" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel@dataAsSeq(data:T):Seq[(I,Double)]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -361,8 +356,8 @@ Seq[(I, Y)] where I is the index set of the GP
 and Y is the value/label type.</p><div class="fullcomment"><div class="comment cmt"><p>Convert from the underlying data structure to
 Seq[(I, Y)] where I is the index set of the GP
 and Y is the value/label type.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel">WarpedGPModel</a> → <a href="../StochasticProcessModel.html" class="extype" name="io.github.mandar2812.dynaml.models.StochasticProcessModel">StochasticProcessModel</a></dd></dl></div>
-    </li><li name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel#detImpl" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="WarpedGPModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel">WarpedGPModel</a> → <a href="../StochasticProcessModel.html" class="extype" name="io.github.mandar2812.dynaml.models.StochasticProcessModel">StochasticProcessModel</a></dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel#detImpl" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="detImpl:io.github.mandar2812.dynaml.pipes.DataPipe[io.github.mandar2812.dynaml.algebra.PartitionedMatrix,Double]"></a>
       <a id="detImpl:DataPipe[PartitionedMatrix,Double]"></a>
       <h4 class="signature">
@@ -374,11 +369,11 @@ and Y is the value/label type.
         <span class="name">detImpl</span><span class="result">: <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</span>[<span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedMatrix">PartitionedMatrix</span>, <span class="extype" name="scala.Double">Double</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.WarpedGPModel@detImpl:io.github.mandar2812.dynaml.pipes.DataPipe[io.github.mandar2812.dynaml.algebra.PartitionedMatrix,Double]" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel@detImpl:io.github.mandar2812.dynaml.pipes.DataPipe[io.github.mandar2812.dynaml.algebra.PartitionedMatrix,Double]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="WarpedGPModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel">WarpedGPModel</a></dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel#energy" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="energy(h:Map[String,Double],options:Map[String,String]):Double"></a>
       <a id="energy(Map[String,Double],Map[String,String]):Double"></a>
@@ -391,7 +386,7 @@ and Y is the value/label type.
         <span class="name">energy</span><span class="params">(<span name="h">h: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>]</span>, <span name="options">options: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.WarpedGPModel@energy(h:Map[String,Double],options:Map[String,String]):Double" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel@energy(h:Map[String,Double],options:Map[String,String]):Double" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -404,7 +399,7 @@ in most global optimization algorithms
 we aim to find an approximate value of
 the hyper-parameters such that this function
 is minimized.
-</p></div><dl class="paramcmts block"><dt class="param">h</dt><dd class="cmt"><p>The value of the hyper-parameters in the configuration space</p></dd><dt class="param">options</dt><dd class="cmt"><p>Optional parameters about configuration</p></dd><dt>returns</dt><dd class="cmt"><p>Configuration Energy E(h)</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel">WarpedGPModel</a> → <a href="../../optimization/GloballyOptimizable.html" class="extype" name="io.github.mandar2812.dynaml.optimization.GloballyOptimizable">GloballyOptimizable</a></dd></dl></div>
+</p></div><dl class="paramcmts block"><dt class="param">h</dt><dd class="cmt"><p>The value of the hyper-parameters in the configuration space</p></dd><dt class="param">options</dt><dd class="cmt"><p>Optional parameters about configuration</p></dd><dt>returns</dt><dd class="cmt"><p>Configuration Energy E(h)</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="WarpedGPModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel">WarpedGPModel</a> → <a href="../../optimization/GloballyOptimizable.html" class="extype" name="io.github.mandar2812.dynaml.optimization.GloballyOptimizable">GloballyOptimizable</a></dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -417,7 +412,7 @@ is minimized.
         <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.WarpedGPModel@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -434,7 +429,7 @@ is minimized.
         <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.WarpedGPModel@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel@equals(x$1:Any):Boolean" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -451,7 +446,7 @@ is minimized.
         <span class="name">errorSigma_</span><span class="params">(<span name="s">s: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.WarpedGPModel@errorSigma_(s:Int):Unit" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel@errorSigma_(s:Int):Unit" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -468,7 +463,7 @@ is minimized.
         <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.WarpedGPModel@finalize():Unit" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel@finalize():Unit" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -488,16 +483,16 @@ is minimized.
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">g</span><span class="result">: <span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.T">T</span></span>
+        <span class="name">g</span><span class="result">: <span class="extype" name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel.T">T</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.WarpedGPModel@g:T" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel@g:T" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">The training data
 </p><div class="fullcomment"><div class="comment cmt"><p>The training data
-</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="" class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel">WarpedGPModel</a> → <a href="../Model.html" class="extype" name="io.github.mandar2812.dynaml.models.Model">Model</a></dd></dl></div>
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="WarpedGPModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel">WarpedGPModel</a> → <a href="../Model.html" class="extype" name="io.github.mandar2812.dynaml.models.Model">Model</a></dd></dl></div>
     </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <a id="getClass():Class[_]"></a>
@@ -510,7 +505,7 @@ is minimized.
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.WarpedGPModel@getClass():Class[_]" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel@getClass():Class[_]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -527,7 +522,7 @@ is minimized.
         <span class="name">gradEnergy</span><span class="params">(<span name="h">h: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.WarpedGPModel@gradEnergy(h:Map[String,Double]):Map[String,Double]" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel@gradEnergy(h:Map[String,Double]):Map[String,Double]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -550,7 +545,7 @@ hyper-parameter optimization routine like ML-II
         <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.WarpedGPModel@hashCode():Int" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel@hashCode():Int" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -567,13 +562,13 @@ hyper-parameter optimization routine like ML-II
         <span class="name">hyper_parameters</span><span class="result">: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.WarpedGPModel@hyper_parameters:List[String]" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel@hyper_parameters:List[String]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Stores the names of the hyper-parameters
 </p><div class="fullcomment"><div class="comment cmt"><p>Stores the names of the hyper-parameters
-</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="" class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel">WarpedGPModel</a> → <a href="../../optimization/GloballyOptimizable.html" class="extype" name="io.github.mandar2812.dynaml.optimization.GloballyOptimizable">GloballyOptimizable</a></dd></dl></div>
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="WarpedGPModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel">WarpedGPModel</a> → <a href="../../optimization/GloballyOptimizable.html" class="extype" name="io.github.mandar2812.dynaml.optimization.GloballyOptimizable">GloballyOptimizable</a></dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -586,7 +581,7 @@ hyper-parameter optimization routine like ML-II
         <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.WarpedGPModel@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -600,10 +595,10 @@ hyper-parameter optimization routine like ML-II
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">mean</span><span class="result">: <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</span>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.I">I</span>, <span class="extype" name="scala.Double">Double</span>]</span>
+        <span class="name">mean</span><span class="result">: <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</span>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel.I">I</span>, <span class="extype" name="scala.Double">Double</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.WarpedGPModel@mean:io.github.mandar2812.dynaml.pipes.DataPipe[I,Double]" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel@mean:io.github.mandar2812.dynaml.pipes.DataPipe[I,Double]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -612,7 +607,7 @@ and returns the corresponding mean of the distribution
 corresponding to input.</p><div class="fullcomment"><div class="comment cmt"><p>Mean Function: Takes a member of the index set (input)
 and returns the corresponding mean of the distribution
 corresponding to input.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel">WarpedGPModel</a> → <a href="../SecondOrderProcessModel.html" class="extype" name="io.github.mandar2812.dynaml.models.SecondOrderProcessModel">SecondOrderProcessModel</a></dd></dl></div>
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="WarpedGPModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel">WarpedGPModel</a> → <a href="../SecondOrderProcessModel.html" class="extype" name="io.github.mandar2812.dynaml.models.SecondOrderProcessModel">SecondOrderProcessModel</a></dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
@@ -625,7 +620,7 @@ corresponding to input.
         <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.WarpedGPModel@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -642,7 +637,7 @@ corresponding to input.
         <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.WarpedGPModel@notify():Unit" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel@notify():Unit" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -659,7 +654,7 @@ corresponding to input.
         <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.WarpedGPModel@notifyAll():Unit" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel@notifyAll():Unit" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -676,7 +671,7 @@ corresponding to input.
         <span class="name">persist</span><span class="params">(<span name="state">state: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.WarpedGPModel@persist(state:Map[String,Double]):Unit" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel@persist(state:Map[String,Double]):Unit" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -690,10 +685,10 @@ corresponding to input.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">predict</span><span class="params">(<span name="point">point: <span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.I">I</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+        <span class="name">predict</span><span class="params">(<span name="point">point: <span class="extype" name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel.I">I</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.WarpedGPModel@predict(point:I):Double" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel@predict(point:I):Double" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -701,7 +696,7 @@ corresponding to input.
 target variable given a
 point.</p><div class="fullcomment"><div class="comment cmt"><p>Predict the value of the
 target variable given a
-point.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel">WarpedGPModel</a> → <a href="../Model.html" class="extype" name="io.github.mandar2812.dynaml.models.Model">Model</a></dd></dl></div>
+point.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="WarpedGPModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel">WarpedGPModel</a> → <a href="../Model.html" class="extype" name="io.github.mandar2812.dynaml.models.Model">Model</a></dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel#predictionWithErrorBars" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="predictionWithErrorBars[U&lt;:Seq[I]](testData:U,sigma:Int):Seq[(I,Double,Double,Double)]"></a>
       <a id="predictionWithErrorBars[U&lt;:Seq[I]](U,Int):Seq[(I,Double,Double,Double)]"></a>
@@ -711,10 +706,10 @@ point.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a 
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">predictionWithErrorBars</span><span class="tparams">[<span name="U">U &lt;: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.I">I</span>]</span>]</span><span class="params">(<span name="testData">testData: <span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.predictionWithErrorBars.U">U</span></span>, <span name="sigma">sigma: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.I">I</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Double">Double</span>)]</span>
+        <span class="name">predictionWithErrorBars</span><span class="tparams">[<span name="U">U &lt;: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel.I">I</span>]</span>]</span><span class="params">(<span name="testData">testData: <span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.predictionWithErrorBars.U">U</span></span>, <span name="sigma">sigma: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel.I">I</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Double">Double</span>)]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.WarpedGPModel@predictionWithErrorBars[U&lt;:Seq[I]](testData:U,sigma:Int):Seq[(I,Double,Double,Double)]" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel@predictionWithErrorBars[U&lt;:Seq[I]](testData:U,sigma:Int):Seq[(I,Double,Double,Double)]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -725,7 +720,7 @@ point.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a 
 1) Mean or MAP estimate Y
 2) Y- : The lower error bar estimate (mean - sigma*stdDeviation)
 3) Y+ : The upper error bar. (mean + sigma*stdDeviation)
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel">WarpedGPModel</a> → <a href="../ContinuousProcessModel.html" class="extype" name="io.github.mandar2812.dynaml.models.ContinuousProcessModel">ContinuousProcessModel</a></dd></dl></div>
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="WarpedGPModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel">WarpedGPModel</a> → <a href="../ContinuousProcessModel.html" class="extype" name="io.github.mandar2812.dynaml.models.ContinuousProcessModel">ContinuousProcessModel</a></dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel#predictiveDistribution" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="predictiveDistribution[U&lt;:Seq[I]](test:U):io.github.mandar2812.dynaml.probability.MeasurableDistrRV[io.github.mandar2812.dynaml.algebra.PartitionedVector,io.github.mandar2812.dynaml.algebra.PartitionedVector,io.github.mandar2812.dynaml.algebra.PartitionedMatrix,io.github.mandar2812.dynaml.probability.distributions.BlockedMultiVariateGaussian]"></a>
       <a id="predictiveDistribution[U&lt;:Seq[I]](U):MeasurableDistrRV[PartitionedVector,PartitionedVector,PartitionedMatrix,BlockedMultiVariateGaussian]"></a>
@@ -735,10 +730,10 @@ point.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a 
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">predictiveDistribution</span><span class="tparams">[<span name="U">U &lt;: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.I">I</span>]</span>]</span><span class="params">(<span name="test">test: <span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.predictiveDistribution.U">U</span></span>)</span><span class="result">: <a href="../../probability/MeasurableDistrRV.html" class="extype" name="io.github.mandar2812.dynaml.probability.MeasurableDistrRV">MeasurableDistrRV</a>[<a href="../../algebra/PartitionedVector.html" class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</a>, <a href="../../algebra/PartitionedVector.html" class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</a>, <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedMatrix">PartitionedMatrix</span>, <a href="../../probability/distributions/BlockedMultiVariateGaussian.html" class="extype" name="io.github.mandar2812.dynaml.probability.distributions.BlockedMultiVariateGaussian">BlockedMultiVariateGaussian</a>]</span>
+        <span class="name">predictiveDistribution</span><span class="tparams">[<span name="U">U &lt;: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel.I">I</span>]</span>]</span><span class="params">(<span name="test">test: <span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.predictiveDistribution.U">U</span></span>)</span><span class="result">: <a href="../../probability/MeasurableDistrRV.html" class="extype" name="io.github.mandar2812.dynaml.probability.MeasurableDistrRV">MeasurableDistrRV</a>[<a href="../../algebra/PartitionedVector.html" class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</a>, <a href="../../algebra/PartitionedVector.html" class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</a>, <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedMatrix">PartitionedMatrix</span>, <a href="../../probability/distributions/BlockedMultiVariateGaussian.html" class="extype" name="io.github.mandar2812.dynaml.probability.distributions.BlockedMultiVariateGaussian">BlockedMultiVariateGaussian</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.WarpedGPModel@predictiveDistribution[U&lt;:Seq[I]](test:U):io.github.mandar2812.dynaml.probability.MeasurableDistrRV[io.github.mandar2812.dynaml.algebra.PartitionedVector,io.github.mandar2812.dynaml.algebra.PartitionedVector,io.github.mandar2812.dynaml.algebra.PartitionedMatrix,io.github.mandar2812.dynaml.probability.distributions.BlockedMultiVariateGaussian]" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel@predictiveDistribution[U&lt;:Seq[I]](test:U):io.github.mandar2812.dynaml.probability.MeasurableDistrRV[io.github.mandar2812.dynaml.algebra.PartitionedVector,io.github.mandar2812.dynaml.algebra.PartitionedVector,io.github.mandar2812.dynaml.algebra.PartitionedMatrix,io.github.mandar2812.dynaml.probability.distributions.BlockedMultiVariateGaussian]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -746,7 +741,7 @@ point.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a 
 a particular set of test data points.</p><div class="fullcomment"><div class="comment cmt"><p>Calculates posterior predictive distribution for
 a particular set of test data points.
 </p></div><dl class="paramcmts block"><dt class="param">test</dt><dd class="cmt"><p>A Sequence or Sequence like data structure
-            storing the values of the input patters.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel">WarpedGPModel</a> → <a href="../StochasticProcessModel.html" class="extype" name="io.github.mandar2812.dynaml.models.StochasticProcessModel">StochasticProcessModel</a></dd></dl></div>
+            storing the values of the input patters.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="WarpedGPModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel">WarpedGPModel</a> → <a href="../StochasticProcessModel.html" class="extype" name="io.github.mandar2812.dynaml.models.StochasticProcessModel">StochasticProcessModel</a></dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
@@ -759,7 +754,7 @@ a particular set of test data points.
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.WarpedGPModel@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -773,10 +768,10 @@ a particular set of test data points.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">test</span><span class="params">(<span name="testData">testData: <span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.T">T</span></span>)</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.I">I</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Double">Double</span>)]</span>
+        <span class="name">test</span><span class="params">(<span name="testData">testData: <span class="extype" name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel.T">T</span></span>)</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel.I">I</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Double">Double</span>)]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.WarpedGPModel@test(testData:T):Seq[(I,Y,Y,Y,Y)]" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel@test(testData:T):Seq[(I,Y,Y,Y,Y)]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -795,12 +790,12 @@ a particular set of test data points.
         <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.WarpedGPModel@toString():String" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel@toString():String" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel#underlyingProcess" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel#underlyingProcess" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="underlyingProcess:io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel[T,I]"></a>
       <a id="underlyingProcess:AbstractGPRegressionModel[T,I]"></a>
       <h4 class="signature">
@@ -809,15 +804,15 @@ a particular set of test data points.
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">underlyingProcess</span><span class="result">: <a href="AbstractGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel">AbstractGPRegressionModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.I">I</span>]</span>
+        <span class="name">underlyingProcess</span><span class="result">: <a href="AbstractGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel">AbstractGPRegressionModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel.I">I</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.WarpedGPModel@underlyingProcess:io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel[T,I]" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel@underlyingProcess:io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel[T,I]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
-    </li><li name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel#wFuncPredDistr" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="WarpedGPModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel">WarpedGPModel</a></dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel#wFuncPredDistr" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wFuncPredDistr:io.github.mandar2812.dynaml.analysis.PushforwardMap[io.github.mandar2812.dynaml.algebra.PartitionedVector,io.github.mandar2812.dynaml.algebra.PartitionedVector,io.github.mandar2812.dynaml.algebra.PartitionedMatrix]"></a>
       <a id="wFuncPredDistr:PushforwardMap[PartitionedVector,PartitionedVector,PartitionedMatrix]"></a>
       <h4 class="signature">
@@ -829,11 +824,11 @@ a particular set of test data points.
         <span class="name">wFuncPredDistr</span><span class="result">: <a href="../../analysis/PushforwardMap.html" class="extype" name="io.github.mandar2812.dynaml.analysis.PushforwardMap">PushforwardMap</a>[<a href="../../algebra/PartitionedVector.html" class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</a>, <a href="../../algebra/PartitionedVector.html" class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</a>, <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedMatrix">PartitionedMatrix</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.WarpedGPModel@wFuncPredDistr:io.github.mandar2812.dynaml.analysis.PushforwardMap[io.github.mandar2812.dynaml.algebra.PartitionedVector,io.github.mandar2812.dynaml.algebra.PartitionedVector,io.github.mandar2812.dynaml.algebra.PartitionedMatrix]" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel@wFuncPredDistr:io.github.mandar2812.dynaml.analysis.PushforwardMap[io.github.mandar2812.dynaml.algebra.PartitionedVector,io.github.mandar2812.dynaml.algebra.PartitionedVector,io.github.mandar2812.dynaml.algebra.PartitionedMatrix]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="WarpedGPModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel">WarpedGPModel</a></dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>
@@ -846,7 +841,7 @@ a particular set of test data points.
         <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.WarpedGPModel@wait():Unit" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel@wait():Unit" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -869,7 +864,7 @@ a particular set of test data points.
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.WarpedGPModel@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -892,7 +887,7 @@ a particular set of test data points.
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.WarpedGPModel@wait(x$1:Long):Unit" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel@wait(x$1:Long):Unit" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -903,7 +898,7 @@ a particular set of test data points.
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel#warpingFunc" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel#warpingFunc" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="warpingFunc:io.github.mandar2812.dynaml.analysis.PushforwardMap[Double,Double,Double]"></a>
       <a id="warpingFunc:PushforwardMap[Double,Double,Double]"></a>
       <h4 class="signature">
@@ -915,11 +910,11 @@ a particular set of test data points.
         <span class="name">warpingFunc</span><span class="result">: <a href="../../analysis/PushforwardMap.html" class="extype" name="io.github.mandar2812.dynaml.analysis.PushforwardMap">PushforwardMap</a>[<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Double">Double</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.WarpedGPModel@warpingFunc:io.github.mandar2812.dynaml.analysis.PushforwardMap[Double,Double,Double]" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel@warpingFunc:io.github.mandar2812.dynaml.analysis.PushforwardMap[Double,Double,Double]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="WarpedGPModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel">WarpedGPModel</a></dd></dl></div>
     </li></ol>
             </div>
 
@@ -929,18 +924,20 @@ a particular set of test data points.
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="io.github.mandar2812.dynaml.optimization.GloballyOptWithGrad">
+        <div class="parent" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel">
+              <h3>Inherited from <a href="WarpedGPModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel">WarpedGPModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel.I">I</span>]</h3>
+            </div><div class="parent" name="io.github.mandar2812.dynaml.optimization.GloballyOptWithGrad">
               <h3>Inherited from <a href="../../optimization/GloballyOptWithGrad.html" class="extype" name="io.github.mandar2812.dynaml.optimization.GloballyOptWithGrad">GloballyOptWithGrad</a></h3>
             </div><div class="parent" name="io.github.mandar2812.dynaml.optimization.GloballyOptimizable">
               <h3>Inherited from <a href="../../optimization/GloballyOptimizable.html" class="extype" name="io.github.mandar2812.dynaml.optimization.GloballyOptimizable">GloballyOptimizable</a></h3>
             </div><div class="parent" name="io.github.mandar2812.dynaml.models.SecondOrderProcessModel">
-              <h3>Inherited from <a href="../SecondOrderProcessModel.html" class="extype" name="io.github.mandar2812.dynaml.models.SecondOrderProcessModel">SecondOrderProcessModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.I">I</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="breeze.linalg.DenseMatrix">DenseMatrix</span>[<span class="extype" name="scala.Double">Double</span>], <a href="../../probability/MeasurableDistrRV.html" class="extype" name="io.github.mandar2812.dynaml.probability.MeasurableDistrRV">MeasurableDistrRV</a>[<a href="../../algebra/PartitionedVector.html" class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</a>, <a href="../../algebra/PartitionedVector.html" class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</a>, <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedMatrix">PartitionedMatrix</span>, <a href="../../probability/distributions/BlockedMultiVariateGaussian.html" class="extype" name="io.github.mandar2812.dynaml.probability.distributions.BlockedMultiVariateGaussian">BlockedMultiVariateGaussian</a>]]</h3>
+              <h3>Inherited from <a href="../SecondOrderProcessModel.html" class="extype" name="io.github.mandar2812.dynaml.models.SecondOrderProcessModel">SecondOrderProcessModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel.I">I</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="breeze.linalg.DenseMatrix">DenseMatrix</span>[<span class="extype" name="scala.Double">Double</span>], <a href="../../probability/MeasurableDistrRV.html" class="extype" name="io.github.mandar2812.dynaml.probability.MeasurableDistrRV">MeasurableDistrRV</a>[<a href="../../algebra/PartitionedVector.html" class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</a>, <a href="../../algebra/PartitionedVector.html" class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</a>, <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedMatrix">PartitionedMatrix</span>, <a href="../../probability/distributions/BlockedMultiVariateGaussian.html" class="extype" name="io.github.mandar2812.dynaml.probability.distributions.BlockedMultiVariateGaussian">BlockedMultiVariateGaussian</a>]]</h3>
             </div><div class="parent" name="io.github.mandar2812.dynaml.models.ContinuousProcessModel">
-              <h3>Inherited from <a href="../ContinuousProcessModel.html" class="extype" name="io.github.mandar2812.dynaml.models.ContinuousProcessModel">ContinuousProcessModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.I">I</span>, <span class="extype" name="scala.Double">Double</span>, <a href="../../probability/MeasurableDistrRV.html" class="extype" name="io.github.mandar2812.dynaml.probability.MeasurableDistrRV">MeasurableDistrRV</a>[<a href="../../algebra/PartitionedVector.html" class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</a>, <a href="../../algebra/PartitionedVector.html" class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</a>, <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedMatrix">PartitionedMatrix</span>, <a href="../../probability/distributions/BlockedMultiVariateGaussian.html" class="extype" name="io.github.mandar2812.dynaml.probability.distributions.BlockedMultiVariateGaussian">BlockedMultiVariateGaussian</a>]]</h3>
+              <h3>Inherited from <a href="../ContinuousProcessModel.html" class="extype" name="io.github.mandar2812.dynaml.models.ContinuousProcessModel">ContinuousProcessModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel.I">I</span>, <span class="extype" name="scala.Double">Double</span>, <a href="../../probability/MeasurableDistrRV.html" class="extype" name="io.github.mandar2812.dynaml.probability.MeasurableDistrRV">MeasurableDistrRV</a>[<a href="../../algebra/PartitionedVector.html" class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</a>, <a href="../../algebra/PartitionedVector.html" class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</a>, <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedMatrix">PartitionedMatrix</span>, <a href="../../probability/distributions/BlockedMultiVariateGaussian.html" class="extype" name="io.github.mandar2812.dynaml.probability.distributions.BlockedMultiVariateGaussian">BlockedMultiVariateGaussian</a>]]</h3>
             </div><div class="parent" name="io.github.mandar2812.dynaml.models.StochasticProcessModel">
-              <h3>Inherited from <a href="../StochasticProcessModel.html" class="extype" name="io.github.mandar2812.dynaml.models.StochasticProcessModel">StochasticProcessModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.I">I</span>, <span class="extype" name="scala.Double">Double</span>, <a href="../../probability/MeasurableDistrRV.html" class="extype" name="io.github.mandar2812.dynaml.probability.MeasurableDistrRV">MeasurableDistrRV</a>[<a href="../../algebra/PartitionedVector.html" class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</a>, <a href="../../algebra/PartitionedVector.html" class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</a>, <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedMatrix">PartitionedMatrix</span>, <a href="../../probability/distributions/BlockedMultiVariateGaussian.html" class="extype" name="io.github.mandar2812.dynaml.probability.distributions.BlockedMultiVariateGaussian">BlockedMultiVariateGaussian</a>]]</h3>
+              <h3>Inherited from <a href="../StochasticProcessModel.html" class="extype" name="io.github.mandar2812.dynaml.models.StochasticProcessModel">StochasticProcessModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel.I">I</span>, <span class="extype" name="scala.Double">Double</span>, <a href="../../probability/MeasurableDistrRV.html" class="extype" name="io.github.mandar2812.dynaml.probability.MeasurableDistrRV">MeasurableDistrRV</a>[<a href="../../algebra/PartitionedVector.html" class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</a>, <a href="../../algebra/PartitionedVector.html" class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</a>, <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedMatrix">PartitionedMatrix</span>, <a href="../../probability/distributions/BlockedMultiVariateGaussian.html" class="extype" name="io.github.mandar2812.dynaml.probability.distributions.BlockedMultiVariateGaussian">BlockedMultiVariateGaussian</a>]]</h3>
             </div><div class="parent" name="io.github.mandar2812.dynaml.models.Model">
-              <h3>Inherited from <a href="../Model.html" class="extype" name="io.github.mandar2812.dynaml.models.Model">Model</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.I">I</span>, <span class="extype" name="scala.Double">Double</span>]</h3>
+              <h3>Inherited from <a href="../Model.html" class="extype" name="io.github.mandar2812.dynaml.models.Model">Model</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel.I">I</span>, <span class="extype" name="scala.Double">Double</span>]</h3>
             </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">

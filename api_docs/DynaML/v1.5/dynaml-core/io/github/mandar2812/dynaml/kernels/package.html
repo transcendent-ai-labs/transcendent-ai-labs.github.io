@@ -152,9 +152,9 @@ of two kernels k(.,.) = k1(.,.) + k2(.,.)</p>
       </a>
     </span>
       <p class="shortcomment cmt">Cauchy Kernel given by the expression
-K(x,y) = 1/(1 + ||x-y||<sup>2</sup>/sigma<sup>2</sup>)
+K(x,y) = 1/(1 + ||x-y||<sup>2</sup>/&sigma;<sup>2</sup>)
 </sup></sup></p><div class="fullcomment"><div class="comment cmt"><p>Cauchy Kernel given by the expression
-K(x,y) = 1/(1 + ||x-y||<sup>2</sup>/sigma<sup>2</sup>)
+K(x,y) = 1/(1 + ||x-y||<sup>2</sup>/&sigma;<sup>2</sup>)
 </p></div></div>
     </li><li name="io.github.mandar2812.dynaml.kernels.CoRegCauchyKernel" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="CoRegCauchyKernelextendsCovarianceFunction[Int,Double,breeze.linalg.DenseMatrix[Double]]withLocalScalarKernel[Int]"></a>
@@ -428,7 +428,7 @@ a hyper-parameter called the noise level.</p><p>K(x,y) = noise*DiracDelta(x,y)
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Implementation of the Normalized Exponential Kernel</p><div class="fullcomment"><div class="comment cmt"><p>Implementation of the Normalized Exponential Kernel</p><p>K(x,y) = exp(beta*(x.y))
+      <p class="shortcomment cmt">Implementation of the Normalized Exponential Kernel</p><div class="fullcomment"><div class="comment cmt"><p>Implementation of the Normalized Exponential Kernel</p><p>K(x,y) = exp(&beta;*(x.y))
 </p></div></div>
     </li><li name="io.github.mandar2812.dynaml.kernels.FBMCovFunction" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="FBMCovFunctionextendsCovarianceFunction[Double,Double,breeze.linalg.DenseMatrix[Double]]withLocalSVMKernel[Double]"></a>
@@ -520,7 +520,8 @@ index sets is.</p><p>K(x,y) = 1/2 &#215; (||x||<sup>2H</sup> + ||y||<sup>2H</sup
       <p class="shortcomment cmt">Implements the gaussian spectral mixture kernel as outlined
 in Wilson et.</p><div class="fullcomment"><div class="comment cmt"><p>Implements the gaussian spectral mixture kernel as outlined
 in Wilson et. al.</p><p>The kernel is defined as the inverse fourier transform
-of a gaussian spectral density as is shown by Bochner's theorem.
+of a gaussian spectral density as is shown by Bochner's theorem.</p><p>K(<b>d</b>) = exp(-2&pi;<sup>2</sup> <b>d</b><sup>T</sup>&Sigma;<sup>-1<sup><b>d</b>) &times;
+cos(2&pi;<b>&mu;</b><sup>T</sup><b>d</b>)
 </p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>The domain over which the kernel is defined</p></dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.kernels.GenExpSpaceTimeKernel" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="GenExpSpaceTimeKernel[I]extendsCovarianceFunction[(I,Double),Double,breeze.linalg.DenseMatrix[Double]]withLocalScalarKernel[(I,Double)]"></a>
