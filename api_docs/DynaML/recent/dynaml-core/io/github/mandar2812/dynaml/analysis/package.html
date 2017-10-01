@@ -47,13 +47,36 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"></div>
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Utilities for computational real analysis
+</p></div><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
         
 
       <div id="mbrsel">
         <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
-        
-        
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By Inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="io.github.mandar2812.dynaml.analysis"><span>analysis</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show All</span></li>
+            </ol>
+          </div>
         <div id="visbl">
             <span class="filtertype">Visibility</span>
             <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
@@ -66,7 +89,27 @@
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="io.github.mandar2812.dynaml.analysis.DifferentiableMap" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+              <ol><li name="io.github.mandar2812.dynaml.analysis.BSplineGenerator" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="BSplineGeneratorextendsMetaPipe21[Int,Int,Double,Double]"></a>
+      <a id="BSplineGenerator:BSplineGenerator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="BSplineGenerator.html"><span class="name">BSplineGenerator</span></a><span class="result"> extends <span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe21">MetaPipe21</span>[<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Double">Double</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.package@BSplineGeneratorextendsMetaPipe21[Int,Int,Double,Double]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">B-Spline generator as described in
+<a href="http://ftp.cs.wisc.edu/Approx/bsplbasic.pdf">B(asic)-Spline Basics</a> by Carl de Boor.</a></p><div class="fullcomment"><div class="comment cmt"><h5> (B)ASIC SPLINES </h5><p>B-Spline generator as described in
+<a href="http://ftp.cs.wisc.edu/Approx/bsplbasic.pdf">B(asic)-Spline Basics</a> by Carl de Boor.</p><p>B<sub>i,k</sub>(t) :=
+&omega;<sub>i,k</sub>(t) B<sub>i,k-1</sub>(t) + (1 - &omega;<sub>i+1,k</sub>(t)) B<sub>i+1,k-1</sub></p></div></div>
+    </li><li name="io.github.mandar2812.dynaml.analysis.DifferentiableMap" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="DifferentiableMap[S,D,J]extendsDataPipe[S,D]"></a>
       <a id="DifferentiableMap[S,D,J]:DifferentiableMap[S,D,J]"></a>
       <h4 class="signature">
@@ -83,6 +126,40 @@
       </a>
     </span>
       <p class="shortcomment cmt">A <span class="extype" name="DataPipe">DataPipe</span> which represents a differentiable transformation.</p>
+    </li><li name="io.github.mandar2812.dynaml.analysis.InnerProductPV" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="InnerProductPVextendsInnerProductSpace[io.github.mandar2812.dynaml.algebra.PartitionedVector,Double]"></a>
+      <a id="InnerProductPV:InnerProductPV"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="InnerProductPV.html"><span class="name">InnerProductPV</span></a><span class="result"> extends <span class="extype" name="spire.algebra.InnerProductSpace">InnerProductSpace</span>[<a href="../algebra/PartitionedVector.html" class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</a>, <span class="extype" name="scala.Double">Double</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.package@InnerProductPVextendsInnerProductSpace[io.github.mandar2812.dynaml.algebra.PartitionedVector,Double]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.github.mandar2812.dynaml.analysis.MatrixVectorSpace" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MatrixVectorSpaceextendsInnerProductSpace[breeze.linalg.DenseMatrix[Double],Double]withProductwithSerializable"></a>
+      <a id="MatrixVectorSpace:MatrixVectorSpace"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="MatrixVectorSpace.html"><span class="name">MatrixVectorSpace</span></a><span class="params">(<span name="rows">rows: <span class="extype" name="scala.Int">Int</span></span>, <span name="cols">cols: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result"> extends <span class="extype" name="spire.algebra.InnerProductSpace">InnerProductSpace</span>[<span class="extype" name="breeze.linalg.DenseMatrix">DenseMatrix</span>[<span class="extype" name="scala.Double">Double</span>], <span class="extype" name="scala.Double">Double</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.package@MatrixVectorSpaceextendsInnerProductSpace[breeze.linalg.DenseMatrix[Double],Double]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Defines an inner product space over m &times; n matrices.</p>
     </li><li name="io.github.mandar2812.dynaml.analysis.PartitionedVectorField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="PartitionedVectorFieldextendsField[io.github.mandar2812.dynaml.algebra.PartitionedVector]withInnerProductSpace[io.github.mandar2812.dynaml.algebra.PartitionedVector,Double]"></a>
       <a id="PartitionedVectorField:PartitionedVectorField"></a>
@@ -92,7 +169,7 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="PartitionedVectorField.html"><span class="name">PartitionedVectorField</span></a><span class="result"> extends <span class="extype" name="spire.algebra.Field">Field</span>[<span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</span>] with <span class="extype" name="spire.algebra.InnerProductSpace">InnerProductSpace</span>[<span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</span>, <span class="extype" name="scala.Double">Double</span>]</span>
+        <a href="PartitionedVectorField.html"><span class="name">PartitionedVectorField</span></a><span class="result"> extends <span class="extype" name="spire.algebra.Field">Field</span>[<a href="../algebra/PartitionedVector.html" class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</a>] with <span class="extype" name="spire.algebra.InnerProductSpace">InnerProductSpace</span>[<a href="../algebra/PartitionedVector.html" class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</a>, <span class="extype" name="scala.Double">Double</span>]</span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.package@PartitionedVectorFieldextendsField[io.github.mandar2812.dynaml.algebra.PartitionedVector]withInnerProductSpace[io.github.mandar2812.dynaml.algebra.PartitionedVector,Double]" title="Permalink" target="_top">
@@ -116,7 +193,43 @@
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt"></p>
+      <p class="shortcomment cmt">Push forward map is a function that has a well defined inverse
+as well as Jacobian of the inverse.</p>
+    </li><li name="io.github.mandar2812.dynaml.analysis.RadialBasis" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="RadialBasis[I]extendsBasis[I]"></a>
+      <a id="RadialBasis[I]:RadialBasis[I]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="RadialBasis.html"><span class="name">RadialBasis</span></a><span class="tparams">[<span name="I">I</span>]</span><span class="result"> extends <span class="extype" name="io.github.mandar2812.dynaml.pipes.Basis">Basis</span>[<span class="extype" name="io.github.mandar2812.dynaml.analysis.RadialBasis.I">I</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.package@RadialBasis[I]extendsBasis[I]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"><h5> Radial Basis Function Generator</h5><h5>
+</h5></div></div>
+    </li><li name="io.github.mandar2812.dynaml.analysis.SplineGenerator" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="SplineGeneratorextendsMetaPipe[Int,Double,Double]"></a>
+      <a id="SplineGenerator:SplineGenerator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="SplineGenerator.html"><span class="name">SplineGenerator</span></a><span class="result"> extends <span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe">MetaPipe</span>[<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Double">Double</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.package@SplineGeneratorextendsMetaPipe[Int,Double,Double]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Represents linear combinations of b-splines.</p><div class="fullcomment"><div class="comment cmt"><h5> Generalised Piecewise Polynomial Splines </h5><p>Represents linear combinations of b-splines.</p></div></div>
     </li><li name="io.github.mandar2812.dynaml.analysis.VectorField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="VectorFieldextendsField[breeze.linalg.DenseVector[Double]]withNRoot[breeze.linalg.DenseVector[Double]]withInnerProductSpace[breeze.linalg.DenseVector[Double],Double]withSerializable"></a>
       <a id="VectorField:VectorField"></a>
@@ -141,7 +254,114 @@
 
         <div id="values" class="values members">
               <h3>Value Members</h3>
-              <ol><li name="io.github.mandar2812.dynaml.analysis.DifferentiableMap" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+              <ol><li name="io.github.mandar2812.dynaml.analysis.BSplineGenerator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BSplineGenerator"></a>
+      <a id="BSplineGenerator:BSplineGenerator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="BSplineGenerator$.html"><span class="name">BSplineGenerator</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.package@BSplineGenerator" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The <a href="BSplineGenerator.html" class="extype" name="io.github.mandar2812.dynaml.analysis.BSplineGenerator">BSplineGenerator</a> companion object has convenience methods for
+creating arbitrary b-spline generators from knot sequences.</p>
+    </li><li name="io.github.mandar2812.dynaml.analysis.BernsteinSplineGenerator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BernsteinSplineGenerator"></a>
+      <a id="BernsteinSplineGenerator:BernsteinSplineGenerator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="BernsteinSplineGenerator$.html"><span class="name">BernsteinSplineGenerator</span></a><span class="result"> extends <a href="BSplineGenerator.html" class="extype" name="io.github.mandar2812.dynaml.analysis.BSplineGenerator">BSplineGenerator</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.package@BernsteinSplineGenerator" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Bernstein B-Splines have knots as (...000111...)
+</p>
+    </li><li name="io.github.mandar2812.dynaml.analysis.BernsteinSplineSeriesGenerator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BernsteinSplineSeriesGenerator"></a>
+      <a id="BernsteinSplineSeriesGenerator:BernsteinSplineSeriesGenerator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$BernsteinSplineSeriesGenerator$.html"><span class="name">BernsteinSplineSeriesGenerator</span></a><span class="result"> extends <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</span>[<span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Int">Int</span>], <span class="extype" name="io.github.mandar2812.dynaml.pipes.Basis">Basis</span>[<span class="extype" name="scala.Double">Double</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.package@BernsteinSplineSeriesGenerator" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Generate a basis of Bernstein Polynomials
+</p>
+    </li><li name="io.github.mandar2812.dynaml.analysis.CardinalBSplineGenerator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CardinalBSplineGenerator"></a>
+      <a id="CardinalBSplineGenerator:CardinalBSplineGenerator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="CardinalBSplineGenerator$.html"><span class="name">CardinalBSplineGenerator</span></a><span class="result"> extends <a href="BSplineGenerator.html" class="extype" name="io.github.mandar2812.dynaml.analysis.BSplineGenerator">BSplineGenerator</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.package@CardinalBSplineGenerator" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Cardinal B-Splines have knots as the sequence of integers.</p>
+    </li><li name="io.github.mandar2812.dynaml.analysis.ChebyshevBasisGenerator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ChebyshevBasisGenerator"></a>
+      <a id="ChebyshevBasisGenerator:ChebyshevBasisGenerator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$ChebyshevBasisGenerator$.html"><span class="name">ChebyshevBasisGenerator</span></a><span class="result"> extends <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe2">DataPipe2</span>[<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="io.github.mandar2812.dynaml.pipes.Basis">Basis</span>[<span class="extype" name="scala.Double">Double</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.package@ChebyshevBasisGenerator" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Generate a basis of Chebyshev functions
+</p>
+    </li><li name="io.github.mandar2812.dynaml.analysis.CubicSplineGenerator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CubicSplineGenerator"></a>
+      <a id="CubicSplineGenerator:CubicSplineGenerator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$CubicSplineGenerator$.html"><span class="name">CubicSplineGenerator</span></a><span class="result"> extends <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</span>[<span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Int">Int</span>], <span class="extype" name="io.github.mandar2812.dynaml.pipes.Basis">Basis</span>[<span class="extype" name="scala.Double">Double</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.package@CubicSplineGenerator" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Generate a basis of Cardinal Cubic B-Splines
+</p>
+    </li><li name="io.github.mandar2812.dynaml.analysis.DifferentiableMap" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="DifferentiableMap"></a>
       <a id="DifferentiableMap:DifferentiableMap"></a>
       <h4 class="signature">
@@ -154,6 +374,57 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.package@DifferentiableMap" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.github.mandar2812.dynaml.analysis.FourierBasisGenerator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FourierBasisGenerator"></a>
+      <a id="FourierBasisGenerator:FourierBasisGenerator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$FourierBasisGenerator$.html"><span class="name">FourierBasisGenerator</span></a><span class="result"> extends <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe2">DataPipe2</span>[<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="io.github.mandar2812.dynaml.pipes.Basis">Basis</span>[<span class="extype" name="scala.Double">Double</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.package@FourierBasisGenerator" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Generates a fourier series feature mapping.</p>
+    </li><li name="io.github.mandar2812.dynaml.analysis.HermiteBasisGenerator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="HermiteBasisGenerator"></a>
+      <a id="HermiteBasisGenerator:HermiteBasisGenerator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$HermiteBasisGenerator$.html"><span class="name">HermiteBasisGenerator</span></a><span class="result"> extends <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</span>[<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="io.github.mandar2812.dynaml.pipes.Basis">Basis</span>[<span class="extype" name="scala.Double">Double</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.package@HermiteBasisGenerator" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Generate a hermite polynomial basis.</p>
+    </li><li name="io.github.mandar2812.dynaml.analysis.InnerProductPV" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="InnerProductPV"></a>
+      <a id="InnerProductPV:InnerProductPV"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="InnerProductPV$.html"><span class="name">InnerProductPV</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.package@InnerProductPV" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -175,6 +446,23 @@
       </a>
     </span>
       
+    </li><li name="io.github.mandar2812.dynaml.analysis.PolynomialBasisGenerator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PolynomialBasisGenerator"></a>
+      <a id="PolynomialBasisGenerator:PolynomialBasisGenerator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$PolynomialBasisGenerator$.html"><span class="name">PolynomialBasisGenerator</span></a><span class="result"> extends <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</span>[<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="io.github.mandar2812.dynaml.pipes.Basis">Basis</span>[<span class="extype" name="scala.Double">Double</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.package@PolynomialBasisGenerator" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Generates a polynomial feature mapping upto a specified degree.</p>
     </li><li name="io.github.mandar2812.dynaml.analysis.PushforwardMap" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="PushforwardMap"></a>
       <a id="PushforwardMap:PushforwardMap"></a>
@@ -188,6 +476,40 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.package@PushforwardMap" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.github.mandar2812.dynaml.analysis.RadialBasis" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RadialBasis"></a>
+      <a id="RadialBasis:RadialBasis"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="RadialBasis$.html"><span class="name">RadialBasis</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.package@RadialBasis" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.github.mandar2812.dynaml.analysis.SplineGenerator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SplineGenerator"></a>
+      <a id="SplineGenerator:SplineGenerator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="SplineGenerator$.html"><span class="name">SplineGenerator</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.package@SplineGenerator" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -235,7 +557,11 @@
         </div>
 
         <div id="inheritedMembers">
-        
+        <div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
         
         </div>
 

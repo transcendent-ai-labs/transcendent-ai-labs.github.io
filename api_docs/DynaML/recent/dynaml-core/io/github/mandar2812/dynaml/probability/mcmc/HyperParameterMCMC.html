@@ -51,7 +51,10 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"></div><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Implementation of the classic Markov Chain Monte Carlo algorithm,
+equipped with reversible Metropolis Hastings updates.
+</p></div><dl class="paramcmts block"><dt class="tparam">Model</dt><dd class="cmt"><p>Any type which implements the <span class="extype" name="GloballyOptimizable">GloballyOptimizable</span> trait
+              i.e. the <span class="extype" name="GloballyOptimizable.energy()">GloballyOptimizable.energy()</span> method.</p></dd><dt class="tparam">Distr</dt><dd class="cmt"><p>A breeze distribution type for hyper-parameter priors.</p></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><a href="../RandomVariable.html" class="extype" name="io.github.mandar2812.dynaml.probability.RandomVariable">RandomVariable</a>[<span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>]], <span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
@@ -90,8 +93,8 @@
         <div id="allMembers">
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
-              <ol><li name="io.github.mandar2812.dynaml.probability.mcmc.HyperParameterMCMC#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(system:Model,hyper_prior:Map[String,Distr],proposal:io.github.mandar2812.dynaml.probability.RandomVarWithDistr[breeze.linalg.DenseVector[Double],breeze.stats.distributions.ContinuousDistr[breeze.linalg.DenseVector[Double]]]):io.github.mandar2812.dynaml.probability.mcmc.HyperParameterMCMC[Model,Distr]"></a>
+              <ol><li name="io.github.mandar2812.dynaml.probability.mcmc.HyperParameterMCMC#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="&lt;init&gt;(system:Model,hyper_prior:Map[String,Distr],proposal:io.github.mandar2812.dynaml.probability.ContinuousRVWithDistr[breeze.linalg.DenseVector[Double],breeze.stats.distributions.ContinuousDistr[breeze.linalg.DenseVector[Double]]],burnIn:Long):io.github.mandar2812.dynaml.probability.mcmc.HyperParameterMCMC[Model,Distr]"></a>
       <a id="&lt;init&gt;:HyperParameterMCMC[Model,Distr]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -99,14 +102,15 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">HyperParameterMCMC</span><span class="params">(<span name="system">system: <span class="extype" name="io.github.mandar2812.dynaml.probability.mcmc.HyperParameterMCMC.Model">Model</span></span>, <span name="hyper_prior">hyper_prior: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="io.github.mandar2812.dynaml.probability.mcmc.HyperParameterMCMC.Distr">Distr</span>]</span>, <span name="proposal">proposal: <a href="../RandomVarWithDistr.html" class="extype" name="io.github.mandar2812.dynaml.probability.RandomVarWithDistr">RandomVarWithDistr</a>[<span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>], <span class="extype" name="breeze.stats.distributions.ContinuousDistr">ContinuousDistr</span>[<span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]]]</span>)</span>
+        <span class="name">HyperParameterMCMC</span><span class="params">(<span name="system">system: <span class="extype" name="io.github.mandar2812.dynaml.probability.mcmc.HyperParameterMCMC.Model">Model</span></span>, <span name="hyper_prior">hyper_prior: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="io.github.mandar2812.dynaml.probability.mcmc.HyperParameterMCMC.Distr">Distr</span>]</span>, <span name="proposal">proposal: <a href="../ContinuousRVWithDistr.html" class="extype" name="io.github.mandar2812.dynaml.probability.ContinuousRVWithDistr">ContinuousRVWithDistr</a>[<span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>], <span class="extype" name="breeze.stats.distributions.ContinuousDistr">ContinuousDistr</span>[<span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]]]</span>, <span name="burnIn">burnIn: <span class="extype" name="scala.Long">Long</span></span>)</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.probability.mcmc.HyperParameterMCMC@&lt;init&gt;(system:Model,hyper_prior:Map[String,Distr],proposal:io.github.mandar2812.dynaml.probability.RandomVarWithDistr[breeze.linalg.DenseVector[Double],breeze.stats.distributions.ContinuousDistr[breeze.linalg.DenseVector[Double]]]):io.github.mandar2812.dynaml.probability.mcmc.HyperParameterMCMC[Model,Distr]" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.probability.mcmc.HyperParameterMCMC@&lt;init&gt;(system:Model,hyper_prior:Map[String,Distr],proposal:io.github.mandar2812.dynaml.probability.ContinuousRVWithDistr[breeze.linalg.DenseVector[Double],breeze.stats.distributions.ContinuousDistr[breeze.linalg.DenseVector[Double]]],burnIn:Long):io.github.mandar2812.dynaml.probability.mcmc.HyperParameterMCMC[Model,Distr]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">system</dt><dd class="cmt"><p>The model whose hyper-parameters are to be sampled.</p></dd><dt class="param">hyper_prior</dt><dd class="cmt"><p>A mean field prior measure over the <span class="extype" name="system">system</span> hyper-parameters.
+                   Represented as a <span class="extype" name="Map">Map</span>.</p></dd><dt class="param">proposal</dt><dd class="cmt"><p>A distribution which is used to propose hyper-parameter updates.</p></dd></dl></div>
     </li></ol>
             </div>
 
@@ -244,18 +248,18 @@ morphed random variable on <span class="extype" name="OtherDomain">OtherDomain</
     </span>
       
     </li><li name="io.github.mandar2812.dynaml.probability.mcmc.HyperParameterMCMC#burnIn" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="burnIn:Int"></a>
-      <a id="burnIn:Int"></a>
+      <a id="burnIn:Long"></a>
+      <a id="burnIn:Long"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">var</span>
+        <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">burnIn</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">burnIn</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.probability.mcmc.HyperParameterMCMC@burnIn:Int" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.probability.mcmc.HyperParameterMCMC@burnIn:Long" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -308,7 +312,7 @@ morphed random variable on <span class="extype" name="OtherDomain">OtherDomain</
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">var</span>
+        <span class="kind">val</span>
       </span>
       <span class="symbol">
         <span class="name">dropCount</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
@@ -444,6 +448,23 @@ morphed random variable on <span class="extype" name="OtherDomain">OtherDomain</
       </a>
     </span>
       <p class="shortcomment cmt">Create an iid random variable from the current (this)</p><div class="fullcomment"><div class="comment cmt"><p>Create an iid random variable from the current (this)</p></div><dl class="paramcmts block"><dt class="param">n</dt><dd class="cmt"><p>The number of iid samples of the base random variable.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../RandomVariable.html" class="extype" name="io.github.mandar2812.dynaml.probability.RandomVariable">RandomVariable</a></dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.probability.mcmc.HyperParameterMCMC#initialState" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="initialState:breeze.linalg.DenseVector[Double]"></a>
+      <a id="initialState:DenseVector[Double]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">initialState</span><span class="result">: <span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.probability.mcmc.HyperParameterMCMC@initialState:breeze.linalg.DenseVector[Double]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>

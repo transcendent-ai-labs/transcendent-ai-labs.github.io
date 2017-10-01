@@ -49,7 +49,9 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="tparam">I</dt><dd class="cmt"><p>The index set of the GP.</p></dd></dl><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><h5> Multi-Output GP Regression </h5><p>Abstract implementation of multi-output gaussian process
+as outlined in Lawrence et. al 2012 on arxiv
+</p></div><dl class="paramcmts block"><dt class="tparam">I</dt><dd class="cmt"><p>The index set of the GP.</p></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><a href="AbstractGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel">AbstractGPRegressionModel</a>[<span class="extype" name="scala.Stream">Stream</span>[(<span class="extype" name="io.github.mandar2812.dynaml.models.gp.MOGPRegressionModel.I">I</span>, <span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>])], (<span class="extype" name="io.github.mandar2812.dynaml.models.gp.MOGPRegressionModel.I">I</span>, <span class="extype" name="scala.Int">Int</span>)], <a href="../../optimization/GloballyOptWithGrad.html" class="extype" name="io.github.mandar2812.dynaml.optimization.GloballyOptWithGrad">GloballyOptWithGrad</a>, <a href="../../optimization/GloballyOptimizable.html" class="extype" name="io.github.mandar2812.dynaml.optimization.GloballyOptimizable">GloballyOptimizable</a>, <a href="../SecondOrderProcessModel.html" class="extype" name="io.github.mandar2812.dynaml.models.SecondOrderProcessModel">SecondOrderProcessModel</a>[<span class="extype" name="scala.Stream">Stream</span>[(<span class="extype" name="io.github.mandar2812.dynaml.models.gp.MOGPRegressionModel.I">I</span>, <span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>])], (<span class="extype" name="io.github.mandar2812.dynaml.models.gp.MOGPRegressionModel.I">I</span>, <span class="extype" name="scala.Int">Int</span>), <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="breeze.linalg.DenseMatrix">DenseMatrix</span>[<span class="extype" name="scala.Double">Double</span>], <a href="../../probability/MultGaussianPRV.html" class="extype" name="io.github.mandar2812.dynaml.probability.MultGaussianPRV">MultGaussianPRV</a>], <a href="../ContinuousProcessModel.html" class="extype" name="io.github.mandar2812.dynaml.models.ContinuousProcessModel">ContinuousProcessModel</a>[<span class="extype" name="scala.Stream">Stream</span>[(<span class="extype" name="io.github.mandar2812.dynaml.models.gp.MOGPRegressionModel.I">I</span>, <span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>])], (<span class="extype" name="io.github.mandar2812.dynaml.models.gp.MOGPRegressionModel.I">I</span>, <span class="extype" name="scala.Int">Int</span>), <span class="extype" name="scala.Double">Double</span>, <a href="../../probability/MultGaussianPRV.html" class="extype" name="io.github.mandar2812.dynaml.probability.MultGaussianPRV">MultGaussianPRV</a>], <a href="../StochasticProcessModel.html" class="extype" name="io.github.mandar2812.dynaml.models.StochasticProcessModel">StochasticProcessModel</a>[<span class="extype" name="scala.Stream">Stream</span>[(<span class="extype" name="io.github.mandar2812.dynaml.models.gp.MOGPRegressionModel.I">I</span>, <span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>])], (<span class="extype" name="io.github.mandar2812.dynaml.models.gp.MOGPRegressionModel.I">I</span>, <span class="extype" name="scala.Int">Int</span>), <span class="extype" name="scala.Double">Double</span>, <a href="../../probability/MultGaussianPRV.html" class="extype" name="io.github.mandar2812.dynaml.probability.MultGaussianPRV">MultGaussianPRV</a>], <a href="../Model.html" class="extype" name="io.github.mandar2812.dynaml.models.Model">Model</a>[<span class="extype" name="scala.Stream">Stream</span>[(<span class="extype" name="io.github.mandar2812.dynaml.models.gp.MOGPRegressionModel.I">I</span>, <span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>])], (<span class="extype" name="io.github.mandar2812.dynaml.models.gp.MOGPRegressionModel.I">I</span>, <span class="extype" name="scala.Int">Int</span>), <span class="extype" name="scala.Double">Double</span>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block">
@@ -313,7 +315,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">calculateEnergyPipe</span><span class="params">(<span name="h">h: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>]</span>, <span name="options">options: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe2">DataPipe2</span>[<span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="io.github.mandar2812.dynaml.models.gp.MOGPRegressionModel.I">I</span>, <span class="extype" name="scala.Int">Int</span>)], <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</span>, <span class="extype" name="scala.Double">Double</span>]</span>
+        <span class="name">calculateEnergyPipe</span><span class="params">(<span name="h">h: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>]</span>, <span name="options">options: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe2">DataPipe2</span>[<span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="io.github.mandar2812.dynaml.models.gp.MOGPRegressionModel.I">I</span>, <span class="extype" name="scala.Int">Int</span>)], <a href="../../algebra/PartitionedVector.html" class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</a>, <span class="extype" name="scala.Double">Double</span>]</span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.MOGPRegressionModel@calculateEnergyPipe(h:Map[String,Double],options:Map[String,String]):io.github.mandar2812.dynaml.pipes.DataPipe2[Seq[I],io.github.mandar2812.dynaml.algebra.PartitionedVector,Double]" title="Permalink" target="_top">
@@ -332,7 +334,7 @@ See: <a href="AbstractGPRegressionModel.html#energy(h:Map[String,Double],options
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">calculateGradEnergyPipe</span><span class="params">(<span name="h">h: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>]</span>)</span><span class="result">: <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe2">DataPipe2</span>[<span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="io.github.mandar2812.dynaml.models.gp.MOGPRegressionModel.I">I</span>, <span class="extype" name="scala.Int">Int</span>)], <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</span>, <span class="extype" name="scala.collection.immutable.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>]]</span>
+        <span class="name">calculateGradEnergyPipe</span><span class="params">(<span name="h">h: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>]</span>)</span><span class="result">: <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe2">DataPipe2</span>[<span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="io.github.mandar2812.dynaml.models.gp.MOGPRegressionModel.I">I</span>, <span class="extype" name="scala.Int">Int</span>)], <a href="../../algebra/PartitionedVector.html" class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</a>, <span class="extype" name="scala.collection.immutable.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>]]</span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.MOGPRegressionModel@calculateGradEnergyPipe(h:Map[String,Double]):io.github.mandar2812.dynaml.pipes.DataPipe2[Seq[I],io.github.mandar2812.dynaml.algebra.PartitionedVector,scala.collection.immutable.Map[String,Double]]" title="Permalink" target="_top">
@@ -605,6 +607,57 @@ also known as log likelihood.</p></dd></dl><dl class="attributes block"> <dt>Def
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel#getCrossKernelMatrix" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getCrossKernelMatrix[U&lt;:Seq[I]](test:U):io.github.mandar2812.dynaml.algebra.PartitionedMatrix"></a>
+      <a id="getCrossKernelMatrix[U&lt;:Seq[(I,Int)]](U):PartitionedMatrix"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getCrossKernelMatrix</span><span class="tparams">[<span name="U">U &lt;: <span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="io.github.mandar2812.dynaml.models.gp.MOGPRegressionModel.I">I</span>, <span class="extype" name="scala.Int">Int</span>)]</span>]</span><span class="params">(<span name="test">test: <span class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel.getCrossKernelMatrix.U">U</span></span>)</span><span class="result">: <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedMatrix">PartitionedMatrix</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.MOGPRegressionModel@getCrossKernelMatrix[U&lt;:Seq[I]](test:U):io.github.mandar2812.dynaml.algebra.PartitionedMatrix" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel">AbstractGPRegressionModel</a></dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel#getTestKernelMatrix" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getTestKernelMatrix[U&lt;:Seq[I]](test:U):io.github.mandar2812.dynaml.algebra.PartitionedPSDMatrix"></a>
+      <a id="getTestKernelMatrix[U&lt;:Seq[(I,Int)]](U):PartitionedPSDMatrix"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getTestKernelMatrix</span><span class="tparams">[<span name="U">U &lt;: <span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="io.github.mandar2812.dynaml.models.gp.MOGPRegressionModel.I">I</span>, <span class="extype" name="scala.Int">Int</span>)]</span>]</span><span class="params">(<span name="test">test: <span class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel.getTestKernelMatrix.U">U</span></span>)</span><span class="result">: <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedPSDMatrix">PartitionedPSDMatrix</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.MOGPRegressionModel@getTestKernelMatrix[U&lt;:Seq[I]](test:U):io.github.mandar2812.dynaml.algebra.PartitionedPSDMatrix" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel">AbstractGPRegressionModel</a></dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel#getTrainKernelMatrix" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getTrainKernelMatrix[U&lt;:Seq[I]]:io.github.mandar2812.dynaml.algebra.PartitionedPSDMatrix"></a>
+      <a id="getTrainKernelMatrix[U&lt;:Seq[(I,Int)]]:PartitionedPSDMatrix"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getTrainKernelMatrix</span><span class="tparams">[<span name="U">U &lt;: <span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="io.github.mandar2812.dynaml.models.gp.MOGPRegressionModel.I">I</span>, <span class="extype" name="scala.Int">Int</span>)]</span>]</span><span class="result">: <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedPSDMatrix">PartitionedPSDMatrix</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.MOGPRegressionModel@getTrainKernelMatrix[U&lt;:Seq[I]]:io.github.mandar2812.dynaml.algebra.PartitionedPSDMatrix" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel">AbstractGPRegressionModel</a></dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel#gradEnergy" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="gradEnergy(h:Map[String,Double]):Map[String,Double]"></a>
       <a id="gradEnergy(Map[String,Double]):Map[String,Double]"></a>
@@ -1018,7 +1071,7 @@ kernels.
         <span class="kind">lazy val</span>
       </span>
       <span class="symbol">
-        <span class="name">trainingDataLabels</span><span class="result">: <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</span></span>
+        <span class="name">trainingDataLabels</span><span class="result">: <a href="../../algebra/PartitionedVector.html" class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.MOGPRegressionModel@trainingDataLabels:io.github.mandar2812.dynaml.algebra.PartitionedVector" title="Permalink" target="_top">

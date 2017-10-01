@@ -315,7 +315,7 @@ set with that configuration.</p><div class="fullcomment"><div class="comment cmt
 configuration of hyper-parameters returns this kernel function
 set with that configuration.
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="LocalScalarKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel">LocalScalarKernel</a></dd></dl></div>
-    </li><li name="io.github.mandar2812.dynaml.kernels.CovarianceFunction#block" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+    </li><li name="io.github.mandar2812.dynaml.kernels.TensorCombinationKernel#block" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="block(h:String*):Unit"></a>
       <a id="block(String*):Unit"></a>
       <h4 class="signature">
@@ -331,7 +331,7 @@ set with that configuration.
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="CovarianceFunction.html" class="extype" name="io.github.mandar2812.dynaml.kernels.CovarianceFunction">CovarianceFunction</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TensorCombinationKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.TensorCombinationKernel">TensorCombinationKernel</a> → <a href="CovarianceFunction.html" class="extype" name="io.github.mandar2812.dynaml.kernels.CovarianceFunction">CovarianceFunction</a></dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.kernels.CovarianceFunction#block_all_hyper_parameters" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="block_all_hyper_parameters:Unit"></a>
       <a id="block_all_hyper_parameters:Unit"></a>
@@ -633,6 +633,23 @@ set with that configuration.
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.kernels.TensorCombinationKernel#getKernelHyp" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getKernelHyp(s:Seq[String]):(Seq[String],Seq[String])"></a>
+      <a id="getKernelHyp(Seq[String]):(Seq[String],Seq[String])"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getKernelHyp</span><span class="params">(<span name="s">s: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: (<span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>], <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>])</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.kernels.KroneckerProductKernel@getKernelHyp(s:Seq[String]):(Seq[String],Seq[String])" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="TensorCombinationKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.TensorCombinationKernel">TensorCombinationKernel</a></dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.kernels.CovarianceFunction#gradient" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="gradient(x:T,y:T):Map[String,V]"></a>
       <a id="gradient((R,S),(R,S)):Map[String,Double]"></a>

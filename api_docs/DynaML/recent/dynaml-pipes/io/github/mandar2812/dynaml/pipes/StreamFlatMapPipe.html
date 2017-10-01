@@ -154,6 +154,32 @@ pipe operations.</p></div><dl class="attributes block"> <dt>Definition Classes</
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.pipes.DataPipe#%&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="%&gt;(that:io.github.mandar2812.dynaml.pipes.Basis[Destination]):io.github.mandar2812.dynaml.pipes.Basis[Source]"></a>
+      <a id="%&gt;(Basis[Stream[J]]):Basis[Stream[I]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $percent$greater" class="name">%&gt;</span><span class="params">(<span name="that">that: <a href="Basis.html" class="extype" name="io.github.mandar2812.dynaml.pipes.Basis">Basis</a>[<span class="extype" name="scala.Stream">Stream</span>[<span class="extype" name="io.github.mandar2812.dynaml.pipes.StreamFlatMapPipe.J">J</span>]]</span>)</span><span class="result">: <a href="Basis.html" class="extype" name="io.github.mandar2812.dynaml.pipes.Basis">Basis</a>[<span class="extype" name="scala.Stream">Stream</span>[<span class="extype" name="io.github.mandar2812.dynaml.pipes.StreamFlatMapPipe.I">I</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.pipes.StreamFlatMapPipe@%&gt;(that:io.github.mandar2812.dynaml.pipes.Basis[Destination]):io.github.mandar2812.dynaml.pipes.Basis[Source]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Represents the composition of two
+pipes, one a vanilla data pipe and
+the other a basis expansion,
+resulting in a third pipe
+Schematically represented as:</p><div class="fullcomment"><div class="comment cmt"><p>Represents the composition of two
+pipes, one a vanilla data pipe and
+the other a basis expansion,
+resulting in a third pipe
+Schematically represented as:</p><p><span class="extype" name="Source">Source</span> -&gt; <span class="extype" name="Destination">Destination</span> :: <span class="extype" name="Destination">Destination</span> -&gt; <span class="extype" name="breeze.linalg.DenseVector">breeze.linalg.DenseVector</span> ==
+<span class="extype" name="Source">Source</span> -&gt; <span class="extype" name="breeze.linalg.DenseVector">breeze.linalg.DenseVector</span></p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="DataPipe.html" class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</a></dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.pipes.DataPipe#*" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="*[OtherSource,OtherDestination](that:io.github.mandar2812.dynaml.pipes.DataPipe[OtherSource,OtherDestination]):io.github.mandar2812.dynaml.pipes.ParallelPipe[Source,Destination,OtherSource,OtherDestination]"></a>
       <a id="*[OtherSource,OtherDestination](DataPipe[OtherSource,OtherDestination]):ParallelPipe[Stream[I],Stream[J],OtherSource,OtherDestination]"></a>

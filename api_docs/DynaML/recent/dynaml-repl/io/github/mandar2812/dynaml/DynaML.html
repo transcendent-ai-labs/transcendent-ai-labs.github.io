@@ -47,18 +47,18 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">DynaML</span><span class="params">(<span name="predef">predef: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;&quot;</span></span>, <span name="defaultPredef">defaultPredef: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>, <span name="storageBackend">storageBackend: <span class="extype" name="ammonite.runtime.Storage">Storage</span> = <span class="defval" name='<span class="name"><a href="../../../package.html">new Storage.Folder(Defaults.ammoniteHome)</a></span>'>...</span></span>, <span name="wd">wd: <span class="extype" name="ammonite.ops.Path">Path</span> = <span class="symbol"><span class="name"><a href="../../../../ammonite/package.html">ammonite.ops.pwd</a></span></span></span>, <span name="welcomeBanner">welcomeBanner: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol"><span class="name"><a href="../../../package.html">Some(Defaults.welcomeBanner)</a></span></span></span>, <span name="inputStream">inputStream: <span class="extype" name="java.io.InputStream">InputStream</span> = <span class="symbol">System.in</span></span>, <span name="outputStream">outputStream: <span class="extype" name="java.io.OutputStream">OutputStream</span> = <span class="symbol">System.out</span></span>, <span name="infoStream">infoStream: <span class="extype" name="java.io.OutputStream">OutputStream</span> = <span class="symbol">System.err</span></span>, <span name="errorStream">errorStream: <span class="extype" name="java.io.OutputStream">OutputStream</span> = <span class="symbol">System.err</span></span>, <span name="verboseOutput">verboseOutput: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>, <span name="remoteLogging">remoteLogging: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <span class="name">DynaML</span><span class="params">(<span name="predefCode">predefCode: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;&quot;</span></span>, <span name="predefFile">predefFile: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="ammonite.ops.Path">Path</span>] = <span class="symbol">None</span></span>, <span name="defaultPredef">defaultPredef: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>, <span name="storageBackend">storageBackend: <span class="extype" name="ammonite.runtime.Storage">Storage</span> = <span class="defval" name='<span class="name"><a href="../../../package.html">new Storage.Folder(Defaults.ammoniteHome)</a></span>'>...</span></span>, <span name="wd">wd: <span class="extype" name="ammonite.ops.Path">Path</span> = <span class="symbol"><span class="name"><a href="../../../../ammonite/package.html">ammonite.ops.pwd</a></span></span></span>, <span name="welcomeBanner">welcomeBanner: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol"><span class="name"><a href="../../../package.html">Some(Defaults.welcomeBanner)</a></span></span></span>, <span name="inputStream">inputStream: <span class="extype" name="java.io.InputStream">InputStream</span> = <span class="symbol">System.in</span></span>, <span name="outputStream">outputStream: <span class="extype" name="java.io.OutputStream">OutputStream</span> = <span class="symbol">System.out</span></span>, <span name="errorStream">errorStream: <span class="extype" name="java.io.OutputStream">OutputStream</span> = <span class="symbol">System.err</span></span>, <span name="verboseOutput">verboseOutput: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>, <span name="remoteLogging">remoteLogging: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>, <span name="colors">colors: <span class="extype" name="ammonite.util.Colors">Colors</span> = <span class="symbol"><span class="name"><a href="../../../../ammonite/package.html">Colors.Default</a></span></span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Contains the various entry points to the Ammonite REPL.</p><p>Configuration of the basic REPL is done by passing in arguments when
 constructing the <a href="" class="extype" name="io.github.mandar2812.dynaml.DynaML">DynaML</a> instance, and the various entrypoints such
-as <a href="#run(replArgs:ammonite.util.Bind[_]*):Any" class="extmbr" name="io.github.mandar2812.dynaml.DynaML#run">run</a> <a href="#runScript(path:ammonite.ops.Path,scriptArgs:Seq[(String,Option[String])]):(ammonite.util.Res[Any],Seq[(ammonite.ops.Path,Option[Long])])" class="extmbr" name="io.github.mandar2812.dynaml.DynaML#runScript">runScript</a> and so on are methods on that instance.</p><p>It is more or less equivalent to the <span class="extype" name="ammonite.repl.Repl">ammonite.repl.Repl</span> object itself, and has
+as <a href="#run(replArgs:ammonite.util.Bind[_]*):(ammonite.util.Res[Any],Seq[(ammonite.ops.Path,Long)])" class="extmbr" name="io.github.mandar2812.dynaml.DynaML#run">run</a> <a href="#runScript(path:ammonite.ops.Path,scriptArgs:Seq[(String,Option[String])]):(ammonite.util.Res[Any],Seq[(ammonite.ops.Path,Long)])" class="extmbr" name="io.github.mandar2812.dynaml.DynaML#runScript">runScript</a> and so on are methods on that instance.</p><p>It is more or less equivalent to the <span class="extype" name="ammonite.repl.Repl">ammonite.repl.Repl</span> object itself, and has
 a similar set of parameters, but does not have any of the <span class="extype" name="ammonite.repl.Repl">ammonite.repl.Repl</span>'s
 implementation-related code and provides a more convenient set of
-entry-points that a user can call.</p><p>Note that the <a href="#instantiateRepl(replArgs:IndexedSeq[ammonite.util.Bind[_]],remoteLogger:Option[ammonite.repl.RemoteLogger]):io.github.mandar2812.dynaml.repl.DynaMLRepl" class="extmbr" name="io.github.mandar2812.dynaml.DynaML#instantiateRepl">instantiateRepl</a> function generates a new <span class="extype" name="Repl">Repl</span>
+entry-points that a user can call.</p><p>Note that the <a href="#instantiateRepl(replArgs:IndexedSeq[ammonite.util.Bind[_]],remoteLogger:Option[ammonite.repl.RemoteLogger]):ProductwithSerializablewithscala.util.Either[(ammonite.util.Res.Failure,Seq[(ammonite.ops.Path,Long)]),io.github.mandar2812.dynaml.repl.DynaMLRepl]" class="extmbr" name="io.github.mandar2812.dynaml.DynaML#instantiateRepl">instantiateRepl</a> function generates a new <span class="extype" name="Repl">Repl</span>
 every time it is called!
-</p></div><dl class="paramcmts block"><dt class="param">predef</dt><dd class="cmt"><p>Any additional code you want to run before the REPL session
+</p></div><dl class="paramcmts block"><dt class="param">predefCode</dt><dd class="cmt"><p>Any additional code you want to run before the REPL session
               starts. Can contain multiple blocks separated by <code>@</code>s</p></dd><dt class="param">defaultPredef</dt><dd class="cmt"><p>Do you want to include the &quot;standard&quot; predef imports
                      provided by Ammonite? These include tools like <code>time</code>,
                      <code>grep</code>, the <code>|</code> or <code>|?</code> pipes from ammonite-ops, and
@@ -71,10 +71,9 @@ every time it is called!
           the scripts will be considered relative to when assigning them
           packages</p></dd><dt class="param">inputStream</dt><dd class="cmt"><p>Where input to the Repl is coming from, typically System.in,
                    but it could come from somewhere else e.g. across the
-                   network in the case of the SshdRepl</p></dd><dt class="param">outputStream</dt><dd class="cmt"><p>Primary output of code run using Ammonite</p></dd><dt class="param">infoStream</dt><dd class="cmt"><p>Miscellaneous logging output when running Ammonite. This
-                  is typically stuff you want to see when running interactively,
-                  but not something you want to see when e.g. you forward a
-                  script's output to a file. This by default it goes to System.err</p></dd><dt class="param">errorStream</dt><dd class="cmt"><p>Error output when things go bad, typically System.err</p></dd></dl><div class="toggleContainer block">
+                   network in the case of the SshdRepl</p></dd><dt class="param">outputStream</dt><dd class="cmt"><p>Primary output of code run using Ammonite</p></dd><dt class="param">errorStream</dt><dd class="cmt"><p>Error output when things go bad, typically System.err; also
+                   gets sent miscellaneous info messages that aren't strictly
+                   part of the REPL or script's output</p></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
@@ -114,7 +113,7 @@ every time it is called!
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="io.github.mandar2812.dynaml.DynaML#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="&lt;init&gt;(predef:String,defaultPredef:Boolean,storageBackend:ammonite.runtime.Storage,wd:ammonite.ops.Path,welcomeBanner:Option[String],inputStream:java.io.InputStream,outputStream:java.io.OutputStream,infoStream:java.io.OutputStream,errorStream:java.io.OutputStream,verboseOutput:Boolean,remoteLogging:Boolean):io.github.mandar2812.dynaml.DynaML"></a>
+      <a id="&lt;init&gt;(predefCode:String,predefFile:Option[ammonite.ops.Path],defaultPredef:Boolean,storageBackend:ammonite.runtime.Storage,wd:ammonite.ops.Path,welcomeBanner:Option[String],inputStream:java.io.InputStream,outputStream:java.io.OutputStream,errorStream:java.io.OutputStream,verboseOutput:Boolean,remoteLogging:Boolean,colors:ammonite.util.Colors):io.github.mandar2812.dynaml.DynaML"></a>
       <a id="&lt;init&gt;:DynaML"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -122,14 +121,14 @@ every time it is called!
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">DynaML</span><span class="params">(<span name="predef">predef: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;&quot;</span></span>, <span name="defaultPredef">defaultPredef: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>, <span name="storageBackend">storageBackend: <span class="extype" name="ammonite.runtime.Storage">Storage</span> = <span class="defval" name='<span class="name"><a href="../../../package.html">new Storage.Folder(Defaults.ammoniteHome)</a></span>'>...</span></span>, <span name="wd">wd: <span class="extype" name="ammonite.ops.Path">Path</span> = <span class="symbol"><span class="name"><a href="../../../../ammonite/package.html">ammonite.ops.pwd</a></span></span></span>, <span name="welcomeBanner">welcomeBanner: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol"><span class="name"><a href="../../../package.html">Some(Defaults.welcomeBanner)</a></span></span></span>, <span name="inputStream">inputStream: <span class="extype" name="java.io.InputStream">InputStream</span> = <span class="symbol">System.in</span></span>, <span name="outputStream">outputStream: <span class="extype" name="java.io.OutputStream">OutputStream</span> = <span class="symbol">System.out</span></span>, <span name="infoStream">infoStream: <span class="extype" name="java.io.OutputStream">OutputStream</span> = <span class="symbol">System.err</span></span>, <span name="errorStream">errorStream: <span class="extype" name="java.io.OutputStream">OutputStream</span> = <span class="symbol">System.err</span></span>, <span name="verboseOutput">verboseOutput: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>, <span name="remoteLogging">remoteLogging: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>)</span>
+        <span class="name">DynaML</span><span class="params">(<span name="predefCode">predefCode: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;&quot;</span></span>, <span name="predefFile">predefFile: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="ammonite.ops.Path">Path</span>] = <span class="symbol">None</span></span>, <span name="defaultPredef">defaultPredef: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>, <span name="storageBackend">storageBackend: <span class="extype" name="ammonite.runtime.Storage">Storage</span> = <span class="defval" name='<span class="name"><a href="../../../package.html">new Storage.Folder(Defaults.ammoniteHome)</a></span>'>...</span></span>, <span name="wd">wd: <span class="extype" name="ammonite.ops.Path">Path</span> = <span class="symbol"><span class="name"><a href="../../../../ammonite/package.html">ammonite.ops.pwd</a></span></span></span>, <span name="welcomeBanner">welcomeBanner: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol"><span class="name"><a href="../../../package.html">Some(Defaults.welcomeBanner)</a></span></span></span>, <span name="inputStream">inputStream: <span class="extype" name="java.io.InputStream">InputStream</span> = <span class="symbol">System.in</span></span>, <span name="outputStream">outputStream: <span class="extype" name="java.io.OutputStream">OutputStream</span> = <span class="symbol">System.out</span></span>, <span name="errorStream">errorStream: <span class="extype" name="java.io.OutputStream">OutputStream</span> = <span class="symbol">System.err</span></span>, <span name="verboseOutput">verboseOutput: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>, <span name="remoteLogging">remoteLogging: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>, <span name="colors">colors: <span class="extype" name="ammonite.util.Colors">Colors</span> = <span class="symbol"><span class="name"><a href="../../../../ammonite/package.html">Colors.Default</a></span></span></span>)</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#io.github.mandar2812.dynaml.DynaML@&lt;init&gt;(predef:String,defaultPredef:Boolean,storageBackend:ammonite.runtime.Storage,wd:ammonite.ops.Path,welcomeBanner:Option[String],inputStream:java.io.InputStream,outputStream:java.io.OutputStream,infoStream:java.io.OutputStream,errorStream:java.io.OutputStream,verboseOutput:Boolean,remoteLogging:Boolean):io.github.mandar2812.dynaml.DynaML" title="Permalink" target="_top">
+      <a href="../../../../index.html#io.github.mandar2812.dynaml.DynaML@&lt;init&gt;(predefCode:String,predefFile:Option[ammonite.ops.Path],defaultPredef:Boolean,storageBackend:ammonite.runtime.Storage,wd:ammonite.ops.Path,welcomeBanner:Option[String],inputStream:java.io.InputStream,outputStream:java.io.OutputStream,errorStream:java.io.OutputStream,verboseOutput:Boolean,remoteLogging:Boolean,colors:ammonite.util.Colors):io.github.mandar2812.dynaml.DynaML" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">predef</dt><dd class="cmt"><p>Any additional code you want to run before the REPL session
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">predefCode</dt><dd class="cmt"><p>Any additional code you want to run before the REPL session
               starts. Can contain multiple blocks separated by <code>@</code>s</p></dd><dt class="param">defaultPredef</dt><dd class="cmt"><p>Do you want to include the &quot;standard&quot; predef imports
                      provided by Ammonite? These include tools like <code>time</code>,
                      <code>grep</code>, the <code>|</code> or <code>|?</code> pipes from ammonite-ops, and
@@ -142,10 +141,9 @@ every time it is called!
           the scripts will be considered relative to when assigning them
           packages</p></dd><dt class="param">inputStream</dt><dd class="cmt"><p>Where input to the Repl is coming from, typically System.in,
                    but it could come from somewhere else e.g. across the
-                   network in the case of the SshdRepl</p></dd><dt class="param">outputStream</dt><dd class="cmt"><p>Primary output of code run using Ammonite</p></dd><dt class="param">infoStream</dt><dd class="cmt"><p>Miscellaneous logging output when running Ammonite. This
-                  is typically stuff you want to see when running interactively,
-                  but not something you want to see when e.g. you forward a
-                  script's output to a file. This by default it goes to System.err</p></dd><dt class="param">errorStream</dt><dd class="cmt"><p>Error output when things go bad, typically System.err</p></dd></dl></div>
+                   network in the case of the SshdRepl</p></dd><dt class="param">outputStream</dt><dd class="cmt"><p>Primary output of code run using Ammonite</p></dd><dt class="param">errorStream</dt><dd class="cmt"><p>Error output when things go bad, typically System.err; also
+                   gets sent miscellaneous info messages that aren't strictly
+                   part of the REPL or script's output</p></dd></dl></div>
     </li></ol>
             </div>
 
@@ -246,6 +244,23 @@ every time it is called!
     </span>)</span>
               
         </dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.DynaML#colors" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="colors:ammonite.util.Colors"></a>
+      <a id="colors:Colors"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">colors</span><span class="result">: <span class="extype" name="ammonite.util.Colors">Colors</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#io.github.mandar2812.dynaml.DynaML@colors:ammonite.util.Colors" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="io.github.mandar2812.dynaml.DynaML#defaultPredef" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="defaultPredef:Boolean"></a>
       <a id="defaultPredef:Boolean"></a>
@@ -303,7 +318,9 @@ every time it is called!
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Error output when things go bad, typically System.err</p>
+      <p class="shortcomment cmt">Error output when things go bad, typically System.err; also
+                   gets sent miscellaneous info messages that aren't strictly
+                   part of the REPL or script's output</p>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
       <a id="finalize():Unit"></a>
@@ -344,26 +361,6 @@ every time it is called!
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="io.github.mandar2812.dynaml.DynaML#infoStream" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="infoStream:java.io.OutputStream"></a>
-      <a id="infoStream:OutputStream"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">infoStream</span><span class="result">: <span class="extype" name="java.io.OutputStream">OutputStream</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#io.github.mandar2812.dynaml.DynaML@infoStream:java.io.OutputStream" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Miscellaneous logging output when running Ammonite.</p><div class="fullcomment"><div class="comment cmt"><p>Miscellaneous logging output when running Ammonite. This
-                  is typically stuff you want to see when running interactively,
-                  but not something you want to see when e.g. you forward a
-                  script's output to a file. This by default it goes to System.err</p></div></div>
     </li><li name="io.github.mandar2812.dynaml.DynaML#inputStream" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="inputStream:java.io.InputStream"></a>
       <a id="inputStream:InputStream"></a>
@@ -385,35 +382,35 @@ every time it is called!
                    but it could come from somewhere else e.g. across the
                    network in the case of the SshdRepl</p></div></div>
     </li><li name="io.github.mandar2812.dynaml.DynaML#instantiateInterpreter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="instantiateInterpreter():ammonite.interp.Interpreter"></a>
-      <a id="instantiateInterpreter():Interpreter"></a>
+      <a id="instantiateInterpreter():scala.util.Either[(ammonite.util.Res.Failing,Seq[(ammonite.ops.Path,Long)]),ammonite.interp.Interpreter]"></a>
+      <a id="instantiateInterpreter():Either[(Failing,Seq[(Path,Long)]),Interpreter]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">instantiateInterpreter</span><span class="params">()</span><span class="result">: <span class="extype" name="ammonite.interp.Interpreter">Interpreter</span></span>
+        <span class="name">instantiateInterpreter</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.util.Either">Either</span>[(<span class="extype" name="ammonite.util.Res.Failing">Failing</span>, <span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="ammonite.ops.Path">Path</span>, <span class="extype" name="scala.Long">Long</span>)]), <span class="extype" name="ammonite.interp.Interpreter">Interpreter</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#io.github.mandar2812.dynaml.DynaML@instantiateInterpreter():ammonite.interp.Interpreter" title="Permalink" target="_top">
+      <a href="../../../../index.html#io.github.mandar2812.dynaml.DynaML@instantiateInterpreter():scala.util.Either[(ammonite.util.Res.Failing,Seq[(ammonite.ops.Path,Long)]),ammonite.interp.Interpreter]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
     </li><li name="io.github.mandar2812.dynaml.DynaML#instantiateRepl" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="instantiateRepl(replArgs:IndexedSeq[ammonite.util.Bind[_]],remoteLogger:Option[ammonite.repl.RemoteLogger]):io.github.mandar2812.dynaml.repl.DynaMLRepl"></a>
-      <a id="instantiateRepl(IndexedSeq[Bind[_]],Option[RemoteLogger]):DynaMLRepl"></a>
+      <a id="instantiateRepl(replArgs:IndexedSeq[ammonite.util.Bind[_]],remoteLogger:Option[ammonite.repl.RemoteLogger]):ProductwithSerializablewithscala.util.Either[(ammonite.util.Res.Failure,Seq[(ammonite.ops.Path,Long)]),io.github.mandar2812.dynaml.repl.DynaMLRepl]"></a>
+      <a id="instantiateRepl(IndexedSeq[Bind[_]],Option[RemoteLogger]):ProductwithSerializablewithEither[(Failure,Seq[(Path,Long)]),DynaMLRepl]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">instantiateRepl</span><span class="params">(<span name="replArgs">replArgs: <span class="extype" name="scala.IndexedSeq">IndexedSeq</span>[<span class="extype" name="ammonite.util.Bind">Bind</span>[_]] = <span class="symbol">Vector.empty</span></span>, <span name="remoteLogger">remoteLogger: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="ammonite.repl.RemoteLogger">RemoteLogger</span>]</span>)</span><span class="result">: <a href="repl/DynaMLRepl.html" class="extype" name="io.github.mandar2812.dynaml.repl.DynaMLRepl">DynaMLRepl</a></span>
+        <span class="name">instantiateRepl</span><span class="params">(<span name="replArgs">replArgs: <span class="extype" name="scala.IndexedSeq">IndexedSeq</span>[<span class="extype" name="ammonite.util.Bind">Bind</span>[_]] = <span class="symbol">Vector.empty</span></span>, <span name="remoteLogger">remoteLogger: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="ammonite.repl.RemoteLogger">RemoteLogger</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span> with <span class="extype" name="scala.util.Either">Either</span>[(<span class="extype" name="ammonite.util.Res.Failure">Failure</span>, <span class="extype" name="scala.collection.Seq">Seq</span>[(<span class="extype" name="ammonite.ops.Path">Path</span>, <span class="extype" name="scala.Long">Long</span>)]), <a href="repl/DynaMLRepl.html" class="extype" name="io.github.mandar2812.dynaml.repl.DynaMLRepl">DynaMLRepl</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#io.github.mandar2812.dynaml.DynaML@instantiateRepl(replArgs:IndexedSeq[ammonite.util.Bind[_]],remoteLogger:Option[ammonite.repl.RemoteLogger]):io.github.mandar2812.dynaml.repl.DynaMLRepl" title="Permalink" target="_top">
+      <a href="../../../../index.html#io.github.mandar2812.dynaml.DynaML@instantiateRepl(replArgs:IndexedSeq[ammonite.util.Bind[_]],remoteLogger:Option[ammonite.repl.RemoteLogger]):ProductwithSerializablewithscala.util.Either[(ammonite.util.Res.Failure,Seq[(ammonite.ops.Path,Long)]),io.github.mandar2812.dynaml.repl.DynaMLRepl]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -436,6 +433,23 @@ every time it is called!
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.DynaML#loadedPredefFile" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="loadedPredefFile:ProductwithSerializablewithscala.util.Either[(ammonite.util.Res.Failure,Seq[(ammonite.ops.Path,Long)]),Option[ammonite.util.PredefInfo]]"></a>
+      <a id="loadedPredefFile:ProductwithSerializablewithEither[(Failure,Seq[(Path,Long)]),Option[PredefInfo]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">loadedPredefFile</span><span class="result">: <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span> with <span class="extype" name="scala.util.Either">Either</span>[(<span class="extype" name="ammonite.util.Res.Failure">Failure</span>, <span class="extype" name="scala.collection.Seq">Seq</span>[(<span class="extype" name="ammonite.ops.Path">Path</span>, <span class="extype" name="scala.Long">Long</span>)]), <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="ammonite.util.PredefInfo">PredefInfo</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#io.github.mandar2812.dynaml.DynaML@loadedPredefFile:ProductwithSerializablewithscala.util.Either[(ammonite.util.Res.Failure,Seq[(ammonite.ops.Path,Long)]),Option[ammonite.util.PredefInfo]]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
@@ -504,25 +518,42 @@ every time it is called!
       </a>
     </span>
       <p class="shortcomment cmt">Primary output of code run using Ammonite</p>
-    </li><li name="io.github.mandar2812.dynaml.DynaML#predef" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="predef:String"></a>
-      <a id="predef:String"></a>
+    </li><li name="io.github.mandar2812.dynaml.DynaML#predefCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="predefCode:String"></a>
+      <a id="predefCode:String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">predef</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+        <span class="name">predefCode</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#io.github.mandar2812.dynaml.DynaML@predef:String" title="Permalink" target="_top">
+      <a href="../../../../index.html#io.github.mandar2812.dynaml.DynaML@predefCode:String" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Any additional code you want to run before the REPL session
               starts.</p><div class="fullcomment"><div class="comment cmt"><p>Any additional code you want to run before the REPL session
               starts. Can contain multiple blocks separated by <code>@</code>s</p></div></div>
+    </li><li name="io.github.mandar2812.dynaml.DynaML#predefFile" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="predefFile:Option[ammonite.ops.Path]"></a>
+      <a id="predefFile:Option[Path]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">predefFile</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="ammonite.ops.Path">Path</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#io.github.mandar2812.dynaml.DynaML@predefFile:Option[ammonite.ops.Path]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="io.github.mandar2812.dynaml.DynaML#remoteLogging" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="remoteLogging:Boolean"></a>
       <a id="remoteLogging:Boolean"></a>
@@ -540,54 +571,58 @@ every time it is called!
       </a>
     </span>
       
-    </li><li name="io.github.mandar2812.dynaml.DynaML#run" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="run(replArgs:ammonite.util.Bind[_]*):Any"></a>
-      <a id="run(Bind[_]*):Any"></a>
+    </li><li name="io.github.mandar2812.dynaml.DynaML#run" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="run(replArgs:ammonite.util.Bind[_]*):(ammonite.util.Res[Any],Seq[(ammonite.ops.Path,Long)])"></a>
+      <a id="run(Bind[_]*):(Res[Any],Seq[(Path,Long)])"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">run</span><span class="params">(<span name="replArgs">replArgs: <span class="extype" name="ammonite.util.Bind">Bind</span>[_]*</span>)</span><span class="result">: <span class="extype" name="scala.Any">Any</span></span>
+        <span class="name">run</span><span class="params">(<span name="replArgs">replArgs: <span class="extype" name="ammonite.util.Bind">Bind</span>[_]*</span>)</span><span class="result">: (<span class="extype" name="ammonite.util.Res">Res</span>[<span class="extype" name="scala.Any">Any</span>], <span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="ammonite.ops.Path">Path</span>, <span class="extype" name="scala.Long">Long</span>)])</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#io.github.mandar2812.dynaml.DynaML@run(replArgs:ammonite.util.Bind[_]*):Any" title="Permalink" target="_top">
+      <a href="../../../../index.html#io.github.mandar2812.dynaml.DynaML@run(replArgs:ammonite.util.Bind[_]*):(ammonite.util.Res[Any],Seq[(ammonite.ops.Path,Long)])" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">Run the REPL, with any additional bindings you wish to provide.</p><div class="fullcomment"><div class="comment cmt"><p>Run the REPL, with any additional bindings you wish to provide.</p><p>Returns an <code>Any</code> representing any value that the user passed into the
+<code>exit</code> call when closing the REPL (defaults to <code>(): Unit</code>). Also returns
+a sequence of paths that were watched as a result of this REPL run, in
+case you wish to re-start the REPL when any of them change.
+</p></div></div>
     </li><li name="io.github.mandar2812.dynaml.DynaML#runCode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="runCode(code:String):ammonite.util.Res[ammonite.util.Imports]"></a>
-      <a id="runCode(String):Res[Imports]"></a>
+      <a id="runCode(code:String):(ammonite.util.Res[ammonite.util.Imports],Seq[(ammonite.ops.Path,Long)])"></a>
+      <a id="runCode(String):(Res[Imports],Seq[(Path,Long)])"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">runCode</span><span class="params">(<span name="code">code: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="ammonite.util.Res">Res</span>[<span class="extype" name="ammonite.util.Imports">Imports</span>]</span>
+        <span class="name">runCode</span><span class="params">(<span name="code">code: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: (<span class="extype" name="ammonite.util.Res">Res</span>[<span class="extype" name="ammonite.util.Imports">Imports</span>], <span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="ammonite.ops.Path">Path</span>, <span class="extype" name="scala.Long">Long</span>)])</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#io.github.mandar2812.dynaml.DynaML@runCode(code:String):ammonite.util.Res[ammonite.util.Imports]" title="Permalink" target="_top">
+      <a href="../../../../index.html#io.github.mandar2812.dynaml.DynaML@runCode(code:String):(ammonite.util.Res[ammonite.util.Imports],Seq[(ammonite.ops.Path,Long)])" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Run a snippet of code
 </p>
     </li><li name="io.github.mandar2812.dynaml.DynaML#runScript" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="runScript(path:ammonite.ops.Path,scriptArgs:Seq[(String,Option[String])]):(ammonite.util.Res[Any],Seq[(ammonite.ops.Path,Option[Long])])"></a>
-      <a id="runScript(Path,Seq[(String,Option[String])]):(Res[Any],Seq[(Path,Option[Long])])"></a>
+      <a id="runScript(path:ammonite.ops.Path,scriptArgs:Seq[(String,Option[String])]):(ammonite.util.Res[Any],Seq[(ammonite.ops.Path,Long)])"></a>
+      <a id="runScript(Path,Seq[(String,Option[String])]):(Res[Any],Seq[(Path,Long)])"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">runScript</span><span class="params">(<span name="path">path: <span class="extype" name="ammonite.ops.Path">Path</span></span>, <span name="scriptArgs">scriptArgs: <span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>])]</span>)</span><span class="result">: (<span class="extype" name="ammonite.util.Res">Res</span>[<span class="extype" name="scala.Any">Any</span>], <span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="ammonite.ops.Path">Path</span>, <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Long">Long</span>])])</span>
+        <span class="name">runScript</span><span class="params">(<span name="path">path: <span class="extype" name="ammonite.ops.Path">Path</span></span>, <span name="scriptArgs">scriptArgs: <span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>])]</span>)</span><span class="result">: (<span class="extype" name="ammonite.util.Res">Res</span>[<span class="extype" name="scala.Any">Any</span>], <span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="ammonite.ops.Path">Path</span>, <span class="extype" name="scala.Long">Long</span>)])</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#io.github.mandar2812.dynaml.DynaML@runScript(path:ammonite.ops.Path,scriptArgs:Seq[(String,Option[String])]):(ammonite.util.Res[Any],Seq[(ammonite.ops.Path,Option[Long])])" title="Permalink" target="_top">
+      <a href="../../../../index.html#io.github.mandar2812.dynaml.DynaML@runScript(path:ammonite.ops.Path,scriptArgs:Seq[(String,Option[String])]):(ammonite.util.Res[Any],Seq[(ammonite.ops.Path,Long)])" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>

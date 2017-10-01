@@ -101,12 +101,36 @@
     </span>
       <p class="shortcomment cmt">Single-Output Gaussian Process Regression Model
 Performs gp/spline smoothing/regression with
-vector inputs and a singular scalar output.</p><div class="fullcomment"><div class="comment cmt"><p>Single-Output Gaussian Process Regression Model
+vector inputs and a singular scalar output.</p><div class="fullcomment"><div class="comment cmt"><h5> Gaussian Process Regression </h5><p>Single-Output Gaussian Process Regression Model
 Performs gp/spline smoothing/regression with
 vector inputs and a singular scalar output.
 </p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>The data structure holding the training data.</p></dd><dt class="tparam">I</dt><dd class="cmt"><p>The index set over which the Gaussian Process
           is defined.
           e.g:</p><ul><li>I = Double when implementing GP time series</li><li>I = DenseVector when implementing GP regression</li></ul></dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.models.gp.GPBasisFuncRegressionModel" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="GPBasisFuncRegressionModel[T,I]extendsAbstractGPRegressionModel[T,I]"></a>
+      <a id="GPBasisFuncRegressionModel[T,I]:GPBasisFuncRegressionModel[T,I]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="GPBasisFuncRegressionModel.html"><span class="name">GPBasisFuncRegressionModel</span></a><span class="tparams">[<span name="T">T</span>, <span name="I">I</span>]</span><span class="result"> extends <a href="AbstractGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel">AbstractGPRegressionModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.GPBasisFuncRegressionModel.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.gp.GPBasisFuncRegressionModel.I">I</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.package@GPBasisFuncRegressionModel[T,I]extendsAbstractGPRegressionModel[T,I]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Single-Output Gaussian Process Regression Model
+Performs gp/spline smoothing/regression with
+vector inputs and a singular scalar output.</p><div class="fullcomment"><div class="comment cmt"><h5> Basis Function Gaussian Process Regression </h5><p>Single-Output Gaussian Process Regression Model
+Performs gp/spline smoothing/regression with
+vector inputs and a singular scalar output.</p><p>The model incorporates explicit basis functions which are
+used to parameterize the mean/trend function.
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>The data structure holding the training data.</p></dd><dt class="tparam">I</dt><dd class="cmt"><p>The index set over which the Gaussian Process
+          is defined.</p></dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.models.gp.GPCommitteeRegression" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="GPCommitteeRegression[D,I]extendsLinearModel[D,breeze.linalg.DenseVector[Double],I,Double,D]"></a>
       <a id="GPCommitteeRegression[D,I]:GPCommitteeRegression[D,I]"></a>
@@ -158,6 +182,24 @@ vector inputs and a singular scalar output.
       </a>
     </span>
       <p class="shortcomment cmt"></p>
+    </li><li name="io.github.mandar2812.dynaml.models.gp.GPOperatorModel" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="GPOperatorModel[T,I,K&lt;:io.github.mandar2812.dynaml.kernels.LinearPDEKernel[I]]extendsAbstractGPRegressionModel[T,(I,Double)]"></a>
+      <a id="GPOperatorModel[T,I,K&lt;:LinearPDEKernel[I]]:GPOperatorModel[T,I,K]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="GPOperatorModel.html"><span class="name">GPOperatorModel</span></a><span class="tparams">[<span name="T">T</span>, <span name="I">I</span>, <span name="K">K &lt;: <a href="../../kernels/LinearPDEKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LinearPDEKernel">LinearPDEKernel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.GPOperatorModel.I">I</span>]</span>]</span><span class="result"> extends <a href="AbstractGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel">AbstractGPRegressionModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.GPOperatorModel.T">T</span>, (<span class="extype" name="io.github.mandar2812.dynaml.models.gp.GPOperatorModel.I">I</span>, <span class="extype" name="scala.Double">Double</span>)]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.package@GPOperatorModel[T,I,K&lt;:io.github.mandar2812.dynaml.kernels.LinearPDEKernel[I]]extendsAbstractGPRegressionModel[T,(I,Double)]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Modified GP formulation for inference of quantities governed
+by linear PDEs.</p>
     </li><li name="io.github.mandar2812.dynaml.models.gp.GPRegression" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="GPRegressionextendsAbstractGPRegressionModel[Seq[(breeze.linalg.DenseVector[Double],Double)],breeze.linalg.DenseVector[Double]]"></a>
       <a id="GPRegression:GPRegression"></a>
@@ -192,6 +234,24 @@ vector inputs and a singular scalar output.
       </a>
     </span>
       <p class="shortcomment cmt"></p>
+    </li><li name="io.github.mandar2812.dynaml.models.gp.GaussianProcessMixture" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="GaussianProcessMixture[T,I]extendsGenContinuousMixtureModel[T,I,Double,io.github.mandar2812.dynaml.algebra.PartitionedVector,io.github.mandar2812.dynaml.algebra.PartitionedPSDMatrix,io.github.mandar2812.dynaml.probability.distributions.BlockedMultiVariateGaussian,io.github.mandar2812.dynaml.probability.MultGaussianPRV,io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel[T,I]]"></a>
+      <a id="GaussianProcessMixture[T,I]:GaussianProcessMixture[T,I]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="GaussianProcessMixture.html"><span class="name">GaussianProcessMixture</span></a><span class="tparams">[<span name="T">T</span>, <span name="I">I</span>]</span><span class="result"> extends <a href="../GenContinuousMixtureModel.html" class="extype" name="io.github.mandar2812.dynaml.models.GenContinuousMixtureModel">GenContinuousMixtureModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.GaussianProcessMixture.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.gp.GaussianProcessMixture.I">I</span>, <span class="extype" name="scala.Double">Double</span>, <a href="../../algebra/PartitionedVector.html" class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</a>, <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedPSDMatrix">PartitionedPSDMatrix</span>, <a href="../../probability/distributions/BlockedMultiVariateGaussian.html" class="extype" name="io.github.mandar2812.dynaml.probability.distributions.BlockedMultiVariateGaussian">BlockedMultiVariateGaussian</a>, <a href="../../probability/MultGaussianPRV.html" class="extype" name="io.github.mandar2812.dynaml.probability.MultGaussianPRV">MultGaussianPRV</a>, <a href="AbstractGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel">AbstractGPRegressionModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.GaussianProcessMixture.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.gp.GaussianProcessMixture.I">I</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.package@GaussianProcessMixture[T,I]extendsGenContinuousMixtureModel[T,I,Double,io.github.mandar2812.dynaml.algebra.PartitionedVector,io.github.mandar2812.dynaml.algebra.PartitionedPSDMatrix,io.github.mandar2812.dynaml.probability.distributions.BlockedMultiVariateGaussian,io.github.mandar2812.dynaml.probability.MultGaussianPRV,io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel[T,I]]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Represents a multinomial mixture of Gaussian Process regression models</p><div class="fullcomment"><div class="comment cmt"><h5> GP Mixtures </h5><p>Represents a multinomial mixture of Gaussian Process regression models</p></div><dl class="paramcmts block"><dt class="tparam">I</dt><dd class="cmt"><p>The index set (input domain) over which each component GP is
+          defined.</p></dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.models.gp.KroneckerGPRegressionModel" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="KroneckerGPRegressionModel[T,I,J]extendsAbstractGPRegressionModel[T,(I,J)]"></a>
       <a id="KroneckerGPRegressionModel[T,I,J]:KroneckerGPRegressionModel[T,I,J]"></a>
@@ -243,6 +303,24 @@ vector inputs and a singular scalar output.
       </a>
     </span>
       <p class="shortcomment cmt"></p>
+    </li><li name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="LogGaussianProcessModel[T,I]extendsWarpedGPModel[T,I]"></a>
+      <a id="LogGaussianProcessModel[T,I]:LogGaussianProcessModel[T,I]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="LogGaussianProcessModel.html"><span class="name">LogGaussianProcessModel</span></a><span class="tparams">[<span name="T">T</span>, <span name="I">I</span>]</span><span class="result"> extends <a href="WarpedGPModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel">WarpedGPModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.gp.LogGaussianProcessModel.I">I</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.package@LogGaussianProcessModel[T,I]extendsWarpedGPModel[T,I]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A stochastic process whose logarithm is a gaussian process.</p><div class="fullcomment"><div class="comment cmt"><h5> Log Gaussian Processes </h5><p>A stochastic process whose logarithm is a gaussian process.
+</p></div></div>
     </li><li name="io.github.mandar2812.dynaml.models.gp.MOGPRegressionModel" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="MOGPRegressionModel[I]extendsAbstractGPRegressionModel[Stream[(I,breeze.linalg.DenseVector[Double])],(I,Int)]"></a>
       <a id="MOGPRegressionModel[I]:MOGPRegressionModel[I]"></a>
@@ -259,7 +337,10 @@ vector inputs and a singular scalar output.
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="tparam">I</dt><dd class="cmt"><p>The index set of the GP.</p></dd></dl></div>
+      <p class="shortcomment cmt">Abstract implementation of multi-output gaussian process
+as outlined in Lawrence et.</p><div class="fullcomment"><div class="comment cmt"><h5> Multi-Output GP Regression </h5><p>Abstract implementation of multi-output gaussian process
+as outlined in Lawrence et. al 2012 on arxiv
+</p></div><dl class="paramcmts block"><dt class="tparam">I</dt><dd class="cmt"><p>The index set of the GP.</p></dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.models.gp.MTGPRegressionModel" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="MTGPRegressionModel[I]extendsAbstractGPRegressionModel[Seq[Stream[(I,Double)]],(I,Int)]"></a>
       <a id="MTGPRegressionModel[I]:MTGPRegressionModel[I]"></a>
@@ -278,7 +359,7 @@ vector inputs and a singular scalar output.
     </span>
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="tparam">I</dt><dd class="cmt"><p>The index set of the GP.</p></dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="WarpedGPModel[T,I]extendsContinuousProcessModel[T,I,Double,io.github.mandar2812.dynaml.probability.MeasurableDistrRV[io.github.mandar2812.dynaml.algebra.PartitionedVector,io.github.mandar2812.dynaml.algebra.PartitionedVector,io.github.mandar2812.dynaml.algebra.PartitionedMatrix]]withSecondOrderProcessModel[T,I,Double,Double,breeze.linalg.DenseMatrix[Double],io.github.mandar2812.dynaml.probability.MeasurableDistrRV[io.github.mandar2812.dynaml.algebra.PartitionedVector,io.github.mandar2812.dynaml.algebra.PartitionedVector,io.github.mandar2812.dynaml.algebra.PartitionedMatrix]]withGloballyOptWithGrad"></a>
+      <a id="WarpedGPModel[T,I]extendsContinuousProcessModel[T,I,Double,io.github.mandar2812.dynaml.probability.MeasurableDistrRV[io.github.mandar2812.dynaml.algebra.PartitionedVector,io.github.mandar2812.dynaml.algebra.PartitionedVector,io.github.mandar2812.dynaml.algebra.PartitionedMatrix,io.github.mandar2812.dynaml.probability.distributions.BlockedMultiVariateGaussian]]withSecondOrderProcessModel[T,I,Double,Double,breeze.linalg.DenseMatrix[Double],io.github.mandar2812.dynaml.probability.MeasurableDistrRV[io.github.mandar2812.dynaml.algebra.PartitionedVector,io.github.mandar2812.dynaml.algebra.PartitionedVector,io.github.mandar2812.dynaml.algebra.PartitionedMatrix,io.github.mandar2812.dynaml.probability.distributions.BlockedMultiVariateGaussian]]withGloballyOptWithGrad"></a>
       <a id="WarpedGPModel[T,I]:WarpedGPModel[T,I]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -286,14 +367,14 @@ vector inputs and a singular scalar output.
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="WarpedGPModel.html"><span class="name">WarpedGPModel</span></a><span class="tparams">[<span name="T">T</span>, <span name="I">I</span>]</span><span class="result"> extends <a href="../ContinuousProcessModel.html" class="extype" name="io.github.mandar2812.dynaml.models.ContinuousProcessModel">ContinuousProcessModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.I">I</span>, <span class="extype" name="scala.Double">Double</span>, <a href="../../probability/MeasurableDistrRV.html" class="extype" name="io.github.mandar2812.dynaml.probability.MeasurableDistrRV">MeasurableDistrRV</a>[<span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</span>, <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</span>, <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedMatrix">PartitionedMatrix</span>]] with <a href="../SecondOrderProcessModel.html" class="extype" name="io.github.mandar2812.dynaml.models.SecondOrderProcessModel">SecondOrderProcessModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.I">I</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="breeze.linalg.DenseMatrix">DenseMatrix</span>[<span class="extype" name="scala.Double">Double</span>], <a href="../../probability/MeasurableDistrRV.html" class="extype" name="io.github.mandar2812.dynaml.probability.MeasurableDistrRV">MeasurableDistrRV</a>[<span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</span>, <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</span>, <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedMatrix">PartitionedMatrix</span>]] with <a href="../../optimization/GloballyOptWithGrad.html" class="extype" name="io.github.mandar2812.dynaml.optimization.GloballyOptWithGrad">GloballyOptWithGrad</a></span>
+        <a href="WarpedGPModel.html"><span class="name">WarpedGPModel</span></a><span class="tparams">[<span name="T">T</span>, <span name="I">I</span>]</span><span class="result"> extends <a href="../ContinuousProcessModel.html" class="extype" name="io.github.mandar2812.dynaml.models.ContinuousProcessModel">ContinuousProcessModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.I">I</span>, <span class="extype" name="scala.Double">Double</span>, <a href="../../probability/MeasurableDistrRV.html" class="extype" name="io.github.mandar2812.dynaml.probability.MeasurableDistrRV">MeasurableDistrRV</a>[<a href="../../algebra/PartitionedVector.html" class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</a>, <a href="../../algebra/PartitionedVector.html" class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</a>, <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedMatrix">PartitionedMatrix</span>, <a href="../../probability/distributions/BlockedMultiVariateGaussian.html" class="extype" name="io.github.mandar2812.dynaml.probability.distributions.BlockedMultiVariateGaussian">BlockedMultiVariateGaussian</a>]] with <a href="../SecondOrderProcessModel.html" class="extype" name="io.github.mandar2812.dynaml.models.SecondOrderProcessModel">SecondOrderProcessModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.gp.WarpedGPModel.I">I</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="breeze.linalg.DenseMatrix">DenseMatrix</span>[<span class="extype" name="scala.Double">Double</span>], <a href="../../probability/MeasurableDistrRV.html" class="extype" name="io.github.mandar2812.dynaml.probability.MeasurableDistrRV">MeasurableDistrRV</a>[<a href="../../algebra/PartitionedVector.html" class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</a>, <a href="../../algebra/PartitionedVector.html" class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</a>, <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedMatrix">PartitionedMatrix</span>, <a href="../../probability/distributions/BlockedMultiVariateGaussian.html" class="extype" name="io.github.mandar2812.dynaml.probability.distributions.BlockedMultiVariateGaussian">BlockedMultiVariateGaussian</a>]] with <a href="../../optimization/GloballyOptWithGrad.html" class="extype" name="io.github.mandar2812.dynaml.optimization.GloballyOptWithGrad">GloballyOptWithGrad</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.package@WarpedGPModel[T,I]extendsContinuousProcessModel[T,I,Double,io.github.mandar2812.dynaml.probability.MeasurableDistrRV[io.github.mandar2812.dynaml.algebra.PartitionedVector,io.github.mandar2812.dynaml.algebra.PartitionedVector,io.github.mandar2812.dynaml.algebra.PartitionedMatrix]]withSecondOrderProcessModel[T,I,Double,Double,breeze.linalg.DenseMatrix[Double],io.github.mandar2812.dynaml.probability.MeasurableDistrRV[io.github.mandar2812.dynaml.algebra.PartitionedVector,io.github.mandar2812.dynaml.algebra.PartitionedVector,io.github.mandar2812.dynaml.algebra.PartitionedMatrix]]withGloballyOptWithGrad" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.package@WarpedGPModel[T,I]extendsContinuousProcessModel[T,I,Double,io.github.mandar2812.dynaml.probability.MeasurableDistrRV[io.github.mandar2812.dynaml.algebra.PartitionedVector,io.github.mandar2812.dynaml.algebra.PartitionedVector,io.github.mandar2812.dynaml.algebra.PartitionedMatrix,io.github.mandar2812.dynaml.probability.distributions.BlockedMultiVariateGaussian]]withSecondOrderProcessModel[T,I,Double,Double,breeze.linalg.DenseMatrix[Double],io.github.mandar2812.dynaml.probability.MeasurableDistrRV[io.github.mandar2812.dynaml.algebra.PartitionedVector,io.github.mandar2812.dynaml.algebra.PartitionedVector,io.github.mandar2812.dynaml.algebra.PartitionedMatrix,io.github.mandar2812.dynaml.probability.distributions.BlockedMultiVariateGaussian]]withGloballyOptWithGrad" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">::Experimental::</p><div class="fullcomment"><div class="comment cmt"><p>::Experimental::</p></div><dl class="attributes block"> <dt>Annotations</dt><dd>
+      <p class="shortcomment cmt">::Experimental::</p><div class="fullcomment"><div class="comment cmt"><p>::Experimental::</p><p>A warped Gaussian Process.</p></div><dl class="attributes block"> <dt>Annotations</dt><dd>
                 <span class="name">@Experimental</span><span class="args">()</span>
               
         </dd></dl></div>
@@ -334,6 +415,23 @@ vector inputs and a singular scalar output.
       </span>
       </h4><span class="permalink">
       <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.package@AbstractGPRegressionModel" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.github.mandar2812.dynaml.models.gp.GPOperatorModel" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GPOperatorModel"></a>
+      <a id="GPOperatorModel:GPOperatorModel"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="GPOperatorModel$.html"><span class="name">GPOperatorModel</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.gp.package@GPOperatorModel" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>

@@ -82,7 +82,7 @@
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt"></p>
+      <p class="shortcomment cmt">Implementation of a Students' T Regression model.</p>
     </li><li name="io.github.mandar2812.dynaml.models.stp.MOStudentTRegression" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="MOStudentTRegression[I]extendsAbstractSTPRegressionModel[Stream[(I,breeze.linalg.DenseVector[Double])],(I,Int)]"></a>
       <a id="MOStudentTRegression[I]:MOStudentTRegression[I]"></a>
@@ -118,7 +118,7 @@
     </span>
       <p class="shortcomment cmt">Created by mandar on 27/08/16.</p>
     </li><li name="io.github.mandar2812.dynaml.models.stp.MVStudentsTModel" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="MVStudentsTModel[T,I]extendsContinuousProcessModel[T,I,breeze.linalg.DenseVector[Double],io.github.mandar2812.dynaml.probability.MatrixTRV]withGloballyOptimizable"></a>
+      <a id="MVStudentsTModel[T,I]extendsContinuousProcessModel[T,I,breeze.linalg.DenseVector[Double],io.github.mandar2812.dynaml.probability.MatrixTRV]withSecondOrderProcessModel[T,I,breeze.linalg.DenseVector[Double],Double,breeze.linalg.DenseMatrix[Double],io.github.mandar2812.dynaml.probability.MatrixTRV]withGloballyOptimizable"></a>
       <a id="MVStudentsTModel[T,I]:MVStudentsTModel[T,I]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -126,10 +126,10 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="MVStudentsTModel.html"><span class="name">MVStudentsTModel</span></a><span class="tparams">[<span name="T">T</span>, <span name="I">I</span>]</span><span class="result"> extends <a href="../ContinuousProcessModel.html" class="extype" name="io.github.mandar2812.dynaml.models.ContinuousProcessModel">ContinuousProcessModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.stp.MVStudentsTModel.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.stp.MVStudentsTModel.I">I</span>, <span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>], <a href="../../probability/MatrixTRV.html" class="extype" name="io.github.mandar2812.dynaml.probability.MatrixTRV">MatrixTRV</a>] with <a href="../../optimization/GloballyOptimizable.html" class="extype" name="io.github.mandar2812.dynaml.optimization.GloballyOptimizable">GloballyOptimizable</a></span>
+        <a href="MVStudentsTModel.html"><span class="name">MVStudentsTModel</span></a><span class="tparams">[<span name="T">T</span>, <span name="I">I</span>]</span><span class="result"> extends <a href="../ContinuousProcessModel.html" class="extype" name="io.github.mandar2812.dynaml.models.ContinuousProcessModel">ContinuousProcessModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.stp.MVStudentsTModel.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.stp.MVStudentsTModel.I">I</span>, <span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>], <a href="../../probability/MatrixTRV.html" class="extype" name="io.github.mandar2812.dynaml.probability.MatrixTRV">MatrixTRV</a>] with <a href="../SecondOrderProcessModel.html" class="extype" name="io.github.mandar2812.dynaml.models.SecondOrderProcessModel">SecondOrderProcessModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.stp.MVStudentsTModel.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.stp.MVStudentsTModel.I">I</span>, <span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>], <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="breeze.linalg.DenseMatrix">DenseMatrix</span>[<span class="extype" name="scala.Double">Double</span>], <a href="../../probability/MatrixTRV.html" class="extype" name="io.github.mandar2812.dynaml.probability.MatrixTRV">MatrixTRV</a>] with <a href="../../optimization/GloballyOptimizable.html" class="extype" name="io.github.mandar2812.dynaml.optimization.GloballyOptimizable">GloballyOptimizable</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.stp.package@MVStudentsTModel[T,I]extendsContinuousProcessModel[T,I,breeze.linalg.DenseVector[Double],io.github.mandar2812.dynaml.probability.MatrixTRV]withGloballyOptimizable" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.stp.package@MVStudentsTModel[T,I]extendsContinuousProcessModel[T,I,breeze.linalg.DenseVector[Double],io.github.mandar2812.dynaml.probability.MatrixTRV]withSecondOrderProcessModel[T,I,breeze.linalg.DenseVector[Double],Double,breeze.linalg.DenseMatrix[Double],io.github.mandar2812.dynaml.probability.MatrixTRV]withGloballyOptimizable" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -144,6 +144,40 @@ emulation.</p><p>Reference:
   Journal of Statistical Planning and Inference
 </a>
 </p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>The type of the training data features and outputs.</p></dd><dt class="tparam">I</dt><dd class="cmt"><p>The type of the index set (input features) of the process.</p></dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.models.stp.MVTMixture" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MVTMixture[T,I]extendsGenContinuousMixtureModel[T,I,breeze.linalg.DenseVector[Double],breeze.linalg.DenseMatrix[Double],(breeze.linalg.DenseMatrix[Double],breeze.linalg.DenseMatrix[Double]),io.github.mandar2812.dynaml.probability.distributions.MatrixT,io.github.mandar2812.dynaml.probability.MatrixTRV,io.github.mandar2812.dynaml.models.stp.MVStudentsTModel[T,I]]"></a>
+      <a id="MVTMixture[T,I]:MVTMixture[T,I]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="MVTMixture.html"><span class="name">MVTMixture</span></a><span class="tparams">[<span name="T">T</span>, <span name="I">I</span>]</span><span class="result"> extends <a href="../GenContinuousMixtureModel.html" class="extype" name="io.github.mandar2812.dynaml.models.GenContinuousMixtureModel">GenContinuousMixtureModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.stp.MVTMixture.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.stp.MVTMixture.I">I</span>, <span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>], <span class="extype" name="breeze.linalg.DenseMatrix">DenseMatrix</span>[<span class="extype" name="scala.Double">Double</span>], (<span class="extype" name="breeze.linalg.DenseMatrix">DenseMatrix</span>[<span class="extype" name="scala.Double">Double</span>], <span class="extype" name="breeze.linalg.DenseMatrix">DenseMatrix</span>[<span class="extype" name="scala.Double">Double</span>]), <a href="../../probability/distributions/MatrixT.html" class="extype" name="io.github.mandar2812.dynaml.probability.distributions.MatrixT">MatrixT</a>, <a href="../../probability/MatrixTRV.html" class="extype" name="io.github.mandar2812.dynaml.probability.MatrixTRV">MatrixTRV</a>, <a href="MVStudentsTModel.html" class="extype" name="io.github.mandar2812.dynaml.models.stp.MVStudentsTModel">MVStudentsTModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.stp.MVTMixture.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.stp.MVTMixture.I">I</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.stp.package@MVTMixture[T,I]extendsGenContinuousMixtureModel[T,I,breeze.linalg.DenseVector[Double],breeze.linalg.DenseMatrix[Double],(breeze.linalg.DenseMatrix[Double],breeze.linalg.DenseMatrix[Double]),io.github.mandar2812.dynaml.probability.distributions.MatrixT,io.github.mandar2812.dynaml.probability.MatrixTRV,io.github.mandar2812.dynaml.models.stp.MVStudentsTModel[T,I]]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p>
+    </li><li name="io.github.mandar2812.dynaml.models.stp.StudentTProcessMixture" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="StudentTProcessMixture[T,I]extendsGenContinuousMixtureModel[T,I,Double,io.github.mandar2812.dynaml.algebra.PartitionedVector,io.github.mandar2812.dynaml.algebra.PartitionedPSDMatrix,io.github.mandar2812.dynaml.probability.distributions.BlockedMultivariateStudentsT,io.github.mandar2812.dynaml.probability.MultStudentsTPRV,io.github.mandar2812.dynaml.models.stp.AbstractSTPRegressionModel[T,I]]"></a>
+      <a id="StudentTProcessMixture[T,I]:StudentTProcessMixture[T,I]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="StudentTProcessMixture.html"><span class="name">StudentTProcessMixture</span></a><span class="tparams">[<span name="T">T</span>, <span name="I">I</span>]</span><span class="result"> extends <a href="../GenContinuousMixtureModel.html" class="extype" name="io.github.mandar2812.dynaml.models.GenContinuousMixtureModel">GenContinuousMixtureModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.stp.StudentTProcessMixture.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.stp.StudentTProcessMixture.I">I</span>, <span class="extype" name="scala.Double">Double</span>, <a href="../../algebra/PartitionedVector.html" class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedVector">PartitionedVector</a>, <span class="extype" name="io.github.mandar2812.dynaml.algebra.PartitionedPSDMatrix">PartitionedPSDMatrix</span>, <a href="../../probability/distributions/BlockedMultivariateStudentsT.html" class="extype" name="io.github.mandar2812.dynaml.probability.distributions.BlockedMultivariateStudentsT">BlockedMultivariateStudentsT</a>, <a href="../../probability/MultStudentsTPRV.html" class="extype" name="io.github.mandar2812.dynaml.probability.MultStudentsTPRV">MultStudentsTPRV</a>, <a href="AbstractSTPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.stp.AbstractSTPRegressionModel">AbstractSTPRegressionModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.stp.StudentTProcessMixture.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.stp.StudentTProcessMixture.I">I</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.stp.package@StudentTProcessMixture[T,I]extendsGenContinuousMixtureModel[T,I,Double,io.github.mandar2812.dynaml.algebra.PartitionedVector,io.github.mandar2812.dynaml.algebra.PartitionedPSDMatrix,io.github.mandar2812.dynaml.probability.distributions.BlockedMultivariateStudentsT,io.github.mandar2812.dynaml.probability.MultStudentsTPRV,io.github.mandar2812.dynaml.models.stp.AbstractSTPRegressionModel[T,I]]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p>
     </li><li name="io.github.mandar2812.dynaml.models.stp.StudentTRegression" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="StudentTRegressionextendsAbstractSTPRegressionModel[Seq[(breeze.linalg.DenseVector[Double],Double)],breeze.linalg.DenseVector[Double]]"></a>
       <a id="StudentTRegression:StudentTRegression"></a>

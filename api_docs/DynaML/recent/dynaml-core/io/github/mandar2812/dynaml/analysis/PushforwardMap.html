@@ -51,7 +51,8 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"></div><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="io.github.mandar2812.dynaml.analysis.PushforwardMap">PushforwardMap</a>[<span class="extype" name="io.github.mandar2812.dynaml.analysis.PushforwardMap.Source">Source</span>, <span class="extype" name="io.github.mandar2812.dynaml.analysis.PushforwardMap.Destination">Destination</span>, <span class="extype" name="io.github.mandar2812.dynaml.analysis.PushforwardMap.Jacobian">Jacobian</span>]</dd></dl><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Push forward map is a function that has a well defined inverse
+as well as Jacobian of the inverse.</p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="io.github.mandar2812.dynaml.analysis.PushforwardMap">PushforwardMap</a>[<span class="extype" name="io.github.mandar2812.dynaml.analysis.PushforwardMap.Source">Source</span>, <span class="extype" name="io.github.mandar2812.dynaml.analysis.PushforwardMap.Destination">Destination</span>, <span class="extype" name="io.github.mandar2812.dynaml.analysis.PushforwardMap.Jacobian">Jacobian</span>]</dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><span class="extype" name="io.github.mandar2812.dynaml.pipes.Encoder">Encoder</span>[<span class="extype" name="io.github.mandar2812.dynaml.analysis.PushforwardMap.Source">Source</span>, <span class="extype" name="io.github.mandar2812.dynaml.analysis.PushforwardMap.Destination">Destination</span>], <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</span>[<span class="extype" name="io.github.mandar2812.dynaml.analysis.PushforwardMap.Source">Source</span>, <span class="extype" name="io.github.mandar2812.dynaml.analysis.PushforwardMap.Destination">Destination</span>], <span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
@@ -188,6 +189,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.pipes.DataPipe#%&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="%&gt;(that:io.github.mandar2812.dynaml.pipes.Basis[Destination]):io.github.mandar2812.dynaml.pipes.Basis[Source]"></a>
+      <a id="%&gt;(Basis[Destination]):Basis[Source]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $percent$greater" class="name">%&gt;</span><span class="params">(<span name="that">that: <span class="extype" name="io.github.mandar2812.dynaml.pipes.Basis">Basis</span>[<span class="extype" name="io.github.mandar2812.dynaml.analysis.PushforwardMap.Destination">Destination</span>]</span>)</span><span class="result">: <span class="extype" name="io.github.mandar2812.dynaml.pipes.Basis">Basis</span>[<span class="extype" name="io.github.mandar2812.dynaml.analysis.PushforwardMap.Source">Source</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.PushforwardMap@%&gt;(that:io.github.mandar2812.dynaml.pipes.Basis[Destination]):io.github.mandar2812.dynaml.pipes.Basis[Source]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>DataPipe</dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.pipes.DataPipe#*" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="*[OtherSource,OtherDestination](that:io.github.mandar2812.dynaml.pipes.DataPipe[OtherSource,OtherDestination]):io.github.mandar2812.dynaml.pipes.ParallelPipe[Source,Destination,OtherSource,OtherDestination]"></a>
       <a id="*[OtherSource,OtherDestination](DataPipe[OtherSource,OtherDestination]):ParallelPipe[Source,Destination,OtherSource,OtherDestination]"></a>
@@ -206,18 +224,35 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>DataPipe</dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.analysis.PushforwardMap#-&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="-&gt;[R&lt;:io.github.mandar2812.dynaml.probability.ContinuousDistrRV[Source]](r:R):io.github.mandar2812.dynaml.probability.MeasurableDistrRV[Source,Destination,Jacobian]"></a>
-      <a id="-&gt;[R&lt;:ContinuousDistrRV[Source]](R):MeasurableDistrRV[Source,Destination,Jacobian]"></a>
+      <a id="-&gt;[R&lt;:io.github.mandar2812.dynaml.probability.ContinuousDistrRV[Source]](r:R):io.github.mandar2812.dynaml.probability.MeasurableDistrRV[Source,Destination,Jacobian,breeze.stats.distributions.ContinuousDistr[Source]]"></a>
+      <a id="-&gt;[R&lt;:ContinuousDistrRV[Source]](R):MeasurableDistrRV[Source,Destination,Jacobian,ContinuousDistr[Source]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $minus$greater" class="name">-&gt;</span><span class="tparams">[<span name="R">R &lt;: <a href="../probability/ContinuousDistrRV.html" class="extype" name="io.github.mandar2812.dynaml.probability.ContinuousDistrRV">ContinuousDistrRV</a>[<span class="extype" name="io.github.mandar2812.dynaml.analysis.PushforwardMap.Source">Source</span>]</span>]</span><span class="params">(<span name="r">r: <span class="extype" name="io.github.mandar2812.dynaml.analysis.PushforwardMap.-&gt;.R">R</span></span>)</span><span class="result">: <a href="../probability/MeasurableDistrRV.html" class="extype" name="io.github.mandar2812.dynaml.probability.MeasurableDistrRV">MeasurableDistrRV</a>[<span class="extype" name="io.github.mandar2812.dynaml.analysis.PushforwardMap.Source">Source</span>, <span class="extype" name="io.github.mandar2812.dynaml.analysis.PushforwardMap.Destination">Destination</span>, <span class="extype" name="io.github.mandar2812.dynaml.analysis.PushforwardMap.Jacobian">Jacobian</span>]</span>
+        <span title="gt4s: $minus$greater" class="name">-&gt;</span><span class="tparams">[<span name="R">R &lt;: <a href="../probability/ContinuousDistrRV.html" class="extype" name="io.github.mandar2812.dynaml.probability.ContinuousDistrRV">ContinuousDistrRV</a>[<span class="extype" name="io.github.mandar2812.dynaml.analysis.PushforwardMap.Source">Source</span>]</span>]</span><span class="params">(<span name="r">r: <span class="extype" name="io.github.mandar2812.dynaml.analysis.PushforwardMap.-&gt;.R">R</span></span>)</span><span class="result">: <a href="../probability/MeasurableDistrRV.html" class="extype" name="io.github.mandar2812.dynaml.probability.MeasurableDistrRV">MeasurableDistrRV</a>[<span class="extype" name="io.github.mandar2812.dynaml.analysis.PushforwardMap.Source">Source</span>, <span class="extype" name="io.github.mandar2812.dynaml.analysis.PushforwardMap.Destination">Destination</span>, <span class="extype" name="io.github.mandar2812.dynaml.analysis.PushforwardMap.Jacobian">Jacobian</span>, <span class="extype" name="breeze.stats.distributions.ContinuousDistr">ContinuousDistr</span>[<span class="extype" name="io.github.mandar2812.dynaml.analysis.PushforwardMap.Source">Source</span>]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.PushforwardMap@-&gt;[R&lt;:io.github.mandar2812.dynaml.probability.ContinuousDistrRV[Source]](r:R):io.github.mandar2812.dynaml.probability.MeasurableDistrRV[Source,Destination,Jacobian]" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.PushforwardMap@-&gt;[R&lt;:io.github.mandar2812.dynaml.probability.ContinuousDistrRV[Source]](r:R):io.github.mandar2812.dynaml.probability.MeasurableDistrRV[Source,Destination,Jacobian,breeze.stats.distributions.ContinuousDistr[Source]]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.github.mandar2812.dynaml.analysis.PushforwardMap#-&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="-&gt;[Distr1&lt;:breeze.stats.distributions.ContinuousDistr[Source]](r:io.github.mandar2812.dynaml.probability.ContinuousRVWithDistr[Source,Distr1]):io.github.mandar2812.dynaml.probability.MeasurableDistrRV[Source,Destination,Jacobian,Distr1]"></a>
+      <a id="-&gt;[Distr1&lt;:ContinuousDistr[Source]](ContinuousRVWithDistr[Source,Distr1]):MeasurableDistrRV[Source,Destination,Jacobian,Distr1]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $minus$greater" class="name">-&gt;</span><span class="tparams">[<span name="Distr1">Distr1 &lt;: <span class="extype" name="breeze.stats.distributions.ContinuousDistr">ContinuousDistr</span>[<span class="extype" name="io.github.mandar2812.dynaml.analysis.PushforwardMap.Source">Source</span>]</span>]</span><span class="params">(<span name="r">r: <a href="../probability/ContinuousRVWithDistr.html" class="extype" name="io.github.mandar2812.dynaml.probability.ContinuousRVWithDistr">ContinuousRVWithDistr</a>[<span class="extype" name="io.github.mandar2812.dynaml.analysis.PushforwardMap.Source">Source</span>, <span class="extype" name="io.github.mandar2812.dynaml.analysis.PushforwardMap.-&gt;.Distr1">Distr1</span>]</span>)</span><span class="result">: <a href="../probability/MeasurableDistrRV.html" class="extype" name="io.github.mandar2812.dynaml.probability.MeasurableDistrRV">MeasurableDistrRV</a>[<span class="extype" name="io.github.mandar2812.dynaml.analysis.PushforwardMap.Source">Source</span>, <span class="extype" name="io.github.mandar2812.dynaml.analysis.PushforwardMap.Destination">Destination</span>, <span class="extype" name="io.github.mandar2812.dynaml.analysis.PushforwardMap.Jacobian">Jacobian</span>, <span class="extype" name="io.github.mandar2812.dynaml.analysis.PushforwardMap.-&gt;.Distr1">Distr1</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.analysis.PushforwardMap@-&gt;[Distr1&lt;:breeze.stats.distributions.ContinuousDistr[Source]](r:io.github.mandar2812.dynaml.probability.ContinuousRVWithDistr[Source,Distr1]):io.github.mandar2812.dynaml.probability.MeasurableDistrRV[Source,Destination,Jacobian,Distr1]" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>

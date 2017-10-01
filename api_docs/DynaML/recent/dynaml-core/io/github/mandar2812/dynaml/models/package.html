@@ -66,7 +66,27 @@
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="io.github.mandar2812.dynaml.models.ContinuousProcessModel" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+              <ol><li name="io.github.mandar2812.dynaml.models.ContinuousMixtureModel" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="ContinuousMixtureModel[T,I,Y,YDomain,W1&lt;:io.github.mandar2812.dynaml.probability.ContinuousDistrRV[YDomain],BaseProcesses&lt;:io.github.mandar2812.dynaml.models.ContinuousProcessModel[T,I,Y,W1]]extendsStochasticProcessMixtureModel[I,Y,io.github.mandar2812.dynaml.probability.ContinuousDistrMixture[YDomain,W1]]"></a>
+      <a id="ContinuousMixtureModel[T,I,Y,YDomain,W1&lt;:ContinuousDistrRV[YDomain],BaseProcesses&lt;:ContinuousProcessModel[T,I,Y,W1]]:ContinuousMixtureModel[T,I,Y,YDomain,W1,BaseProcesses]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ContinuousMixtureModel.html"><span class="name">ContinuousMixtureModel</span></a><span class="tparams">[<span name="T">T</span>, <span name="I">I</span>, <span name="Y">Y</span>, <span name="YDomain">YDomain</span>, <span name="W1">W1 &lt;: <a href="../probability/ContinuousDistrRV.html" class="extype" name="io.github.mandar2812.dynaml.probability.ContinuousDistrRV">ContinuousDistrRV</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.ContinuousMixtureModel.YDomain">YDomain</span>]</span>, <span name="BaseProcesses">BaseProcesses &lt;: <a href="ContinuousProcessModel.html" class="extype" name="io.github.mandar2812.dynaml.models.ContinuousProcessModel">ContinuousProcessModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.ContinuousMixtureModel.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.ContinuousMixtureModel.I">I</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.ContinuousMixtureModel.Y">Y</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.ContinuousMixtureModel.W1">W1</span>]</span>]</span><span class="result"> extends <a href="StochasticProcessMixtureModel.html" class="extype" name="io.github.mandar2812.dynaml.models.StochasticProcessMixtureModel">StochasticProcessMixtureModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.ContinuousMixtureModel.I">I</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.ContinuousMixtureModel.Y">Y</span>, <a href="../probability/ContinuousDistrMixture.html" class="extype" name="io.github.mandar2812.dynaml.probability.ContinuousDistrMixture">ContinuousDistrMixture</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.ContinuousMixtureModel.YDomain">YDomain</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.ContinuousMixtureModel.W1">W1</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.models.package@ContinuousMixtureModel[T,I,Y,YDomain,W1&lt;:io.github.mandar2812.dynaml.probability.ContinuousDistrRV[YDomain],BaseProcesses&lt;:io.github.mandar2812.dynaml.models.ContinuousProcessModel[T,I,Y,W1]]extendsStochasticProcessMixtureModel[I,Y,io.github.mandar2812.dynaml.probability.ContinuousDistrMixture[YDomain,W1]]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A process which is a multinomial mixture of
+continuous component processes.</p><div class="fullcomment"><div class="comment cmt"><p>A process which is a multinomial mixture of
+continuous component processes.</p></div><dl class="paramcmts block"><dt class="tparam">I</dt><dd class="cmt"><p>The type of the index set (i.e. Double for time series, DenseVector for GP regression)</p></dd><dt class="tparam">Y</dt><dd class="cmt"><p>The type of the output label</p></dd><dt class="tparam">W1</dt><dd class="cmt"><p>Implementing class of the posterior distribution for the base processes
+          should inherit from <span class="extype" name="ContinuousMixtureRV">ContinuousMixtureRV</span></p></dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.models.ContinuousProcessModel" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="ContinuousProcessModel[T,I,Y,W&lt;:io.github.mandar2812.dynaml.probability.ContinuousRandomVariable[_]]extendsStochasticProcessModel[T,I,Y,W]"></a>
       <a id="ContinuousProcessModel[T,I,Y,W&lt;:ContinuousRandomVariable[_]]:ContinuousProcessModel[T,I,Y,W]"></a>
       <h4 class="signature">
@@ -82,7 +102,9 @@
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt"></p>
+      <p class="shortcomment cmt">Blueprint for a continuous valued stochastic process, abstracts away the behavior
+common to sub-classes such as <a href="gp/GPRegression.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.GPRegression">io.github.mandar2812.dynaml.models.gp.GPRegression</a>,
+<a href="stp/StudentTRegression.html" class="extype" name="io.github.mandar2812.dynaml.models.stp.StudentTRegression">io.github.mandar2812.dynaml.models.stp.StudentTRegression</a> and others.</p>
     </li><li name="io.github.mandar2812.dynaml.models.EvaluableModel" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="EvaluableModel[P,R]extendsAnyRef"></a>
       <a id="EvaluableModel[P,R]:EvaluableModel[P,R]"></a>
@@ -108,6 +130,30 @@ there is a function taking in a csv
 reader object pointing to a test csv file
 and returns the appropriate <span class="extype" name="Metrics">Metrics</span> object
 </p></div><dl class="paramcmts block"><dt class="tparam">P</dt><dd class="cmt"><p>The type of the model's Parameters</p></dd><dt class="tparam">R</dt><dd class="cmt"><p>The type of the output value</p></dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.models.GenContinuousMixtureModel" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="GenContinuousMixtureModel[T,I,Y,YDomain,YDomainVar,BaseDistr&lt;:breeze.stats.distributions.ContinuousDistr[YDomain]withbreeze.stats.distributions.Moments[YDomain,YDomainVar]withio.github.mandar2812.dynaml.probability.distributions.HasErrorBars[YDomain],W1&lt;:io.github.mandar2812.dynaml.probability.ContinuousRVWithDistr[YDomain,BaseDistr],BaseProcesses&lt;:io.github.mandar2812.dynaml.models.ContinuousProcessModel[T,I,Y,W1]]extendsStochasticProcessMixtureModel[I,Y,io.github.mandar2812.dynaml.probability.ContMixtureRVBars[YDomain,YDomainVar,BaseDistr]]"></a>
+      <a id="GenContinuousMixtureModel[T,I,Y,YDomain,YDomainVar,BaseDistr&lt;:ContinuousDistr[YDomain]withMoments[YDomain,YDomainVar]withHasErrorBars[YDomain],W1&lt;:ContinuousRVWithDistr[YDomain,BaseDistr],BaseProcesses&lt;:ContinuousProcessModel[T,I,Y,W1]]:GenContinuousMixtureModel[T,I,Y,YDomain,YDomainVar,BaseDistr,W1,BaseProcesses]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="GenContinuousMixtureModel.html"><span class="name">GenContinuousMixtureModel</span></a><span class="tparams">[<span name="T">T</span>, <span name="I">I</span>, <span name="Y">Y</span>, <span name="YDomain">YDomain</span>, <span name="YDomainVar">YDomainVar</span>, <span name="BaseDistr">BaseDistr &lt;: <span class="extype" name="breeze.stats.distributions.ContinuousDistr">ContinuousDistr</span>[<span class="extype" name="io.github.mandar2812.dynaml.models.GenContinuousMixtureModel.YDomain">YDomain</span>] with <span class="extype" name="breeze.stats.distributions.Moments">Moments</span>[<span class="extype" name="io.github.mandar2812.dynaml.models.GenContinuousMixtureModel.YDomain">YDomain</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.GenContinuousMixtureModel.YDomainVar">YDomainVar</span>] with <a href="../probability/distributions/HasErrorBars.html" class="extype" name="io.github.mandar2812.dynaml.probability.distributions.HasErrorBars">HasErrorBars</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.GenContinuousMixtureModel.YDomain">YDomain</span>]</span>, <span name="W1">W1 &lt;: <a href="../probability/ContinuousRVWithDistr.html" class="extype" name="io.github.mandar2812.dynaml.probability.ContinuousRVWithDistr">ContinuousRVWithDistr</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.GenContinuousMixtureModel.YDomain">YDomain</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.GenContinuousMixtureModel.BaseDistr">BaseDistr</span>]</span>, <span name="BaseProcesses">BaseProcesses &lt;: <a href="ContinuousProcessModel.html" class="extype" name="io.github.mandar2812.dynaml.models.ContinuousProcessModel">ContinuousProcessModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.GenContinuousMixtureModel.T">T</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.GenContinuousMixtureModel.I">I</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.GenContinuousMixtureModel.Y">Y</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.GenContinuousMixtureModel.W1">W1</span>]</span>]</span><span class="result"> extends <a href="StochasticProcessMixtureModel.html" class="extype" name="io.github.mandar2812.dynaml.models.StochasticProcessMixtureModel">StochasticProcessMixtureModel</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.GenContinuousMixtureModel.I">I</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.GenContinuousMixtureModel.Y">Y</span>, <span class="extype" name="io.github.mandar2812.dynaml.probability.ContMixtureRVBars">ContMixtureRVBars</span>[<span class="extype" name="io.github.mandar2812.dynaml.models.GenContinuousMixtureModel.YDomain">YDomain</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.GenContinuousMixtureModel.YDomainVar">YDomainVar</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.GenContinuousMixtureModel.BaseDistr">BaseDistr</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.models.package@GenContinuousMixtureModel[T,I,Y,YDomain,YDomainVar,BaseDistr&lt;:breeze.stats.distributions.ContinuousDistr[YDomain]withbreeze.stats.distributions.Moments[YDomain,YDomainVar]withio.github.mandar2812.dynaml.probability.distributions.HasErrorBars[YDomain],W1&lt;:io.github.mandar2812.dynaml.probability.ContinuousRVWithDistr[YDomain,BaseDistr],BaseProcesses&lt;:io.github.mandar2812.dynaml.models.ContinuousProcessModel[T,I,Y,W1]]extendsStochasticProcessMixtureModel[I,Y,io.github.mandar2812.dynaml.probability.ContMixtureRVBars[YDomain,YDomainVar,BaseDistr]]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A multinomial mixture of component processes, each
+of which can output predictive distributions which have
+error bars around the mean/mode.</p><div class="fullcomment"><div class="comment cmt"><p>A multinomial mixture of component processes, each
+of which can output predictive distributions which have
+error bars around the mean/mode.
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>The training data type of each component</p></dd><dt class="tparam">I</dt><dd class="cmt"><p>The input feature type accepted by each component</p></dd><dt class="tparam">Y</dt><dd class="cmt"><p>The type of the output label</p></dd><dt class="tparam">YDomain</dt><dd class="cmt"><p>The type of a collection of outputs, e.g. vector</p></dd><dt class="tparam">YDomainVar</dt><dd class="cmt"><p>The type of the second moment (variance) returned
+                   by the predictive distribution of each component process</p></dd><dt class="tparam">BaseDistr</dt><dd class="cmt"><p>The type of the predictive distribution of each process.</p></dd><dt class="tparam">W1</dt><dd class="cmt"><p>The random variable type returned by the <span class="extype" name="predictiveDistribution()">predictiveDistribution()</span> method
+           of each component.</p></dd><dt class="tparam">BaseProcesses</dt><dd class="cmt"><p>The type of the stochastic process components</p></dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.models.KernelizedModel" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="KernelizedModel[G,L,T&lt;:breeze.linalg.Tensor[K1,Double],Q&lt;:breeze.linalg.Tensor[K2,Double],R,K1,K2]extendsLinearModel[G,T,Q,R,L]withGloballyOptimizablewithEvaluableModel[T,R]"></a>
       <a id="KernelizedModel[G,L,T&lt;:Tensor[K1,Double],Q&lt;:Tensor[K2,Double],R,K1,K2]:KernelizedModel[G,L,T,Q,R,K1,K2]"></a>
@@ -203,7 +249,24 @@ for Machine Learning models.
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>The underlying data structure storing the training &amp; test data.</p></dd><dt class="tparam">I</dt><dd class="cmt"><p>The type of the index set (i.e. Double for time series, DenseVector for GP regression)</p></dd><dt class="tparam">Y</dt><dd class="cmt"><p>The type of the output label</p></dd><dt class="tparam">K</dt><dd class="cmt"><p>The type returned by the kernel function.</p></dd><dt class="tparam">M</dt><dd class="cmt"><p>The data structure holding the kernel/covariance matrix</p></dd><dt class="tparam">W</dt><dd class="cmt"><p>Implementing class of the posterior distribution</p></dd></dl></div>
+      <p class="shortcomment cmt">Processes which can be specified by upto second order statistics i.e.</p><div class="fullcomment"><div class="comment cmt"><p>Processes which can be specified by upto second order statistics i.e. mean and covariance</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>The underlying data structure storing the training &amp; test data.</p></dd><dt class="tparam">I</dt><dd class="cmt"><p>The type of the index set (i.e. Double for time series, DenseVector for GP regression)</p></dd><dt class="tparam">Y</dt><dd class="cmt"><p>The type of the output label</p></dd><dt class="tparam">K</dt><dd class="cmt"><p>The type returned by the kernel function.</p></dd><dt class="tparam">M</dt><dd class="cmt"><p>The data structure holding the kernel/covariance matrix</p></dd><dt class="tparam">W</dt><dd class="cmt"><p>Implementing class of the posterior distribution</p></dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.models.StochasticProcessMixtureModel" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="StochasticProcessMixtureModel[I,Y,W&lt;:io.github.mandar2812.dynaml.probability.ContinuousMixtureRV[_,_]]extendsContinuousProcessModel[Seq[(I,Y)],I,Y,W]"></a>
+      <a id="StochasticProcessMixtureModel[I,Y,W&lt;:ContinuousMixtureRV[_,_]]:StochasticProcessMixtureModel[I,Y,W]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="StochasticProcessMixtureModel.html"><span class="name">StochasticProcessMixtureModel</span></a><span class="tparams">[<span name="I">I</span>, <span name="Y">Y</span>, <span name="W">W &lt;: <a href="../probability/ContinuousMixtureRV.html" class="extype" name="io.github.mandar2812.dynaml.probability.ContinuousMixtureRV">ContinuousMixtureRV</a>[_, _]</span>]</span><span class="result"> extends <a href="ContinuousProcessModel.html" class="extype" name="io.github.mandar2812.dynaml.models.ContinuousProcessModel">ContinuousProcessModel</a>[<span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="io.github.mandar2812.dynaml.models.StochasticProcessMixtureModel.I">I</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.StochasticProcessMixtureModel.Y">Y</span>)], <span class="extype" name="io.github.mandar2812.dynaml.models.StochasticProcessMixtureModel.I">I</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.StochasticProcessMixtureModel.Y">Y</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.StochasticProcessMixtureModel.W">W</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.models.package@StochasticProcessMixtureModel[I,Y,W&lt;:io.github.mandar2812.dynaml.probability.ContinuousMixtureRV[_,_]]extendsContinuousProcessModel[Seq[(I,Y)],I,Y,W]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="io.github.mandar2812.dynaml.models.StochasticProcessModel" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="StochasticProcessModel[T,I,Y,W]extendsModel[T,I,Y]"></a>
       <a id="StochasticProcessModel[T,I,Y,W]:StochasticProcessModel[T,I,Y,W]"></a>
@@ -220,8 +283,7 @@ for Machine Learning models.
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">date 26/08/16.</p><div class="fullcomment"><div class="comment cmt"><p>date 26/08/16.
-High Level description of a stochastic process based predictive model.
+      <p class="shortcomment cmt">High Level description of a stochastic process based predictive model.</p><div class="fullcomment"><div class="comment cmt"><p>High Level description of a stochastic process based predictive model.
 </p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>The underlying data structure storing the training &amp; test data.</p></dd><dt class="tparam">I</dt><dd class="cmt"><p>The type of the index set (i.e. Double for time series, DenseVector for GP regression)</p></dd><dt class="tparam">Y</dt><dd class="cmt"><p>The type of the output label</p></dd><dt class="tparam">W</dt><dd class="cmt"><p>Implementing class of the posterior distribution</p></dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.models.SubsampledDualLSSVM" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="SubsampledDualLSSVM[G,L]extendsKernelizedModel[G,L,breeze.linalg.DenseVector[Double],breeze.linalg.DenseVector[Double],Double,Int,Int]"></a>
@@ -260,6 +322,23 @@ High Level description of a stochastic process based predictive model.
       </span>
       </h4><span class="permalink">
       <a href="../../../../../index.html#io.github.mandar2812.dynaml.models.package@KernelizedModel" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.github.mandar2812.dynaml.models.StochasticProcessMixtureModel" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="StochasticProcessMixtureModel"></a>
+      <a id="StochasticProcessMixtureModel:StochasticProcessMixtureModel"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="StochasticProcessMixtureModel$.html"><span class="name">StochasticProcessMixtureModel</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.models.package@StochasticProcessMixtureModel" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>

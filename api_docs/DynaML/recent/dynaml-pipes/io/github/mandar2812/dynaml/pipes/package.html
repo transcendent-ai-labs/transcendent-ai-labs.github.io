@@ -66,7 +66,24 @@
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="io.github.mandar2812.dynaml.pipes.BifurcationPipe" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+              <ol><li name="io.github.mandar2812.dynaml.pipes.Basis" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="Basis[-I]extendsDataPipe[I,breeze.linalg.DenseVector[Double]]"></a>
+      <a id="Basis[-I]:Basis[I]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Basis.html"><span class="name">Basis</span></a><span class="tparams">[<span name="I">-I</span>]</span><span class="result"> extends <a href="DataPipe.html" class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</a>[<span class="extype" name="io.github.mandar2812.dynaml.pipes.Basis.I">I</span>, <span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.pipes.package@Basis[-I]extendsDataPipe[I,breeze.linalg.DenseVector[Double]]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Defines an abstract type for a basis expansion/mapping.</p>
+    </li><li name="io.github.mandar2812.dynaml.pipes.BifurcationPipe" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="BifurcationPipe[-Source,+Result1,+Result2]extendsDataPipe[Source,(Result1,Result2)]"></a>
       <a id="BifurcationPipe[-Source,+Result1,+Result2]:BifurcationPipe[Source,Result1,Result2]"></a>
       <h4 class="signature">
@@ -83,7 +100,7 @@
       </a>
     </span>
       
-    </li><li name="io.github.mandar2812.dynaml.pipes.DataPipe" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+    </li><li name="io.github.mandar2812.dynaml.pipes.DataPipe" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="DataPipe[-Source,+Destination]extendsSerializable"></a>
       <a id="DataPipe[-Source,+Destination]:DataPipe[Source,Destination]"></a>
       <h4 class="signature">
@@ -99,7 +116,11 @@
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt"></p>
+      <p class="shortcomment cmt">Top level trait representing an
+abstract pipe that defines a transformation
+between two data types, i.e.</p><div class="fullcomment"><div class="comment cmt"><p>Top level trait representing an
+abstract pipe that defines a transformation
+between two data types, i.e. <span class="extype" name="Source">Source</span> and <span class="extype" name="Destination">Destination</span></p></div></div>
     </li><li name="io.github.mandar2812.dynaml.pipes.DataPipe2" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="DataPipe2[-Source1,-Source2,+Result]extendsSerializable"></a>
       <a id="DataPipe2[-Source1,-Source2,+Result]:DataPipe2[Source1,Source2,Result]"></a>
@@ -187,7 +208,7 @@ to a bijective function.</p></div><dl class="paramcmts block"><dt class="tparam"
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt"></p>
+      <p class="shortcomment cmt">Data Pipe wrapper of a curried function of order 1</p>
     </li><li name="io.github.mandar2812.dynaml.pipes.MetaPipe12" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="MetaPipe12[A,B,C,D]extendsDataPipe[A,io.github.mandar2812.dynaml.pipes.DataPipe2[B,C,D]]"></a>
       <a id="MetaPipe12[A,B,C,D]:MetaPipe12[A,B,C,D]"></a>
@@ -204,7 +225,8 @@ to a bijective function.</p></div><dl class="paramcmts block"><dt class="tparam"
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt"></p>
+      <p class="shortcomment cmt">Wraps a curried function of order 1 which takes 1 arguments
+and returns a <span class="extype" name="Function2">Function2</span>.</p>
     </li><li name="io.github.mandar2812.dynaml.pipes.MetaPipe21" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="MetaPipe21[A,B,C,D]extendsDataPipe2[A,B,io.github.mandar2812.dynaml.pipes.DataPipe[C,D]]"></a>
       <a id="MetaPipe21[A,B,C,D]:MetaPipe21[A,B,C,D]"></a>
@@ -221,7 +243,8 @@ to a bijective function.</p></div><dl class="paramcmts block"><dt class="tparam"
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt"></p>
+      <p class="shortcomment cmt">Wraps a curried function of order 1 which takes 2 arguments
+and returns a <span class="extype" name="Function1">Function1</span>.</p>
     </li><li name="io.github.mandar2812.dynaml.pipes.ParallelPipe" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="ParallelPipe[-Source1,+Result1,-Source2,+Result2]extendsDataPipe[(Source1,Source2),(Result1,Result2)]"></a>
       <a id="ParallelPipe[-Source1,+Result1,-Source2,+Result2]:ParallelPipe[Source1,Result1,Source2,Result2]"></a>
@@ -521,7 +544,24 @@ performs the scala <code>map</code>operation.</p>
 
         <div id="values" class="values members">
               <h3>Value Members</h3>
-              <ol><li name="io.github.mandar2812.dynaml.pipes.BifurcationPipe" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+              <ol><li name="io.github.mandar2812.dynaml.pipes.Basis" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Basis"></a>
+      <a id="Basis:Basis"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Basis$.html"><span class="name">Basis</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.pipes.package@Basis" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.github.mandar2812.dynaml.pipes.BifurcationPipe" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="BifurcationPipe"></a>
       <a id="BifurcationPipe:BifurcationPipe"></a>
       <h4 class="signature">

@@ -51,7 +51,9 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><h5> GP Pipes: Alternate </h5><p>A <span class="extype" name="DataPipe2">DataPipe2</span> which takes a data set,
+a trend and outputs a GP Regression model.
+</p></div><dl class="paramcmts block"><dt class="tparam">IndexSet</dt><dd class="cmt"><p>Type of features of each data pattern</p></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe2">DataPipe2</span>[<span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPRegressionPipe2.IndexSet">IndexSet</span>, <span class="extype" name="scala.Double">Double</span>)], <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</span>[<span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPRegressionPipe2.IndexSet">IndexSet</span>, <span class="extype" name="scala.Double">Double</span>], <a href="../models/gp/AbstractGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel">AbstractGPRegressionModel</a>[<span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPRegressionPipe2.IndexSet">IndexSet</span>, <span class="extype" name="scala.Double">Double</span>)], <span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPRegressionPipe2.IndexSet">IndexSet</span>]], <span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
@@ -90,8 +92,8 @@
         <div id="allMembers">
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
-              <ol><li name="io.github.mandar2812.dynaml.modelpipe.GPRegressionPipe2#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(cov:io.github.mandar2812.dynaml.kernels.LocalScalarKernel[IndexSet],n:io.github.mandar2812.dynaml.kernels.LocalScalarKernel[IndexSet])(implicitevidence$3:scala.reflect.ClassTag[IndexSet]):io.github.mandar2812.dynaml.modelpipe.GPRegressionPipe2[IndexSet]"></a>
+              <ol><li name="io.github.mandar2812.dynaml.modelpipe.GPRegressionPipe2#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="&lt;init&gt;(cov:io.github.mandar2812.dynaml.kernels.LocalScalarKernel[IndexSet],n:io.github.mandar2812.dynaml.kernels.LocalScalarKernel[IndexSet])(implicitevidence$4:scala.reflect.ClassTag[IndexSet]):io.github.mandar2812.dynaml.modelpipe.GPRegressionPipe2[IndexSet]"></a>
       <a id="&lt;init&gt;:GPRegressionPipe2[IndexSet]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -102,11 +104,14 @@
         <span class="name">GPRegressionPipe2</span><span class="params">(<span name="cov">cov: <a href="../kernels/LocalScalarKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel">LocalScalarKernel</a>[<span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPRegressionPipe2.IndexSet">IndexSet</span>]</span>, <span name="n">n: <a href="../kernels/LocalScalarKernel.html" class="extype" name="io.github.mandar2812.dynaml.kernels.LocalScalarKernel">LocalScalarKernel</a>[<span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPRegressionPipe2.IndexSet">IndexSet</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <span class="extype" name="scala.reflect.ClassTag">ClassTag</span>[<span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPRegressionPipe2.IndexSet">IndexSet</span>]</span>)</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.modelpipe.GPRegressionPipe2@&lt;init&gt;(cov:io.github.mandar2812.dynaml.kernels.LocalScalarKernel[IndexSet],n:io.github.mandar2812.dynaml.kernels.LocalScalarKernel[IndexSet])(implicitevidence$3:scala.reflect.ClassTag[IndexSet]):io.github.mandar2812.dynaml.modelpipe.GPRegressionPipe2[IndexSet]" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.modelpipe.GPRegressionPipe2@&lt;init&gt;(cov:io.github.mandar2812.dynaml.kernels.LocalScalarKernel[IndexSet],n:io.github.mandar2812.dynaml.kernels.LocalScalarKernel[IndexSet])(implicitevidence$4:scala.reflect.ClassTag[IndexSet]):io.github.mandar2812.dynaml.modelpipe.GPRegressionPipe2[IndexSet]" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">cov</dt><dd class="cmt"><p>The covariance function of the resultant GP,
+           as an instance of <span class="extype" name="LocalScalarKernel">LocalScalarKernel</span> defined on
+           the <span class="extype" name="IndexSet">IndexSet</span> type.</p></dd><dt class="param">n</dt><dd class="cmt"><p>The measurement noise of the output signal/data, also
+         as in instance of <span class="extype" name="LocalScalarKernel">LocalScalarKernel</span></p></dd></dl></div>
     </li></ol>
             </div>
 
@@ -401,7 +406,7 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.modelpipe.GPRegressionPipe2#run" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="run(data1:Seq[(IndexSet,Double)],data2:io.github.mandar2812.dynaml.pipes.DataPipe[IndexSet,Double]):io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel[Seq[(IndexSet,Double)],IndexSet]"></a>
+      <a id="run(data:Seq[(IndexSet,Double)],trend:io.github.mandar2812.dynaml.pipes.DataPipe[IndexSet,Double]):io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel[Seq[(IndexSet,Double)],IndexSet]"></a>
       <a id="run(Seq[(IndexSet,Double)],DataPipe[IndexSet,Double]):AbstractGPRegressionModel[Seq[(IndexSet,Double)],IndexSet]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -409,10 +414,10 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">run</span><span class="params">(<span name="data1">data1: <span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPRegressionPipe2.IndexSet">IndexSet</span>, <span class="extype" name="scala.Double">Double</span>)]</span>, <span name="data2">data2: <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</span>[<span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPRegressionPipe2.IndexSet">IndexSet</span>, <span class="extype" name="scala.Double">Double</span>]</span>)</span><span class="result">: <a href="../models/gp/AbstractGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel">AbstractGPRegressionModel</a>[<span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPRegressionPipe2.IndexSet">IndexSet</span>, <span class="extype" name="scala.Double">Double</span>)], <span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPRegressionPipe2.IndexSet">IndexSet</span>]</span>
+        <span class="name">run</span><span class="params">(<span name="data">data: <span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPRegressionPipe2.IndexSet">IndexSet</span>, <span class="extype" name="scala.Double">Double</span>)]</span>, <span name="trend">trend: <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</span>[<span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPRegressionPipe2.IndexSet">IndexSet</span>, <span class="extype" name="scala.Double">Double</span>]</span>)</span><span class="result">: <a href="../models/gp/AbstractGPRegressionModel.html" class="extype" name="io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel">AbstractGPRegressionModel</a>[<span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPRegressionPipe2.IndexSet">IndexSet</span>, <span class="extype" name="scala.Double">Double</span>)], <span class="extype" name="io.github.mandar2812.dynaml.modelpipe.GPRegressionPipe2.IndexSet">IndexSet</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.modelpipe.GPRegressionPipe2@run(data1:Seq[(IndexSet,Double)],data2:io.github.mandar2812.dynaml.pipes.DataPipe[IndexSet,Double]):io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel[Seq[(IndexSet,Double)],IndexSet]" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.modelpipe.GPRegressionPipe2@run(data:Seq[(IndexSet,Double)],trend:io.github.mandar2812.dynaml.pipes.DataPipe[IndexSet,Double]):io.github.mandar2812.dynaml.models.gp.AbstractGPRegressionModel[Seq[(IndexSet,Double)],IndexSet]" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>

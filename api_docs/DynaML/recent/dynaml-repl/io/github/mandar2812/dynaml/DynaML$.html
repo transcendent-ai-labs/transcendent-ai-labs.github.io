@@ -244,23 +244,6 @@
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="io.github.mandar2812.dynaml.DynaML#fromConfig" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="fromConfig(cliConfig:io.github.mandar2812.dynaml.repl.Cli.Config,isRepl:Boolean,stdIn:java.io.InputStream,stdOut:java.io.OutputStream,stdErr:java.io.OutputStream):io.github.mandar2812.dynaml.DynaML"></a>
-      <a id="fromConfig(Config,Boolean,InputStream,OutputStream,OutputStream):DynaML"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">fromConfig</span><span class="params">(<span name="cliConfig">cliConfig: <a href="repl/Cli$$Config.html" class="extype" name="io.github.mandar2812.dynaml.repl.Cli.Config">Config</a></span>, <span name="isRepl">isRepl: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="stdIn">stdIn: <span class="extype" name="java.io.InputStream">InputStream</span></span>, <span name="stdOut">stdOut: <span class="extype" name="java.io.OutputStream">OutputStream</span></span>, <span name="stdErr">stdErr: <span class="extype" name="java.io.OutputStream">OutputStream</span></span>)</span><span class="result">: <a href="DynaML.html" class="extype" name="io.github.mandar2812.dynaml.DynaML">DynaML</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#io.github.mandar2812.dynaml.DynaML$@fromConfig(cliConfig:io.github.mandar2812.dynaml.repl.Cli.Config,isRepl:Boolean,stdIn:java.io.InputStream,stdOut:java.io.OutputStream,stdErr:java.io.OutputStream):io.github.mandar2812.dynaml.DynaML" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
     </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <a id="getClass():Class[_]"></a>
@@ -295,23 +278,6 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="io.github.mandar2812.dynaml.DynaML#helpMsg" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="helpMsg(help:Boolean):ProductwithSerializablewithscala.util.Either[(Boolean,String),Unit]"></a>
-      <a id="helpMsg(Boolean):ProductwithSerializablewithEither[(Boolean,String),Unit]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">helpMsg</span><span class="params">(<span name="help">help: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span> with <span class="extype" name="scala.util.Either">Either</span>[(<span class="extype" name="scala.Boolean">Boolean</span>, <span class="extype" name="scala.Predef.String">String</span>), <span class="extype" name="scala.Unit">Unit</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#io.github.mandar2812.dynaml.DynaML$@helpMsg(help:Boolean):ProductwithSerializablewithscala.util.Either[(Boolean,String),Unit]" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -329,6 +295,27 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.DynaML#isInteractive" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInteractive():Boolean"></a>
+      <a id="isInteractive():Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInteractive</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#io.github.mandar2812.dynaml.DynaML$@isInteractive():Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Detects if the console is interactive; lets us make console-friendly output
+(e.g.</p><div class="fullcomment"><div class="comment cmt"><p>Detects if the console is interactive; lets us make console-friendly output
+(e.g. ansi color codes) if it is, and script-friendly output (no ansi codes)
+if it's not</p><p>https://stackoverflow.com/a/1403817/871202
+</p></div></div>
     </li><li name="io.github.mandar2812.dynaml.DynaML#main" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="main(args0:Array[String]):Unit"></a>
       <a id="main(Array[String]):Unit"></a>
@@ -346,21 +333,21 @@
       </a>
     </span>
       <p class="shortcomment cmt">The command-line entry point, which does all the argument parsing before
-delegating to <a href="DynaML.html#run(replArgs:ammonite.util.Bind[_]*):Any" class="extmbr" name="io.github.mandar2812.dynaml.DynaML#run">DynaML.run</a>
+delegating to <a href="DynaML.html#run(replArgs:ammonite.util.Bind[_]*):(ammonite.util.Res[Any],Seq[(ammonite.ops.Path,Long)])" class="extmbr" name="io.github.mandar2812.dynaml.DynaML#run">DynaML.run</a>
 </p>
     </li><li name="io.github.mandar2812.dynaml.DynaML#main0" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="main0(args:List[String],stdIn:java.io.InputStream,stdOut:java.io.OutputStream,stdErr:java.io.OutputStream):Either[(Boolean,String),Boolean]"></a>
-      <a id="main0(List[String],InputStream,OutputStream,OutputStream):Either[(Boolean,String),Boolean]"></a>
+      <a id="main0(args:List[String],stdIn:java.io.InputStream,stdOut:java.io.OutputStream,stdErr:java.io.OutputStream):Boolean"></a>
+      <a id="main0(List[String],InputStream,OutputStream,OutputStream):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">main0</span><span class="params">(<span name="args">args: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="stdIn">stdIn: <span class="extype" name="java.io.InputStream">InputStream</span></span>, <span name="stdOut">stdOut: <span class="extype" name="java.io.OutputStream">OutputStream</span></span>, <span name="stdErr">stdErr: <span class="extype" name="java.io.OutputStream">OutputStream</span></span>)</span><span class="result">: <span class="extype" name="scala.Either">Either</span>[(<span class="extype" name="scala.Boolean">Boolean</span>, <span class="extype" name="scala.Predef.String">String</span>), <span class="extype" name="scala.Boolean">Boolean</span>]</span>
+        <span class="name">main0</span><span class="params">(<span name="args">args: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="stdIn">stdIn: <span class="extype" name="java.io.InputStream">InputStream</span></span>, <span name="stdOut">stdOut: <span class="extype" name="java.io.OutputStream">OutputStream</span></span>, <span name="stdErr">stdErr: <span class="extype" name="java.io.OutputStream">OutputStream</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#io.github.mandar2812.dynaml.DynaML$@main0(args:List[String],stdIn:java.io.InputStream,stdOut:java.io.OutputStream,stdErr:java.io.OutputStream):Either[(Boolean,String),Boolean]" title="Permalink" target="_top">
+      <a href="../../../../index.html#io.github.mandar2812.dynaml.DynaML$@main0(args:List[String],stdIn:java.io.InputStream,stdOut:java.io.OutputStream,stdErr:java.io.OutputStream):Boolean" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -436,43 +423,6 @@ processes
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="io.github.mandar2812.dynaml.DynaML#runScript" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="runScript(scriptPath:ammonite.ops.Path,scriptArgs:List[String],cliConfig:io.github.mandar2812.dynaml.repl.Cli.Config,stdIn:java.io.InputStream,stdOut:java.io.OutputStream,stdErr:java.io.OutputStream):Boolean"></a>
-      <a id="runScript(Path,List[String],Config,InputStream,OutputStream,OutputStream):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">runScript</span><span class="params">(<span name="scriptPath">scriptPath: <span class="extype" name="ammonite.ops.Path">Path</span></span>, <span name="scriptArgs">scriptArgs: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="cliConfig">cliConfig: <a href="repl/Cli$$Config.html" class="extype" name="io.github.mandar2812.dynaml.repl.Cli.Config">Config</a></span>, <span name="stdIn">stdIn: <span class="extype" name="java.io.InputStream">InputStream</span></span>, <span name="stdOut">stdOut: <span class="extype" name="java.io.OutputStream">OutputStream</span></span>, <span name="stdErr">stdErr: <span class="extype" name="java.io.OutputStream">OutputStream</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#io.github.mandar2812.dynaml.DynaML$@runScript(scriptPath:ammonite.ops.Path,scriptArgs:List[String],cliConfig:io.github.mandar2812.dynaml.repl.Cli.Config,stdIn:java.io.InputStream,stdOut:java.io.OutputStream,stdErr:java.io.OutputStream):Boolean" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
-                <span class="name">@tailrec</span><span class="args">()</span>
-              
-        </dd></dl></div>
-    </li><li name="io.github.mandar2812.dynaml.DynaML#runScriptAndPrint" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="runScriptAndPrint(scriptPath:ammonite.ops.Path,flatArgs:List[String],c:io.github.mandar2812.dynaml.repl.Cli.Config,scriptMain:io.github.mandar2812.dynaml.DynaML,stdErr:java.io.OutputStream):(Boolean,Seq[(ammonite.ops.Path,Option[Long])])"></a>
-      <a id="runScriptAndPrint(Path,List[String],Config,DynaML,OutputStream):(Boolean,Seq[(Path,Option[Long])])"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">runScriptAndPrint</span><span class="params">(<span name="scriptPath">scriptPath: <span class="extype" name="ammonite.ops.Path">Path</span></span>, <span name="flatArgs">flatArgs: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="c">c: <a href="repl/Cli$$Config.html" class="extype" name="io.github.mandar2812.dynaml.repl.Cli.Config">Config</a></span>, <span name="scriptMain">scriptMain: <a href="DynaML.html" class="extype" name="io.github.mandar2812.dynaml.DynaML">DynaML</a></span>, <span name="stdErr">stdErr: <span class="extype" name="java.io.OutputStream">OutputStream</span></span>)</span><span class="result">: (<span class="extype" name="scala.Boolean">Boolean</span>, <span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="ammonite.ops.Path">Path</span>, <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Long">Long</span>])])</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#io.github.mandar2812.dynaml.DynaML$@runScriptAndPrint(scriptPath:ammonite.ops.Path,flatArgs:List[String],c:io.github.mandar2812.dynaml.repl.Cli.Config,scriptMain:io.github.mandar2812.dynaml.DynaML,stdErr:java.io.OutputStream):(Boolean,Seq[(ammonite.ops.Path,Option[Long])])" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
