@@ -82,7 +82,7 @@
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Contains the various entry points to the Ammonite REPL.</p><div class="fullcomment"><div class="comment cmt"><p>Contains the various entry points to the Ammonite REPL.</p><p>Configuration of the basic REPL is done by passing in arguments when
+      <p class="shortcomment cmt">Contains the various entry points to the DynaML/Ammonite REPL.</p><div class="fullcomment"><div class="comment cmt"><p>Contains the various entry points to the DynaML/Ammonite REPL.</p><p>Configuration of the basic REPL is done by passing in arguments when
 constructing the <a href="DynaML.html" class="extype" name="io.github.mandar2812.dynaml.DynaML">DynaML</a> instance, and the various entrypoints such
 as <a href="DynaML.html#run(replArgs:ammonite.util.Bind[_]*):(ammonite.util.Res[Any],Seq[(ammonite.ops.Path,Long)])" class="extmbr" name="io.github.mandar2812.dynaml.DynaML#run">run</a> <a href="DynaML.html#runScript(path:ammonite.ops.Path,scriptArgs:Seq[(String,Option[String])]):(ammonite.util.Res[Any],Seq[(ammonite.ops.Path,Long)])" class="extmbr" name="io.github.mandar2812.dynaml.DynaML#runScript">runScript</a> and so on are methods on that instance.</p><p>It is more or less equivalent to the <span class="extype" name="ammonite.repl.Repl">ammonite.repl.Repl</span> object itself, and has
 a similar set of parameters, but does not have any of the <span class="extype" name="ammonite.repl.Repl">ammonite.repl.Repl</span>'s
@@ -105,6 +105,77 @@ every time it is called!
                    network in the case of the SshdRepl</p></dd><dt class="param">outputStream</dt><dd class="cmt"><p>Primary output of code run using Ammonite</p></dd><dt class="param">errorStream</dt><dd class="cmt"><p>Error output when things go bad, typically System.err; also
                    gets sent miscellaneous info messages that aren't strictly
                    part of the REPL or script's output</p></dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.DynaMLSSH" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DynaMLSSHextendsAnyRef"></a>
+      <a id="DynaMLSSH:DynaMLSSH"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="DynaMLSSH.html"><span class="name">DynaMLSSH</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#io.github.mandar2812.dynaml.package@DynaMLSSHextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">An ssh server which serves ammonite repl as it's shell channel.</p><div class="fullcomment"><div class="comment cmt"><p>An ssh server which serves ammonite repl as it's shell channel.
+To start listening for incoming connections call
+<span class="extype" name="start()">start()</span> method. You can <span class="extype" name="stop()">stop()</span> the server at any moment.
+It will also close all running sessions</p></div></div>
+    </li><li name="io.github.mandar2812.dynaml.IpInfo" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="IpInfoextendsProductwithSerializable"></a>
+      <a id="IpInfo:IpInfo"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="IpInfo.html"><span class="name">IpInfo</span></a><span class="params">(<span name="query">query: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="country">country: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="city">city: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="lat">lat: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="lon">lon: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Double">Double</span>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#io.github.mandar2812.dynaml.package@IpInfoextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.github.mandar2812.dynaml.IpPairSummary" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="IpPairSummaryextendsProductwithSerializable"></a>
+      <a id="IpPairSummary:IpPairSummary"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="IpPairSummary.html"><span class="name">IpPairSummary</span></a><span class="params">(<span name="distance">distance: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="ip1Info">ip1Info: <a href="IpInfo.html" class="extype" name="io.github.mandar2812.dynaml.IpInfo">IpInfo</a></span>, <span name="ip2Info">ip2Info: <a href="IpInfo.html" class="extype" name="io.github.mandar2812.dynaml.IpInfo">IpInfo</a></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#io.github.mandar2812.dynaml.package@IpPairSummaryextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.github.mandar2812.dynaml.IpPairSummaryRequest" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="IpPairSummaryRequestextendsProductwithSerializable"></a>
+      <a id="IpPairSummaryRequest:IpPairSummaryRequest"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="IpPairSummaryRequest.html"><span class="name">IpPairSummaryRequest</span></a><span class="params">(<span name="ip1">ip1: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="ip2">ip2: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#io.github.mandar2812.dynaml.package@IpPairSummaryRequestextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="io.github.mandar2812.dynaml.MainRunner" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="MainRunnerextendsAnyRef"></a>
       <a id="MainRunner:MainRunner"></a>
@@ -125,6 +196,40 @@ every time it is called!
 - Handling for the common input/output streams and print-streams
 - Logic around the watch-and-rerun flag
 </p></div></div>
+    </li><li name="io.github.mandar2812.dynaml.Protocols" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ProtocolsextendsDefaultJsonProtocol"></a>
+      <a id="Protocols:Protocols"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Protocols.html"><span class="name">Protocols</span></a><span class="result"> extends <span class="extype" name="spray.json.DefaultJsonProtocol">DefaultJsonProtocol</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#io.github.mandar2812.dynaml.package@ProtocolsextendsDefaultJsonProtocol" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.github.mandar2812.dynaml.Service" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ServiceextendsProtocols"></a>
+      <a id="Service:Service"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Service.html"><span class="name">Service</span></a><span class="result"> extends <a href="Protocols.html" class="extype" name="io.github.mandar2812.dynaml.Protocols">Protocols</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#io.github.mandar2812.dynaml.package@ServiceextendsProtocols" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li></ol>
             </div>
 
@@ -149,6 +254,23 @@ every time it is called!
       </a>
     </span>
       
+    </li><li name="io.github.mandar2812.dynaml.DynaMLSSH" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DynaMLSSH"></a>
+      <a id="DynaMLSSH:DynaMLSSH"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="DynaMLSSH$.html"><span class="name">DynaMLSSH</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#io.github.mandar2812.dynaml.package@DynaMLSSH" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="io.github.mandar2812.dynaml.DynaMLSpark" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="DynaMLSpark"></a>
       <a id="DynaMLSpark:DynaMLSpark"></a>
@@ -166,6 +288,40 @@ every time it is called!
       </a>
     </span>
       <p class="shortcomment cmt"></p>
+    </li><li name="io.github.mandar2812.dynaml.DynaServe" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DynaServe"></a>
+      <a id="DynaServe:DynaServe"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="DynaServe$.html"><span class="name">DynaServe</span></a><span class="result"> extends <span class="extype" name="scala.App">App</span> with <a href="Service.html" class="extype" name="io.github.mandar2812.dynaml.Service">Service</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#io.github.mandar2812.dynaml.package@DynaServe" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.github.mandar2812.dynaml.IpPairSummary" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="IpPairSummary"></a>
+      <a id="IpPairSummary:IpPairSummary"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="IpPairSummary$.html"><span class="name">IpPairSummary</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#io.github.mandar2812.dynaml.package@IpPairSummary" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="io.github.mandar2812.dynaml.openml" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="openml"></a>
       <a id="openml:openml"></a>

@@ -301,6 +301,23 @@ for positive real arguments.</p>
       </a>
     </span>
       
+    </li><li name="io.github.mandar2812.dynaml.utils.Renjin" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Renjin"></a>
+      <a id="Renjin:Renjin"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$Renjin$.html"><span class="name">Renjin</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.utils.package@Renjin" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Encapsulates renjin script engine and its capabilities.</p>
     </li><li name="io.github.mandar2812.dynaml.utils#chebyshev" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="chebyshev(n:Int,x:Double,kind:Int):Double"></a>
       <a id="chebyshev(Int,Double,Int):Double"></a>
@@ -526,26 +543,6 @@ which is a <span class="extype" name="List">List</span> of <span class="extype" 
 which is a <span class="extype" name="List">List</span> of <span class="extype" name="DenseVector">DenseVector</span>.
 </p></div><dl class="paramcmts block"><dt class="param">data</dt><dd class="cmt"><p>The data set.</p></dd><dt>returns</dt><dd class="cmt"><p>A <span class="extype" name="Tuple2">Tuple2</span> containing the mean
         and variance.</p></dd></dl></div>
-    </li><li name="io.github.mandar2812.dynaml.utils#getStatsRDD" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="getStatsRDD(data:org.apache.spark.rdd.RDD[org.apache.spark.mllib.regression.LabeledPoint]):(Double,Double,breeze.linalg.DenseVector[Double],breeze.linalg.DenseMatrix[Double])"></a>
-      <a id="getStatsRDD(RDD[LabeledPoint]):(Double,Double,DenseVector[Double],DenseMatrix[Double])"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">getStatsRDD</span><span class="params">(<span name="data">data: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[<span class="extype" name="org.apache.spark.mllib.regression.LabeledPoint">LabeledPoint</span>]</span>)</span><span class="result">: (<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Double">Double</span>, <span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>], <span class="extype" name="breeze.linalg.DenseMatrix">DenseMatrix</span>[<span class="extype" name="scala.Double">Double</span>])</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.utils.package@getStatsRDD(data:org.apache.spark.rdd.RDD[org.apache.spark.mllib.regression.LabeledPoint]):(Double,Double,breeze.linalg.DenseVector[Double],breeze.linalg.DenseMatrix[Double])" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
-                <span class="name">@Experimental</span><span class="args">()</span>
-              
-        </dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.utils#getTypeTag" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="getTypeTag[T](obj:T)(implicitevidence$1:reflect.runtime.universe.TypeTag[T]):reflect.runtime.universe.TypeTag[T]"></a>
       <a id="getTypeTag[T](T)(scala.reflect.api.JavaUniverse.TypeTag[T]):scala.reflect.api.JavaUniverse.TypeTag[T]"></a>
@@ -635,6 +632,24 @@ the Gaussian derivatives at a point x.
       </a>
     </span>
       
+    </li><li name="io.github.mandar2812.dynaml.utils#legendre" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="legendre(n:Int,x:Double):Double"></a>
+      <a id="legendre(Int,Double):Double"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">legendre</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>, <span name="x">x: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.utils.package@legendre(n:Int,x:Double):Double" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Calculate the value of the Legendre polynomials
+tail recursively.</p>
     </li><li name="io.github.mandar2812.dynaml.utils#log1pExp" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="log1pExp:Double=&gt;Double"></a>
       <a id="log1pExp:(Double)⇒Double"></a>
@@ -687,18 +702,18 @@ the Gaussian derivatives at a point x.
     </span>
       <p class="shortcomment cmt"></p>
     </li><li name="io.github.mandar2812.dynaml.utils#productField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="productField[Domain,Domain1](implicitev:spire.algebra.Field[Domain],implicitev1:spire.algebra.Field[Domain1]):spire.algebra.Field[(Domain,Domain1)]"></a>
-      <a id="productField[Domain,Domain1](Field[Domain],Field[Domain1]):Field[(Domain,Domain1)]"></a>
+      <a id="productField[Domain,Domain1](ev:spire.algebra.Field[Domain],ev1:spire.algebra.Field[Domain1])(impliciteqq:spire.algebra.Eq[Domain],impliciteqq1:spire.algebra.Eq[Domain1]):spire.algebra.Field[(Domain,Domain1)]"></a>
+      <a id="productField[Domain,Domain1](Field[Domain],Field[Domain1])(Eq[Domain],Eq[Domain1]):Field[(Domain,Domain1)]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">productField</span><span class="tparams">[<span name="Domain">Domain</span>, <span name="Domain1">Domain1</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="ev">ev: <span class="extype" name="spire.algebra.Field">Field</span>[<span class="extype" name="io.github.mandar2812.dynaml.utils.productField.Domain">Domain</span>]</span>, <span name="ev1">ev1: <span class="extype" name="spire.algebra.Field">Field</span>[<span class="extype" name="io.github.mandar2812.dynaml.utils.productField.Domain1">Domain1</span>]</span>)</span><span class="result">: <span class="extype" name="spire.algebra.Field">Field</span>[(<span class="extype" name="io.github.mandar2812.dynaml.utils.productField.Domain">Domain</span>, <span class="extype" name="io.github.mandar2812.dynaml.utils.productField.Domain1">Domain1</span>)]</span>
+        <span class="name">productField</span><span class="tparams">[<span name="Domain">Domain</span>, <span name="Domain1">Domain1</span>]</span><span class="params">(<span name="ev">ev: <span class="extype" name="spire.algebra.Field">Field</span>[<span class="extype" name="io.github.mandar2812.dynaml.utils.productField.Domain">Domain</span>]</span>, <span name="ev1">ev1: <span class="extype" name="spire.algebra.Field">Field</span>[<span class="extype" name="io.github.mandar2812.dynaml.utils.productField.Domain1">Domain1</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="eqq">eqq: <span class="extype" name="spire.algebra.Eq">Eq</span>[<span class="extype" name="io.github.mandar2812.dynaml.utils.productField.Domain">Domain</span>]</span>, <span name="eqq1">eqq1: <span class="extype" name="spire.algebra.Eq">Eq</span>[<span class="extype" name="io.github.mandar2812.dynaml.utils.productField.Domain1">Domain1</span>]</span>)</span><span class="result">: <span class="extype" name="spire.algebra.Field">Field</span>[(<span class="extype" name="io.github.mandar2812.dynaml.utils.productField.Domain">Domain</span>, <span class="extype" name="io.github.mandar2812.dynaml.utils.productField.Domain1">Domain1</span>)]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.utils.package@productField[Domain,Domain1](implicitev:spire.algebra.Field[Domain],implicitev1:spire.algebra.Field[Domain1]):spire.algebra.Field[(Domain,Domain1)]" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.utils.package@productField[Domain,Domain1](ev:spire.algebra.Field[Domain],ev1:spire.algebra.Field[Domain1])(impliciteqq:spire.algebra.Eq[Domain],impliciteqq1:spire.algebra.Eq[Domain1]):spire.algebra.Field[(Domain,Domain1)]" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>

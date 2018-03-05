@@ -52,7 +52,7 @@
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>A mechanism to generate neural computation layers on the fly.
 </p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</span>[<span class="extype" name="io.github.mandar2812.dynaml.models.neuralnets.NeuralLayerFactory.P">P</span>, <a href="NeuralLayer.html" class="extype" name="io.github.mandar2812.dynaml.models.neuralnets.NeuralLayer">NeuralLayer</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.neuralnets.NeuralLayerFactory.P">P</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.neuralnets.NeuralLayerFactory.I">I</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.neuralnets.NeuralLayerFactory.J">J</span>]], <span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</span>[<span class="extype" name="io.github.mandar2812.dynaml.models.neuralnets.NeuralLayerFactory.P">P</span>, <a href="NeuralLayer.html" class="extype" name="io.github.mandar2812.dynaml.models.neuralnets.NeuralLayer">NeuralLayer</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.neuralnets.NeuralLayerFactory.P">P</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.neuralnets.NeuralLayerFactory.I">I</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.neuralnets.NeuralLayerFactory.J">J</span>]], <span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipeConvertible">DataPipeConvertible</span>[<span class="extype" name="io.github.mandar2812.dynaml.models.neuralnets.NeuralLayerFactory.P">P</span>, <a href="NeuralLayer.html" class="extype" name="io.github.mandar2812.dynaml.models.neuralnets.NeuralLayer">NeuralLayer</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.neuralnets.NeuralLayerFactory.P">P</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.neuralnets.NeuralLayerFactory.I">I</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.neuralnets.NeuralLayerFactory.J">J</span>]], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block">
             <span class="toggle">Known Subclasses</span>
             <div class="subClasses hiddenContent"><a href="Vec2VecLayerFactory.html" class="extype" name="io.github.mandar2812.dynaml.models.neuralnets.Vec2VecLayerFactory">Vec2VecLayerFactory</a></div>
@@ -73,7 +73,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="io.github.mandar2812.dynaml.models.neuralnets.NeuralLayerFactory"><span>NeuralLayerFactory</span></li><li class="in" name="io.github.mandar2812.dynaml.pipes.DataPipe"><span>DataPipe</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="io.github.mandar2812.dynaml.models.neuralnets.NeuralLayerFactory"><span>NeuralLayerFactory</span></li><li class="in" name="io.github.mandar2812.dynaml.pipes.DataPipe"><span>DataPipe</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="io.github.mandar2812.dynaml.pipes.DataPipeConvertible"><span>DataPipeConvertible</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -204,18 +204,18 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.pipes.DataPipe#&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="&gt;[Further](that:io.github.mandar2812.dynaml.pipes.DataPipe[Destination,Further]):io.github.mandar2812.dynaml.pipes.DataPipe[Source,Further]"></a>
-      <a id="&gt;[Further](DataPipe[NeuralLayer[P,I,J],Further]):DataPipe[P,Further]"></a>
+      <a id="&gt;[Further](that:io.github.mandar2812.dynaml.pipes.DataPipeConvertible[Destination,Further]):io.github.mandar2812.dynaml.pipes.DataPipe[Source,Further]"></a>
+      <a id="&gt;[Further](DataPipeConvertible[NeuralLayer[P,I,J],Further]):DataPipe[P,Further]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $greater" class="name">&gt;</span><span class="tparams">[<span name="Further">Further</span>]</span><span class="params">(<span name="that">that: <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</span>[<a href="NeuralLayer.html" class="extype" name="io.github.mandar2812.dynaml.models.neuralnets.NeuralLayer">NeuralLayer</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.neuralnets.NeuralLayerFactory.P">P</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.neuralnets.NeuralLayerFactory.I">I</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.neuralnets.NeuralLayerFactory.J">J</span>], <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe.&gt;.Further">Further</span>]</span>)</span><span class="result">: <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</span>[<span class="extype" name="io.github.mandar2812.dynaml.models.neuralnets.NeuralLayerFactory.P">P</span>, <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe.&gt;.Further">Further</span>]</span>
+        <span title="gt4s: $greater" class="name">&gt;</span><span class="tparams">[<span name="Further">Further</span>]</span><span class="params">(<span name="that">that: <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipeConvertible">DataPipeConvertible</span>[<a href="NeuralLayer.html" class="extype" name="io.github.mandar2812.dynaml.models.neuralnets.NeuralLayer">NeuralLayer</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.neuralnets.NeuralLayerFactory.P">P</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.neuralnets.NeuralLayerFactory.I">I</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.neuralnets.NeuralLayerFactory.J">J</span>], <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe.&gt;.Further">Further</span>]</span>)</span><span class="result">: <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</span>[<span class="extype" name="io.github.mandar2812.dynaml.models.neuralnets.NeuralLayerFactory.P">P</span>, <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe.&gt;.Further">Further</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.neuralnets.NeuralLayerFactory@&gt;[Further](that:io.github.mandar2812.dynaml.pipes.DataPipe[Destination,Further]):io.github.mandar2812.dynaml.pipes.DataPipe[Source,Further]" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.neuralnets.NeuralLayerFactory@&gt;[Further](that:io.github.mandar2812.dynaml.pipes.DataPipeConvertible[Destination,Further]):io.github.mandar2812.dynaml.pipes.DataPipe[Source,Further]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -521,6 +521,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.pipes.DataPipe#toPipe" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toPipe:Source=&gt;Destination"></a>
+      <a id="toPipe:(P)⇒NeuralLayer[P,I,J]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toPipe</span><span class="result">: (<span class="extype" name="io.github.mandar2812.dynaml.models.neuralnets.NeuralLayerFactory.P">P</span>) ⇒ <a href="NeuralLayer.html" class="extype" name="io.github.mandar2812.dynaml.models.neuralnets.NeuralLayer">NeuralLayer</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.neuralnets.NeuralLayerFactory.P">P</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.neuralnets.NeuralLayerFactory.I">I</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.neuralnets.NeuralLayerFactory.J">J</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.models.neuralnets.NeuralLayerFactory@toPipe:Source=&gt;Destination" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>DataPipe → DataPipeConvertible</dd></dl></div>
     </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
       <a id="toString():String"></a>
@@ -622,6 +639,8 @@
               <h3>Inherited from <span class="extype" name="scala.Serializable">Serializable</span></h3>
             </div><div class="parent" name="java.io.Serializable">
               <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="io.github.mandar2812.dynaml.pipes.DataPipeConvertible">
+              <h3>Inherited from <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipeConvertible">DataPipeConvertible</span>[<span class="extype" name="io.github.mandar2812.dynaml.models.neuralnets.NeuralLayerFactory.P">P</span>, <a href="NeuralLayer.html" class="extype" name="io.github.mandar2812.dynaml.models.neuralnets.NeuralLayer">NeuralLayer</a>[<span class="extype" name="io.github.mandar2812.dynaml.models.neuralnets.NeuralLayerFactory.P">P</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.neuralnets.NeuralLayerFactory.I">I</span>, <span class="extype" name="io.github.mandar2812.dynaml.models.neuralnets.NeuralLayerFactory.J">J</span>]]</h3>
             </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">

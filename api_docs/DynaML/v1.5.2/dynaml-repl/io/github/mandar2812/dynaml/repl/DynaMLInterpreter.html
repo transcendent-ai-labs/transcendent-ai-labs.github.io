@@ -1,0 +1,1089 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>DynaMLInterpreter - io.github.mandar2812.dynaml.repl.DynaMLInterpreter</title>
+          <meta name="description" content="DynaMLInterpreter - io.github.mandar2812.dynaml.repl.DynaMLInterpreter" />
+          <meta name="keywords" content="DynaMLInterpreter io.github.mandar2812.dynaml.repl.DynaMLInterpreter" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../../index.html';
+            var hash = 'io.github.mandar2812.dynaml.repl.DynaMLInterpreter';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <a href="DynaMLInterpreter$.html" title="See companion object"><img alt="Class/Object" src="../../../../../lib/class_to_object_big.png" /></a>
+        <p id="owner"><a href="../../../../package.html" class="extype" name="io">io</a>.<a href="../../../package.html" class="extype" name="io.github">github</a>.<a href="../../package.html" class="extype" name="io.github.mandar2812">mandar2812</a>.<a href="../package.html" class="extype" name="io.github.mandar2812.dynaml">dynaml</a>.<a href="package.html" class="extype" name="io.github.mandar2812.dynaml.repl">repl</a></p>
+        <h1><a href="DynaMLInterpreter$.html" title="See companion object">DynaMLInterpreter</a></h1><h3><span class="morelinks"><div>
+            Related Docs:
+            <a href="DynaMLInterpreter$.html" title="See companion object">object DynaMLInterpreter</a>
+            | <a href="package.html" class="extype" name="io.github.mandar2812.dynaml.repl">package repl</a>
+          </div></span></h3><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DynaMLInterpreter</span><span class="result"> extends <span class="extype" name="ammonite.interp.Interpreter">Interpreter</span></span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><span class="extype" name="ammonite.interp.Interpreter">Interpreter</span>, <span class="extype" name="ammonite.runtime.ImportHook.InterpreterInterface">InterpreterInterface</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By Inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="io.github.mandar2812.dynaml.repl.DynaMLInterpreter"><span>DynaMLInterpreter</span></li><li class="in" name="ammonite.interp.Interpreter"><span>Interpreter</span></li><li class="in" name="ammonite.runtime.ImportHook.InterpreterInterface"><span>InterpreterInterface</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show All</span></li>
+            </ol>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        <div id="constructors" class="members">
+              <h3>Instance Constructors</h3>
+              <ol><li name="io.github.mandar2812.dynaml.repl.DynaMLInterpreter#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;(printer:ammonite.util.Printer,storage:ammonite.runtime.Storage,basePredefs:Seq[ammonite.util.PredefInfo],customPredefs:Seq[ammonite.util.PredefInfo],extraBridges:Seq[(String,String,AnyRef)],wd:ammonite.ops.Path,colors:ammonite.util.Ref[ammonite.util.Colors],verboseOutput:Boolean,getFrame:()=&gt;ammonite.runtime.Frame):io.github.mandar2812.dynaml.repl.DynaMLInterpreter"></a>
+      <a id="&lt;init&gt;:DynaMLInterpreter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DynaMLInterpreter</span><span class="params">(<span name="printer">printer: <span class="extype" name="ammonite.util.Printer">Printer</span></span>, <span name="storage">storage: <span class="extype" name="ammonite.runtime.Storage">Storage</span></span>, <span name="basePredefs">basePredefs: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="ammonite.util.PredefInfo">PredefInfo</span>]</span>, <span name="customPredefs">customPredefs: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="ammonite.util.PredefInfo">PredefInfo</span>]</span>, <span name="extraBridges">extraBridges: <span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>)]</span>, <span name="wd">wd: <span class="extype" name="ammonite.ops.Path">Path</span></span>, <span name="colors">colors: <span class="extype" name="ammonite.util.Ref">Ref</span>[<span class="extype" name="ammonite.util.Colors">Colors</span>]</span>, <span name="verboseOutput">verboseOutput: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>, <span name="getFrame">getFrame: () ⇒ <span class="extype" name="ammonite.runtime.Frame">Frame</span></span>)</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@&lt;init&gt;(printer:ammonite.util.Printer,storage:ammonite.runtime.Storage,basePredefs:Seq[ammonite.util.PredefInfo],customPredefs:Seq[ammonite.util.PredefInfo],extraBridges:Seq[(String,String,AnyRef)],wd:ammonite.ops.Path,colors:ammonite.util.Ref[ammonite.util.Colors],verboseOutput:Boolean,getFrame:()=&gt;ammonite.runtime.Frame):io.github.mandar2812.dynaml.repl.DynaMLInterpreter" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="ammonite.interp.Interpreter.BlockData" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="BlockData=Option[(ammonite.util.Util.ClassFiles,ammonite.util.ScriptOutput.BlockMetadata)]"></a>
+      <a id="BlockData:BlockData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">BlockData</span><span class="result"> = <span class="extype" name="scala.Option">Option</span>[(<span class="extype" name="ammonite.util.Util.ClassFiles">ClassFiles</span>, <span class="extype" name="ammonite.util.ScriptOutput.BlockMetadata">BlockMetadata</span>)]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@BlockData=Option[(ammonite.util.Util.ClassFiles,ammonite.util.ScriptOutput.BlockMetadata)]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Interpreter</dd></dl></div>
+    </li><li name="ammonite.interp.Interpreter.DefaultLoadJar" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="DefaultLoadJarextendsLoadJar"></a>
+      <a id="DefaultLoadJar:DefaultLoadJar"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DefaultLoadJar</span><span class="result"> extends <span class="extype" name="ammonite.interp.LoadJar">LoadJar</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@DefaultLoadJarextendsLoadJar" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Interpreter</dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@##():Int" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="ammonite.interp.Interpreter#alreadyLoadedFiles" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="alreadyLoadedFiles:scala.collection.mutable.Map[ammonite.util.Util.CodeSource,ammonite.util.ScriptOutput.Metadata]"></a>
+      <a id="alreadyLoadedFiles:Map[CodeSource,Metadata]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">alreadyLoadedFiles</span><span class="result">: <span class="extype" name="scala.collection.mutable.Map">Map</span>[<span class="extype" name="ammonite.util.Util.CodeSource">CodeSource</span>, <span class="extype" name="ammonite.util.ScriptOutput.Metadata">Metadata</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@alreadyLoadedFiles:scala.collection.mutable.Map[ammonite.util.Util.CodeSource,ammonite.util.ScriptOutput.Metadata]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Interpreter</dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="ammonite.interp.Interpreter#beforeExitHooks" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="beforeExitHooks:scala.collection.mutable.Buffer[Any=&gt;Any]"></a>
+      <a id="beforeExitHooks:Buffer[(Any)⇒Any]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">beforeExitHooks</span><span class="result">: <span class="extype" name="scala.collection.mutable.Buffer">Buffer</span>[(<span class="extype" name="scala.Any">Any</span>) ⇒ <span class="extype" name="scala.Any">Any</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@beforeExitHooks:scala.collection.mutable.Buffer[Any=&gt;Any]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Interpreter</dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@clone():Object" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="ammonite.interp.Interpreter#compilationCount" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="compilationCount:Int"></a>
+      <a id="compilationCount:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">compilationCount</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@compilationCount:Int" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Interpreter</dd></dl></div>
+    </li><li name="ammonite.interp.Interpreter#compilerManager" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="compilerManager:ammonite.interp.CompilerLifecycleManager"></a>
+      <a id="compilerManager:CompilerLifecycleManager"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">compilerManager</span><span class="result">: <span class="extype" name="ammonite.interp.CompilerLifecycleManager">CompilerLifecycleManager</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@compilerManager:ammonite.interp.CompilerLifecycleManager" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Interpreter</dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.repl.DynaMLInterpreter#eval" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eval:io.github.mandar2812.dynaml.repl.DynaMLEvaluator"></a>
+      <a id="eval:DynaMLEvaluator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eval</span><span class="result">: <a href="DynaMLEvaluator.html" class="extype" name="io.github.mandar2812.dynaml.repl.DynaMLEvaluator">DynaMLEvaluator</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@eval:io.github.mandar2812.dynaml.repl.DynaMLEvaluator" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="io.github.mandar2812.dynaml.repl.DynaMLInterpreter">DynaMLInterpreter</a> → Interpreter</dd></dl></div>
+    </li><li name="ammonite.interp.Interpreter#evalClassloader" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="evalClassloader:ammonite.runtime.SpecialClassLoader"></a>
+      <a id="evalClassloader:SpecialClassLoader"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">evalClassloader</span><span class="result">: <span class="extype" name="ammonite.runtime.SpecialClassLoader">SpecialClassLoader</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@evalClassloader:ammonite.runtime.SpecialClassLoader" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Interpreter</dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.repl.DynaMLInterpreter#evaluateCell" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="evaluateCell(processed:ammonite.interp.Preprocessor.Output,printer:ammonite.util.Printer,fileName:String,indexedWrapperName:ammonite.util.Name,silent:Boolean,incrementLine:()=&gt;Unit,outputStream:org.apache.commons.io.output.ByteArrayOutputStream):ammonite.util.Res[(ammonite.util.Evaluated,ammonite.util.Tag)]"></a>
+      <a id="evaluateCell(Output,Printer,String,Name,Boolean,()⇒Unit,ByteArrayOutputStream):Res[(Evaluated,Tag)]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">evaluateCell</span><span class="params">(<span name="processed">processed: <span class="extype" name="ammonite.interp.Preprocessor.Output">Output</span></span>, <span name="printer">printer: <span class="extype" name="ammonite.util.Printer">Printer</span></span>, <span name="fileName">fileName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="indexedWrapperName">indexedWrapperName: <span class="extype" name="ammonite.util.Name">Name</span></span>, <span name="silent">silent: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>, <span name="incrementLine">incrementLine: () ⇒ <span class="extype" name="scala.Unit">Unit</span></span>, <span name="outputStream">outputStream: <span class="extype" name="org.apache.commons.io.output.ByteArrayOutputStream">ByteArrayOutputStream</span></span>)</span><span class="result">: <span class="extype" name="ammonite.util.Res">Res</span>[(<span class="extype" name="ammonite.util.Evaluated">Evaluated</span>, <span class="extype" name="ammonite.util.Tag">Tag</span>)]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@evaluateCell(processed:ammonite.interp.Preprocessor.Output,printer:ammonite.util.Printer,fileName:String,indexedWrapperName:ammonite.util.Name,silent:Boolean,incrementLine:()=&gt;Unit,outputStream:org.apache.commons.io.output.ByteArrayOutputStream):ammonite.util.Res[(ammonite.util.Evaluated,ammonite.util.Tag)]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="ammonite.interp.Interpreter#evaluateLine" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="evaluateLine(processed:&lt;?&gt;,printer:&lt;?&gt;,fileName:&lt;?&gt;,indexedWrapperName:&lt;?&gt;,silent:&lt;?&gt;,incrementLine:&lt;?&gt;):ammonite.util.Res[(ammonite.util.Evaluated,ammonite.util.Tag)]"></a>
+      <a id="evaluateLine(Output,Printer,String,Name,Boolean,()⇒Unit):Res[(Evaluated,Tag)]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">evaluateLine</span><span class="params">(<span name="processed">processed: <span class="extype" name="ammonite.interp.Preprocessor.Output">Output</span></span>, <span name="printer">printer: <span class="extype" name="ammonite.util.Printer">Printer</span></span>, <span name="fileName">fileName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="indexedWrapperName">indexedWrapperName: <span class="extype" name="ammonite.util.Name">Name</span></span>, <span name="silent">silent: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="incrementLine">incrementLine: () ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <span class="extype" name="ammonite.util.Res">Res</span>[(<span class="extype" name="ammonite.util.Evaluated">Evaluated</span>, <span class="extype" name="ammonite.util.Tag">Tag</span>)]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@evaluateLine(processed:ammonite.interp.Preprocessor.Output,printer:ammonite.util.Printer,fileName:String,indexedWrapperName:ammonite.util.Name,silent:Boolean,incrementLine:()=&gt;Unit):ammonite.util.Res[(ammonite.util.Evaluated,ammonite.util.Tag)]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Interpreter</dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="ammonite.interp.Interpreter#frameImports" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="frameImports:ammonite.util.Imports"></a>
+      <a id="frameImports:Imports"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">frameImports</span><span class="result">: <span class="extype" name="ammonite.util.Imports">Imports</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@frameImports:ammonite.util.Imports" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Interpreter</dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="ammonite.interp.Interpreter#handleImports" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="handleImports(i:ammonite.util.Imports):Unit"></a>
+      <a id="handleImports(Imports):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">handleImports</span><span class="params">(<span name="i">i: <span class="extype" name="ammonite.util.Imports">Imports</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@handleImports(i:ammonite.util.Imports):Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Interpreter</dd></dl></div>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="ammonite.interp.Interpreter#headFrame" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="headFrame:ammonite.runtime.Frame"></a>
+      <a id="headFrame:Frame"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">headFrame</span><span class="result">: <span class="extype" name="ammonite.runtime.Frame">Frame</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@headFrame:ammonite.runtime.Frame" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Interpreter</dd></dl></div>
+    </li><li name="ammonite.interp.Interpreter#importHooks" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="importHooks:ammonite.util.Ref[scala.collection.immutable.Map[Seq[String],ammonite.runtime.ImportHook]]{defvalue:()=&gt;scala.collection.immutable.Map[Seq[String],ammonite.runtime.ImportHook];defvalue_=(x$1:()=&gt;scala.collection.immutable.Map[Seq[String],ammonite.runtime.ImportHook]):Unit}"></a>
+      <a id="importHooks:Ref[Map[Seq[String],ImportHook]]{.../*2definitionsintyperefinement*/}"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">importHooks</span><span class="result">: <span class="extype" name="ammonite.util.Ref">Ref</span>[<span class="extype" name="scala.collection.immutable.Map">Map</span>[<span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>], <span class="extype" name="ammonite.runtime.ImportHook">ImportHook</span>]] { ... /* 2 definitions in type refinement */ }</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@importHooks:ammonite.util.Ref[scala.collection.immutable.Map[Seq[String],ammonite.runtime.ImportHook]]{defvalue:()=&gt;scala.collection.immutable.Map[Seq[String],ammonite.runtime.ImportHook];defvalue_=(x$1:()=&gt;scala.collection.immutable.Map[Seq[String],ammonite.runtime.ImportHook]):Unit}" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Interpreter</dd></dl></div>
+    </li><li name="ammonite.interp.Interpreter#initializePredef" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="initializePredef():Option[(ammonite.util.Res.Failing,Seq[(ammonite.ops.Path,Long)])]"></a>
+      <a id="initializePredef():Option[(Failing,Seq[(Path,Long)])]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">initializePredef</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[(<span class="extype" name="ammonite.util.Res.Failing">Failing</span>, <span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="ammonite.ops.Path">Path</span>, <span class="extype" name="scala.Long">Long</span>)])]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@initializePredef():Option[(ammonite.util.Res.Failing,Seq[(ammonite.ops.Path,Long)])]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Interpreter</dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="ammonite.interp.Interpreter#loadIvy" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="loadIvy(coordinates:coursier.Dependency*):Either[String,Set[java.io.File]]"></a>
+      <a id="loadIvy(Dependency*):Either[String,Set[File]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">loadIvy</span><span class="params">(<span name="coordinates">coordinates: <span class="extype" name="coursier.Dependency">Dependency</span>*</span>)</span><span class="result">: <span class="extype" name="scala.Either">Either</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.Set">Set</span>[<span class="extype" name="java.io.File">File</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@loadIvy(coordinates:coursier.Dependency*):Either[String,Set[java.io.File]]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Interpreter → InterpreterInterface</dd></dl></div>
+    </li><li name="ammonite.interp.Interpreter#mainThread" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="mainThread:Thread"></a>
+      <a id="mainThread:Thread"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">mainThread</span><span class="result">: <span class="extype" name="java.lang.Thread">Thread</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@mainThread:Thread" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Interpreter</dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="ammonite.interp.Interpreter#parseImportHooks" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="parseImportHooks(source:ammonite.util.Util.CodeSource,stmts:Seq[String]):(scala.collection.mutable.Buffer[String],scala.collection.mutable.Buffer[ammonite.util.ImportTree])"></a>
+      <a id="parseImportHooks(CodeSource,Seq[String]):(Buffer[String],Buffer[ImportTree])"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">parseImportHooks</span><span class="params">(<span name="source">source: <span class="extype" name="ammonite.util.Util.CodeSource">CodeSource</span></span>, <span name="stmts">stmts: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: (<span class="extype" name="scala.collection.mutable.Buffer">Buffer</span>[<span class="extype" name="scala.Predef.String">String</span>], <span class="extype" name="scala.collection.mutable.Buffer">Buffer</span>[<span class="extype" name="ammonite.util.ImportTree">ImportTree</span>])</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@parseImportHooks(source:ammonite.util.Util.CodeSource,stmts:Seq[String]):(scala.collection.mutable.Buffer[String],scala.collection.mutable.Buffer[ammonite.util.ImportTree])" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Interpreter</dd></dl></div>
+    </li><li name="ammonite.interp.Interpreter#pluginClassloader" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="pluginClassloader:ammonite.runtime.SpecialClassLoader"></a>
+      <a id="pluginClassloader:SpecialClassLoader"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">pluginClassloader</span><span class="result">: <span class="extype" name="ammonite.runtime.SpecialClassLoader">SpecialClassLoader</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@pluginClassloader:ammonite.runtime.SpecialClassLoader" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Interpreter</dd></dl></div>
+    </li><li name="ammonite.interp.Interpreter#predefImports" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="predefImports:ammonite.util.Imports"></a>
+      <a id="predefImports:Imports"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">predefImports</span><span class="result">: <span class="extype" name="ammonite.util.Imports">Imports</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@predefImports:ammonite.util.Imports" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Interpreter</dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.repl.DynaMLInterpreter#printer" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="printer:ammonite.util.Printer"></a>
+      <a id="printer:Printer"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">printer</span><span class="result">: <span class="extype" name="ammonite.util.Printer">Printer</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@printer:ammonite.util.Printer" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="io.github.mandar2812.dynaml.repl.DynaMLInterpreter">DynaMLInterpreter</a> → Interpreter</dd></dl></div>
+    </li><li name="ammonite.interp.Interpreter#processAllScriptBlocks" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="processAllScriptBlocks(blocks:&lt;?&gt;,splittedScript:&lt;?&gt;,startingImports:&lt;?&gt;,codeSource:&lt;?&gt;,evaluate:&lt;?&gt;,autoImport:&lt;?&gt;,extraCode:&lt;?&gt;):ammonite.util.Res[ammonite.util.ScriptOutput.Metadata]"></a>
+      <a id="processAllScriptBlocks(Seq[BlockData],⇒Res[IndexedSeq[(String,Seq[String])]],Imports,CodeSource,(Output,Name)⇒Res[(Evaluated,Tag)],Boolean,String):Res[Metadata]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">processAllScriptBlocks</span><span class="params">(<span name="blocks">blocks: <span class="extype" name="scala.Seq">Seq</span>[<a href="#BlockData=Option[(ammonite.util.Util.ClassFiles,ammonite.util.ScriptOutput.BlockMetadata)]" class="extmbr" name="io.github.mandar2812.dynaml.repl.DynaMLInterpreter.BlockData">BlockData</a>]</span>, <span name="splittedScript">splittedScript: ⇒ <span class="extype" name="ammonite.util.Res">Res</span>[<span class="extype" name="scala.IndexedSeq">IndexedSeq</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>])]]</span>, <span name="startingImports">startingImports: <span class="extype" name="ammonite.util.Imports">Imports</span></span>, <span name="codeSource">codeSource: <span class="extype" name="ammonite.util.Util.CodeSource">CodeSource</span></span>, <span name="evaluate">evaluate: (<span class="extype" name="ammonite.interp.Preprocessor.Output">Output</span>, <span class="extype" name="ammonite.util.Name">Name</span>) ⇒ <span class="extype" name="ammonite.util.Res">Res</span>[(<span class="extype" name="ammonite.util.Evaluated">Evaluated</span>, <span class="extype" name="ammonite.util.Tag">Tag</span>)]</span>, <span name="autoImport">autoImport: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="extraCode">extraCode: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="ammonite.util.Res">Res</span>[<span class="extype" name="ammonite.util.ScriptOutput.Metadata">Metadata</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@processAllScriptBlocks(blocks:Seq[Interpreter.this.BlockData],splittedScript:=&gt;ammonite.util.Res[IndexedSeq[(String,Seq[String])]],startingImports:ammonite.util.Imports,codeSource:ammonite.util.Util.CodeSource,evaluate:(ammonite.interp.Preprocessor.Output,ammonite.util.Name)=&gt;ammonite.util.Res[(ammonite.util.Evaluated,ammonite.util.Tag)],autoImport:Boolean,extraCode:String):ammonite.util.Res[ammonite.util.ScriptOutput.Metadata]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Interpreter</dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.repl.DynaMLInterpreter#processCellBlocks" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="processCellBlocks(blocks:Seq[DynaMLInterpreter.this.BlockData],splittedScript:=&gt;ammonite.util.Res[IndexedSeq[(String,Seq[String])]],startingImports:ammonite.util.Imports,codeSource:ammonite.util.Util.CodeSource,evaluate:(ammonite.interp.Preprocessor.Output,ammonite.util.Name)=&gt;ammonite.util.Res[((Iterator[String],ammonite.util.Evaluated),ammonite.util.Tag)],autoImport:Boolean,extraCode:String):ammonite.util.Res[(ammonite.util.ScriptOutput.Metadata,Iterator[String])]"></a>
+      <a id="processCellBlocks(Seq[BlockData],⇒Res[IndexedSeq[(String,Seq[String])]],Imports,CodeSource,(Output,Name)⇒Res[((Iterator[String],Evaluated),Tag)],Boolean,String):Res[(Metadata,Iterator[String])]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">processCellBlocks</span><span class="params">(<span name="blocks">blocks: <span class="extype" name="scala.Seq">Seq</span>[<a href="#BlockData=Option[(ammonite.util.Util.ClassFiles,ammonite.util.ScriptOutput.BlockMetadata)]" class="extmbr" name="io.github.mandar2812.dynaml.repl.DynaMLInterpreter.BlockData">BlockData</a>]</span>, <span name="splittedScript">splittedScript: ⇒ <span class="extype" name="ammonite.util.Res">Res</span>[<span class="extype" name="scala.IndexedSeq">IndexedSeq</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>])]]</span>, <span name="startingImports">startingImports: <span class="extype" name="ammonite.util.Imports">Imports</span></span>, <span name="codeSource">codeSource: <span class="extype" name="ammonite.util.Util.CodeSource">CodeSource</span></span>, <span name="evaluate">evaluate: (<span class="extype" name="ammonite.interp.Preprocessor.Output">Output</span>, <span class="extype" name="ammonite.util.Name">Name</span>) ⇒ <span class="extype" name="ammonite.util.Res">Res</span>[((<span class="extype" name="scala.Iterator">Iterator</span>[<span class="extype" name="scala.Predef.String">String</span>], <span class="extype" name="ammonite.util.Evaluated">Evaluated</span>), <span class="extype" name="ammonite.util.Tag">Tag</span>)]</span>, <span name="autoImport">autoImport: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="extraCode">extraCode: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="ammonite.util.Res">Res</span>[(<span class="extype" name="ammonite.util.ScriptOutput.Metadata">Metadata</span>, <span class="extype" name="scala.Iterator">Iterator</span>[<span class="extype" name="scala.Predef.String">String</span>])]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@processCellBlocks(blocks:Seq[DynaMLInterpreter.this.BlockData],splittedScript:=&gt;ammonite.util.Res[IndexedSeq[(String,Seq[String])]],startingImports:ammonite.util.Imports,codeSource:ammonite.util.Util.CodeSource,evaluate:(ammonite.interp.Preprocessor.Output,ammonite.util.Name)=&gt;ammonite.util.Res[((Iterator[String],ammonite.util.Evaluated),ammonite.util.Tag)],autoImport:Boolean,extraCode:String):ammonite.util.Res[(ammonite.util.ScriptOutput.Metadata,Iterator[String])]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="ammonite.interp.Interpreter#processExec" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="processExec(code:String,currentLine:Int,incrementLine:()=&gt;Unit):ammonite.util.Res[ammonite.util.Imports]"></a>
+      <a id="processExec(String,Int,()⇒Unit):Res[Imports]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">processExec</span><span class="params">(<span name="code">code: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="currentLine">currentLine: <span class="extype" name="scala.Int">Int</span></span>, <span name="incrementLine">incrementLine: () ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <span class="extype" name="ammonite.util.Res">Res</span>[<span class="extype" name="ammonite.util.Imports">Imports</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@processExec(code:String,currentLine:Int,incrementLine:()=&gt;Unit):ammonite.util.Res[ammonite.util.Imports]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Interpreter</dd></dl></div>
+    </li><li name="ammonite.interp.Interpreter#processLine" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="processLine(code:&lt;?&gt;,stmts:&lt;?&gt;,currentLine:&lt;?&gt;,silent:&lt;?&gt;,incrementLine:&lt;?&gt;):ammonite.util.Res[ammonite.util.Evaluated]"></a>
+      <a id="processLine(String,Seq[String],Int,Boolean,()⇒Unit):Res[Evaluated]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">processLine</span><span class="params">(<span name="code">code: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="stmts">stmts: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="currentLine">currentLine: <span class="extype" name="scala.Int">Int</span></span>, <span name="silent">silent: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="incrementLine">incrementLine: () ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <span class="extype" name="ammonite.util.Res">Res</span>[<span class="extype" name="ammonite.util.Evaluated">Evaluated</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@processLine(code:String,stmts:Seq[String],currentLine:Int,silent:Boolean,incrementLine:()=&gt;Unit):ammonite.util.Res[ammonite.util.Evaluated]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Interpreter</dd></dl></div>
+    </li><li name="ammonite.interp.Interpreter#processModule" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="processModule(code:String,codeSource:ammonite.util.Util.CodeSource,autoImport:Boolean,extraCode:String,hardcoded:Boolean):ammonite.util.Res[ammonite.util.ScriptOutput.Metadata]"></a>
+      <a id="processModule(String,CodeSource,Boolean,String,Boolean):Res[Metadata]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">processModule</span><span class="params">(<span name="code">code: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="codeSource">codeSource: <span class="extype" name="ammonite.util.Util.CodeSource">CodeSource</span></span>, <span name="autoImport">autoImport: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="extraCode">extraCode: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="hardcoded">hardcoded: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="ammonite.util.Res">Res</span>[<span class="extype" name="ammonite.util.ScriptOutput.Metadata">Metadata</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@processModule(code:String,codeSource:ammonite.util.Util.CodeSource,autoImport:Boolean,extraCode:String,hardcoded:Boolean):ammonite.util.Res[ammonite.util.ScriptOutput.Metadata]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Interpreter</dd></dl></div>
+    </li><li name="ammonite.interp.Interpreter#processSingleBlock" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="processSingleBlock(processed:&lt;?&gt;,codeSource0:&lt;?&gt;,indexedWrapperName:&lt;?&gt;):ammonite.util.Res[(ammonite.util.Evaluated,ammonite.util.Tag)]"></a>
+      <a id="processSingleBlock(Output,CodeSource,Name):Res[(Evaluated,Tag)]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">processSingleBlock</span><span class="params">(<span name="processed">processed: <span class="extype" name="ammonite.interp.Preprocessor.Output">Output</span></span>, <span name="codeSource0">codeSource0: <span class="extype" name="ammonite.util.Util.CodeSource">CodeSource</span></span>, <span name="indexedWrapperName">indexedWrapperName: <span class="extype" name="ammonite.util.Name">Name</span></span>)</span><span class="result">: <span class="extype" name="ammonite.util.Res">Res</span>[(<span class="extype" name="ammonite.util.Evaluated">Evaluated</span>, <span class="extype" name="ammonite.util.Tag">Tag</span>)]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@processSingleBlock(processed:ammonite.interp.Preprocessor.Output,codeSource0:ammonite.util.Util.CodeSource,indexedWrapperName:ammonite.util.Name):ammonite.util.Res[(ammonite.util.Evaluated,ammonite.util.Tag)]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Interpreter</dd></dl></div>
+    </li><li name="ammonite.interp.Interpreter#repositories" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="repositories:ammonite.util.Ref[List[coursier.core.Repository]]{defvalue:()=&gt;List[coursier.core.Repository];defvalue_=(x$1:()=&gt;List[coursier.core.Repository]):Unit}"></a>
+      <a id="repositories:Ref[List[Repository]]{.../*2definitionsintyperefinement*/}"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">repositories</span><span class="result">: <span class="extype" name="ammonite.util.Ref">Ref</span>[<span class="extype" name="scala.collection.immutable.List">List</span>[<span class="extype" name="coursier.core.Repository">Repository</span>]] { ... /* 2 definitions in type refinement */ }</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@repositories:ammonite.util.Ref[List[coursier.core.Repository]]{defvalue:()=&gt;List[coursier.core.Repository];defvalue_=(x$1:()=&gt;List[coursier.core.Repository]):Unit}" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Interpreter</dd></dl></div>
+    </li><li name="ammonite.interp.Interpreter#resolveImportHooks" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="resolveImportHooks(importTrees:Seq[ammonite.util.ImportTree],hookedStmts:Seq[String],source:ammonite.util.Util.CodeSource):ammonite.util.Res[ammonite.util.ImportHookInfo]"></a>
+      <a id="resolveImportHooks(Seq[ImportTree],Seq[String],CodeSource):Res[ImportHookInfo]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">resolveImportHooks</span><span class="params">(<span name="importTrees">importTrees: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="ammonite.util.ImportTree">ImportTree</span>]</span>, <span name="hookedStmts">hookedStmts: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="source">source: <span class="extype" name="ammonite.util.Util.CodeSource">CodeSource</span></span>)</span><span class="result">: <span class="extype" name="ammonite.util.Res">Res</span>[<span class="extype" name="ammonite.util.ImportHookInfo">ImportHookInfo</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@resolveImportHooks(importTrees:Seq[ammonite.util.ImportTree],hookedStmts:Seq[String],source:ammonite.util.Util.CodeSource):ammonite.util.Res[ammonite.util.ImportHookInfo]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Interpreter</dd></dl></div>
+    </li><li name="ammonite.interp.Interpreter#resolveSingleImportHook" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="resolveSingleImportHook(source:&lt;?&gt;,tree:&lt;?&gt;):ammonite.util.Res[Seq[ammonite.util.Imports]]"></a>
+      <a id="resolveSingleImportHook(CodeSource,ImportTree):Res[Seq[Imports]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">resolveSingleImportHook</span><span class="params">(<span name="source">source: <span class="extype" name="ammonite.util.Util.CodeSource">CodeSource</span></span>, <span name="tree">tree: <span class="extype" name="ammonite.util.ImportTree">ImportTree</span></span>)</span><span class="result">: <span class="extype" name="ammonite.util.Res">Res</span>[<span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="ammonite.util.Imports">Imports</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@resolveSingleImportHook(source:ammonite.util.Util.CodeSource,tree:ammonite.util.ImportTree):ammonite.util.Res[Seq[ammonite.util.Imports]]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Interpreter</dd></dl></div>
+    </li><li name="ammonite.interp.Interpreter#storage" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="storage:ammonite.runtime.Storage"></a>
+      <a id="storage:Storage"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">storage</span><span class="result">: <span class="extype" name="ammonite.runtime.Storage">Storage</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@storage:ammonite.runtime.Storage" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Interpreter</dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@toString():String" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="ammonite.interp.Interpreter#watch" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="watch(p:ammonite.ops.Path):Unit"></a>
+      <a id="watch(Path):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">watch</span><span class="params">(<span name="p">p: <span class="extype" name="ammonite.ops.Path">Path</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@watch(p:ammonite.ops.Path):Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Interpreter → InterpreterInterface</dd></dl></div>
+    </li><li name="ammonite.interp.Interpreter#watchedFiles" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="watchedFiles:scala.collection.mutable.Buffer[(ammonite.ops.Path,Long)]"></a>
+      <a id="watchedFiles:Buffer[(Path,Long)]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">watchedFiles</span><span class="result">: <span class="extype" name="scala.collection.mutable.Buffer">Buffer</span>[(<span class="extype" name="ammonite.ops.Path">Path</span>, <span class="extype" name="scala.Long">Long</span>)]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@watchedFiles:scala.collection.mutable.Buffer[(ammonite.ops.Path,Long)]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Interpreter</dd></dl></div>
+    </li><li name="ammonite.interp.Interpreter#wd" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wd:ammonite.ops.Path"></a>
+      <a id="wd:Path"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wd</span><span class="result">: <span class="extype" name="ammonite.ops.Path">Path</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.repl.DynaMLInterpreter@wd:ammonite.ops.Path" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Interpreter</dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="ammonite.interp.Interpreter">
+              <h3>Inherited from <span class="extype" name="ammonite.interp.Interpreter">Interpreter</span></h3>
+            </div><div class="parent" name="ammonite.runtime.ImportHook.InterpreterInterface">
+              <h3>Inherited from <span class="extype" name="ammonite.runtime.ImportHook.InterpreterInterface">InterpreterInterface</span></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

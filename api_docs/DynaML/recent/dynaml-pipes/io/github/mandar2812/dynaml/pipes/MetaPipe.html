@@ -53,7 +53,7 @@
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Data Pipe wrapper of a curried function of order 1</p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe">MetaPipe</a>[<span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe.Source">Source</span>, <span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe.Intermediate">Intermediate</span>, <span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe.Destination">Destination</span>]</dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="DataPipe.html" class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</a>[<span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe.Source">Source</span>, <a href="DataPipe.html" class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</a>[<span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe.Intermediate">Intermediate</span>, <span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe.Destination">Destination</span>]], <span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="DataPipe.html" class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</a>[<span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe.Source">Source</span>, <a href="DataPipe.html" class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</a>[<span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe.Intermediate">Intermediate</span>, <span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe.Destination">Destination</span>]], <span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <a href="DataPipeConvertible.html" class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipeConvertible">DataPipeConvertible</a>[<span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe.Source">Source</span>, <a href="DataPipe.html" class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</a>[<span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe.Intermediate">Intermediate</span>, <span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe.Destination">Destination</span>]], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -71,7 +71,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="io.github.mandar2812.dynaml.pipes.MetaPipe"><span>MetaPipe</span></li><li class="in" name="io.github.mandar2812.dynaml.pipes.DataPipe"><span>DataPipe</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="io.github.mandar2812.dynaml.pipes.MetaPipe"><span>MetaPipe</span></li><li class="in" name="io.github.mandar2812.dynaml.pipes.DataPipe"><span>DataPipe</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="io.github.mandar2812.dynaml.pipes.DataPipeConvertible"><span>DataPipeConvertible</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -211,18 +211,18 @@ Schematically represented as:</p><p><span class="extype" name="Source">Source</s
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.pipes.DataPipe#&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="&gt;[Further](that:io.github.mandar2812.dynaml.pipes.DataPipe[Destination,Further]):io.github.mandar2812.dynaml.pipes.DataPipe[Source,Further]"></a>
-      <a id="&gt;[Further](DataPipe[DataPipe[Intermediate,Destination],Further]):DataPipe[Source,Further]"></a>
+      <a id="&gt;[Further](that:io.github.mandar2812.dynaml.pipes.DataPipeConvertible[Destination,Further]):io.github.mandar2812.dynaml.pipes.DataPipe[Source,Further]"></a>
+      <a id="&gt;[Further](DataPipeConvertible[DataPipe[Intermediate,Destination],Further]):DataPipe[Source,Further]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $greater" class="name">&gt;</span><span class="tparams">[<span name="Further">Further</span>]</span><span class="params">(<span name="that">that: <a href="DataPipe.html" class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</a>[<a href="DataPipe.html" class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</a>[<span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe.Intermediate">Intermediate</span>, <span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe.Destination">Destination</span>], <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe.&gt;.Further">Further</span>]</span>)</span><span class="result">: <a href="DataPipe.html" class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</a>[<span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe.Source">Source</span>, <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe.&gt;.Further">Further</span>]</span>
+        <span title="gt4s: $greater" class="name">&gt;</span><span class="tparams">[<span name="Further">Further</span>]</span><span class="params">(<span name="that">that: <a href="DataPipeConvertible.html" class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipeConvertible">DataPipeConvertible</a>[<a href="DataPipe.html" class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</a>[<span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe.Intermediate">Intermediate</span>, <span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe.Destination">Destination</span>], <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe.&gt;.Further">Further</span>]</span>)</span><span class="result">: <a href="DataPipe.html" class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</a>[<span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe.Source">Source</span>, <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe.&gt;.Further">Further</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.pipes.MetaPipe@&gt;[Further](that:io.github.mandar2812.dynaml.pipes.DataPipe[Destination,Further]):io.github.mandar2812.dynaml.pipes.DataPipe[Source,Further]" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.pipes.MetaPipe@&gt;[Further](that:io.github.mandar2812.dynaml.pipes.DataPipeConvertible[Destination,Further]):io.github.mandar2812.dynaml.pipes.DataPipe[Source,Further]" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -265,9 +265,9 @@ Schematically represented as:</p><p><span class="extype" name="Source">Source</s
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">This is a modified form of the <a href="#&gt;[Further](that:io.github.mandar2812.dynaml.pipes.DataPipe[Destination,Further]):io.github.mandar2812.dynaml.pipes.DataPipe[Source,Further]" class="extmbr" name="io.github.mandar2812.dynaml.pipes.MetaPipe#&gt;">&gt;</a> operator in <a href="DataPipe.html" class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</a>
+      <p class="shortcomment cmt">This is a modified form of the <a href="#&gt;[Further](that:io.github.mandar2812.dynaml.pipes.DataPipeConvertible[Destination,Further]):io.github.mandar2812.dynaml.pipes.DataPipe[Source,Further]" class="extmbr" name="io.github.mandar2812.dynaml.pipes.MetaPipe#&gt;">&gt;</a> operator in <a href="DataPipe.html" class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</a>
 The pipe composition is applied to the resultant <a href="DataPipe.html" class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</a>
-produced by the <a href="#run(data:Source):Destination" class="extmbr" name="io.github.mandar2812.dynaml.pipes.MetaPipe#run">MetaPipe.run</a> and the argument.</p><div class="fullcomment"><div class="comment cmt"><p>This is a modified form of the <a href="#&gt;[Further](that:io.github.mandar2812.dynaml.pipes.DataPipe[Destination,Further]):io.github.mandar2812.dynaml.pipes.DataPipe[Source,Further]" class="extmbr" name="io.github.mandar2812.dynaml.pipes.MetaPipe#&gt;">&gt;</a> operator in <a href="DataPipe.html" class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</a>
+produced by the <a href="#run(data:Source):Destination" class="extmbr" name="io.github.mandar2812.dynaml.pipes.MetaPipe#run">MetaPipe.run</a> and the argument.</p><div class="fullcomment"><div class="comment cmt"><p>This is a modified form of the <a href="#&gt;[Further](that:io.github.mandar2812.dynaml.pipes.DataPipeConvertible[Destination,Further]):io.github.mandar2812.dynaml.pipes.DataPipe[Source,Further]" class="extmbr" name="io.github.mandar2812.dynaml.pipes.MetaPipe#&gt;">&gt;</a> operator in <a href="DataPipe.html" class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</a>
 The pipe composition is applied to the resultant <a href="DataPipe.html" class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</a>
 produced by the <a href="#run(data:Source):Destination" class="extmbr" name="io.github.mandar2812.dynaml.pipes.MetaPipe#run">MetaPipe.run</a> and the argument.
 </p></div><dl class="paramcmts block"><dt class="tparam">Further</dt><dd class="cmt"><p>The type of the result of the parameter.</p></dd><dt class="param">next</dt><dd class="cmt"><p>The data pipe to join</p></dd></dl></div>
@@ -521,6 +521,23 @@ produced by the <a href="#run(data:Source):Destination" class="extmbr" name="io.
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.pipes.DataPipe#toPipe" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toPipe:Source=&gt;Destination"></a>
+      <a id="toPipe:(Source)⇒DataPipe[Intermediate,Destination]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toPipe</span><span class="result">: (<span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe.Source">Source</span>) ⇒ <a href="DataPipe.html" class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</a>[<span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe.Intermediate">Intermediate</span>, <span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe.Destination">Destination</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.pipes.MetaPipe@toPipe:Source=&gt;Destination" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="DataPipe.html" class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</a> → <a href="DataPipeConvertible.html" class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipeConvertible">DataPipeConvertible</a></dd></dl></div>
     </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
       <a id="toString():String"></a>
@@ -622,6 +639,8 @@ produced by the <a href="#run(data:Source):Destination" class="extmbr" name="io.
               <h3>Inherited from <span class="extype" name="scala.Serializable">Serializable</span></h3>
             </div><div class="parent" name="java.io.Serializable">
               <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="io.github.mandar2812.dynaml.pipes.DataPipeConvertible">
+              <h3>Inherited from <a href="DataPipeConvertible.html" class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipeConvertible">DataPipeConvertible</a>[<span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe.Source">Source</span>, <a href="DataPipe.html" class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</a>[<span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe.Intermediate">Intermediate</span>, <span class="extype" name="io.github.mandar2812.dynaml.pipes.MetaPipe.Destination">Destination</span>]]</h3>
             </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">

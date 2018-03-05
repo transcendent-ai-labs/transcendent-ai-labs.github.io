@@ -51,7 +51,7 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Contains the various entry points to the Ammonite REPL.</p><p>Configuration of the basic REPL is done by passing in arguments when
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Contains the various entry points to the DynaML/Ammonite REPL.</p><p>Configuration of the basic REPL is done by passing in arguments when
 constructing the <a href="" class="extype" name="io.github.mandar2812.dynaml.DynaML">DynaML</a> instance, and the various entrypoints such
 as <a href="#run(replArgs:ammonite.util.Bind[_]*):(ammonite.util.Res[Any],Seq[(ammonite.ops.Path,Long)])" class="extmbr" name="io.github.mandar2812.dynaml.DynaML#run">run</a> <a href="#runScript(path:ammonite.ops.Path,scriptArgs:Seq[(String,Option[String])]):(ammonite.util.Res[Any],Seq[(ammonite.ops.Path,Long)])" class="extmbr" name="io.github.mandar2812.dynaml.DynaML#runScript">runScript</a> and so on are methods on that instance.</p><p>It is more or less equivalent to the <span class="extype" name="ammonite.repl.Repl">ammonite.repl.Repl</span> object itself, and has
 a similar set of parameters, but does not have any of the <span class="extype" name="ammonite.repl.Repl">ammonite.repl.Repl</span>'s
@@ -381,6 +381,23 @@ every time it is called!
                    but it could come from somewhere else e.g.</p><div class="fullcomment"><div class="comment cmt"><p>Where input to the Repl is coming from, typically System.in,
                    but it could come from somewhere else e.g. across the
                    network in the case of the SshdRepl</p></div></div>
+    </li><li name="io.github.mandar2812.dynaml.DynaML#instantiateDynaZepplinInterpreter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="instantiateDynaZepplinInterpreter():scala.util.Either[(ammonite.util.Res.Failing,Seq[(ammonite.ops.Path,Long)]),io.github.mandar2812.dynaml.repl.DynaMLInterpreter]"></a>
+      <a id="instantiateDynaZepplinInterpreter():Either[(Failing,Seq[(Path,Long)]),DynaMLInterpreter]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">instantiateDynaZepplinInterpreter</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.util.Either">Either</span>[(<span class="extype" name="ammonite.util.Res.Failing">Failing</span>, <span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="ammonite.ops.Path">Path</span>, <span class="extype" name="scala.Long">Long</span>)]), <span class="extype" name="io.github.mandar2812.dynaml.repl.DynaMLInterpreter">DynaMLInterpreter</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#io.github.mandar2812.dynaml.DynaML@instantiateDynaZepplinInterpreter():scala.util.Either[(ammonite.util.Res.Failing,Seq[(ammonite.ops.Path,Long)]),io.github.mandar2812.dynaml.repl.DynaMLInterpreter]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="io.github.mandar2812.dynaml.DynaML#instantiateInterpreter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="instantiateInterpreter():scala.util.Either[(ammonite.util.Res.Failing,Seq[(ammonite.ops.Path,Long)]),ammonite.interp.Interpreter]"></a>
       <a id="instantiateInterpreter():Either[(Failing,Seq[(Path,Long)]),Interpreter]"></a>
@@ -407,7 +424,7 @@ every time it is called!
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">instantiateRepl</span><span class="params">(<span name="replArgs">replArgs: <span class="extype" name="scala.IndexedSeq">IndexedSeq</span>[<span class="extype" name="ammonite.util.Bind">Bind</span>[_]] = <span class="symbol">Vector.empty</span></span>, <span name="remoteLogger">remoteLogger: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="ammonite.repl.RemoteLogger">RemoteLogger</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span> with <span class="extype" name="scala.util.Either">Either</span>[(<span class="extype" name="ammonite.util.Res.Failure">Failure</span>, <span class="extype" name="scala.collection.Seq">Seq</span>[(<span class="extype" name="ammonite.ops.Path">Path</span>, <span class="extype" name="scala.Long">Long</span>)]), <a href="repl/DynaMLRepl.html" class="extype" name="io.github.mandar2812.dynaml.repl.DynaMLRepl">DynaMLRepl</a>]</span>
+        <span class="name">instantiateRepl</span><span class="params">(<span name="replArgs">replArgs: <span class="extype" name="scala.IndexedSeq">IndexedSeq</span>[<span class="extype" name="ammonite.util.Bind">Bind</span>[_]] = <span class="symbol">Vector.empty</span></span>, <span name="remoteLogger">remoteLogger: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="ammonite.repl.RemoteLogger">RemoteLogger</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span> with <span class="extype" name="scala.util.Either">Either</span>[(<span class="extype" name="ammonite.util.Res.Failure">Failure</span>, <span class="extype" name="scala.collection.Seq">Seq</span>[(<span class="extype" name="ammonite.ops.Path">Path</span>, <span class="extype" name="scala.Long">Long</span>)]), <span class="extype" name="io.github.mandar2812.dynaml.repl.DynaMLRepl">DynaMLRepl</span>]</span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#io.github.mandar2812.dynaml.DynaML@instantiateRepl(replArgs:IndexedSeq[ammonite.util.Bind[_]],remoteLogger:Option[ammonite.repl.RemoteLogger]):ProductwithSerializablewithscala.util.Either[(ammonite.util.Res.Failure,Seq[(ammonite.ops.Path,Long)]),io.github.mandar2812.dynaml.repl.DynaMLRepl]" title="Permalink" target="_top">

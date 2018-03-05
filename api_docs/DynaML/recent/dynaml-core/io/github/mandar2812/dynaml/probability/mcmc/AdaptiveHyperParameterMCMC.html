@@ -58,7 +58,7 @@ variance is adjusted every iteration.
           <div class="superTypes hiddenContent"><a href="../RandomVariable.html" class="extype" name="io.github.mandar2812.dynaml.probability.RandomVariable">RandomVariable</a>[<span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>]], <span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block">
             <span class="toggle">Known Subclasses</span>
-            <div class="subClasses hiddenContent"><a href="HyperParameterSCAM.html" class="extype" name="io.github.mandar2812.dynaml.probability.mcmc.HyperParameterSCAM">HyperParameterSCAM</a></div>
+            <div class="subClasses hiddenContent"><a href="HyperParameterMCMC.html" class="extype" name="io.github.mandar2812.dynaml.probability.mcmc.HyperParameterMCMC">HyperParameterMCMC</a>, <a href="HyperParameterSCAM.html" class="extype" name="io.github.mandar2812.dynaml.probability.mcmc.HyperParameterSCAM">HyperParameterSCAM</a></div>
           </div></div>
         
 
@@ -334,19 +334,19 @@ morphed random variable on <span class="extype" name="OtherDomain">OtherDomain</
       </a>
     </span>
       
-    </li><li name="io.github.mandar2812.dynaml.probability.mcmc.AdaptiveHyperParameterMCMC#candidateDistributionPipe" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="candidateDistributionPipe:io.github.mandar2812.dynaml.pipes.DataPipe2[breeze.linalg.DenseVector[Double],breeze.linalg.DenseMatrix[Double],io.github.mandar2812.dynaml.probability.MultGaussianRV]"></a>
-      <a id="candidateDistributionPipe:DataPipe2[DenseVector[Double],DenseMatrix[Double],MultGaussianRV]"></a>
+    </li><li name="io.github.mandar2812.dynaml.probability.mcmc.AdaptiveHyperParameterMCMC#candidateDistribution" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="candidateDistribution(mean:breeze.linalg.DenseVector[Double],covariance:breeze.linalg.DenseMatrix[Double]):io.github.mandar2812.dynaml.probability.ContinuousRVWithDistr[breeze.linalg.DenseVector[Double],breeze.stats.distributions.ContinuousDistr[breeze.linalg.DenseVector[Double]]]"></a>
+      <a id="candidateDistribution(DenseVector[Double],DenseMatrix[Double]):ContinuousRVWithDistr[DenseVector[Double],ContinuousDistr[DenseVector[Double]]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">candidateDistributionPipe</span><span class="result">: <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe2">DataPipe2</span>[<span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>], <span class="extype" name="breeze.linalg.DenseMatrix">DenseMatrix</span>[<span class="extype" name="scala.Double">Double</span>], <a href="../MultGaussianRV.html" class="extype" name="io.github.mandar2812.dynaml.probability.MultGaussianRV">MultGaussianRV</a>]</span>
+        <span class="name">candidateDistribution</span><span class="params">(<span name="mean">mean: <span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="covariance">covariance: <span class="extype" name="breeze.linalg.DenseMatrix">DenseMatrix</span>[<span class="extype" name="scala.Double">Double</span>]</span>)</span><span class="result">: <a href="../ContinuousRVWithDistr.html" class="extype" name="io.github.mandar2812.dynaml.probability.ContinuousRVWithDistr">ContinuousRVWithDistr</a>[<span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>], <span class="extype" name="breeze.stats.distributions.ContinuousDistr">ContinuousDistr</span>[<span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.probability.mcmc.AdaptiveHyperParameterMCMC@candidateDistributionPipe:io.github.mandar2812.dynaml.pipes.DataPipe2[breeze.linalg.DenseVector[Double],breeze.linalg.DenseMatrix[Double],io.github.mandar2812.dynaml.probability.MultGaussianRV]" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.probability.mcmc.AdaptiveHyperParameterMCMC@candidateDistribution(mean:breeze.linalg.DenseVector[Double],covariance:breeze.linalg.DenseMatrix[Double]):io.github.mandar2812.dynaml.probability.ContinuousRVWithDistr[breeze.linalg.DenseVector[Double],breeze.stats.distributions.ContinuousDistr[breeze.linalg.DenseVector[Double]]]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -552,23 +552,6 @@ morphed random variable on <span class="extype" name="OtherDomain">OtherDomain</
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
-    </li><li name="io.github.mandar2812.dynaml.probability.mcmc.AdaptiveHyperParameterMCMC#getNext" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="getNext():breeze.linalg.DenseVector[Double]"></a>
-      <a id="getNext():DenseVector[Double]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">getNext</span><span class="params">()</span><span class="result">: <span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.probability.mcmc.AdaptiveHyperParameterMCMC@getNext():breeze.linalg.DenseVector[Double]" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
       <a id="hashCode():Int"></a>
@@ -740,6 +723,23 @@ morphed random variable on <span class="extype" name="OtherDomain">OtherDomain</
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.probability.mcmc.AdaptiveHyperParameterMCMC#next" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="next():breeze.linalg.DenseVector[Double]"></a>
+      <a id="next():DenseVector[Double]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">next</span><span class="params">()</span><span class="result">: <span class="extype" name="breeze.linalg.DenseVector">DenseVector</span>[<span class="extype" name="scala.Double">Double</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.probability.mcmc.AdaptiveHyperParameterMCMC@next():breeze.linalg.DenseVector[Double]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
     </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
       <a id="notify():Unit"></a>
@@ -826,7 +826,7 @@ morphed random variable on <span class="extype" name="OtherDomain">OtherDomain</
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.probability.mcmc.AdaptiveHyperParameterMCMC#sample" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="sample:io.github.mandar2812.dynaml.pipes.DataPipe[Unit,scala.collection.immutable.Map[String,Double]]"></a>
+      <a id="sample:io.github.mandar2812.dynaml.pipes.DataPipe[Unit,Map[String,Double]]"></a>
       <a id="sample:DataPipe[Unit,Map[String,Double]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -834,10 +834,10 @@ morphed random variable on <span class="extype" name="OtherDomain">OtherDomain</
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">sample</span><span class="result">: <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</span>[<span class="extype" name="scala.Unit">Unit</span>, <span class="extype" name="scala.collection.immutable.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>]]</span>
+        <span class="name">sample</span><span class="result">: <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</span>[<span class="extype" name="scala.Unit">Unit</span>, <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.probability.mcmc.AdaptiveHyperParameterMCMC@sample:io.github.mandar2812.dynaml.pipes.DataPipe[Unit,scala.collection.immutable.Map[String,Double]]" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.probability.mcmc.AdaptiveHyperParameterMCMC@sample:io.github.mandar2812.dynaml.pipes.DataPipe[Unit,Map[String,Double]]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>

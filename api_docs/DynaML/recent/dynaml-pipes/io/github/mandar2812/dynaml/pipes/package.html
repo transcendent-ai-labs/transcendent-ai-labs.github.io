@@ -101,7 +101,7 @@
     </span>
       
     </li><li name="io.github.mandar2812.dynaml.pipes.DataPipe" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="DataPipe[-Source,+Destination]extendsSerializable"></a>
+      <a id="DataPipe[-Source,+Destination]extendsDataPipeConvertible[Source,Destination]withSerializable"></a>
       <a id="DataPipe[-Source,+Destination]:DataPipe[Source,Destination]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -109,10 +109,10 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="DataPipe.html"><span class="name">DataPipe</span></a><span class="tparams">[<span name="Source">-Source</span>, <span name="Destination">+Destination</span>]</span><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="DataPipe.html"><span class="name">DataPipe</span></a><span class="tparams">[<span name="Source">-Source</span>, <span name="Destination">+Destination</span>]</span><span class="result"> extends <a href="DataPipeConvertible.html" class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipeConvertible">DataPipeConvertible</a>[<span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe.Source">Source</span>, <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe.Destination">Destination</span>] with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.pipes.package@DataPipe[-Source,+Destination]extendsSerializable" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.pipes.package@DataPipe[-Source,+Destination]extendsDataPipeConvertible[Source,Destination]withSerializable" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -122,7 +122,7 @@ between two data types, i.e.</p><div class="fullcomment"><div class="comment cmt
 abstract pipe that defines a transformation
 between two data types, i.e. <span class="extype" name="Source">Source</span> and <span class="extype" name="Destination">Destination</span></p></div></div>
     </li><li name="io.github.mandar2812.dynaml.pipes.DataPipe2" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="DataPipe2[-Source1,-Source2,+Result]extendsSerializable"></a>
+      <a id="DataPipe2[-Source1,-Source2,+Result]extendsDataPipeConvertible[(Source1,Source2),Result]withSerializable"></a>
       <a id="DataPipe2[-Source1,-Source2,+Result]:DataPipe2[Source1,Source2,Result]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -130,16 +130,16 @@ between two data types, i.e. <span class="extype" name="Source">Source</span> an
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="DataPipe2.html"><span class="name">DataPipe2</span></a><span class="tparams">[<span name="Source1">-Source1</span>, <span name="Source2">-Source2</span>, <span name="Result">+Result</span>]</span><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="DataPipe2.html"><span class="name">DataPipe2</span></a><span class="tparams">[<span name="Source1">-Source1</span>, <span name="Source2">-Source2</span>, <span name="Result">+Result</span>]</span><span class="result"> extends <a href="DataPipeConvertible.html" class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipeConvertible">DataPipeConvertible</a>[(<span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe2.Source1">Source1</span>, <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe2.Source2">Source2</span>), <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe2.Result">Result</span>] with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.pipes.package@DataPipe2[-Source1,-Source2,+Result]extendsSerializable" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.pipes.package@DataPipe2[-Source1,-Source2,+Result]extendsDataPipeConvertible[(Source1,Source2),Result]withSerializable" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt"></p>
     </li><li name="io.github.mandar2812.dynaml.pipes.DataPipe3" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="DataPipe3[-Source1,-Source2,-Source3,+Result]extendsSerializable"></a>
+      <a id="DataPipe3[-Source1,-Source2,-Source3,+Result]extendsDataPipeConvertible[(Source1,Source2,Source3),Result]withSerializable"></a>
       <a id="DataPipe3[-Source1,-Source2,-Source3,+Result]:DataPipe3[Source1,Source2,Source3,Result]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -147,16 +147,16 @@ between two data types, i.e. <span class="extype" name="Source">Source</span> an
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="DataPipe3.html"><span class="name">DataPipe3</span></a><span class="tparams">[<span name="Source1">-Source1</span>, <span name="Source2">-Source2</span>, <span name="Source3">-Source3</span>, <span name="Result">+Result</span>]</span><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="DataPipe3.html"><span class="name">DataPipe3</span></a><span class="tparams">[<span name="Source1">-Source1</span>, <span name="Source2">-Source2</span>, <span name="Source3">-Source3</span>, <span name="Result">+Result</span>]</span><span class="result"> extends <a href="DataPipeConvertible.html" class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipeConvertible">DataPipeConvertible</a>[(<span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe3.Source1">Source1</span>, <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe3.Source2">Source2</span>, <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe3.Source3">Source3</span>), <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe3.Result">Result</span>] with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.pipes.package@DataPipe3[-Source1,-Source2,-Source3,+Result]extendsSerializable" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.pipes.package@DataPipe3[-Source1,-Source2,-Source3,+Result]extendsDataPipeConvertible[(Source1,Source2,Source3),Result]withSerializable" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt"></p>
     </li><li name="io.github.mandar2812.dynaml.pipes.DataPipe4" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="DataPipe4[-Source1,-Source2,-Source3,-Source4,+Result]extendsSerializable"></a>
+      <a id="DataPipe4[-Source1,-Source2,-Source3,-Source4,+Result]extendsDataPipeConvertible[(Source1,Source2,Source3,Source4),Result]withSerializable"></a>
       <a id="DataPipe4[-Source1,-Source2,-Source3,-Source4,+Result]:DataPipe4[Source1,Source2,Source3,Source4,Result]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -164,14 +164,31 @@ between two data types, i.e. <span class="extype" name="Source">Source</span> an
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="DataPipe4.html"><span class="name">DataPipe4</span></a><span class="tparams">[<span name="Source1">-Source1</span>, <span name="Source2">-Source2</span>, <span name="Source3">-Source3</span>, <span name="Source4">-Source4</span>, <span name="Result">+Result</span>]</span><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="DataPipe4.html"><span class="name">DataPipe4</span></a><span class="tparams">[<span name="Source1">-Source1</span>, <span name="Source2">-Source2</span>, <span name="Source3">-Source3</span>, <span name="Source4">-Source4</span>, <span name="Result">+Result</span>]</span><span class="result"> extends <a href="DataPipeConvertible.html" class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipeConvertible">DataPipeConvertible</a>[(<span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe4.Source1">Source1</span>, <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe4.Source2">Source2</span>, <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe4.Source3">Source3</span>, <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe4.Source4">Source4</span>), <span class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe4.Result">Result</span>] with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#io.github.mandar2812.dynaml.pipes.package@DataPipe4[-Source1,-Source2,-Source3,-Source4,+Result]extendsSerializable" title="Permalink" target="_top">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.pipes.package@DataPipe4[-Source1,-Source2,-Source3,-Source4,+Result]extendsDataPipeConvertible[(Source1,Source2,Source3,Source4),Result]withSerializable" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt"></p>
+    </li><li name="io.github.mandar2812.dynaml.pipes.DataPipeConvertible" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="DataPipeConvertible[-Source,+Destination]extendsAnyRef"></a>
+      <a id="DataPipeConvertible[-Source,+Destination]:DataPipeConvertible[Source,Destination]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="DataPipeConvertible.html"><span class="name">DataPipeConvertible</span></a><span class="tparams">[<span name="Source">-Source</span>, <span name="Destination">+Destination</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.pipes.package@DataPipeConvertible[-Source,+Destination]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="io.github.mandar2812.dynaml.pipes.Encoder" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="Encoder[S,D]extendsDataPipe[S,D]"></a>
       <a id="Encoder[S,D]:Encoder[S,D]"></a>
