@@ -12,7 +12,7 @@ layout: default
 
 ## What we do
 
-Transcendent AI Labs aims to pursue new and exciting avenues in AI/Machine Learning
+T.AI Labs aims to pursue new and exciting avenues in AI/Machine Learning
 by architecting highly modular and scalable platforms for inference, learning and decision making.
 
 
