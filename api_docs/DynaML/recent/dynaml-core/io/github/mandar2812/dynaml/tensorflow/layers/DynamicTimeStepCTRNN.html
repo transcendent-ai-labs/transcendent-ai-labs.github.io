@@ -45,7 +45,7 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">DynamicTimeStepCTRNN</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="units">units: <span class="extype" name="scala.Int">Int</span></span>, <span name="horizon">horizon: <span class="extype" name="scala.Int">Int</span></span>, <span name="weightsInitializer">weightsInitializer: <span class="extype" name="org.platanios.tensorflow.api.ops.variables.Initializer">Initializer</span> = <span class="symbol"><span class="name"><a href="../../../../../../org/package.html">RandomNormalInitializer()</a></span></span></span>, <span name="biasInitializer">biasInitializer: <span class="extype" name="org.platanios.tensorflow.api.ops.variables.Initializer">Initializer</span> = <span class="symbol"><span class="name"><a href="../../../../../../org/package.html">RandomNormalInitializer()</a></span></span></span>, <span name="gainInitializer">gainInitializer: <span class="extype" name="org.platanios.tensorflow.api.ops.variables.Initializer">Initializer</span> = <span class="symbol"><span class="name"><a href="../../../../../../org/package.html">RandomNormalInitializer()</a></span></span></span>, <span name="timeConstantInitializer">timeConstantInitializer: <span class="extype" name="org.platanios.tensorflow.api.ops.variables.Initializer">Initializer</span> = <span class="symbol"><span class="name"><a href="../../../../../../org/package.html">RandomNormalInitializer()</a></span></span></span>, <span name="regularization">regularization: <span class="extype" name="org.platanios.tensorflow.api.ops.variables.Regularizer">Regularizer</span> = <span class="symbol"><span class="name"><a href="L2Regularizer.html">new L2Regularizer</a></span></span></span>)</span><span class="result"> extends <span class="extype" name="org.platanios.tensorflow.api.learn.layers.Layer">Layer</span>[<a href="../../../../../../org/platanios/tensorflow/api/package.html#Output=org.platanios.tensorflow.api.ops.Output" class="extmbr" name="org.platanios.tensorflow.api.Output">Output</a>, <a href="../../../../../../org/platanios/tensorflow/api/package.html#Output=org.platanios.tensorflow.api.ops.Output" class="extmbr" name="org.platanios.tensorflow.api.Output">Output</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <span class="name">DynamicTimeStepCTRNN</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="horizon">horizon: <span class="extype" name="scala.Int">Int</span></span>, <span name="weightsInitializer">weightsInitializer: <span class="extype" name="org.platanios.tensorflow.api.ops.variables.Initializer">Initializer</span> = <span class="symbol"><span class="name"><a href="../../../../../../org/package.html">RandomNormalInitializer()</a></span></span></span>, <span name="biasInitializer">biasInitializer: <span class="extype" name="org.platanios.tensorflow.api.ops.variables.Initializer">Initializer</span> = <span class="symbol"><span class="name"><a href="../../../../../../org/package.html">RandomNormalInitializer()</a></span></span></span>, <span name="gainInitializer">gainInitializer: <span class="extype" name="org.platanios.tensorflow.api.ops.variables.Initializer">Initializer</span> = <span class="symbol"><span class="name"><a href="../../../../../../org/package.html">RandomNormalInitializer()</a></span></span></span>, <span name="timeConstantInitializer">timeConstantInitializer: <span class="extype" name="org.platanios.tensorflow.api.ops.variables.Initializer">Initializer</span> = <span class="symbol"><span class="name"><a href="../../../../../../org/package.html">RandomNormalInitializer()</a></span></span></span>, <span name="regularization">regularization: <span class="extype" name="org.platanios.tensorflow.api.ops.variables.Regularizer">Regularizer</span> = <span class="symbol"><span class="name"><a href="L2Regularizer.html">new L2Regularizer</a></span></span></span>)</span><span class="result"> extends <span class="extype" name="org.platanios.tensorflow.api.learn.layers.Layer">Layer</span>[<a href="../../../../../../org/platanios/tensorflow/api/package.html#Output=org.platanios.tensorflow.api.ops.Output" class="extmbr" name="org.platanios.tensorflow.api.Output">Output</a>, <a href="../../../../../../org/platanios/tensorflow/api/package.html#Output=org.platanios.tensorflow.api.ops.Output" class="extmbr" name="org.platanios.tensorflow.api.Output">Output</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
@@ -93,7 +93,7 @@ is inferred during training.
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="io.github.mandar2812.dynaml.tensorflow.layers.DynamicTimeStepCTRNN#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(name:String,units:Int,horizon:Int,weightsInitializer:org.platanios.tensorflow.api.ops.variables.Initializer,biasInitializer:org.platanios.tensorflow.api.ops.variables.Initializer,gainInitializer:org.platanios.tensorflow.api.ops.variables.Initializer,timeConstantInitializer:org.platanios.tensorflow.api.ops.variables.Initializer,regularization:org.platanios.tensorflow.api.ops.variables.Regularizer):io.github.mandar2812.dynaml.tensorflow.layers.DynamicTimeStepCTRNN"></a>
+      <a id="&lt;init&gt;(name:String,horizon:Int,weightsInitializer:org.platanios.tensorflow.api.ops.variables.Initializer,biasInitializer:org.platanios.tensorflow.api.ops.variables.Initializer,gainInitializer:org.platanios.tensorflow.api.ops.variables.Initializer,timeConstantInitializer:org.platanios.tensorflow.api.ops.variables.Initializer,regularization:org.platanios.tensorflow.api.ops.variables.Regularizer):io.github.mandar2812.dynaml.tensorflow.layers.DynamicTimeStepCTRNN"></a>
       <a id="&lt;init&gt;:DynamicTimeStepCTRNN"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -101,10 +101,10 @@ is inferred during training.
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">DynamicTimeStepCTRNN</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="units">units: <span class="extype" name="scala.Int">Int</span></span>, <span name="horizon">horizon: <span class="extype" name="scala.Int">Int</span></span>, <span name="weightsInitializer">weightsInitializer: <span class="extype" name="org.platanios.tensorflow.api.ops.variables.Initializer">Initializer</span> = <span class="symbol"><span class="name"><a href="../../../../../../org/package.html">RandomNormalInitializer()</a></span></span></span>, <span name="biasInitializer">biasInitializer: <span class="extype" name="org.platanios.tensorflow.api.ops.variables.Initializer">Initializer</span> = <span class="symbol"><span class="name"><a href="../../../../../../org/package.html">RandomNormalInitializer()</a></span></span></span>, <span name="gainInitializer">gainInitializer: <span class="extype" name="org.platanios.tensorflow.api.ops.variables.Initializer">Initializer</span> = <span class="symbol"><span class="name"><a href="../../../../../../org/package.html">RandomNormalInitializer()</a></span></span></span>, <span name="timeConstantInitializer">timeConstantInitializer: <span class="extype" name="org.platanios.tensorflow.api.ops.variables.Initializer">Initializer</span> = <span class="symbol"><span class="name"><a href="../../../../../../org/package.html">RandomNormalInitializer()</a></span></span></span>, <span name="regularization">regularization: <span class="extype" name="org.platanios.tensorflow.api.ops.variables.Regularizer">Regularizer</span> = <span class="symbol"><span class="name"><a href="L2Regularizer.html">new L2Regularizer</a></span></span></span>)</span>
+        <span class="name">DynamicTimeStepCTRNN</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="horizon">horizon: <span class="extype" name="scala.Int">Int</span></span>, <span name="weightsInitializer">weightsInitializer: <span class="extype" name="org.platanios.tensorflow.api.ops.variables.Initializer">Initializer</span> = <span class="symbol"><span class="name"><a href="../../../../../../org/package.html">RandomNormalInitializer()</a></span></span></span>, <span name="biasInitializer">biasInitializer: <span class="extype" name="org.platanios.tensorflow.api.ops.variables.Initializer">Initializer</span> = <span class="symbol"><span class="name"><a href="../../../../../../org/package.html">RandomNormalInitializer()</a></span></span></span>, <span name="gainInitializer">gainInitializer: <span class="extype" name="org.platanios.tensorflow.api.ops.variables.Initializer">Initializer</span> = <span class="symbol"><span class="name"><a href="../../../../../../org/package.html">RandomNormalInitializer()</a></span></span></span>, <span name="timeConstantInitializer">timeConstantInitializer: <span class="extype" name="org.platanios.tensorflow.api.ops.variables.Initializer">Initializer</span> = <span class="symbol"><span class="name"><a href="../../../../../../org/package.html">RandomNormalInitializer()</a></span></span></span>, <span name="regularization">regularization: <span class="extype" name="org.platanios.tensorflow.api.ops.variables.Regularizer">Regularizer</span> = <span class="symbol"><span class="name"><a href="L2Regularizer.html">new L2Regularizer</a></span></span></span>)</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.tensorflow.layers.DynamicTimeStepCTRNN@&lt;init&gt;(name:String,units:Int,horizon:Int,weightsInitializer:org.platanios.tensorflow.api.ops.variables.Initializer,biasInitializer:org.platanios.tensorflow.api.ops.variables.Initializer,gainInitializer:org.platanios.tensorflow.api.ops.variables.Initializer,timeConstantInitializer:org.platanios.tensorflow.api.ops.variables.Initializer,regularization:org.platanios.tensorflow.api.ops.variables.Regularizer):io.github.mandar2812.dynaml.tensorflow.layers.DynamicTimeStepCTRNN" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.tensorflow.layers.DynamicTimeStepCTRNN@&lt;init&gt;(name:String,horizon:Int,weightsInitializer:org.platanios.tensorflow.api.ops.variables.Initializer,biasInitializer:org.platanios.tensorflow.api.ops.variables.Initializer,gainInitializer:org.platanios.tensorflow.api.ops.variables.Initializer,timeConstantInitializer:org.platanios.tensorflow.api.ops.variables.Initializer,regularization:org.platanios.tensorflow.api.ops.variables.Regularizer):io.github.mandar2812.dynaml.tensorflow.layers.DynamicTimeStepCTRNN" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -221,35 +221,35 @@ is inferred during training.
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Layer</dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.tensorflow.layers.DynamicTimeStepCTRNN#_forward" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="_forward(input:org.platanios.tensorflow.api.Output,mode:org.platanios.tensorflow.api.learn.Mode):org.platanios.tensorflow.api.Output"></a>
-      <a id="_forward(Output,Mode):Output"></a>
+      <a id="_forward(input:org.platanios.tensorflow.api.Output)(implicitmode:org.platanios.tensorflow.api.learn.Mode):org.platanios.tensorflow.api.Output"></a>
+      <a id="_forward(Output)(Mode):Output"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">_forward</span><span class="params">(<span name="input">input: <a href="../../../../../../org/platanios/tensorflow/api/package.html#Output=org.platanios.tensorflow.api.ops.Output" class="extmbr" name="org.platanios.tensorflow.api.Output">Output</a></span>, <span name="mode">mode: <span class="extype" name="org.platanios.tensorflow.api.learn.Mode">Mode</span></span>)</span><span class="result">: <a href="../../../../../../org/platanios/tensorflow/api/package.html#Output=org.platanios.tensorflow.api.ops.Output" class="extmbr" name="org.platanios.tensorflow.api.Output">Output</a></span>
+        <span class="name">_forward</span><span class="params">(<span name="input">input: <a href="../../../../../../org/platanios/tensorflow/api/package.html#Output=org.platanios.tensorflow.api.ops.Output" class="extmbr" name="org.platanios.tensorflow.api.Output">Output</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="mode">mode: <span class="extype" name="org.platanios.tensorflow.api.learn.Mode">Mode</span></span>)</span><span class="result">: <a href="../../../../../../org/platanios/tensorflow/api/package.html#Output=org.platanios.tensorflow.api.ops.Output" class="extmbr" name="org.platanios.tensorflow.api.Output">Output</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.tensorflow.layers.DynamicTimeStepCTRNN@_forward(input:org.platanios.tensorflow.api.Output,mode:org.platanios.tensorflow.api.learn.Mode):org.platanios.tensorflow.api.Output" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.tensorflow.layers.DynamicTimeStepCTRNN@_forward(input:org.platanios.tensorflow.api.Output)(implicitmode:org.platanios.tensorflow.api.learn.Mode):org.platanios.tensorflow.api.Output" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="" class="extype" name="io.github.mandar2812.dynaml.tensorflow.layers.DynamicTimeStepCTRNN">DynamicTimeStepCTRNN</a> → Layer</dd></dl></div>
     </li><li name="org.platanios.tensorflow.api.learn.layers.Layer#apply" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="apply(input:T,mode:org.platanios.tensorflow.api.learn.Mode):R"></a>
-      <a id="apply(Output,Mode):Output"></a>
+      <a id="apply(input:T)(implicitmode:org.platanios.tensorflow.api.learn.Mode):R"></a>
+      <a id="apply(Output)(Mode):Output"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">apply</span><span class="params">(<span name="input">input: <a href="../../../../../../org/platanios/tensorflow/api/package.html#Output=org.platanios.tensorflow.api.ops.Output" class="extmbr" name="org.platanios.tensorflow.api.Output">Output</a></span>, <span name="mode">mode: <span class="extype" name="org.platanios.tensorflow.api.learn.Mode">Mode</span></span>)</span><span class="result">: <a href="../../../../../../org/platanios/tensorflow/api/package.html#Output=org.platanios.tensorflow.api.ops.Output" class="extmbr" name="org.platanios.tensorflow.api.Output">Output</a></span>
+        <span class="name">apply</span><span class="params">(<span name="input">input: <a href="../../../../../../org/platanios/tensorflow/api/package.html#Output=org.platanios.tensorflow.api.ops.Output" class="extmbr" name="org.platanios.tensorflow.api.Output">Output</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="mode">mode: <span class="extype" name="org.platanios.tensorflow.api.learn.Mode">Mode</span></span>)</span><span class="result">: <a href="../../../../../../org/platanios/tensorflow/api/package.html#Output=org.platanios.tensorflow.api.ops.Output" class="extmbr" name="org.platanios.tensorflow.api.Output">Output</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.tensorflow.layers.DynamicTimeStepCTRNN@apply(input:T,mode:org.platanios.tensorflow.api.learn.Mode):R" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.tensorflow.layers.DynamicTimeStepCTRNN@apply(input:T)(implicitmode:org.platanios.tensorflow.api.learn.Mode):R" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -345,23 +345,6 @@ is inferred during training.
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Layer</dd></dl></div>
-    </li><li name="org.platanios.tensorflow.api.learn.layers.Layer#context" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="context:scala.util.DynamicVariable[org.platanios.tensorflow.api.learn.layers.LayerCreationContext]"></a>
-      <a id="context:DynamicVariable[LayerCreationContext]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">implicit </span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">context</span><span class="result">: <span class="extype" name="scala.util.DynamicVariable">DynamicVariable</span>[<span class="extype" name="org.platanios.tensorflow.api.learn.layers.LayerCreationContext">LayerCreationContext</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.tensorflow.layers.DynamicTimeStepCTRNN@context:scala.util.DynamicVariable[org.platanios.tensorflow.api.learn.layers.LayerCreationContext]" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Layer</dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -403,18 +386,18 @@ is inferred during training.
               
         </dd></dl></div>
     </li><li name="org.platanios.tensorflow.api.learn.layers.Layer#forward" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="forward(input:T,mode:org.platanios.tensorflow.api.learn.Mode):R"></a>
-      <a id="forward(Output,Mode):Output"></a>
+      <a id="forward(input:T)(implicitmode:org.platanios.tensorflow.api.learn.Mode):R"></a>
+      <a id="forward(Output)(Mode):Output"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">forward</span><span class="params">(<span name="input">input: <a href="../../../../../../org/platanios/tensorflow/api/package.html#Output=org.platanios.tensorflow.api.ops.Output" class="extmbr" name="org.platanios.tensorflow.api.Output">Output</a></span>, <span name="mode">mode: <span class="extype" name="org.platanios.tensorflow.api.learn.Mode">Mode</span></span>)</span><span class="result">: <a href="../../../../../../org/platanios/tensorflow/api/package.html#Output=org.platanios.tensorflow.api.ops.Output" class="extmbr" name="org.platanios.tensorflow.api.Output">Output</a></span>
+        <span class="name">forward</span><span class="params">(<span name="input">input: <a href="../../../../../../org/platanios/tensorflow/api/package.html#Output=org.platanios.tensorflow.api.ops.Output" class="extmbr" name="org.platanios.tensorflow.api.Output">Output</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="mode">mode: <span class="extype" name="org.platanios.tensorflow.api.learn.Mode">Mode</span></span>)</span><span class="result">: <a href="../../../../../../org/platanios/tensorflow/api/package.html#Output=org.platanios.tensorflow.api.ops.Output" class="extmbr" name="org.platanios.tensorflow.api.Output">Output</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.tensorflow.layers.DynamicTimeStepCTRNN@forward(input:T,mode:org.platanios.tensorflow.api.learn.Mode):R" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.tensorflow.layers.DynamicTimeStepCTRNN@forward(input:T)(implicitmode:org.platanios.tensorflow.api.learn.Mode):R" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -640,23 +623,6 @@ is inferred during training.
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Layer → AnyRef → Any</dd></dl></div>
-    </li><li name="io.github.mandar2812.dynaml.tensorflow.layers.DynamicTimeStepCTRNN#units" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="units:Int"></a>
-      <a id="units:Int"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">units</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.tensorflow.layers.DynamicTimeStepCTRNN@units:Int" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>

@@ -87,6 +87,23 @@ each dimension.</p><div class="fullcomment"><div class="comment cmt"><p>Scales a
 each dimension. This assumes that there is no covariance between the data
 dimensions.
 </p></div><dl class="paramcmts block"><dt class="param">mean</dt><dd class="cmt"><p>Sample mean of the data</p></dd><dt class="param">sigma</dt><dd class="cmt"><p>Sample variance of each data dimension</p></dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.tensorflow.utils.GaussianScalerTO" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GaussianScalerTOextendsTOScalerwithProductwithSerializable"></a>
+      <a id="GaussianScalerTO:GaussianScalerTO"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="GaussianScalerTO.html"><span class="name">GaussianScalerTO</span></a><span class="params">(<span name="mean">mean: <a href="../../../../../../org/platanios/tensorflow/api/package.html#Output=org.platanios.tensorflow.api.ops.Output" class="extmbr" name="org.platanios.tensorflow.api.Output">Output</a></span>, <span name="sigma">sigma: <a href="../../../../../../org/platanios/tensorflow/api/package.html#Output=org.platanios.tensorflow.api.ops.Output" class="extmbr" name="org.platanios.tensorflow.api.Output">Output</a></span>)</span><span class="result"> extends <a href="TOScaler.html" class="extype" name="io.github.mandar2812.dynaml.tensorflow.utils.TOScaler">TOScaler</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.tensorflow.utils.package@GaussianScalerTOextendsTOScalerwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="io.github.mandar2812.dynaml.tensorflow.utils.GenRegressionMetricsTF" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="GenRegressionMetricsTFextendsRegressionMetricsTF"></a>
       <a id="GenRegressionMetricsTF:GenRegressionMetricsTF"></a>
@@ -125,6 +142,23 @@ matrix outputs/labels.</p>
 each dimension.</p><div class="fullcomment"><div class="comment cmt"><p>Scales attributes of a vector pattern using the sample minimum and maximum of
 each dimension.
 </p></div><dl class="paramcmts block"><dt class="param">min</dt><dd class="cmt"><p>Sample minimum of the data</p></dd><dt class="param">max</dt><dd class="cmt"><p>Sample maximum of each data dimension</p></dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.tensorflow.utils.MinMaxScalerTO" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MinMaxScalerTOextendsTOScalerwithProductwithSerializable"></a>
+      <a id="MinMaxScalerTO:MinMaxScalerTO"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="MinMaxScalerTO.html"><span class="name">MinMaxScalerTO</span></a><span class="params">(<span name="min">min: <a href="../../../../../../org/platanios/tensorflow/api/package.html#Output=org.platanios.tensorflow.api.ops.Output" class="extmbr" name="org.platanios.tensorflow.api.Output">Output</a></span>, <span name="max">max: <a href="../../../../../../org/platanios/tensorflow/api/package.html#Output=org.platanios.tensorflow.api.ops.Output" class="extmbr" name="org.platanios.tensorflow.api.Output">Output</a></span>)</span><span class="result"> extends <a href="TOScaler.html" class="extype" name="io.github.mandar2812.dynaml.tensorflow.utils.TOScaler">TOScaler</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.tensorflow.utils.package@MinMaxScalerTOextendsTOScalerwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="io.github.mandar2812.dynaml.tensorflow.utils.TFScaler" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="TFScalerextendsReversibleScaler[org.platanios.tensorflow.api.Tensor]"></a>
       <a id="TFScaler:TFScaler"></a>
@@ -138,6 +172,23 @@ each dimension.
       </span>
       </h4><span class="permalink">
       <a href="../../../../../../index.html#io.github.mandar2812.dynaml.tensorflow.utils.package@TFScalerextendsReversibleScaler[org.platanios.tensorflow.api.Tensor]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.github.mandar2812.dynaml.tensorflow.utils.TOScaler" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="TOScalerextendsReversibleScaler[org.platanios.tensorflow.api.Output]"></a>
+      <a id="TOScaler:TOScaler"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="TOScaler.html"><span class="name">TOScaler</span></a><span class="result"> extends <span class="extype" name="io.github.mandar2812.dynaml.pipes.ReversibleScaler">ReversibleScaler</span>[<a href="../../../../../../org/platanios/tensorflow/api/package.html#Output=org.platanios.tensorflow.api.ops.Output" class="extmbr" name="org.platanios.tensorflow.api.Output">Output</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.tensorflow.utils.package@TOScalerextendsReversibleScaler[org.platanios.tensorflow.api.Output]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -187,25 +238,23 @@ each dimension.
       </a>
     </span>
       
-    </li><li name="io.github.mandar2812.dynaml.tensorflow.utils.dtfutils" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="dtfutils"></a>
-      <a id="dtfutils:dtfutils"></a>
+    </li><li name="io.github.mandar2812.dynaml.tensorflow.utils.Utils" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Utils"></a>
+      <a id="Utils:Utils"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="dtfutils$.html"><span class="name">dtfutils</span></a>
+        <a href="Utils$.html"><span class="name">Utils</span></a>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.tensorflow.utils.package@dtfutils" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.tensorflow.utils.package@Utils" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Contains miscellaneous utility functions for DynaML's
-tensorflow handle/package.</p><div class="fullcomment"><div class="comment cmt"><h5> DynaML Tensorflow Utilities Package </h5><p>Contains miscellaneous utility functions for DynaML's
-tensorflow handle/package.</p></div></div>
+      
     </li></ol>
             </div>
 

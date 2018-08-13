@@ -209,6 +209,110 @@ between two data types, i.e. <span class="extype" name="Source">Source</span> an
 from a domain to a range.</p><div class="fullcomment"><div class="comment cmt"><p>A deterministic and reversible encoding
 from a domain to a range. Mathematically equivalent
 to a bijective function.</p></div><dl class="paramcmts block"><dt class="tparam">S</dt><dd class="cmt"><p>The domain type</p></dd><dt class="tparam">D</dt><dd class="cmt"><p>The output type</p></dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.pipes.IterableDataPipe" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="IterableDataPipe[I,J,K]extendsDataPipe[Iterable[I],K]"></a>
+      <a id="IterableDataPipe[I,J,K]:IterableDataPipe[I,J,K]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="IterableDataPipe.html"><span class="name">IterableDataPipe</span></a><span class="tparams">[<span name="I">I</span>, <span name="J">J</span>, <span name="K">K</span>]</span><span class="result"> extends <a href="DataPipe.html" class="extype" name="io.github.mandar2812.dynaml.pipes.DataPipe">DataPipe</a>[<span class="extype" name="scala.Iterable">Iterable</span>[<span class="extype" name="io.github.mandar2812.dynaml.pipes.IterableDataPipe.I">I</span>], <span class="extype" name="io.github.mandar2812.dynaml.pipes.IterableDataPipe.K">K</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.pipes.package@IterableDataPipe[I,J,K]extendsDataPipe[Iterable[I],K]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="tparam">I</dt><dd class="cmt"><p>The type of a single source record</p></dd><dt class="tparam">J</dt><dd class="cmt"><p>The result type of a single record.</p></dd></dl></div>
+    </li><li name="io.github.mandar2812.dynaml.pipes.IterableFilterPipe" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="IterableFilterPipe[I]extendsIterableDataPipe[I,Boolean,Iterable[I]]"></a>
+      <a id="IterableFilterPipe[I]:IterableFilterPipe[I]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="IterableFilterPipe.html"><span class="name">IterableFilterPipe</span></a><span class="tparams">[<span name="I">I</span>]</span><span class="result"> extends <a href="IterableDataPipe.html" class="extype" name="io.github.mandar2812.dynaml.pipes.IterableDataPipe">IterableDataPipe</a>[<span class="extype" name="io.github.mandar2812.dynaml.pipes.IterableFilterPipe.I">I</span>, <span class="extype" name="scala.Boolean">Boolean</span>, <span class="extype" name="scala.Iterable">Iterable</span>[<span class="extype" name="io.github.mandar2812.dynaml.pipes.IterableFilterPipe.I">I</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.pipes.package@IterableFilterPipe[I]extendsIterableDataPipe[I,Boolean,Iterable[I]]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.github.mandar2812.dynaml.pipes.IterableFlatMapPipe" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="IterableFlatMapPipe[I,J]extendsIterableDataPipe[I,Iterable[J],Iterable[J]]"></a>
+      <a id="IterableFlatMapPipe[I,J]:IterableFlatMapPipe[I,J]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="IterableFlatMapPipe.html"><span class="name">IterableFlatMapPipe</span></a><span class="tparams">[<span name="I">I</span>, <span name="J">J</span>]</span><span class="result"> extends <a href="IterableDataPipe.html" class="extype" name="io.github.mandar2812.dynaml.pipes.IterableDataPipe">IterableDataPipe</a>[<span class="extype" name="io.github.mandar2812.dynaml.pipes.IterableFlatMapPipe.I">I</span>, <span class="extype" name="scala.Iterable">Iterable</span>[<span class="extype" name="io.github.mandar2812.dynaml.pipes.IterableFlatMapPipe.J">J</span>], <span class="extype" name="scala.Iterable">Iterable</span>[<span class="extype" name="io.github.mandar2812.dynaml.pipes.IterableFlatMapPipe.J">J</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.pipes.package@IterableFlatMapPipe[I,J]extendsIterableDataPipe[I,Iterable[J],Iterable[J]]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A pipeline which takes a <span class="extype" name="Iterable">Iterable</span> of data and
+performs the scala <code>flatMap</code> operation.</p>
+    </li><li name="io.github.mandar2812.dynaml.pipes.IterableMapPipe" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="IterableMapPipe[I,J]extendsIterableDataPipe[I,J,Iterable[J]]"></a>
+      <a id="IterableMapPipe[I,J]:IterableMapPipe[I,J]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="IterableMapPipe.html"><span class="name">IterableMapPipe</span></a><span class="tparams">[<span name="I">I</span>, <span name="J">J</span>]</span><span class="result"> extends <a href="IterableDataPipe.html" class="extype" name="io.github.mandar2812.dynaml.pipes.IterableDataPipe">IterableDataPipe</a>[<span class="extype" name="io.github.mandar2812.dynaml.pipes.IterableMapPipe.I">I</span>, <span class="extype" name="io.github.mandar2812.dynaml.pipes.IterableMapPipe.J">J</span>, <span class="extype" name="scala.Iterable">Iterable</span>[<span class="extype" name="io.github.mandar2812.dynaml.pipes.IterableMapPipe.J">J</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.pipes.package@IterableMapPipe[I,J]extendsIterableDataPipe[I,J,Iterable[J]]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A pipeline which takes a <span class="extype" name="Iterable">Iterable</span> of data and
+performs the scala <code>map</code>operation.</p>
+    </li><li name="io.github.mandar2812.dynaml.pipes.IterablePartitionPipe" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="IterablePartitionPipe[I]extendsIterableDataPipe[I,Boolean,(Iterable[I],Iterable[I])]"></a>
+      <a id="IterablePartitionPipe[I]:IterablePartitionPipe[I]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="IterablePartitionPipe.html"><span class="name">IterablePartitionPipe</span></a><span class="tparams">[<span name="I">I</span>]</span><span class="result"> extends <a href="IterableDataPipe.html" class="extype" name="io.github.mandar2812.dynaml.pipes.IterableDataPipe">IterableDataPipe</a>[<span class="extype" name="io.github.mandar2812.dynaml.pipes.IterablePartitionPipe.I">I</span>, <span class="extype" name="scala.Boolean">Boolean</span>, (<span class="extype" name="scala.Iterable">Iterable</span>[<span class="extype" name="io.github.mandar2812.dynaml.pipes.IterablePartitionPipe.I">I</span>], <span class="extype" name="scala.Iterable">Iterable</span>[<span class="extype" name="io.github.mandar2812.dynaml.pipes.IterablePartitionPipe.I">I</span>])]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.pipes.package@IterablePartitionPipe[I]extendsIterableDataPipe[I,Boolean,(Iterable[I],Iterable[I])]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.github.mandar2812.dynaml.pipes.IterableSideEffectPipe" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="IterableSideEffectPipe[I]extendsIterableDataPipe[I,Unit,Unit]"></a>
+      <a id="IterableSideEffectPipe[I]:IterableSideEffectPipe[I]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="IterableSideEffectPipe.html"><span class="name">IterableSideEffectPipe</span></a><span class="tparams">[<span name="I">I</span>]</span><span class="result"> extends <a href="IterableDataPipe.html" class="extype" name="io.github.mandar2812.dynaml.pipes.IterableDataPipe">IterableDataPipe</a>[<span class="extype" name="io.github.mandar2812.dynaml.pipes.IterableSideEffectPipe.I">I</span>, <span class="extype" name="scala.Unit">Unit</span>, <span class="extype" name="scala.Unit">Unit</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.pipes.package@IterableSideEffectPipe[I]extendsIterableDataPipe[I,Unit,Unit]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="io.github.mandar2812.dynaml.pipes.MetaPipe" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="MetaPipe[Source,Intermediate,Destination]extendsDataPipe[Source,io.github.mandar2812.dynaml.pipes.DataPipe[Intermediate,Destination]]"></a>
       <a id="MetaPipe[Source,Intermediate,Destination]:MetaPipe[Source,Intermediate,Destination]"></a>
@@ -676,6 +780,57 @@ performs the scala <code>map</code>operation.</p>
       </span>
       </h4><span class="permalink">
       <a href="../../../../../index.html#io.github.mandar2812.dynaml.pipes.package@Encoder" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.github.mandar2812.dynaml.pipes.IterableDataPipe" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="IterableDataPipe"></a>
+      <a id="IterableDataPipe:IterableDataPipe"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="IterableDataPipe$.html"><span class="name">IterableDataPipe</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.pipes.package@IterableDataPipe" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.github.mandar2812.dynaml.pipes.IterableFlatMapPipe" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="IterableFlatMapPipe"></a>
+      <a id="IterableFlatMapPipe:IterableFlatMapPipe"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="IterableFlatMapPipe$.html"><span class="name">IterableFlatMapPipe</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.pipes.package@IterableFlatMapPipe" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="io.github.mandar2812.dynaml.pipes.IterablePartitionPipe" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="IterablePartitionPipe"></a>
+      <a id="IterablePartitionPipe:IterablePartitionPipe"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="IterablePartitionPipe$.html"><span class="name">IterablePartitionPipe</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#io.github.mandar2812.dynaml.pipes.package@IterablePartitionPipe" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
