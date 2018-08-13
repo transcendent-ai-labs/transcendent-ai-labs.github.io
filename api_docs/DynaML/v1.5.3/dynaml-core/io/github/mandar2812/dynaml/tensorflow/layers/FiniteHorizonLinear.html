@@ -45,13 +45,13 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">FiniteHorizonLinear</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="units">units: <span class="extype" name="scala.Int">Int</span></span>, <span name="observables">observables: <span class="extype" name="scala.Int">Int</span></span>, <span name="horizon">horizon: <span class="extype" name="scala.Int">Int</span></span>, <span name="weightsInitializer">weightsInitializer: <span class="extype" name="org.platanios.tensorflow.api.ops.variables.Initializer">Initializer</span> = <span class="symbol"><span class="name"><a href="../../../../../../org/package.html">RandomNormalInitializer()</a></span></span></span>, <span name="biasInitializer">biasInitializer: <span class="extype" name="org.platanios.tensorflow.api.ops.variables.Initializer">Initializer</span> = <span class="symbol"><span class="name"><a href="../../../../../../org/package.html">RandomNormalInitializer()</a></span></span></span>, <span name="regularization">regularization: <span class="extype" name="org.platanios.tensorflow.api.ops.variables.Regularizer">Regularizer</span> = <span class="symbol">L2Regularizer()</span></span>)</span><span class="result"> extends <span class="extype" name="org.platanios.tensorflow.api.learn.layers.Layer">Layer</span>[<a href="../../../../../../org/platanios/tensorflow/api/package.html#Output=org.platanios.tensorflow.api.ops.Output" class="extmbr" name="org.platanios.tensorflow.api.Output">Output</a>, <a href="../../../../../../org/platanios/tensorflow/api/package.html#Output=org.platanios.tensorflow.api.ops.Output" class="extmbr" name="org.platanios.tensorflow.api.Output">Output</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <span class="name">FiniteHorizonLinear</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="observables">observables: <span class="extype" name="scala.Int">Int</span></span>, <span name="weightsInitializer">weightsInitializer: <span class="extype" name="org.platanios.tensorflow.api.ops.variables.Initializer">Initializer</span> = <span class="symbol"><span class="name"><a href="../../../../../../org/package.html">RandomNormalInitializer()</a></span></span></span>, <span name="biasInitializer">biasInitializer: <span class="extype" name="org.platanios.tensorflow.api.ops.variables.Initializer">Initializer</span> = <span class="symbol"><span class="name"><a href="../../../../../../org/package.html">RandomNormalInitializer()</a></span></span></span>, <span name="regularization">regularization: <span class="extype" name="org.platanios.tensorflow.api.ops.variables.Regularizer">Regularizer</span> = <span class="symbol">L2Regularizer()</span></span>)</span><span class="result"> extends <span class="extype" name="org.platanios.tensorflow.api.learn.layers.Layer">Layer</span>[<a href="../../../../../../org/platanios/tensorflow/api/package.html#Output=org.platanios.tensorflow.api.ops.Output" class="extmbr" name="org.platanios.tensorflow.api.Output">Output</a>, <a href="../../../../../../org/platanios/tensorflow/api/package.html#Output=org.platanios.tensorflow.api.ops.Output" class="extmbr" name="org.platanios.tensorflow.api.Output">Output</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Projection of a finite horizon multivariate
 time series onto an observation space.
-</p></div><dl class="paramcmts block"><dt class="param">units</dt><dd class="cmt"><p>The degrees of freedom or dimensionality of the dynamical system</p></dd><dt class="param">observables</dt><dd class="cmt"><p>The dimensionality of the observations at each time epoch.</p></dd></dl><div class="toggleContainer block">
+</p></div><dl class="paramcmts block"><dt class="param">observables</dt><dd class="cmt"><p>The dimensionality of the observations at each time epoch.</p></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <span class="extype" name="org.platanios.tensorflow.api.learn.layers.Layer">Layer</span>[<a href="../../../../../../org/platanios/tensorflow/api/package.html#Output=org.platanios.tensorflow.api.ops.Output" class="extmbr" name="org.platanios.tensorflow.api.Output">Output</a>, <a href="../../../../../../org/platanios/tensorflow/api/package.html#Output=org.platanios.tensorflow.api.ops.Output" class="extmbr" name="org.platanios.tensorflow.api.Output">Output</a>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
@@ -91,7 +91,7 @@ time series onto an observation space.
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="io.github.mandar2812.dynaml.tensorflow.layers.FiniteHorizonLinear#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="&lt;init&gt;(name:String,units:Int,observables:Int,horizon:Int,weightsInitializer:org.platanios.tensorflow.api.ops.variables.Initializer,biasInitializer:org.platanios.tensorflow.api.ops.variables.Initializer,regularization:org.platanios.tensorflow.api.ops.variables.Regularizer):io.github.mandar2812.dynaml.tensorflow.layers.FiniteHorizonLinear"></a>
+      <a id="&lt;init&gt;(name:String,observables:Int,weightsInitializer:org.platanios.tensorflow.api.ops.variables.Initializer,biasInitializer:org.platanios.tensorflow.api.ops.variables.Initializer,regularization:org.platanios.tensorflow.api.ops.variables.Regularizer):io.github.mandar2812.dynaml.tensorflow.layers.FiniteHorizonLinear"></a>
       <a id="&lt;init&gt;:FiniteHorizonLinear"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -99,14 +99,14 @@ time series onto an observation space.
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">FiniteHorizonLinear</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="units">units: <span class="extype" name="scala.Int">Int</span></span>, <span name="observables">observables: <span class="extype" name="scala.Int">Int</span></span>, <span name="horizon">horizon: <span class="extype" name="scala.Int">Int</span></span>, <span name="weightsInitializer">weightsInitializer: <span class="extype" name="org.platanios.tensorflow.api.ops.variables.Initializer">Initializer</span> = <span class="symbol"><span class="name"><a href="../../../../../../org/package.html">RandomNormalInitializer()</a></span></span></span>, <span name="biasInitializer">biasInitializer: <span class="extype" name="org.platanios.tensorflow.api.ops.variables.Initializer">Initializer</span> = <span class="symbol"><span class="name"><a href="../../../../../../org/package.html">RandomNormalInitializer()</a></span></span></span>, <span name="regularization">regularization: <span class="extype" name="org.platanios.tensorflow.api.ops.variables.Regularizer">Regularizer</span> = <span class="symbol">L2Regularizer()</span></span>)</span>
+        <span class="name">FiniteHorizonLinear</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="observables">observables: <span class="extype" name="scala.Int">Int</span></span>, <span name="weightsInitializer">weightsInitializer: <span class="extype" name="org.platanios.tensorflow.api.ops.variables.Initializer">Initializer</span> = <span class="symbol"><span class="name"><a href="../../../../../../org/package.html">RandomNormalInitializer()</a></span></span></span>, <span name="biasInitializer">biasInitializer: <span class="extype" name="org.platanios.tensorflow.api.ops.variables.Initializer">Initializer</span> = <span class="symbol"><span class="name"><a href="../../../../../../org/package.html">RandomNormalInitializer()</a></span></span></span>, <span name="regularization">regularization: <span class="extype" name="org.platanios.tensorflow.api.ops.variables.Regularizer">Regularizer</span> = <span class="symbol">L2Regularizer()</span></span>)</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.tensorflow.layers.FiniteHorizonLinear@&lt;init&gt;(name:String,units:Int,observables:Int,horizon:Int,weightsInitializer:org.platanios.tensorflow.api.ops.variables.Initializer,biasInitializer:org.platanios.tensorflow.api.ops.variables.Initializer,regularization:org.platanios.tensorflow.api.ops.variables.Regularizer):io.github.mandar2812.dynaml.tensorflow.layers.FiniteHorizonLinear" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.tensorflow.layers.FiniteHorizonLinear@&lt;init&gt;(name:String,observables:Int,weightsInitializer:org.platanios.tensorflow.api.ops.variables.Initializer,biasInitializer:org.platanios.tensorflow.api.ops.variables.Initializer,regularization:org.platanios.tensorflow.api.ops.variables.Regularizer):io.github.mandar2812.dynaml.tensorflow.layers.FiniteHorizonLinear" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">units</dt><dd class="cmt"><p>The degrees of freedom or dimensionality of the dynamical system</p></dd><dt class="param">observables</dt><dd class="cmt"><p>The dimensionality of the observations at each time epoch.</p></dd></dl></div>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">observables</dt><dd class="cmt"><p>The dimensionality of the observations at each time epoch.</p></dd></dl></div>
     </li></ol>
             </div>
 
@@ -219,35 +219,35 @@ time series onto an observation space.
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Layer</dd></dl></div>
     </li><li name="io.github.mandar2812.dynaml.tensorflow.layers.FiniteHorizonLinear#_forward" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="_forward(input:org.platanios.tensorflow.api.Output,mode:org.platanios.tensorflow.api.learn.Mode):org.platanios.tensorflow.api.Output"></a>
-      <a id="_forward(Output,Mode):Output"></a>
+      <a id="_forward(input:org.platanios.tensorflow.api.Output)(implicitmode:org.platanios.tensorflow.api.learn.Mode):org.platanios.tensorflow.api.Output"></a>
+      <a id="_forward(Output)(Mode):Output"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">_forward</span><span class="params">(<span name="input">input: <a href="../../../../../../org/platanios/tensorflow/api/package.html#Output=org.platanios.tensorflow.api.ops.Output" class="extmbr" name="org.platanios.tensorflow.api.Output">Output</a></span>, <span name="mode">mode: <span class="extype" name="org.platanios.tensorflow.api.learn.Mode">Mode</span></span>)</span><span class="result">: <a href="../../../../../../org/platanios/tensorflow/api/package.html#Output=org.platanios.tensorflow.api.ops.Output" class="extmbr" name="org.platanios.tensorflow.api.Output">Output</a></span>
+        <span class="name">_forward</span><span class="params">(<span name="input">input: <a href="../../../../../../org/platanios/tensorflow/api/package.html#Output=org.platanios.tensorflow.api.ops.Output" class="extmbr" name="org.platanios.tensorflow.api.Output">Output</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="mode">mode: <span class="extype" name="org.platanios.tensorflow.api.learn.Mode">Mode</span></span>)</span><span class="result">: <a href="../../../../../../org/platanios/tensorflow/api/package.html#Output=org.platanios.tensorflow.api.ops.Output" class="extmbr" name="org.platanios.tensorflow.api.Output">Output</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.tensorflow.layers.FiniteHorizonLinear@_forward(input:org.platanios.tensorflow.api.Output,mode:org.platanios.tensorflow.api.learn.Mode):org.platanios.tensorflow.api.Output" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.tensorflow.layers.FiniteHorizonLinear@_forward(input:org.platanios.tensorflow.api.Output)(implicitmode:org.platanios.tensorflow.api.learn.Mode):org.platanios.tensorflow.api.Output" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="" class="extype" name="io.github.mandar2812.dynaml.tensorflow.layers.FiniteHorizonLinear">FiniteHorizonLinear</a> → Layer</dd></dl></div>
     </li><li name="org.platanios.tensorflow.api.learn.layers.Layer#apply" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="apply(input:T,mode:org.platanios.tensorflow.api.learn.Mode):R"></a>
-      <a id="apply(Output,Mode):Output"></a>
+      <a id="apply(input:T)(implicitmode:org.platanios.tensorflow.api.learn.Mode):R"></a>
+      <a id="apply(Output)(Mode):Output"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">apply</span><span class="params">(<span name="input">input: <a href="../../../../../../org/platanios/tensorflow/api/package.html#Output=org.platanios.tensorflow.api.ops.Output" class="extmbr" name="org.platanios.tensorflow.api.Output">Output</a></span>, <span name="mode">mode: <span class="extype" name="org.platanios.tensorflow.api.learn.Mode">Mode</span></span>)</span><span class="result">: <a href="../../../../../../org/platanios/tensorflow/api/package.html#Output=org.platanios.tensorflow.api.ops.Output" class="extmbr" name="org.platanios.tensorflow.api.Output">Output</a></span>
+        <span class="name">apply</span><span class="params">(<span name="input">input: <a href="../../../../../../org/platanios/tensorflow/api/package.html#Output=org.platanios.tensorflow.api.ops.Output" class="extmbr" name="org.platanios.tensorflow.api.Output">Output</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="mode">mode: <span class="extype" name="org.platanios.tensorflow.api.learn.Mode">Mode</span></span>)</span><span class="result">: <a href="../../../../../../org/platanios/tensorflow/api/package.html#Output=org.platanios.tensorflow.api.ops.Output" class="extmbr" name="org.platanios.tensorflow.api.Output">Output</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.tensorflow.layers.FiniteHorizonLinear@apply(input:T,mode:org.platanios.tensorflow.api.learn.Mode):R" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.tensorflow.layers.FiniteHorizonLinear@apply(input:T)(implicitmode:org.platanios.tensorflow.api.learn.Mode):R" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -343,23 +343,6 @@ time series onto an observation space.
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Layer</dd></dl></div>
-    </li><li name="org.platanios.tensorflow.api.learn.layers.Layer#context" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="context:scala.util.DynamicVariable[org.platanios.tensorflow.api.learn.layers.LayerCreationContext]"></a>
-      <a id="context:DynamicVariable[LayerCreationContext]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">implicit </span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">context</span><span class="result">: <span class="extype" name="scala.util.DynamicVariable">DynamicVariable</span>[<span class="extype" name="org.platanios.tensorflow.api.learn.layers.LayerCreationContext">LayerCreationContext</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.tensorflow.layers.FiniteHorizonLinear@context:scala.util.DynamicVariable[org.platanios.tensorflow.api.learn.layers.LayerCreationContext]" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Layer</dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -401,18 +384,18 @@ time series onto an observation space.
               
         </dd></dl></div>
     </li><li name="org.platanios.tensorflow.api.learn.layers.Layer#forward" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="forward(input:T,mode:org.platanios.tensorflow.api.learn.Mode):R"></a>
-      <a id="forward(Output,Mode):Output"></a>
+      <a id="forward(input:T)(implicitmode:org.platanios.tensorflow.api.learn.Mode):R"></a>
+      <a id="forward(Output)(Mode):Output"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">forward</span><span class="params">(<span name="input">input: <a href="../../../../../../org/platanios/tensorflow/api/package.html#Output=org.platanios.tensorflow.api.ops.Output" class="extmbr" name="org.platanios.tensorflow.api.Output">Output</a></span>, <span name="mode">mode: <span class="extype" name="org.platanios.tensorflow.api.learn.Mode">Mode</span></span>)</span><span class="result">: <a href="../../../../../../org/platanios/tensorflow/api/package.html#Output=org.platanios.tensorflow.api.ops.Output" class="extmbr" name="org.platanios.tensorflow.api.Output">Output</a></span>
+        <span class="name">forward</span><span class="params">(<span name="input">input: <a href="../../../../../../org/platanios/tensorflow/api/package.html#Output=org.platanios.tensorflow.api.ops.Output" class="extmbr" name="org.platanios.tensorflow.api.Output">Output</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="mode">mode: <span class="extype" name="org.platanios.tensorflow.api.learn.Mode">Mode</span></span>)</span><span class="result">: <a href="../../../../../../org/platanios/tensorflow/api/package.html#Output=org.platanios.tensorflow.api.ops.Output" class="extmbr" name="org.platanios.tensorflow.api.Output">Output</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.tensorflow.layers.FiniteHorizonLinear@forward(input:T,mode:org.platanios.tensorflow.api.learn.Mode):R" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.tensorflow.layers.FiniteHorizonLinear@forward(input:T)(implicitmode:org.platanios.tensorflow.api.learn.Mode):R" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -434,23 +417,6 @@ time series onto an observation space.
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="io.github.mandar2812.dynaml.tensorflow.layers.FiniteHorizonLinear#horizon" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="horizon:Int"></a>
-      <a id="horizon:Int"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">horizon</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.tensorflow.layers.FiniteHorizonLinear@horizon:Int" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -621,23 +587,6 @@ time series onto an observation space.
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Layer → AnyRef → Any</dd></dl></div>
-    </li><li name="io.github.mandar2812.dynaml.tensorflow.layers.FiniteHorizonLinear#units" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="units:Int"></a>
-      <a id="units:Int"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">units</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#io.github.mandar2812.dynaml.tensorflow.layers.FiniteHorizonLinear@units:Int" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">The degrees of freedom or dimensionality of the dynamical system</p>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>
