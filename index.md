@@ -3,7 +3,7 @@ layout: default
 ---
 
 
-<img src="tail_logo.png" alt="TAIL Logo" style="width: 256px;"/>
+<img src="tai.png" alt="TAIL Logo" style="width: 256px;"/>
 
 <br/>
 
