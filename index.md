@@ -12,7 +12,7 @@ layout: default
 
 ## What we do
 
-Build highly modular and scalable platforms for inference, learning and decision making.
+Build modular and scalable platforms for inference, learning and decision making.
 
 
 

@@ -1,7 +1,7 @@
 # Site settings
 title: TAILHQ
 tag_text: TAIL
-description: "Highly modular and scalable platforms for inference, learning and decision making."
+description: "Modular and scalable platforms for inference, learning and decision making."
 # Build settings
 markdown: kramdown
 exclude: ["README.md"]
